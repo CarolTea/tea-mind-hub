@@ -1,8 +1,10 @@
 import { useFadeIn } from "@/hooks/useFadeIn";
+import { useLang } from "@/contexts/LanguageContext";
 import aboutTea from "@/assets/about-tea.jpg";
 
 const About = () => {
   const { ref, isVisible } = useFadeIn();
+  const { t } = useLang();
 
   return (
     <section id="about" className="py-32 lg:py-40">
@@ -12,15 +14,12 @@ const About = () => {
       >
         <div>
           <h2 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-8 leading-tight">
-            The Intelligence Behind
+            {t.about.title1}
             <br />
-            <em>the Industry</em>
+            <em>{t.about.title2}</em>
           </h2>
           <p className="font-sans text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg">
-            Tea Mind Business Hub structures professionals, integrates sensory
-            expertise with market application, and builds positioning power
-            within the global tea ecosystem. We operate at the intersection of
-            strategic intelligence and industry authority.
+            {t.about.description}
           </p>
         </div>
 

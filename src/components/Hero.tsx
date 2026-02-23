@@ -1,4 +1,5 @@
 import heroBg from "@/assets/hero-bg.jpg";
+import { useLang } from "@/contexts/LanguageContext";
 
 const HeroBackground = () => (
   <svg
@@ -20,6 +21,8 @@ const HeroBackground = () => (
 );
 
 const Hero = () => {
+  const { t } = useLang();
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <img src={heroBg} alt="Aerial view of lush tea plantation rows" className="absolute inset-0 w-full h-full object-cover" />
@@ -29,19 +32,19 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-32 lg:py-0">
         <div className="max-w-2xl">
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-tight text-primary-foreground mb-8 opacity-0 animate-fade-in">
-            We think in markets,
+            {t.hero.title1}
             <br />
-            <span className="italic">not in cups.</span>
+            <span className="italic">{t.hero.title2}</span>
           </h1>
           <p className="font-sans text-lg md:text-xl text-primary-foreground/70 leading-relaxed mb-12 max-w-lg opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Strategic intelligence for professionals shaping the tea industry.
+            {t.hero.subtitle}
           </p>
           <div className="flex flex-wrap gap-4 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <a href="#programs" className="inline-flex items-center px-8 py-3.5 bg-accent text-accent-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:opacity-90">
-              Explore Programs
+              {t.hero.cta1}
             </a>
             <a href="#society" className="inline-flex items-center px-8 py-3.5 border border-primary-foreground/40 text-primary-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:border-primary-foreground hover:bg-primary-foreground/10">
-              Enter the Society
+              {t.hero.cta2}
             </a>
           </div>
         </div>
