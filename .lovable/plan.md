@@ -1,28 +1,20 @@
 
 
-# Remover Fundo Branco da Logo via CSS
+# Substituir logos do Navbar e Footer com as imagens transparentes
 
-## Problema
-A imagem da logo (PNG) possui fundo branco embutido no arquivo. Mesmo com varias tentativas de substituicao, o fundo branco persiste porque esta na propria imagem.
+## O que sera feito
 
-## Solucao
-Usar a propriedade CSS `mix-blend-mode: multiply` na tag `<img>` da logo. Essa tecnica torna pixels brancos invisíveis, fazendo o logo se integrar perfeitamente com qualquer fundo (escuro ou claro).
+1. **Copiar as duas imagens** enviadas para `src/assets/`:
+   - `Tea_Hub_Logo_header_favicon.png` → `src/assets/tea-mind-logo-transparent.png` (substitui a logo atual do navbar)
+   - `Tea_Hub_Logo_footer.png` → `src/assets/tea-hub-logo-transparent.png` (substitui a logo atual do footer)
 
-## Arquivos Modificados
+2. **Navbar (`src/components/Navbar.tsx`)**: Garantir que a tag `<img>` NAO tenha `mix-blend-multiply` — a imagem ja vem com fundo transparente.
 
-### 1. `src/components/Navbar.tsx`
-- Adicionar `mix-blend-mode: multiply` na classe da imagem do logo
-- Mudar de `className="h-14 w-auto"` para `className="h-14 w-auto mix-blend-multiply"`
+3. **Footer (`src/components/Footer.tsx`)**: Garantir que a tag `<img>` NAO tenha `mix-blend-multiply`.
 
-### 2. `src/components/Footer.tsx`
-- Adicionar `mix-blend-mode: multiply` na classe da imagem do logo
-- Mudar de `className="h-16 w-auto mb-6"` para `className="h-16 w-auto mb-6 mix-blend-multiply"`
+## Detalhes tecnicos
 
-## Como funciona
-O `mix-blend-mode: multiply` faz com que pixels brancos (255,255,255) se tornem transparentes ao se misturar com o fundo. As cores do logo (verde e dourado) permanecem intactas. Funciona em todos os navegadores modernos.
-
-## Resultado esperado
-- Logo no navbar: sem fundo branco, integrada com o hero escuro
-- Logo no footer: sem fundo branco, integrada com o fundo escuro do footer
-- Sem necessidade de editar o arquivo de imagem
+- As imagens serao copiadas sobrescrevendo os arquivos existentes em `src/assets/`, mantendo os mesmos nomes de arquivo ja importados nos componentes.
+- Nenhuma mudanca de import necessaria — os nomes dos arquivos permanecem iguais.
+- Remover qualquer classe `mix-blend-multiply` residual das tags `<img>`.
 
