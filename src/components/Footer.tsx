@@ -16,7 +16,7 @@ const Footer = () => {
             <img
               src={teaMindLogo}
               alt="Tea Mind Business Hub"
-              className="h-10 w-auto mb-6 brightness-0 invert opacity-80"
+              className="h-16 w-auto mb-6"
             />
             <p className="font-sans text-sm text-primary-foreground/50 leading-relaxed max-w-xs">
               Strategic intelligence for professionals shaping the global tea
