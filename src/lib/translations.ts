@@ -131,7 +131,7 @@ export const translations = {
     hero: {
       title1: "Pensamos em mercados,",
       title2: "n\u00E3o em x\u00EDcaras.",
-      subtitle: "Um hub de desenvolvimento profissional operando na interseção de inteligência de mercado e expertise sensorial.",
+      subtitle: "Hub de inteligência estratégica & desenvolvimento profissional no mercado do chá.",
       cta1: "Explorar Programas",
       cta2: "Entrar na Sociedade",
     },
@@ -175,7 +175,7 @@ export const translations = {
       quote: "\u201CEstruturamos o que outros consomem.\u201D",
     },
     footer: {
-      tagline: "Um hub de desenvolvimento profissional operando na interseção de inteligência de mercado e expertise sensorial.",
+      tagline: "Hub de inteligência estratégica & desenvolvimento profissional no mercado do chá.",
       navigation: "Navega\u00E7\u00E3o",
       contactTitle: "Contato",
       copyright: "Todos os direitos reservados.",
