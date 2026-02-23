@@ -1,4 +1,4 @@
-import teaMindLogo from "@/assets/tea-mind-logo-transparent.png";
+import teaHubLogo from "@/assets/tea-hub-logo-transparent.png";
 
 const footerLinks = [
   { label: "About", href: "#about" },
@@ -14,9 +14,9 @@ const Footer = () => {
           {/* Logo & tagline */}
           <div>
             <img
-              src={teaMindLogo}
+              src={teaHubLogo}
               alt="Tea Mind Business Hub"
-              className="h-16 w-auto mb-6 mix-blend-multiply"
+              className="h-16 w-auto mb-6"
             />
             <p className="font-sans text-sm text-primary-foreground/50 leading-relaxed max-w-xs">
               Strategic intelligence for professionals shaping the global tea
