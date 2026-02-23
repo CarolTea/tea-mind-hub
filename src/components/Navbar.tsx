@@ -3,15 +3,17 @@ import { useNavigate } from "react-router-dom";
 import { useLang } from "@/contexts/LanguageContext";
 import teaMindLogo from "@/assets/tea-mind-logo-transparent.png";
 
+const neuroRoutes = { en: "/neurogastronomy", es: "/es/neurogastronomia", pt: "/pt/neurogastronomia" } as const;
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [programsOpen, setProgramsOpen] = useState(false);
   const { lang, t } = useLang();
   const navigate = useNavigate();
 
   const navLinks = [
     { label: t.nav.about, href: "#about" },
-    { label: t.nav.programs, href: "#programs" },
     { label: t.nav.society, href: "#society" },
     { label: t.nav.contact, href: "#footer" },
   ];
@@ -39,7 +41,44 @@ const Navbar = () => {
 
         {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-10">
-          {navLinks.map((link) => (
+          {navLinks.slice(0, 1).map((link) => (
+            <li key={link.label}>
+              <a
+                href={link.href}
+                className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+
+          {/* Programs dropdown */}
+          <li
+            className="relative"
+            onMouseEnter={() => setProgramsOpen(true)}
+            onMouseLeave={() => setProgramsOpen(false)}
+          >
+            <a
+              href="#programs"
+              className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
+            >
+              {t.nav.programs}
+            </a>
+            {programsOpen && (
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2">
+                <div className="bg-background border border-border/60 shadow-lg py-2 min-w-[220px]">
+                  <button
+                    onClick={() => { setProgramsOpen(false); navigate(neuroRoutes[lang]); }}
+                    className="w-full text-left px-5 py-2.5 text-sm font-sans tracking-wide text-foreground/80 hover:text-foreground hover:bg-muted/50 transition-colors duration-200"
+                  >
+                    {t.nav.neurogastronomy}
+                  </button>
+                </div>
+              </div>
+            )}
+          </li>
+
+          {navLinks.slice(1).map((link) => (
             <li key={link.label}>
               <a
                 href={link.href}
@@ -77,7 +116,33 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden bg-background/98 backdrop-blur-sm border-t border-border">
           <ul className="flex flex-col items-center gap-6 py-8">
-            {navLinks.map((link) => (
+            {navLinks.slice(0, 1).map((link) => (
+              <li key={link.label}>
+                <a
+                  href={link.href}
+                  className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+            <li className="flex flex-col items-center gap-3">
+              <a
+                href="#programs"
+                className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground"
+                onClick={() => setMenuOpen(false)}
+              >
+                {t.nav.programs}
+              </a>
+              <button
+                onClick={() => { setMenuOpen(false); navigate(neuroRoutes[lang]); }}
+                className="text-xs font-sans tracking-wide text-foreground/60 hover:text-foreground transition-colors"
+              >
+                → {t.nav.neurogastronomy}
+              </button>
+            </li>
+            {navLinks.slice(1).map((link) => (
               <li key={link.label}>
                 <a
                   href={link.href}

@@ -7,6 +7,7 @@ export const translations = {
       programs: "Programs",
       society: "Society",
       contact: "Contact",
+      neurogastronomy: "Neurogastronomy Program",
     },
     hero: {
       title1: "We think in markets,",
@@ -48,16 +49,17 @@ export const translations = {
     },
     programs: {
       heading: "Our Programs",
+      cta: "Explore Program",
       items: [
         {
-          title: "Tea Programs",
+          title: "Tea Program",
           description:
-            "Comprehensive programs covering tea market dynamics, sourcing strategy, sensory analysis, and professional certification pathways for the global tea sector.",
+            "Comprehensive program covering tea market dynamics, sourcing strategy, sensory analysis, and professional certification pathways for the global tea sector.",
         },
         {
-          title: "Neurogastronomy Programs",
+          title: "Neurogastronomy Program",
           description:
-            "Cutting-edge programs exploring the science of flavor perception, multisensory experiences, and how neuroscience reshapes tea tasting, customer experience and product development.",
+            "Cutting-edge program exploring the science of flavor perception, multisensory experiences, and how neuroscience reshapes tea tasting, customer experience and product development.",
         },
       ],
     },
@@ -83,6 +85,7 @@ export const translations = {
       programs: "Programas",
       society: "Sociedad",
       contact: "Contacto",
+      neurogastronomy: "Programa de Neurogastronomía",
     },
     hero: {
       title1: "Pensamos en mercados,",
@@ -124,16 +127,17 @@ export const translations = {
     },
     programs: {
       heading: "Nuestros Programas",
+      cta: "Explorar Programa",
       items: [
         {
-          title: "Programas de Té",
+          title: "Programa de Té",
           description:
-            "Programas integrales que cubren la dinámica del mercado del té, estrategia de abastecimiento, análisis sensorial y vías de certificación profesional para el sector global del té.",
+            "Programa integral que cubre la dinámica del mercado del té, estrategia de abastecimiento, análisis sensorial y vías de certificación profesional para el sector global del té.",
         },
         {
-          title: "Programas de Neurogastronomía",
+          title: "Programa de Neurogastronomía",
           description:
-            "Programas de vanguardia que exploran la ciencia de la percepción del sabor, experiencias multisensoriales y cómo la neurociencia transforma la degustación de té, la experiencia del cliente y el desarrollo de productos.",
+            "Programa de vanguardia que explora la ciencia de la percepción del sabor, experiencias multisensoriales y cómo la neurociencia transforma la degustación de té, la experiencia del cliente y el desarrollo de productos.",
         },
       ],
     },
@@ -159,6 +163,7 @@ export const translations = {
       programs: "Programas",
       society: "Sociedade",
       contact: "Contato",
+      neurogastronomy: "Programa de Neurogastronomia",
     },
     hero: {
       title1: "Pensamos em mercados,",
@@ -200,16 +205,17 @@ export const translations = {
     },
     programs: {
       heading: "Nossos Programas",
+      cta: "Explorar Programa",
       items: [
         {
-          title: "Programas de Ch\u00E1",
+          title: "Programa de Chá",
           description:
-            "Programas abrangentes cobrindo din\u00E2micas do mercado de ch\u00E1, estrat\u00E9gia de sourcing, an\u00E1lise sensorial e caminhos de certifica\u00E7\u00E3o profissional para o setor global do ch\u00E1.",
+            "Programa abrangente cobrindo dinâmicas do mercado de chá, estratégia de sourcing, análise sensorial e caminhos de certificação profissional para o setor global do chá.",
         },
         {
-          title: "Programas de Neurogastronomia",
+          title: "Programa de Neurogastronomia",
           description:
-            "Programas de vanguarda que exploram a ciência da percepção de sabor, experiências multissensoriais e como a neurociência transforma a degustação de chá, a experiência do cliente e o desenvolvimento de produtos.",
+            "Programa de vanguarda que explora a ciência da percepção de sabor, experiências multissensoriais e como a neurociência transforma a degustação de chá, a experiência do cliente e o desenvolvimento de produtos.",
         },
       ],
     },
