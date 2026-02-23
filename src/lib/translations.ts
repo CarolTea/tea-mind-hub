@@ -32,7 +32,7 @@ export const translations = {
         {
           title: "Neurogastronomy Programs",
           description:
-            "Cutting-edge programs exploring the science of flavor perception, multisensory experiences, and how neuroscience reshapes tea tasting and product development.",
+            "Cutting-edge programs exploring the science of flavor perception, multisensory experiences, and how neuroscience reshapes tea tasting, clients experience and product development.",
         },
       ],
     },
@@ -83,7 +83,7 @@ export const translations = {
         {
           title: "Programas de Neurogastronomía",
           description:
-            "Programas de vanguardia que exploran la ciencia de la percepción del sabor, experiencias multisensoriales y cómo la neurociencia transforma la degustación de té y el desarrollo de productos.",
+            "Programas de vanguardia que exploran la ciencia de la percepción del sabor, experiencias multisensoriales y cómo la neurociencia transforma la degustación de té, la experiencia del cliente y el desarrollo de productos.",
         },
       ],
     },
@@ -134,7 +134,7 @@ export const translations = {
         {
           title: "Programas de Neurogastronomia",
           description:
-            "Programas de vanguarda que exploram a ci\u00EAncia da percep\u00E7\u00E3o de sabor, experi\u00EAncias multissensoriais e como a neuroci\u00EAncia transforma a degusta\u00E7\u00E3o de ch\u00E1 e o desenvolvimento de produtos.",
+            "Programas de vanguarda que exploram a ciência da percepção de sabor, experiências multissensoriais e como a neurociência transforma a degustação de chá, a experiência do cliente e o desenvolvimento de produtos.",
         },
       ],
     },
