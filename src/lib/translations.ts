@@ -16,8 +16,8 @@ export const translations = {
       cta2: "Enter the Society",
     },
     about: {
-      title1: "What",
-      title2: "We Are",
+      title1: "The Intelligence Behind",
+      title2: "the Industry",
       description:
         "Tea Mind Business Hub is a strategic intelligence and professional development institute dedicated to structuring the global tea industry.",
       bullets: [
@@ -76,8 +76,8 @@ export const translations = {
       cta2: "Entrar a la Sociedad",
     },
     about: {
-      title1: "Quiénes",
-      title2: "Somos",
+      title1: "La Inteligencia Detrás",
+      title2: "de la Industria",
       description:
         "Tea Mind Business Hub es un instituto de inteligencia estratégica y desarrollo profesional dedicado a estructurar la industria global del té.",
       bullets: [
@@ -136,8 +136,8 @@ export const translations = {
       cta2: "Entrar na Sociedade",
     },
     about: {
-      title1: "O Que",
-      title2: "Somos",
+      title1: "A Inteligência Por Trás",
+      title2: "da Indústria",
       description:
         "O Tea Mind Business Hub é um instituto de inteligência estratégica e desenvolvimento profissional dedicado a estruturar a indústria global do chá.",
       bullets: [
