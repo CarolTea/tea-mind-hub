@@ -1,37 +1,28 @@
 import { useFadeIn } from "@/hooks/useFadeIn";
+import { useLang } from "@/contexts/LanguageContext";
 import program1 from "@/assets/program-1.jpg";
 import program2 from "@/assets/program-2.jpg";
-import program3 from "@/assets/program-3.jpg";
 
-const programs = [
-  {
-    title: "Tea Programs",
-    description: "Comprehensive programs covering tea market dynamics, sourcing strategy, sensory analysis, and professional certification pathways for the global tea sector.",
-    image: program1,
-    alt: "Professional tea cupping and evaluation setup",
-  },
-  {
-    title: "Neurogastronomy Programs",
-    description: "Cutting-edge programs exploring the science of flavor perception, multisensory experiences, and how neuroscience reshapes tea tasting and product development.",
-    image: program2,
-    alt: "Sensory analysis and neurogastronomy exploration",
-  },
+const programImages = [
+  { image: program1, alt: "Professional tea cupping and evaluation setup" },
+  { image: program2, alt: "Sensory analysis and neurogastronomy exploration" },
 ];
 
 const Programs = () => {
   const { ref, isVisible } = useFadeIn();
+  const { t } = useLang();
 
   return (
     <section id="programs" className="py-32 lg:py-40">
       <div ref={ref} className={`max-w-7xl mx-auto px-6 lg:px-12 fade-in-section ${isVisible ? "is-visible" : ""}`}>
         <h2 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-20 text-center leading-tight">
-          Our Programs
+          {t.programs.heading}
         </h2>
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
-          {programs.map((program) => (
+          {t.programs.items.map((program, i) => (
             <div key={program.title} className="group relative border border-border/60 transition-all duration-500 hover:border-foreground/20 overflow-hidden">
               <div className="relative h-56 overflow-hidden">
-                <img src={program.image} alt={program.alt} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                <img src={programImages[i].image} alt={programImages[i].alt} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                 <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/40 transition-colors duration-500" />
               </div>
               <div className="p-8 lg:p-10">
