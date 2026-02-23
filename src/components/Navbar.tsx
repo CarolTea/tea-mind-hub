@@ -22,9 +22,9 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleLang = () => {
-    navigate(lang === "en" ? "/es" : "/");
-  };
+  const langRoutes = { en: "/", es: "/es", pt: "/pt" } as const;
+  const langOrder: Array<"en" | "es" | "pt"> = ["en", "es", "pt"];
+  const nextLangs = langOrder.filter((l) => l !== lang);
 
   return (
     <header
@@ -48,14 +48,16 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-          <li>
-            <button
-              onClick={toggleLang}
-              className="text-xs font-sans font-medium tracking-wider uppercase border border-foreground/20 px-3 py-1.5 text-foreground/70 hover:text-foreground hover:border-foreground/40 transition-colors duration-300"
-            >
-              {lang === "en" ? "ES" : "EN"}
-            </button>
-          </li>
+          {nextLangs.map((l) => (
+            <li key={l}>
+              <button
+                onClick={() => navigate(langRoutes[l])}
+                className="text-xs font-sans font-medium tracking-wider uppercase border border-foreground/20 px-3 py-1.5 text-foreground/70 hover:text-foreground hover:border-foreground/40 transition-colors duration-300"
+              >
+                {l.toUpperCase()}
+              </button>
+            </li>
+          ))}
         </ul>
 
         {/* Mobile toggle */}
@@ -85,14 +87,16 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
-            <li>
-              <button
-                onClick={() => { setMenuOpen(false); toggleLang(); }}
-                className="text-xs font-sans font-medium tracking-wider uppercase border border-foreground/20 px-3 py-1.5 text-foreground/70 hover:text-foreground"
-              >
-                {lang === "en" ? "ES" : "EN"}
-              </button>
-            </li>
+            {nextLangs.map((l) => (
+              <li key={l}>
+                <button
+                  onClick={() => { setMenuOpen(false); navigate(langRoutes[l]); }}
+                  className="text-xs font-sans font-medium tracking-wider uppercase border border-foreground/20 px-3 py-1.5 text-foreground/70 hover:text-foreground"
+                >
+                  {l.toUpperCase()}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
       )}
