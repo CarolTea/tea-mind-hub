@@ -32,7 +32,7 @@ export const translations = {
         {
           title: "Neurogastronomy Programs",
           description:
-            "Cutting-edge programs exploring the science of flavor perception, multisensory experiences, and how neuroscience reshapes tea tasting, clients experience and product development.",
+            "Cutting-edge programs exploring the science of flavor perception, multisensory experiences, and how neuroscience reshapes tea tasting, customer experience and product development.",
         },
       ],
     },
