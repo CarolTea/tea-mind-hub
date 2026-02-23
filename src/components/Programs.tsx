@@ -5,22 +5,16 @@ import program3 from "@/assets/program-3.jpg";
 
 const programs = [
   {
-    title: "Professional Formations",
-    description: "Structured programs that build foundational expertise in tea market dynamics, sourcing strategy, and professional certification pathways.",
+    title: "Tea Programs",
+    description: "Comprehensive programs covering tea market dynamics, sourcing strategy, sensory analysis, and professional certification pathways for the global tea sector.",
     image: program1,
     alt: "Professional tea cupping and evaluation setup",
   },
   {
-    title: "Specializations",
-    description: "Advanced focus areas in sensory analysis, supply chain intelligence, market positioning, and category management for the global tea sector.",
+    title: "Neurogastronomy Programs",
+    description: "Cutting-edge programs exploring the science of flavor perception, multisensory experiences, and how neuroscience reshapes tea tasting and product development.",
     image: program2,
-    alt: "Sensory analysis of premium tea leaves",
-  },
-  {
-    title: "Advanced Programs",
-    description: "Executive-level programs designed for industry leaders navigating complex market strategies, brand architecture, and international expansion.",
-    image: program3,
-    alt: "Executive strategy and business intelligence",
+    alt: "Sensory analysis and neurogastronomy exploration",
   },
 ];
 
@@ -33,7 +27,7 @@ const Programs = () => {
         <h2 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-20 text-center leading-tight">
           Our Programs
         </h2>
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
           {programs.map((program) => (
             <div key={program.title} className="group relative border border-border/60 transition-all duration-500 hover:border-foreground/20 overflow-hidden">
               <div className="relative h-56 overflow-hidden">
