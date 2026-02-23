@@ -1,4 +1,4 @@
-export type Lang = "en" | "es";
+export type Lang = "en" | "es" | "pt";
 
 export const translations = {
   en: {
@@ -101,6 +101,57 @@ export const translations = {
       navigation: "Navegación",
       contactTitle: "Contacto",
       copyright: "Todos los derechos reservados.",
+    },
+  },
+  pt: {
+    nav: {
+      about: "Sobre",
+      programs: "Programas",
+      society: "Sociedade",
+      contact: "Contato",
+    },
+    hero: {
+      title1: "Pensamos em mercados,",
+      title2: "n\u00E3o em x\u00EDcaras.",
+      subtitle: "Intelig\u00EAncia estrat\u00E9gica para profissionais que moldam a ind\u00FAstria do ch\u00E1.",
+      cta1: "Explorar Programas",
+      cta2: "Entrar na Sociedade",
+    },
+    about: {
+      title1: "A Intelig\u00EAncia Por Tr\u00E1s",
+      title2: "da Ind\u00FAstria",
+      description:
+        "O Tea Mind Business Hub estrutura profissionais, integra expertise sensorial com aplica\u00E7\u00E3o de mercado e constr\u00F3i poder de posicionamento dentro do ecossistema global do ch\u00E1. Operamos na intersec\u00E7\u00E3o entre intelig\u00EAncia estrat\u00E9gica e autoridade da ind\u00FAstria.",
+    },
+    programs: {
+      heading: "Nossos Programas",
+      items: [
+        {
+          title: "Programas de Ch\u00E1",
+          description:
+            "Programas abrangentes cobrindo din\u00E2micas do mercado de ch\u00E1, estrat\u00E9gia de sourcing, an\u00E1lise sensorial e caminhos de certifica\u00E7\u00E3o profissional para o setor global do ch\u00E1.",
+        },
+        {
+          title: "Programas de Neurogastronomia",
+          description:
+            "Programas de vanguarda que exploram a ci\u00EAncia da percep\u00E7\u00E3o de sabor, experi\u00EAncias multissensoriais e como a neuroci\u00EAncia transforma a degusta\u00E7\u00E3o de ch\u00E1 e o desenvolvimento de produtos.",
+        },
+      ],
+    },
+    society: {
+      title: "O C\u00EDrculo Interior",
+      description:
+        "A Tea Mind Society \u00E9 uma rede profissional seletiva reservada para aqueles que moldam mercados, definem padr\u00F5es e influenciam o futuro da ind\u00FAstria global do ch\u00E1.",
+      cta: "Descubra a Sociedade",
+    },
+    philosophy: {
+      quote: "\u201CEstruturamos o que outros consomem.\u201D",
+    },
+    footer: {
+      tagline: "Intelig\u00EAncia estrat\u00E9gica para profissionais que moldam a ind\u00FAstria global do ch\u00E1.",
+      navigation: "Navega\u00E7\u00E3o",
+      contactTitle: "Contato",
+      copyright: "Todos os direitos reservados.",
     },
   },
 } as const;
