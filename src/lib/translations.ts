@@ -16,10 +16,19 @@ export const translations = {
       cta2: "Enter the Society",
     },
     about: {
-      title1: "The Intelligence Behind",
-      title2: "the Industry",
+      title1: "What",
+      title2: "We Are",
       description:
-        "Tea Mind Business Hub structures professionals, integrates sensory expertise with market application, and builds positioning power within the global tea ecosystem. We operate at the intersection of strategic intelligence and industry authority.",
+        "Tea Mind Business Hub is a strategic intelligence and professional development institute dedicated to structuring the global tea industry.",
+      bullets: [
+        "Market strategy",
+        "Sensory science",
+        "Industry positioning",
+        "Professional authority",
+      ],
+      operateAt: "We operate at the intersection of:",
+      closing1: "Our work is not about consumption.",
+      closing2: "It is about construction.",
     },
     programs: {
       heading: "Our Programs",
@@ -67,10 +76,19 @@ export const translations = {
       cta2: "Entrar a la Sociedad",
     },
     about: {
-      title1: "La Inteligencia Detrás",
-      title2: "de la Industria",
+      title1: "Quiénes",
+      title2: "Somos",
       description:
-        "Tea Mind Business Hub estructura profesionales, integra la expertise sensorial con la aplicación de mercado y construye poder de posicionamiento dentro del ecosistema global del té. Operamos en la intersección de la inteligencia estratégica y la autoridad de la industria.",
+        "Tea Mind Business Hub es un instituto de inteligencia estratégica y desarrollo profesional dedicado a estructurar la industria global del té.",
+      bullets: [
+        "Estrategia de mercado",
+        "Ciencia sensorial",
+        "Posicionamiento en la industria",
+        "Autoridad profesional",
+      ],
+      operateAt: "Operamos en la intersección de:",
+      closing1: "Nuestro trabajo no se trata de consumo.",
+      closing2: "Se trata de construcción.",
     },
     programs: {
       heading: "Nuestros Programas",
@@ -118,10 +136,19 @@ export const translations = {
       cta2: "Entrar na Sociedade",
     },
     about: {
-      title1: "A Intelig\u00EAncia Por Tr\u00E1s",
-      title2: "da Ind\u00FAstria",
+      title1: "O Que",
+      title2: "Somos",
       description:
-        "O Tea Mind Business Hub estrutura profissionais, integra expertise sensorial com aplica\u00E7\u00E3o de mercado e constr\u00F3i poder de posicionamento dentro do ecossistema global do ch\u00E1. Operamos na intersec\u00E7\u00E3o entre intelig\u00EAncia estrat\u00E9gica e autoridade da ind\u00FAstria.",
+        "O Tea Mind Business Hub é um instituto de inteligência estratégica e desenvolvimento profissional dedicado a estruturar a indústria global do chá.",
+      bullets: [
+        "Estratégia de mercado",
+        "Ciência sensorial",
+        "Posicionamento na indústria",
+        "Autoridade profissional",
+      ],
+      operateAt: "Operamos na interseção de:",
+      closing1: "Nosso trabalho não é sobre consumo.",
+      closing2: "É sobre construção.",
     },
     programs: {
       heading: "Nossos Programas",

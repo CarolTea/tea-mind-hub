@@ -18,8 +18,21 @@ const About = () => {
             <br />
             <em>{t.about.title2}</em>
           </h2>
-          <p className="font-sans text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg">
+          <p className="font-sans text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg mb-6">
             {t.about.description}
+          </p>
+          <p className="font-sans text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg mb-4">
+            {t.about.operateAt}
+          </p>
+          <ul className="list-disc list-inside font-sans text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg mb-6 space-y-1">
+            {t.about.bullets.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+          <p className="font-sans text-base md:text-lg text-foreground/90 leading-relaxed max-w-lg font-medium">
+            {t.about.closing1}
+            <br />
+            {t.about.closing2}
           </p>
         </div>
 

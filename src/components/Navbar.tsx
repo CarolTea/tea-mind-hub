@@ -32,8 +32,9 @@ const Navbar = () => {
       style={{ backgroundColor: "hsl(40, 20%, 94%, 0.95)" }}
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-12 py-4">
-        <a href={lang === "en" ? "/" : "/es"} className="flex items-center gap-3">
+        <a href={lang === "en" ? "/" : `/${lang}`} className="flex items-center gap-3">
           <img src={teaMindLogo} alt="Tea Mind Business Hub" className="h-14 w-auto" />
+          <span className="hidden sm:inline font-serif text-lg font-medium text-foreground tracking-wide">Tea Mind Business Hub</span>
         </a>
 
         {/* Desktop nav */}
