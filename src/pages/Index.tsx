@@ -3,6 +3,7 @@ import type { Lang } from "@/lib/translations";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Intelligence from "@/components/Intelligence";
 import Programs from "@/components/Programs";
 import Society from "@/components/Society";
 import Philosophy from "@/components/Philosophy";
@@ -16,6 +17,7 @@ const Index = ({ lang = "en" }: { lang?: Lang }) => {
         <main>
           <Hero />
           <About />
+          <Intelligence />
           <Programs />
           <Society />
           <Philosophy />

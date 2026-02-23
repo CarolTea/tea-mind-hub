@@ -30,6 +30,22 @@ export const translations = {
       closing1: "Our work is not about consumption.",
       closing2: "It is about construction.",
     },
+    intelligence: {
+      title: "Proprietary Intelligence Systems",
+      intro: "Tea Mind Business Hub integrates proprietary AI systems trained on our complete professional methodology.",
+      line1: "These systems are not generic assistants.",
+      line2: "They are structured with the same technical depth that defines our programs.",
+      supports: "Our intelligence layer supports:",
+      bullets: [
+        "Strategic market positioning",
+        "Product and experience development",
+        "Sensory structuring",
+        "Business decision-making",
+        "Professional application",
+      ],
+      closing1: "We extend structured knowledge beyond the classroom.",
+      closing2: "This is methodology transformed into applied intelligence.",
+    },
     programs: {
       heading: "Our Programs",
       items: [
@@ -90,6 +106,22 @@ export const translations = {
       closing1: "Nuestro trabajo no se trata de consumo.",
       closing2: "Se trata de construcción.",
     },
+    intelligence: {
+      title: "Proprietary Intelligence Systems",
+      intro: "Tea Mind Business Hub integra sistemas de IA propietarios entrenados con nuestra metodología profesional completa.",
+      line1: "Estos sistemas no son asistentes genéricos.",
+      line2: "Están estructurados con la misma profundidad técnica que define nuestros programas.",
+      supports: "Nuestra capa de inteligencia soporta:",
+      bullets: [
+        "Posicionamiento estratégico de mercado",
+        "Desarrollo de productos y experiencias",
+        "Estructuración sensorial",
+        "Toma de decisiones empresariales",
+        "Aplicación profesional",
+      ],
+      closing1: "Extendemos el conocimiento estructurado más allá del aula.",
+      closing2: "Esto es metodología transformada en inteligencia aplicada.",
+    },
     programs: {
       heading: "Nuestros Programas",
       items: [
@@ -149,6 +181,22 @@ export const translations = {
       operateAt: "Operamos na interseção de:",
       closing1: "Nosso trabalho não é sobre consumo.",
       closing2: "É sobre construção.",
+    },
+    intelligence: {
+      title: "Proprietary Intelligence Systems",
+      intro: "O Tea Mind Business Hub integra sistemas de IA proprietários treinados com nossa metodologia profissional completa.",
+      line1: "Esses sistemas não são assistentes genéricos.",
+      line2: "Eles são estruturados com a mesma profundidade técnica que define nossos programas.",
+      supports: "Nossa camada de inteligência suporta:",
+      bullets: [
+        "Posicionamento estratégico de mercado",
+        "Desenvolvimento de produtos e experiências",
+        "Estruturação sensorial",
+        "Tomada de decisões empresariais",
+        "Aplicação profissional",
+      ],
+      closing1: "Estendemos o conhecimento estruturado para além da sala de aula.",
+      closing2: "Isso é metodologia transformada em inteligência aplicada.",
     },
     programs: {
       heading: "Nossos Programas",
