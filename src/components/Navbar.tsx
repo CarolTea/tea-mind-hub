@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import teaMindLogo from "@/assets/tea-mind-logo.png";
+import teaMindLogo from "@/assets/tea-mind-logo-transparent.png";
 
 const navLinks = [
   { label: "About", href: "#about" },

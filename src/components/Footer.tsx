@@ -1,4 +1,4 @@
-import teaMindLogo from "@/assets/tea-mind-logo.png";
+import teaMindLogo from "@/assets/tea-mind-logo-transparent.png";
 
 const footerLinks = [
   { label: "About", href: "#about" },
