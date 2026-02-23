@@ -11,7 +11,7 @@ export const translations = {
     hero: {
       title1: "We think in markets,",
       title2: "not in cups.",
-      subtitle: "Strategic intelligence for professionals shaping the tea industry.",
+      subtitle: "A professional development hub operating at the intersection of market intelligence and sensory expertise.",
       cta1: "Explore Programs",
       cta2: "Enter the Society",
     },
@@ -19,7 +19,7 @@ export const translations = {
       title1: "The Intelligence Behind",
       title2: "the Industry",
       description:
-        "Tea Mind Business Hub is a strategic intelligence and professional development institute dedicated to structuring the global tea industry.",
+        "Tea Mind Business Hub is a strategic intelligence and professional development hub dedicated to structuring the global tea industry.",
       bullets: [
         "Market strategy",
         "Sensory science",
@@ -55,7 +55,7 @@ export const translations = {
       quote: "\u201CWe structure what others consume.\u201D",
     },
     footer: {
-      tagline: "Strategic intelligence for professionals shaping the global tea industry.",
+      tagline: "A professional development hub operating at the intersection of market intelligence and sensory expertise.",
       navigation: "Navigation",
       contactTitle: "Contact",
       copyright: "All rights reserved.",
@@ -71,7 +71,7 @@ export const translations = {
     hero: {
       title1: "Pensamos en mercados,",
       title2: "no en tazas.",
-      subtitle: "Inteligencia estratégica para profesionales que moldean la industria del té.",
+      subtitle: "Un hub de desarrollo profesional que opera en la intersección de inteligencia de mercado y expertise sensorial.",
       cta1: "Explorar Programas",
       cta2: "Entrar a la Sociedad",
     },
@@ -79,7 +79,7 @@ export const translations = {
       title1: "La Inteligencia Detrás",
       title2: "de la Industria",
       description:
-        "Tea Mind Business Hub es un instituto de inteligencia estratégica y desarrollo profesional dedicado a estructurar la industria global del té.",
+        "Tea Mind Business Hub es un hub de inteligencia estratégica y desarrollo profesional dedicado a estructurar la industria global del té.",
       bullets: [
         "Estrategia de mercado",
         "Ciencia sensorial",
@@ -115,7 +115,7 @@ export const translations = {
       quote: "\u201CEstructuramos lo que otros consumen.\u201D",
     },
     footer: {
-      tagline: "Inteligencia estratégica para profesionales que moldean la industria global del té.",
+      tagline: "Un hub de desarrollo profesional que opera en la intersección de inteligencia de mercado y expertise sensorial.",
       navigation: "Navegación",
       contactTitle: "Contacto",
       copyright: "Todos los derechos reservados.",
@@ -131,7 +131,7 @@ export const translations = {
     hero: {
       title1: "Pensamos em mercados,",
       title2: "n\u00E3o em x\u00EDcaras.",
-      subtitle: "Intelig\u00EAncia estrat\u00E9gica para profissionais que moldam a ind\u00FAstria do ch\u00E1.",
+      subtitle: "Um hub de desenvolvimento profissional operando na interseção de inteligência de mercado e expertise sensorial.",
       cta1: "Explorar Programas",
       cta2: "Entrar na Sociedade",
     },
@@ -139,7 +139,7 @@ export const translations = {
       title1: "A Inteligência Por Trás",
       title2: "da Indústria",
       description:
-        "O Tea Mind Business Hub é um instituto de inteligência estratégica e desenvolvimento profissional dedicado a estruturar a indústria global do chá.",
+        "O Tea Mind Business Hub é um hub de inteligência estratégica e desenvolvimento profissional dedicado a estruturar a indústria global do chá.",
       bullets: [
         "Estratégia de mercado",
         "Ciência sensorial",
@@ -175,7 +175,7 @@ export const translations = {
       quote: "\u201CEstruturamos o que outros consomem.\u201D",
     },
     footer: {
-      tagline: "Intelig\u00EAncia estrat\u00E9gica para profissionais que moldam a ind\u00FAstria global do ch\u00E1.",
+      tagline: "Um hub de desenvolvimento profissional operando na interseção de inteligência de mercado e expertise sensorial.",
       navigation: "Navega\u00E7\u00E3o",
       contactTitle: "Contato",
       copyright: "Todos os direitos reservados.",
