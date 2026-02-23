@@ -31,7 +31,7 @@ const Navbar = () => {
           <img
             src={teaMindLogo}
             alt="Tea Mind Business Hub"
-            className="h-14 w-auto"
+            className="h-14 w-auto mix-blend-multiply"
           />
         </a>
 
