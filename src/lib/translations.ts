@@ -106,7 +106,7 @@ export const translations = {
       ],
     },
     society: {
-      title: "El Círculo Interior",
+      title: "The Inner Circle",
       description:
         "La Tea Mind Society es una red profesional selectiva reservada para quienes moldean mercados, definen estándares e influyen en el futuro de la industria global del té.",
       cta: "Descubrir la Sociedad",
@@ -166,7 +166,7 @@ export const translations = {
       ],
     },
     society: {
-      title: "O C\u00EDrculo Interior",
+      title: "The Inner Circle",
       description:
         "A Tea Mind Society \u00E9 uma rede profissional seletiva reservada para aqueles que moldam mercados, definem padr\u00F5es e influenciam o futuro da ind\u00FAstria global do ch\u00E1.",
       cta: "Descubra a Sociedade",
