@@ -3,7 +3,7 @@ import type { Lang } from "@/lib/translations";
 export const neuralTranslations: Record<Lang, {
   hero: { title: string; subtitle: string; intro: string };
   layers: { heading: string; items: Array<{ number: string; name: string; subtitle: string; description: string; why: string }> };
-  pricing: { heading: string; individual: { title: string; monthly: string; annual: string; annualLabel: string; benefits: string }; combo: { title: string; subtitle: string; monthly: string; annual: string; annualNote: string } };
+  pricing: { heading: string; plans: Array<{ name: string; description: string; monthly: string; annual: string }>; combo: { title: string; subtitle: string; monthly: string; annual: string; annualNote: string }; cta: string; monthlyLabel: string; annualLabel: string };
   cta: { statement: string; button: string };
 }> = {
   pt: {
@@ -40,13 +40,14 @@ export const neuralTranslations: Record<Lang, {
     },
     pricing: {
       heading: "Escolha o nível de inteligência necessário para o seu momento profissional.",
-      individual: {
-        title: "Plano Individual",
-        monthly: "R$ [Valor] /mês",
-        annual: "R$ [Valor] /ano",
-        annualLabel: "Best Value",
-        benefits: "Acesso a 01 IA à escolha · Suporte Técnico · Treinamento Contínuo",
-      },
+      monthlyLabel: "Mensal",
+      annualLabel: "Anual",
+      cta: "Solicitar Acesso",
+      plans: [
+        { name: "Sensory AI", description: "Precisão sensorial e diagnóstico de terroirs com IA dedicada.", monthly: "R$ [Valor] /mês", annual: "R$ [Valor] /ano" },
+        { name: "Blender AI", description: "Desenvolvimento de blends autorais com inteligência de bancada.", monthly: "R$ [Valor] /mês", annual: "R$ [Valor] /ano" },
+        { name: "Business AI", description: "Gestão estratégica e escala de negócios com copiloto executivo.", monthly: "R$ [Valor] /mês", annual: "R$ [Valor] /ano" },
+      ],
       combo: {
         title: "Tea Mind Neural Full Access",
         subtitle: "Acesso total às 3 IAs (Sensory, Blender e Business) operando em sinergia absoluta.",
@@ -94,13 +95,14 @@ export const neuralTranslations: Record<Lang, {
     },
     pricing: {
       heading: "Choose the level of intelligence your professional moment demands.",
-      individual: {
-        title: "Individual Plan",
-        monthly: "[Value] /month",
-        annual: "[Value] /year",
-        annualLabel: "Best Value",
-        benefits: "Access to 1 AI of your choice · Technical Support · Continuous Training",
-      },
+      monthlyLabel: "Monthly",
+      annualLabel: "Annual",
+      cta: "Request Access",
+      plans: [
+        { name: "Sensory AI", description: "Sensory precision and terroir diagnostics with dedicated AI.", monthly: "[Value] /month", annual: "[Value] /year" },
+        { name: "Blender AI", description: "Signature blend development with bench intelligence.", monthly: "[Value] /month", annual: "[Value] /year" },
+        { name: "Business AI", description: "Strategic management and business scaling with executive copilot.", monthly: "[Value] /month", annual: "[Value] /year" },
+      ],
       combo: {
         title: "Tea Mind Neural Full Access",
         subtitle: "Full access to all 3 AIs (Sensory, Blender, and Business) operating in absolute synergy.",
@@ -148,13 +150,14 @@ export const neuralTranslations: Record<Lang, {
     },
     pricing: {
       heading: "Elija el nivel de inteligencia necesario para su momento profesional.",
-      individual: {
-        title: "Plan Individual",
-        monthly: "[Valor] /mes",
-        annual: "[Valor] /año",
-        annualLabel: "Best Value",
-        benefits: "Acceso a 01 IA a elección · Soporte Técnico · Entrenamiento Continuo",
-      },
+      monthlyLabel: "Mensual",
+      annualLabel: "Anual",
+      cta: "Solicitar Acceso",
+      plans: [
+        { name: "Sensory AI", description: "Precisión sensorial y diagnóstico de terroirs con IA dedicada.", monthly: "[Valor] /mes", annual: "[Valor] /año" },
+        { name: "Blender AI", description: "Desarrollo de blends autorales con inteligencia de laboratorio.", monthly: "[Valor] /mes", annual: "[Valor] /año" },
+        { name: "Business AI", description: "Gestión estratégica y escalabilidad de negocios con copiloto ejecutivo.", monthly: "[Valor] /mes", annual: "[Valor] /año" },
+      ],
       combo: {
         title: "Tea Mind Neural Full Access",
         subtitle: "Acceso total a las 3 IAs (Sensory, Blender y Business) operando en sinergia absoluta.",

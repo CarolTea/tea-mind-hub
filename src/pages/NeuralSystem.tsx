@@ -79,58 +79,62 @@ const PricingSection = () => {
   const t = neuralTranslations[lang].pricing;
   return (
     <section className="bg-primary text-primary-foreground py-24 md:py-32">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <Fade>
           <h2 className="font-serif text-3xl md:text-4xl text-center mb-16">{t.heading}</h2>
         </Fade>
 
-        {/* Individual Plan */}
-        <Fade>
-          <div className="border border-primary-foreground/20 p-8 md:p-10 mb-8">
-            <h3 className="font-serif text-2xl mb-6">{t.individual.title}</h3>
-            <div className="grid sm:grid-cols-2 gap-6 mb-6">
-              <div>
-                <p className="text-xs tracking-wider uppercase text-primary-foreground/50 mb-2 font-sans">
-                  {lang === "en" ? "Monthly" : "Mensal"}
-                </p>
-                <p className="font-serif text-3xl text-primary-foreground">{t.individual.monthly}</p>
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {/* Individual AI Plans */}
+          {t.plans.map((plan, i) => (
+            <Fade key={i}>
+              <div className="border border-primary-foreground/20 p-6 md:p-8 flex flex-col h-full">
+                <h3 className="font-serif text-xl mb-3">{plan.name}</h3>
+                <p className="text-sm text-primary-foreground/60 font-sans mb-6 flex-grow">{plan.description}</p>
+                <div className="mb-4">
+                  <p className="text-xs tracking-wider uppercase text-primary-foreground/50 mb-1 font-sans">{t.monthlyLabel}</p>
+                  <p className="font-serif text-2xl">{plan.monthly}</p>
+                </div>
+                <div className="mb-6">
+                  <p className="text-xs tracking-wider uppercase text-accent mb-1 font-sans">{t.annualLabel}</p>
+                  <p className="font-serif text-2xl text-accent">{plan.annual}</p>
+                </div>
+                <a
+                  href="mailto:contato@teamindbusinesshub.com"
+                  className="block text-center border border-primary-foreground/40 text-primary-foreground px-4 py-3 text-sm tracking-[0.15em] uppercase font-sans hover:bg-primary-foreground/10 transition-colors duration-300"
+                >
+                  {t.cta}
+                </a>
               </div>
-              <div>
-                <p className="text-xs tracking-wider uppercase text-accent mb-2 font-sans">
-                  {lang === "en" ? "Annual" : "Anual"} — {t.individual.annualLabel}
-                </p>
-                <p className="font-serif text-3xl text-accent">{t.individual.annual}</p>
-              </div>
-            </div>
-            <p className="text-sm text-primary-foreground/60 font-sans">{t.individual.benefits}</p>
-          </div>
-        </Fade>
+            </Fade>
+          ))}
 
-        {/* Full Access Combo */}
-        <Fade>
-          <div className="border-2 border-accent p-8 md:p-10 relative">
-            <div className="absolute -top-4 left-8 bg-accent px-4 py-1">
-              <span className="text-xs tracking-wider uppercase font-sans text-secondary font-medium">💎 Full Access</span>
-            </div>
-            <h3 className="font-serif text-2xl mb-3 text-accent">{t.combo.title}</h3>
-            <p className="text-base text-primary-foreground/70 font-sans mb-8">{t.combo.subtitle}</p>
-            <div className="grid sm:grid-cols-2 gap-6 mb-6">
-              <div>
-                <p className="text-xs tracking-wider uppercase text-primary-foreground/50 mb-2 font-sans">
-                  {lang === "en" ? "Monthly" : "Mensal"}
-                </p>
-                <p className="font-serif text-3xl text-primary-foreground">{t.combo.monthly}</p>
+          {/* Full Access Combo */}
+          <Fade>
+            <div className="border-2 border-accent p-6 md:p-8 flex flex-col h-full relative">
+              <div className="absolute -top-4 left-6 bg-accent px-4 py-1">
+                <span className="text-xs tracking-wider uppercase font-sans text-secondary font-medium">💎 Full Access</span>
               </div>
-              <div>
-                <p className="text-xs tracking-wider uppercase text-accent mb-2 font-sans">
-                  {lang === "en" ? "Annual" : "Anual"}
-                </p>
-                <p className="font-serif text-3xl text-accent">{t.combo.annual}</p>
+              <h3 className="font-serif text-xl mb-2 text-accent mt-2">{t.combo.title}</h3>
+              <p className="text-sm text-primary-foreground/60 font-sans mb-6 flex-grow">{t.combo.subtitle}</p>
+              <div className="mb-4">
+                <p className="text-xs tracking-wider uppercase text-primary-foreground/50 mb-1 font-sans">{t.monthlyLabel}</p>
+                <p className="font-serif text-2xl">{t.combo.monthly}</p>
               </div>
+              <div className="mb-4">
+                <p className="text-xs tracking-wider uppercase text-accent mb-1 font-sans">{t.annualLabel}</p>
+                <p className="font-serif text-2xl text-accent">{t.combo.annual}</p>
+              </div>
+              <p className="text-xs text-accent/70 font-sans italic mb-6">{t.combo.annualNote}</p>
+              <a
+                href="mailto:contato@teamindbusinesshub.com"
+                className="block text-center bg-accent text-secondary px-4 py-3 text-sm tracking-[0.15em] uppercase font-sans hover:bg-accent/90 transition-colors duration-300 font-medium"
+              >
+                {t.cta}
+              </a>
             </div>
-            <p className="text-sm text-accent/80 font-sans italic">{t.combo.annualNote}</p>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
       </div>
     </section>
   );
