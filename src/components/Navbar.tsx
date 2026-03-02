@@ -4,6 +4,7 @@ import { useLang } from "@/contexts/LanguageContext";
 import teaMindLogo from "@/assets/tea-mind-logo-transparent.png";
 
 const neuroRoutes = { en: "/neurogastronomy", es: "/es/neurogastronomia", pt: "/pt/neurogastronomia" } as const;
+const neuralRoutes = { en: "/neural-system", es: "/es/sistema-neural", pt: "/pt/sistema-neural" } as const;
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -73,6 +74,12 @@ const Navbar = () => {
                   >
                     {t.nav.neurogastronomy}
                   </button>
+                  <button
+                    onClick={() => { setProgramsOpen(false); navigate(neuralRoutes[lang]); }}
+                    className="w-full text-left px-5 py-2.5 text-sm font-sans tracking-wide text-foreground/80 hover:text-foreground hover:bg-muted/50 transition-colors duration-200"
+                  >
+                    Neural System
+                  </button>
                 </div>
               </div>
             )}
@@ -140,6 +147,12 @@ const Navbar = () => {
                 className="text-xs font-sans tracking-wide text-foreground/60 hover:text-foreground transition-colors"
               >
                 → {t.nav.neurogastronomy}
+              </button>
+              <button
+                onClick={() => { setMenuOpen(false); navigate(neuralRoutes[lang]); }}
+                className="text-xs font-sans tracking-wide text-foreground/60 hover:text-foreground transition-colors"
+              >
+                → Neural System
               </button>
             </li>
             {navLinks.slice(1).map((link) => (
