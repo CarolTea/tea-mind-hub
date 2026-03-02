@@ -34,6 +34,7 @@ export const translations = {
     intelligence: {
       title: "The World's First AI Infrastructure for the Tea Market",
       intro: "Tea Mind Business Hub integrates a pioneering ecosystem of proprietary AI systems, specifically engineered and trained on our comprehensive professional methodology. We have moved beyond generic assistants to create a sophisticated neural layer that embodies the technical depth, rigor, and expertise of our world-class programs.",
+      cta: "Explore Neural System",
     },
     programs: {
       heading: "Our Programs",
@@ -100,6 +101,7 @@ export const translations = {
     intelligence: {
       title: "La Primera Infraestructura de IA del Mundo para el Mercado del Té",
       intro: "Tea Mind Business Hub integra un ecosistema pionero de sistemas de IA propietarios, específicamente diseñados y entrenados con nuestra metodología profesional integral. Hemos ido más allá de los asistentes genéricos para crear una sofisticada capa neural que encarna la profundidad técnica, el rigor y la expertise de nuestros programas de clase mundial.",
+      cta: "Explorar Neural System",
     },
     programs: {
       heading: "Nuestros Programas",
@@ -166,6 +168,7 @@ export const translations = {
     intelligence: {
       title: "A Primeira Infraestrutura de IA do Mundo para o Mercado do Chá",
       intro: "O Tea Mind Business Hub integra um ecossistema pioneiro de sistemas de IA proprietários, especificamente projetados e treinados com nossa metodologia profissional abrangente. Fomos além dos assistentes genéricos para criar uma sofisticada camada neural que incorpora a profundidade técnica, o rigor e a expertise dos nossos programas de classe mundial.",
+      cta: "Explorar Neural System",
     },
     programs: {
       heading: "Nossos Programas",

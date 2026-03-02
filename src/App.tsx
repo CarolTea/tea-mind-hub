@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Neurogastronomy from "./pages/Neurogastronomy";
+import NeuralSystem from "./pages/NeuralSystem";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,9 @@ const App = () => (
           <Route path="/neurogastronomy" element={<Neurogastronomy lang="en" />} />
           <Route path="/es/neurogastronomia" element={<Neurogastronomy lang="es" />} />
           <Route path="/pt/neurogastronomia" element={<Neurogastronomy lang="pt" />} />
+          <Route path="/neural-system" element={<NeuralSystem lang="en" />} />
+          <Route path="/es/sistema-neural" element={<NeuralSystem lang="es" />} />
+          <Route path="/pt/sistema-neural" element={<NeuralSystem lang="pt" />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
