@@ -98,7 +98,7 @@ export const translations = {
       closing2: "Se trata de construcción.",
     },
     intelligence: {
-      title: "The World's First AI Infrastructure for the Tea Market",
+      title: "La Primera Infraestructura de IA del Mundo para el Mercado del Té",
       intro: "Tea Mind Business Hub integra un ecosistema pionero de sistemas de IA propietarios, específicamente diseñados y entrenados con nuestra metodología profesional integral. Hemos ido más allá de los asistentes genéricos para crear una sofisticada capa neural que encarna la profundidad técnica, el rigor y la expertise de nuestros programas de clase mundial.",
     },
     programs: {
@@ -164,7 +164,7 @@ export const translations = {
       closing2: "É sobre construção.",
     },
     intelligence: {
-      title: "The World's First AI Infrastructure for the Tea Market",
+      title: "A Primeira Infraestrutura de IA do Mundo para o Mercado do Chá",
       intro: "O Tea Mind Business Hub integra um ecossistema pioneiro de sistemas de IA proprietários, especificamente projetados e treinados com nossa metodologia profissional abrangente. Fomos além dos assistentes genéricos para criar uma sofisticada camada neural que incorpora a profundidade técnica, o rigor e a expertise dos nossos programas de classe mundial.",
     },
     programs: {
