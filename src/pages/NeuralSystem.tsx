@@ -23,6 +23,9 @@ const NeuralHero = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-secondary/90 via-secondary to-secondary/95" />
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center py-32">
         <Fade>
+          <span className="inline-block border border-accent text-accent text-[10px] tracking-[0.3em] uppercase font-sans px-5 py-2 mb-8">
+            {t.badge}
+          </span>
           <p className="text-xs tracking-[0.35em] uppercase text-accent mb-8 font-sans">Tea Mind Business Hub</p>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6">
             {t.title}
@@ -40,31 +43,57 @@ const NeuralHero = () => {
   );
 };
 
-/* ─── Intelligence Layers (3 AI Cards) ─── */
-const IntelligenceLayers = () => {
+/* ─── Agents Section (Stacked Cards) ─── */
+const AgentsSection = () => {
   const { lang } = useLang();
   const t = neuralTranslations[lang].layers;
   return (
     <section className="bg-background py-24 md:py-32">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-6">
         <Fade>
-          <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-16">{t.heading}</h2>
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-4">{t.heading}</h2>
+          <p className="text-base md:text-lg text-foreground/60 text-center max-w-3xl mx-auto mb-20 font-sans leading-relaxed">
+            {t.subtitle}
+          </p>
         </Fade>
-        <div className="grid md:grid-cols-3 gap-8">
-          {t.items.map((item) => (
-            <Fade key={item.number}>
-              <div className="group border border-border/60 p-8 md:p-10 hover:border-accent/50 transition-colors duration-500 h-full flex flex-col">
-                <span className="font-serif text-5xl text-accent/30 mb-6">{item.number}</span>
-                <h3 className="font-serif text-xl md:text-2xl text-foreground mb-2">{item.name}</h3>
-                <p className="text-sm tracking-wider uppercase text-accent mb-6 font-sans">{item.subtitle}</p>
-                <p className="text-base text-foreground/75 leading-relaxed font-sans mb-8 flex-grow">{item.description}</p>
-                <div className="border-t border-border/40 pt-6">
-                  <p className="text-xs tracking-wider uppercase text-foreground/50 mb-2 font-sans">
-                    {lang === "en" ? "Why you need this" : lang === "es" ? "Por qué lo necesita" : "Por que você precisa disso"}
-                  </p>
-                  <p className="text-sm text-foreground/70 leading-relaxed font-sans">{item.why}</p>
+
+        <div className="space-y-16 md:space-y-24">
+          {t.items.map((agent) => (
+            <Fade key={agent.number}>
+              <article className="border border-border/60 p-8 md:p-12">
+                {/* Header */}
+                <div className="mb-8">
+                  <span className="font-serif text-5xl text-accent/30 block mb-4">{agent.number}</span>
+                  <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-3">{agent.name}</h3>
+                  <p className="text-sm tracking-wider uppercase text-accent font-sans italic">{agent.tag}</p>
                 </div>
-              </div>
+
+                <div className="w-12 h-px bg-accent/40 mb-8" />
+
+                {/* Headline */}
+                <p className="font-serif text-xl md:text-2xl text-foreground/90 mb-6 leading-snug">{agent.headline}</p>
+
+                {/* Body */}
+                {agent.body.split("\n\n").map((paragraph, i) => (
+                  <p key={i} className="text-base text-foreground/70 leading-relaxed font-sans mb-4">{paragraph}</p>
+                ))}
+
+                {/* Capabilities */}
+                <p className="text-sm tracking-wider uppercase text-foreground/50 font-sans mt-8 mb-4">{agent.capabilitiesIntro}</p>
+                <ul className="space-y-3 mb-8">
+                  {agent.capabilities.map((cap, i) => (
+                    <li key={i} className="flex items-start gap-3 text-base text-foreground/75 font-sans leading-relaxed">
+                      <span className="text-accent mt-1.5 text-xs">◆</span>
+                      <span>{cap}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Closing */}
+                <div className="border-t border-border/40 pt-6">
+                  <p className="text-base text-foreground/80 font-sans italic">{agent.closing}</p>
+                </div>
+              </article>
             </Fade>
           ))}
         </div>
@@ -73,67 +102,75 @@ const IntelligenceLayers = () => {
   );
 };
 
-/* ─── Pricing ─── */
+/* ─── Pricing (3 Tiers) ─── */
 const PricingSection = () => {
   const { lang } = useLang();
   const t = neuralTranslations[lang].pricing;
+
+  const tiers = [t.monthly, t.annual, t.combo];
+
   return (
     <section className="bg-primary text-primary-foreground py-24 md:py-32">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <Fade>
           <h2 className="font-serif text-3xl md:text-4xl text-center mb-16">{t.heading}</h2>
         </Fade>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {/* Individual AI Plans */}
-          {t.plans.map((plan, i) => (
-            <Fade key={i}>
-              <div className="border border-primary-foreground/20 p-6 md:p-8 flex flex-col h-full">
-                <h3 className="font-serif text-xl mb-3">{plan.name}</h3>
-                <p className="text-sm text-primary-foreground/60 font-sans mb-6 flex-grow">{plan.description}</p>
-                <div className="mb-4">
-                  <p className="text-xs tracking-wider uppercase text-primary-foreground/50 mb-1 font-sans">{t.monthlyLabel}</p>
-                  <p className="font-serif text-2xl">{plan.monthly}</p>
-                </div>
-                <div className="mb-6">
-                  <p className="text-xs tracking-wider uppercase text-accent mb-1 font-sans">{t.annualLabel}</p>
-                  <p className="font-serif text-2xl text-accent">{plan.annual}</p>
-                </div>
-                <a
-                  href="mailto:contato@teamindbusinesshub.com"
-                  className="block text-center border border-primary-foreground/40 text-primary-foreground px-4 py-3 text-sm tracking-[0.15em] uppercase font-sans hover:bg-primary-foreground/10 transition-colors duration-300"
+        <div className="grid md:grid-cols-3 gap-6">
+          {tiers.map((tier, i) => {
+            const isCombo = i === 2;
+            return (
+              <Fade key={i}>
+                <div
+                  className={`relative p-6 md:p-8 flex flex-col h-full ${
+                    isCombo
+                      ? "border-2 border-accent"
+                      : "border border-primary-foreground/20"
+                  }`}
                 >
-                  {t.cta}
-                </a>
-              </div>
-            </Fade>
-          ))}
+                  {tier.badge && (
+                    <div className="absolute -top-3.5 left-6 bg-accent px-4 py-1">
+                      <span className="text-[10px] tracking-wider uppercase font-sans text-secondary font-medium">
+                        {tier.badge}
+                      </span>
+                    </div>
+                  )}
 
-          {/* Full Access Combo */}
-          <Fade>
-            <div className="border-2 border-accent p-6 md:p-8 flex flex-col h-full relative">
-              <div className="absolute -top-4 left-6 bg-accent px-4 py-1">
-                <span className="text-xs tracking-wider uppercase font-sans text-secondary font-medium">💎 Full Access</span>
-              </div>
-              <h3 className="font-serif text-xl mb-2 text-accent mt-2">{t.combo.title}</h3>
-              <p className="text-sm text-primary-foreground/60 font-sans mb-6 flex-grow">{t.combo.subtitle}</p>
-              <div className="mb-4">
-                <p className="text-xs tracking-wider uppercase text-primary-foreground/50 mb-1 font-sans">{t.monthlyLabel}</p>
-                <p className="font-serif text-2xl">{t.combo.monthly}</p>
-              </div>
-              <div className="mb-4">
-                <p className="text-xs tracking-wider uppercase text-accent mb-1 font-sans">{t.annualLabel}</p>
-                <p className="font-serif text-2xl text-accent">{t.combo.annual}</p>
-              </div>
-              <p className="text-xs text-accent/70 font-sans italic mb-6">{t.combo.annualNote}</p>
-              <a
-                href="mailto:contato@teamindbusinesshub.com"
-                className="block text-center bg-accent text-secondary px-4 py-3 text-sm tracking-[0.15em] uppercase font-sans hover:bg-accent/90 transition-colors duration-300 font-medium"
-              >
-                {t.cta}
-              </a>
-            </div>
-          </Fade>
+                  <h3 className={`font-serif text-lg md:text-xl mb-2 ${tier.badge ? "mt-2" : ""} ${isCombo ? "text-accent" : ""}`}>
+                    {tier.title}
+                  </h3>
+
+                  <p className="text-xs tracking-wider uppercase text-primary-foreground/50 font-sans mb-6">
+                    {tier.access}
+                  </p>
+
+                  <div className="mb-2">
+                    <p className={`font-serif text-2xl md:text-3xl ${isCombo ? "text-accent" : ""}`}>{tier.price}</p>
+                  </div>
+
+                  {tier.installment && (
+                    <p className="text-sm text-primary-foreground/50 font-sans mb-6">{tier.installment}</p>
+                  )}
+                  {!tier.installment && <div className="mb-6" />}
+
+                  <p className="text-sm text-primary-foreground/60 font-sans leading-relaxed mb-8 flex-grow">
+                    {tier.description}
+                  </p>
+
+                  <a
+                    href="mailto:contato@teamindbusinesshub.com"
+                    className={`block text-center px-4 py-3 text-sm tracking-[0.15em] uppercase font-sans transition-colors duration-300 ${
+                      isCombo
+                        ? "bg-accent text-secondary hover:bg-accent/90 font-medium"
+                        : "border border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10"
+                    }`}
+                  >
+                    {tier.cta}
+                  </a>
+                </div>
+              </Fade>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -171,7 +208,7 @@ const NeuralSystemContent = () => (
     <Navbar />
     <main>
       <NeuralHero />
-      <IntelligenceLayers />
+      <AgentsSection />
       <PricingSection />
       <CtaSection />
     </main>
