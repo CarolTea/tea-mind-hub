@@ -190,6 +190,15 @@ const HotmartPricingSection = () => {
                     <div className="mb-6" />
                   )}
 
+                  <ul className="space-y-2 mb-6">
+                    {plan.features.map((f, j) => (
+                      <li key={j} className="flex items-start gap-2 text-sm text-primary-foreground/70 font-sans">
+                        <span className="text-accent mt-0.5 text-xs">◆</span>
+                        <span>{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+
                   <div className="mt-auto">
                     <a
                       href={tier.link}
