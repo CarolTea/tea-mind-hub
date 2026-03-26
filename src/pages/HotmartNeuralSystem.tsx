@@ -160,8 +160,8 @@ const HotmartPricingSection = () => {
                     <p className="font-serif text-2xl md:text-3xl">{tier.price}</p>
                   </div>
 
-                  {"installment" in tier && tier.installment ? (
-                    <p className="text-sm text-primary-foreground/50 font-sans mb-6">{tier.installment}</p>
+                  {isAnnual && plan.annual.installment ? (
+                    <p className="text-sm text-primary-foreground/50 font-sans mb-6">{plan.annual.installment}</p>
                   ) : (
                     <div className="mb-6" />
                   )}

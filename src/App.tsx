@@ -29,6 +29,7 @@ const App = () => (
           <Route path="/neural-system" element={<NeuralSystem lang="en" />} />
           <Route path="/es/sistema-neural" element={<NeuralSystem lang="es" />} />
           <Route path="/pt/sistema-neural" element={<NeuralSystem lang="pt" />} />
+          <Route path="/hotmart/neural-system" element={<HotmartNeuralSystem />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
