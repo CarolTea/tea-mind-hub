@@ -91,18 +91,36 @@ const plans = [
     description: "Para o olhar, o nariz e o paladar treinado.",
     monthly: { price: "R$ 70 / mês", link: "https://pay.hotmart.com/R104714810A?off=tccxvcz3" },
     annual: { price: "R$ 600 à vista", installment: "ou até 12x de R$ 50,00", link: "https://pay.hotmart.com/R104714810A?off=xpmd66ta" },
+    features: [
+      "Análises sensoriais com linguagem técnica",
+      "Cartas de chás para restaurantes e hotéis",
+      "Harmonizações por perfil aromático",
+      "Conteúdos e aulas especializadas",
+    ],
   },
   {
     name: "Tea Mind | Blend AI",
     description: "Para quem cria produto com intenção.",
     monthly: { price: "R$ 70 / mês", link: "https://pay.hotmart.com/Q104723929R?off=x5mb43ov" },
     annual: { price: "R$ 600 à vista", installment: "ou até 12x de R$ 50,00", link: "https://pay.hotmart.com/Q104723929R?off=57g1hghd" },
+    features: [
+      "Desenvolvimento de blends autorais",
+      "Ajuste de proporções e equilíbrio sensorial",
+      "Diluição e fixação de aromas",
+      "Conformidade com normas da Anvisa",
+    ],
   },
   {
     name: "Tea Mind | Business AI",
     description: "Para quem quer crescer com estratégia.",
-    monthly: { price: "R$ 70 / mês", link: "https://pay.hotmart.com/A104733041Q?off=pp3v8i9h" },
-    annual: { price: "R$ 600 à vista", installment: "ou até 12x de R$ 50,00", link: "https://pay.hotmart.com/A104733041Q?off=4qcpbc0v" },
+    monthly: { price: "R$ 75 / mês", link: "https://pay.hotmart.com/A104733041Q?off=pp3v8i9h" },
+    annual: { price: "R$ 600 à vista", installment: "ou até 12x de R$ 63,89", link: "https://pay.hotmart.com/A104733041Q?off=4qcpbc0v" },
+    features: [
+      "Planos de negócio para o setor de chá",
+      "Precificação de produtos e serviços",
+      "Análise de mercado e posicionamento",
+      "Estratégias de crescimento e expansão",
+    ],
   },
 ];
 
@@ -110,6 +128,12 @@ const combo = {
   name: "Combo Neural System — 3 Agentes",
   description: "Acesso completo: sensorial, produto e negócio — integrados e disponíveis o tempo todo.",
   annual: { price: "R$ 1.100 à vista", installment: "ou até 12x de R$ 117,14", link: "https://pay.hotmart.com/H104735466M?off=l9avfqe7" },
+  features: [
+    "Acesso aos 3 agentes especializados",
+    "Sensorial + Produto + Negócio integrados",
+    "Economia vs. planos avulsos",
+    "Suporte completo para todas as áreas",
+  ],
 };
 
 /* ─── Pricing Section ─── */
@@ -166,6 +190,15 @@ const HotmartPricingSection = () => {
                     <div className="mb-6" />
                   )}
 
+                  <ul className="space-y-2 mb-6">
+                    {plan.features.map((f, j) => (
+                      <li key={j} className="flex items-start gap-2 text-sm text-primary-foreground/70 font-sans">
+                        <span className="text-accent mt-0.5 text-xs">◆</span>
+                        <span>{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+
                   <div className="mt-auto">
                     <a
                       href={tier.link}
@@ -203,6 +236,15 @@ const HotmartPricingSection = () => {
               {!isAnnual && (
                 <p className="text-xs text-accent/70 font-sans italic mb-4">* Combo disponível somente no plano anual</p>
               )}
+
+              <ul className="space-y-2 mb-6">
+                {combo.features.map((f, j) => (
+                  <li key={j} className="flex items-start gap-2 text-sm text-primary-foreground/70 font-sans">
+                    <span className="text-accent mt-0.5 text-xs">◆</span>
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
 
               <div className="mt-auto">
                 <a
