@@ -90,7 +90,7 @@ const plans = [
     name: "Tea Mind | Sensory AI",
     description: "Para o olhar, o nariz e o paladar treinado.",
     monthly: { price: "R$ 70 / mês", link: "https://pay.hotmart.com/R104714810A?off=tccxvcz3" },
-    annual: { price: "R$ 600 à vista", installment: "ou até 12x de R$ 63,89", link: "https://pay.hotmart.com/R104714810A?off=dqs1m6gn" },
+    annual: { price: "R$ 600 à vista", installment: "ou até 12x de R$ 63,89", link: "https://pay.hotmart.com/R104714810A" },
     features: [
       "Análises sensoriais com linguagem técnica",
       "Cartas de chás para restaurantes e hotéis",
@@ -180,14 +180,15 @@ const HotmartPricingSection = () => {
                     {plan.description}
                   </p>
 
-                  <div className="mb-2">
-                    <p className="font-serif text-2xl md:text-3xl">{tier.price}</p>
-                  </div>
-
-                  {isAnnual && plan.annual.installment ? (
-                    <p className="text-sm text-primary-foreground/50 font-sans mb-6">{plan.annual.installment}</p>
+                  {isAnnual ? (
+                    <div className="mb-6">
+                      <p className="font-serif text-2xl md:text-3xl">{plan.annual.installment?.replace("ou até ", "")}</p>
+                      <p className="text-sm text-primary-foreground/50 font-sans mt-2">ou {plan.annual.price}</p>
+                    </div>
                   ) : (
-                    <div className="mb-6" />
+                    <div className="mb-6">
+                      <p className="font-serif text-2xl md:text-3xl">{tier.price}</p>
+                    </div>
                   )}
 
                   <ul className="space-y-2 mb-6">
@@ -228,10 +229,10 @@ const HotmartPricingSection = () => {
                 {combo.description}
               </p>
 
-              <div className="mb-2">
-                <p className="font-serif text-2xl md:text-3xl text-accent">{combo.annual.price}</p>
+              <div className="mb-6">
+                <p className="font-serif text-2xl md:text-3xl text-accent">{combo.annual.installment?.replace("ou até ", "")}</p>
+                <p className="text-sm text-primary-foreground/50 font-sans mt-2">ou {combo.annual.price}</p>
               </div>
-              <p className="text-sm text-primary-foreground/50 font-sans mb-6">{combo.annual.installment}</p>
 
               {!isAnnual && (
                 <p className="text-xs text-accent/70 font-sans italic mb-4">* Combo disponível somente no plano anual</p>
