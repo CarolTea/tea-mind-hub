@@ -229,10 +229,10 @@ const HotmartPricingSection = () => {
                 {combo.description}
               </p>
 
-              <div className="mb-2">
-                <p className="font-serif text-2xl md:text-3xl text-accent">{combo.annual.price}</p>
+              <div className="mb-6">
+                <p className="font-serif text-2xl md:text-3xl text-accent">{combo.annual.installment?.replace("ou até ", "")}</p>
+                <p className="text-sm text-primary-foreground/50 font-sans mt-2">ou {combo.annual.price}</p>
               </div>
-              <p className="text-sm text-primary-foreground/50 font-sans mb-6">{combo.annual.installment}</p>
 
               {!isAnnual && (
                 <p className="text-xs text-accent/70 font-sans italic mb-4">* Combo disponível somente no plano anual</p>
