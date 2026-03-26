@@ -90,7 +90,7 @@ const plans = [
     name: "Tea Mind | Sensory AI",
     description: "Para o olhar, o nariz e o paladar treinado.",
     monthly: { price: "R$ 70 / mês", link: "https://pay.hotmart.com/R104714810A?off=tccxvcz3" },
-    annual: { price: "R$ 600 à vista", installment: "ou até 12x de R$ 63,89", link: "https://pay.hotmart.com/R104714810A?off=dqs1m6gn" },
+    annual: { price: "R$ 600 à vista", installment: "ou até 12x de R$ 63,89", link: "https://pay.hotmart.com/R104714810A" },
     features: [
       "Análises sensoriais com linguagem técnica",
       "Cartas de chás para restaurantes e hotéis",
