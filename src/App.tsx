@@ -7,6 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import Neurogastronomy from "./pages/Neurogastronomy";
 import NeuralSystem from "./pages/NeuralSystem";
+import HotmartNeuralSystem from "./pages/HotmartNeuralSystem";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
