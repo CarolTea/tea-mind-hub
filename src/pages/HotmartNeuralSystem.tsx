@@ -180,14 +180,15 @@ const HotmartPricingSection = () => {
                     {plan.description}
                   </p>
 
-                  <div className="mb-2">
-                    <p className="font-serif text-2xl md:text-3xl">{tier.price}</p>
-                  </div>
-
-                  {isAnnual && plan.annual.installment ? (
-                    <p className="text-sm text-primary-foreground/50 font-sans mb-6">{plan.annual.installment}</p>
+                  {isAnnual ? (
+                    <div className="mb-6">
+                      <p className="font-serif text-2xl md:text-3xl">{plan.annual.installment?.replace("ou até ", "")}</p>
+                      <p className="text-sm text-primary-foreground/50 font-sans mt-2">ou {plan.annual.price}</p>
+                    </div>
                   ) : (
-                    <div className="mb-6" />
+                    <div className="mb-6">
+                      <p className="font-serif text-2xl md:text-3xl">{tier.price}</p>
+                    </div>
                   )}
 
                   <ul className="space-y-2 mb-6">
