@@ -102,7 +102,7 @@ const plans = [
     name: "Tea Mind | Blend AI",
     description: "Para quem cria produto com intenção.",
     monthly: { price: "R$ 70 / mês", link: "https://pay.hotmart.com/Q104723929R?off=x5mb43ov" },
-    annual: { price: "R$ 600 à vista", installment: "ou até 12x de R$ 50,00", link: "https://pay.hotmart.com/Q104723929R?off=57g1hghd" },
+    annual: { price: "R$ 600 à vista", installment: "ou até 12x de R$ 63,89", link: "https://pay.hotmart.com/Q104723929R?off=57g1hghd" },
     features: [
       "Desenvolvimento de blends autorais",
       "Ajuste de proporções e equilíbrio sensorial",
