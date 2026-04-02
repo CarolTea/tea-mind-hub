@@ -31,7 +31,10 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-32 lg:py-0">
         <div className="max-w-2xl">
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-tight text-primary-foreground mb-8 opacity-0 animate-fade-in">
+          <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-accent mb-6 opacity-0 animate-fade-in">
+            {t.hero.eyebrow}
+          </p>
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-tight text-primary-foreground mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             {t.hero.title1}
             <br />
             <span className="italic">{t.hero.title2}</span>
@@ -43,10 +46,13 @@ const Hero = () => {
             <a href="#programs" className="inline-flex items-center px-8 py-3.5 bg-accent text-accent-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:opacity-90">
               {t.hero.cta1}
             </a>
-            <a href="#society" className="inline-flex items-center px-8 py-3.5 border border-primary-foreground/40 text-primary-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:border-primary-foreground hover:bg-primary-foreground/10">
+            <a href="#" className="inline-flex items-center px-8 py-3.5 border border-primary-foreground/40 text-primary-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:border-primary-foreground hover:bg-primary-foreground/10">
               {t.hero.cta2}
             </a>
           </div>
+          <p className="font-sans text-xs md:text-sm text-primary-foreground/40 mt-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.6s" }}>
+            {t.hero.socialProof}
+          </p>
         </div>
       </div>
     </section>
