@@ -1,0 +1,456 @@
+import type { Lang } from "./translations";
+
+export interface ProgramData {
+  id: string;
+  title: string;
+  mainDescription: string;
+  bodyText: string;
+  forWhoIntro: string;
+  forWhoItems: string[];
+  includesTitle: string;
+  includesItems: string[];
+  formationText: string;
+  directionTitle: string;
+  directionText: string;
+  cta: string;
+}
+
+export interface ProgramsPageTranslation {
+  hero: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    introParagraphs: string[];
+  };
+  diagnosis: {
+    text: string;
+    cta1: string;
+    cta2: string;
+  };
+  forWhoTitle: string;
+  includesTitle: string;
+  programs: ProgramData[];
+}
+
+export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
+  pt: {
+    hero: {
+      eyebrow: "Tea Mind Programas",
+      title: "Programas desenhados para diferentes momentos, perfis e realidades no mercado do chá",
+      subtitle: "Na Tea Mind, cada programa parte de uma estrutura sólida de formação e direcionamento estratégico, mas ganha forma a partir de quem entra: seus objetivos, seu momento, sua capacidade de investimento, seu contexto local e aquilo que você deseja criar no mundo do chá.",
+      introParagraphs: [
+        "Trabalhamos com diferentes formatos de construção no mercado do chá. Há quem deseje começar de forma solo, integrar o chá ao que já faz ou desenvolver uma atuação autoral. Há também quem queira criar marcas, experiências ou negócios mais robustos. O que conecta todos esses caminhos é a necessidade de direção, formação séria e visão de mercado.",
+        "Por isso, nossos programas são conduzidos com olhar aplicado à realidade de cada aluno.",
+        "Ao ingressar, a pessoa passa por um onboarding estratégico, recebe um Smart Journey | mapa personalizado e percorre sua jornada com sessões estratégicas que ajudam a organizar decisões, ajustar caminhos e transformar conhecimento em construção real.",
+        "Mais do que ensinar, a Tea Mind orienta, reposiciona e direciona a jornada para que cada programa se conecte ao que faz sentido para a realidade de quem entra."
+      ],
+    },
+    diagnosis: {
+      text: "Nem sempre é fácil saber sozinho qual programa se adequa melhor ao seu momento.\n\nPor isso, recomendamos começar pelo diagnóstico gratuito: uma leitura inicial que ajuda a compreender qual trajetória faz mais sentido para o seu perfil, sua realidade e o que você deseja construir no mercado do chá.",
+      cta1: "Fazer o Diagnóstico Gratuito",
+      cta2: "Conhecer os Programas Abaixo",
+    },
+    forWhoTitle: "Para quem é",
+    includesTitle: "O que inclui",
+    programs: [
+      {
+        id: "atuacao",
+        title: "Tea Mind Atuação com Chá",
+        mainDescription: "Nosso programa de formação profissional e acompanhamento estratégico para quem deseja atuar com chá com mais clareza, direção e visão de mercado.",
+        bodyText: "No Tea Mind Atuação com Chá, o aluno ingressa na formação de Sommelier de Chá & Tea Barista empreendedor e desenvolve sua trajetória ao longo de uma jornada acompanhada por onboarding estratégico, Smart Journey e sessões estratégicas aplicadas à sua realidade, para transformar conhecimento em atuação profissional real.",
+        forWhoIntro: "Este programa é para quem:",
+        forWhoItems: [
+          "Deseja trabalhar com chá de forma profissional, séria e bem direcionada",
+          "Quer transformar o chá em uma forma de atuação e monetização",
+          "Busca integrar o chá à sua profissão atual, ao seu negócio ou à sua expressão autoral",
+          "Está aberto a novos caminhos de atuar com chá como experiências, oficinas, workshops, atendimento, curadoria, hospitalidade, representação de marcas, consultorias",
+          "Deseja construir uma trajetória com visão empreendedora, mesmo começando de forma gradual",
+          "Entende que atuar com chá exige formação robusta, repertório e direcionamento aplicado",
+        ],
+        includesTitle: "O que inclui",
+        includesItems: [
+          "Formação de Sommelier de Chá & Tea Barista",
+          "Tea Box",
+          "Onboarding estratégico",
+          "Smart Journey | Mapa de atuação Tea Mind",
+          "2 sessões estratégicas ao longo da jornada",
+          "Acesso estendido ao conteúdo — 24 meses",
+          "Certificação após aprovação nas provas intermediárias e finais",
+        ],
+        formationText: "Uma formação profissional robusta, desenvolvida para quem deseja atuar com chá com profundidade, seriedade e visão de mercado — e não apenas ter um contato introdutório com o tema.",
+        directionTitle: "Como funciona o nosso direcionamento",
+        directionText: "O programa parte de uma base técnica e profissional consistente, mas a forma como essa jornada se organiza ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos contexto, objetivos, repertório e possibilidades. O Smart Journey organiza esse olhar em um mapa personalizado, e as sessões estratégicas ajudam você a transformar a formação em um caminho aplicável ao tipo de atuação que você deseja construir.",
+        cta: "Fazer o Diagnóstico Gratuito",
+      },
+      {
+        id: "laboratorio",
+        title: "Tea Mind Laboratório de Marcas de Chá",
+        mainDescription: "Nosso programa de formação profissional e acompanhamento estratégico para quem deseja criar uma linha de chás com assinatura própria, padrão premium e posicionamento de mercado.",
+        bodyText: "No Tea Mind Laboratório de Marcas de Chá, o aluno ingressa na formação em Tea Blender empreendedor e percorre uma jornada acompanhada por onboarding estratégico, Smart Journey e sessões estratégicas aplicadas à sua realidade, estruturadas para transformar ideias em produtos com identidade, viabilidade comercial e potencial real de venda.",
+        forWhoIntro: "Este programa é para quem:",
+        forWhoItems: [
+          "Deseja criar uma linha de chás com assinatura própria, visão de mercado e valor percebido",
+          "Quer desenvolver blends com o mesmo padrão internacional de marcas conceituadas (Dammann Frères, Palais des Thés), critério técnico e diferenciação real",
+          "Busca transformar uma ideia em produto vendável, e não apenas em uma mistura artesanal sem direção",
+          "Gosta de unir criatividade, técnica e estratégia na criação de produtos",
+          "Entende que desenvolver uma linha de chá exige conhecimento sério sobre formulação, mercado, critérios regulatórios e estrutura de negócio",
+        ],
+        includesTitle: "O que inclui",
+        includesItems: [
+          "Formação em Tea Blender",
+          "Tea Box",
+          "Onboarding estratégico",
+          "Smart Journey | Mapa de marca e produto",
+          "2 sessões estratégicas ao longo da jornada",
+          "Acesso estendido ao conteúdo",
+          "Certificação após aprovação do seu blend profissional para avaliação",
+        ],
+        formationText: "Uma formação profissional robusta, desenvolvida para quem deseja criar produtos com seriedade, profundidade técnica e visão de mercado — e não apenas aprender a misturar ingredientes.",
+        directionTitle: "Como funciona o direcionamento",
+        directionText: "O programa parte de uma base sólida de formação em tea blending com técnicas avançadas de grandes marcas e a jornada ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos objetivos, momento, contexto, capacidade de investimento e o tipo de produto ou marca que a pessoa deseja construir. O Smart Journey organiza esse olhar em um mapa personalizado, e as sessões estratégicas ajudam a transformar a formação em um caminho aplicável à criação da linha, ao posicionamento da marca e à entrada no mercado.",
+        cta: "Fazer o Diagnóstico Gratuito",
+      },
+      {
+        id: "sprint",
+        title: "Tea Mind Sprint Smart",
+        mainDescription: "Nosso programa de diagnóstico estratégico e redirecionamento para quem já começou a investir no seu negócio de chá, mas ainda não tem clareza nem segurança sobre o que está construindo.",
+        bodyText: "Um dos erros mais comuns de quem começa no mercado do chá é tentar vender antes de entender a fatia do mercado que deseja ocupar.\n\nProduto, embalagem e divulgação podem até dar a sensação de avanço, mas negócios consistentes nascem de outra lógica: mercado, estratégia, produto, posicionamento e só então venda.\n\nO Sprint foi desenhado exatamente para corrigir essa inversão: trazer clareza, reorganizar prioridades e estruturar decisões com mais inteligência, antes que mais tempo, energia e dinheiro sejam investidos no lugar errado.\n\nAqui o empreendedor passa por uma análise aplicada do seu momento, dos investimentos já realizados e das decisões que precisam ser revistas para reorganizar a base do negócio, evitar erros que custam caro e transformar movimento em direção.",
+        forWhoIntro: "Este programa é para quem:",
+        forWhoItems: [
+          "Já começou a investir em produto, embalagem, marketing, operação ou imagem, mas ainda não estruturou o negócio com base estratégica",
+          "Sente que está fazendo muitas coisas ao mesmo tempo, sem clareza do que realmente precisa priorizar",
+          "Entrou em execução antes de compreender mercado, produto, posicionamento e lógica de negócio",
+          "Deseja revisar decisões antes de continuar investindo tempo, energia e dinheiro",
+          "Precisa de uma leitura estratégica do que já construiu e do que precisa corrigir",
+          "Quer sair do improviso e reorganizar o negócio com mais segurança",
+        ],
+        includesTitle: "O que inclui",
+        includesItems: [
+          "Formulário de análise do negócio",
+          "Documento devolutivo com diagnóstico",
+          "3 sessões estratégicas",
+          "30 dias de suporte via WhatsApp",
+          "30 dias de acesso à IA de Negócios",
+          "Um curso de chá para quem ainda precisa consolidar a base de conhecimento do setor",
+          "Um material digital de apoio à estruturação de negócios de chá",
+        ],
+        formationText: "",
+        directionTitle: "Como funciona o direcionamento",
+        directionText: "O Sprint começa com uma análise do negócio para entender o que já foi feito, o que foi investido, quais decisões precisam ser revistas e onde estão os principais gargalos.\n\nA partir disso, o aluno recebe um diagnóstico devolutivo e percorre três sessões estratégicas voltadas a reorganizar prioridades, corrigir a base do negócio e orientar próximos passos mais seguros e coerentes com a realidade atual.",
+        cta: "Fazer o Diagnóstico Gratuito",
+      },
+      {
+        id: "arquitetura",
+        title: "Tea Mind Arquitetura do Negócio do Chá",
+        mainDescription: "Nosso programa premium de formação aprofundada e direção estratégica para quem deseja acessar o capital intelectual mais completo da Tea Mind e construir sua trajetória ou negócio no mercado do chá com mais repertório, clareza e consistência.",
+        bodyText: "Na Tea Mind Arquitetura do Negócio do Chá, o aluno percorre a jornada mais completa do hub, reunindo formações, especializações e Encontros de Arquitetura Estratégica para transformar conhecimento em construção real, com profundidade técnica, visão de mercado e direção aplicada ao que deseja desenvolver.",
+        forWhoIntro: "Este programa é para quem:",
+        forWhoItems: [
+          "Deseja acessar a jornada mais completa da Tea Mind, com profundidade técnica e visão estratégica",
+          "Valoriza estudo sério, repertório amplo e formação consistente no mercado do chá",
+          "Quer reunir, em um mesmo programa, diferentes frentes de formação, especialização e direcionamento aplicado",
+          "Busca construir uma trajetória profissional ou um negócio com mais estrutura, clareza e maturidade",
+          "Entende que resultados mais consistentes exigem aprofundamento, tempo de construção e apoio estratégico em momentos-chave",
+          "Deseja ter acesso ao núcleo mais robusto do capital intelectual da Tea Mind",
+        ],
+        includesTitle: "O que inclui",
+        includesItems: [
+          "Tea Mind Atuação com Chá",
+          "Tea Mind Laboratório de Marcas de Chá",
+          "Especialização em Eventos e Experiências com Chá",
+          "Especialização em MasterChef de Harmonização",
+          "2 Tea Boxes, uma de cada formação principal",
+          "Onboarding estratégico",
+          "Smart Journey | Mapa estratégico Tea Mind",
+          "6 Encontros de Arquitetura Estratégica",
+          "36 meses de acesso ao conteúdo incluído no programa",
+          "24 meses para utilizar os Encontros de Arquitetura Estratégica",
+        ],
+        formationText: "Uma jornada premium e aprofundada para quem deseja desenvolver repertório técnico, visão de mercado e direção estratégica em um nível mais amplo, consistente e integrado dentro do universo do chá.",
+        directionTitle: "Como funciona o direcionamento",
+        directionText: "A Arquitetura parte de uma jornada robusta de formação e especializações, mas ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos contexto, objetivos, ambição e possibilidades. O Smart Journey organiza esse olhar em um mapa estratégico personalizado, e os Encontros de Arquitetura Estratégica ajudam a transformar estudo em construção real, apoiando decisões importantes ao longo de até 24 meses, conforme a evolução de cada pessoa.",
+        cta: "Fazer o Diagnóstico Gratuito",
+      },
+    ],
+  },
+  en: {
+    hero: {
+      eyebrow: "Tea Mind Programs",
+      title: "Programs designed for different moments, profiles, and realities in the tea market",
+      subtitle: "At Tea Mind, each program is built on a solid foundation of training and strategic guidance, but takes shape based on who enters: your goals, your stage, your investment capacity, your local context, and what you want to create in the world of tea.",
+      introParagraphs: [
+        "We work with different formats of building in the tea market. Some want to start solo, integrate tea into what they already do, or develop an authorial practice. Others want to create brands, experiences, or more robust businesses. What connects all these paths is the need for direction, serious training, and market vision.",
+        "That's why our programs are conducted with a perspective applied to each student's reality.",
+        "Upon joining, each person goes through a strategic onboarding, receives a Smart Journey | personalized map, and follows their journey with strategic sessions that help organize decisions, adjust paths, and transform knowledge into real construction.",
+        "More than teaching, Tea Mind guides, repositions, and directs the journey so that each program connects to what makes sense for the reality of who enters."
+      ],
+    },
+    diagnosis: {
+      text: "It's not always easy to know on your own which program best suits your current moment.\n\nThat's why we recommend starting with the free diagnosis: an initial reading that helps you understand which trajectory makes the most sense for your profile, your reality, and what you want to build in the tea market.",
+      cta1: "Take the Free Diagnosis",
+      cta2: "Explore the Programs Below",
+    },
+    forWhoTitle: "Who is it for",
+    includesTitle: "What's included",
+    programs: [
+      {
+        id: "atuacao",
+        title: "Tea Mind Professional Practice",
+        mainDescription: "Our professional training and strategic guidance program for those who want to work with tea with more clarity, direction, and market vision.",
+        bodyText: "In Tea Mind Professional Practice, the student enters the Tea Sommelier & Entrepreneurial Tea Barista training and develops their trajectory along a journey accompanied by strategic onboarding, Smart Journey, and strategic sessions applied to their reality, to transform knowledge into real professional practice.",
+        forWhoIntro: "This program is for those who:",
+        forWhoItems: [
+          "Want to work with tea professionally, seriously, and with clear direction",
+          "Want to transform tea into a form of practice and monetization",
+          "Seek to integrate tea into their current profession, business, or authorial expression",
+          "Are open to new ways of working with tea such as experiences, workshops, service, curation, hospitality, brand representation, consulting",
+          "Want to build a trajectory with an entrepreneurial vision, even starting gradually",
+          "Understand that working with tea requires robust training, repertoire, and applied guidance",
+        ],
+        includesTitle: "What's included",
+        includesItems: [
+          "Tea Sommelier & Tea Barista Training",
+          "Tea Box",
+          "Strategic onboarding",
+          "Smart Journey | Tea Mind Practice Map",
+          "2 strategic sessions throughout the journey",
+          "Extended content access — 24 months",
+          "Certification upon passing intermediate and final exams",
+        ],
+        formationText: "A robust professional training developed for those who want to work with tea with depth, seriousness, and market vision — not just have an introductory contact with the subject.",
+        directionTitle: "How our guidance works",
+        directionText: "The program starts from a consistent technical and professional base, but the way this journey is organized gains direction from each student's reality.\n\nDuring onboarding, we map context, goals, repertoire, and possibilities. The Smart Journey organizes this perspective into a personalized map, and strategic sessions help you transform training into an applicable path for the type of practice you want to build.",
+        cta: "Take the Free Diagnosis",
+      },
+      {
+        id: "laboratorio",
+        title: "Tea Mind Tea Brand Lab",
+        mainDescription: "Our professional training and strategic guidance program for those who want to create a tea line with their own signature, premium standards, and market positioning.",
+        bodyText: "In Tea Mind Tea Brand Lab, the student enters the Entrepreneurial Tea Blender training and follows a journey accompanied by strategic onboarding, Smart Journey, and strategic sessions applied to their reality, structured to transform ideas into products with identity, commercial viability, and real sales potential.",
+        forWhoIntro: "This program is for those who:",
+        forWhoItems: [
+          "Want to create a tea line with their own signature, market vision, and perceived value",
+          "Want to develop blends with the same international standard as renowned brands (Dammann Frères, Palais des Thés), technical criteria, and real differentiation",
+          "Seek to transform an idea into a sellable product, not just an artisanal mix without direction",
+          "Enjoy combining creativity, technique, and strategy in product creation",
+          "Understand that developing a tea line requires serious knowledge about formulation, market, regulatory criteria, and business structure",
+        ],
+        includesTitle: "What's included",
+        includesItems: [
+          "Tea Blender Training",
+          "Tea Box",
+          "Strategic onboarding",
+          "Smart Journey | Brand and product map",
+          "2 strategic sessions throughout the journey",
+          "Extended content access",
+          "Certification upon approval of your professional blend for evaluation",
+        ],
+        formationText: "A robust professional training developed for those who want to create products with seriousness, technical depth, and market vision — not just learn to mix ingredients.",
+        directionTitle: "How the guidance works",
+        directionText: "The program starts from a solid foundation of tea blending training with advanced techniques from major brands, and the journey gains direction from each student's reality.\n\nDuring onboarding, we map goals, timing, context, investment capacity, and the type of product or brand the person wants to build. The Smart Journey organizes this perspective into a personalized map, and strategic sessions help transform training into an applicable path for line creation, brand positioning, and market entry.",
+        cta: "Take the Free Diagnosis",
+      },
+      {
+        id: "sprint",
+        title: "Tea Mind Sprint Smart",
+        mainDescription: "Our strategic diagnosis and redirection program for those who have already started investing in their tea business but still lack clarity or confidence about what they're building.",
+        bodyText: "One of the most common mistakes for those entering the tea market is trying to sell before understanding which market segment they want to occupy.\n\nProduct, packaging, and promotion may give a sense of progress, but consistent businesses are born from another logic: market, strategy, product, positioning, and only then sales.\n\nThe Sprint was designed exactly to correct this inversion: to bring clarity, reorganize priorities, and structure decisions with more intelligence, before more time, energy, and money are invested in the wrong place.\n\nHere the entrepreneur undergoes an applied analysis of their current moment, investments already made, and decisions that need to be revised to reorganize the business foundation, avoid costly mistakes, and transform movement into direction.",
+        forWhoIntro: "This program is for those who:",
+        forWhoItems: [
+          "Have already started investing in product, packaging, marketing, operations, or image, but haven't structured the business with a strategic foundation",
+          "Feel they're doing too many things at once, without clarity on what really needs to be prioritized",
+          "Went into execution before understanding market, product, positioning, and business logic",
+          "Want to review decisions before continuing to invest time, energy, and money",
+          "Need a strategic reading of what they've built and what needs to be corrected",
+          "Want to leave improvisation behind and reorganize the business with more confidence",
+        ],
+        includesTitle: "What's included",
+        includesItems: [
+          "Business analysis form",
+          "Diagnostic feedback document",
+          "3 strategic sessions",
+          "30 days of WhatsApp support",
+          "30 days of access to Business AI",
+          "A tea course for those who still need to consolidate the sector's knowledge base",
+          "A digital support material for structuring tea businesses",
+        ],
+        formationText: "",
+        directionTitle: "How the guidance works",
+        directionText: "The Sprint begins with a business analysis to understand what has already been done, what has been invested, which decisions need to be revised, and where the main bottlenecks are.\n\nFrom there, the student receives diagnostic feedback and goes through three strategic sessions focused on reorganizing priorities, correcting the business foundation, and guiding safer and more coherent next steps aligned with the current reality.",
+        cta: "Take the Free Diagnosis",
+      },
+      {
+        id: "arquitetura",
+        title: "Tea Mind Tea Business Architecture",
+        mainDescription: "Our premium program of in-depth training and strategic direction for those who want to access Tea Mind's most complete intellectual capital and build their trajectory or business in the tea market with more repertoire, clarity, and consistency.",
+        bodyText: "In Tea Mind Tea Business Architecture, the student follows the hub's most complete journey, combining training, specializations, and Strategic Architecture Meetings to transform knowledge into real construction, with technical depth, market vision, and direction applied to what they want to develop.",
+        forWhoIntro: "This program is for those who:",
+        forWhoItems: [
+          "Want to access Tea Mind's most complete journey, with technical depth and strategic vision",
+          "Value serious study, broad repertoire, and consistent training in the tea market",
+          "Want to combine, in one program, different fronts of training, specialization, and applied guidance",
+          "Seek to build a professional trajectory or business with more structure, clarity, and maturity",
+          "Understand that more consistent results require deepening, construction time, and strategic support at key moments",
+          "Want access to the most robust core of Tea Mind's intellectual capital",
+        ],
+        includesTitle: "What's included",
+        includesItems: [
+          "Tea Mind Professional Practice",
+          "Tea Mind Tea Brand Lab",
+          "Specialization in Tea Events and Experiences",
+          "Specialization in Pairing MasterChef",
+          "2 Tea Boxes, one from each main training",
+          "Strategic onboarding",
+          "Smart Journey | Tea Mind Strategic Map",
+          "6 Strategic Architecture Meetings",
+          "36 months of access to program content",
+          "24 months to use Strategic Architecture Meetings",
+        ],
+        formationText: "A premium and in-depth journey for those who want to develop technical repertoire, market vision, and strategic direction at a broader, more consistent, and integrated level within the tea universe.",
+        directionTitle: "How the guidance works",
+        directionText: "The Architecture starts from a robust journey of training and specializations, but gains direction from each student's reality.\n\nDuring onboarding, we map context, goals, ambition, and possibilities. The Smart Journey organizes this perspective into a personalized strategic map, and the Strategic Architecture Meetings help transform study into real construction, supporting important decisions over up to 24 months, according to each person's evolution.",
+        cta: "Take the Free Diagnosis",
+      },
+    ],
+  },
+  es: {
+    hero: {
+      eyebrow: "Tea Mind Programas",
+      title: "Programas diseñados para diferentes momentos, perfiles y realidades en el mercado del té",
+      subtitle: "En Tea Mind, cada programa parte de una estructura sólida de formación y dirección estratégica, pero toma forma a partir de quien ingresa: sus objetivos, su momento, su capacidad de inversión, su contexto local y lo que desea crear en el mundo del té.",
+      introParagraphs: [
+        "Trabajamos con diferentes formatos de construcción en el mercado del té. Hay quienes desean comenzar de forma individual, integrar el té a lo que ya hacen o desarrollar una actuación autoral. También hay quienes quieren crear marcas, experiencias o negocios más robustos. Lo que conecta todos estos caminos es la necesidad de dirección, formación seria y visión de mercado.",
+        "Por eso, nuestros programas se conducen con una mirada aplicada a la realidad de cada alumno.",
+        "Al ingresar, la persona pasa por un onboarding estratégico, recibe un Smart Journey | mapa personalizado y recorre su jornada con sesiones estratégicas que ayudan a organizar decisiones, ajustar caminos y transformar conocimiento en construcción real.",
+        "Más que enseñar, Tea Mind orienta, reposiciona y dirige la jornada para que cada programa se conecte con lo que tiene sentido para la realidad de quien ingresa."
+      ],
+    },
+    diagnosis: {
+      text: "No siempre es fácil saber por cuenta propia cuál programa se adecua mejor a tu momento.\n\nPor eso, recomendamos comenzar por el diagnóstico gratuito: una lectura inicial que ayuda a comprender cuál trayectoria tiene más sentido para tu perfil, tu realidad y lo que deseas construir en el mercado del té.",
+      cta1: "Hacer el Diagnóstico Gratuito",
+      cta2: "Conocer los Programas Abajo",
+    },
+    forWhoTitle: "¿Para quién es?",
+    includesTitle: "Qué incluye",
+    programs: [
+      {
+        id: "atuacao",
+        title: "Tea Mind Actuación con Té",
+        mainDescription: "Nuestro programa de formación profesional y acompañamiento estratégico para quienes desean actuar con té con más claridad, dirección y visión de mercado.",
+        bodyText: "En Tea Mind Actuación con Té, el alumno ingresa a la formación de Sommelier de Té & Tea Barista emprendedor y desarrolla su trayectoria a lo largo de una jornada acompañada por onboarding estratégico, Smart Journey y sesiones estratégicas aplicadas a su realidad, para transformar conocimiento en actuación profesional real.",
+        forWhoIntro: "Este programa es para quienes:",
+        forWhoItems: [
+          "Desean trabajar con té de forma profesional, seria y bien direccionada",
+          "Quieren transformar el té en una forma de actuación y monetización",
+          "Buscan integrar el té a su profesión actual, su negocio o su expresión autoral",
+          "Están abiertos a nuevos caminos de actuar con té como experiencias, talleres, workshops, atención, curaduría, hospitalidad, representación de marcas, consultorías",
+          "Desean construir una trayectoria con visión emprendedora, incluso comenzando de forma gradual",
+          "Entienden que actuar con té exige formación robusta, repertorio y direccionamiento aplicado",
+        ],
+        includesTitle: "Qué incluye",
+        includesItems: [
+          "Formación de Sommelier de Té & Tea Barista",
+          "Tea Box",
+          "Onboarding estratégico",
+          "Smart Journey | Mapa de actuación Tea Mind",
+          "2 sesiones estratégicas a lo largo de la jornada",
+          "Acceso extendido al contenido — 24 meses",
+          "Certificación tras aprobación en exámenes intermedios y finales",
+        ],
+        formationText: "Una formación profesional robusta, desarrollada para quienes desean actuar con té con profundidad, seriedad y visión de mercado — y no solo tener un contacto introductorio con el tema.",
+        directionTitle: "Cómo funciona nuestro direccionamiento",
+        directionText: "El programa parte de una base técnica y profesional consistente, pero la forma en que esta jornada se organiza gana dirección a partir de la realidad de cada alumno.\n\nEn el onboarding, mapeamos contexto, objetivos, repertorio y posibilidades. El Smart Journey organiza esa mirada en un mapa personalizado, y las sesiones estratégicas te ayudan a transformar la formación en un camino aplicable al tipo de actuación que deseas construir.",
+        cta: "Hacer el Diagnóstico Gratuito",
+      },
+      {
+        id: "laboratorio",
+        title: "Tea Mind Laboratorio de Marcas de Té",
+        mainDescription: "Nuestro programa de formación profesional y acompañamiento estratégico para quienes desean crear una línea de tés con firma propia, estándar premium y posicionamiento de mercado.",
+        bodyText: "En Tea Mind Laboratorio de Marcas de Té, el alumno ingresa a la formación en Tea Blender emprendedor y recorre una jornada acompañada por onboarding estratégico, Smart Journey y sesiones estratégicas aplicadas a su realidad, estructuradas para transformar ideas en productos con identidad, viabilidad comercial y potencial real de venta.",
+        forWhoIntro: "Este programa es para quienes:",
+        forWhoItems: [
+          "Desean crear una línea de tés con firma propia, visión de mercado y valor percibido",
+          "Quieren desarrollar blends con el mismo estándar internacional de marcas reconocidas (Dammann Frères, Palais des Thés), criterio técnico y diferenciación real",
+          "Buscan transformar una idea en producto vendible, y no solo en una mezcla artesanal sin dirección",
+          "Les gusta unir creatividad, técnica y estrategia en la creación de productos",
+          "Entienden que desarrollar una línea de té exige conocimiento serio sobre formulación, mercado, criterios regulatorios y estructura de negocio",
+        ],
+        includesTitle: "Qué incluye",
+        includesItems: [
+          "Formación en Tea Blender",
+          "Tea Box",
+          "Onboarding estratégico",
+          "Smart Journey | Mapa de marca y producto",
+          "2 sesiones estratégicas a lo largo de la jornada",
+          "Acceso extendido al contenido",
+          "Certificación tras aprobación de tu blend profesional para evaluación",
+        ],
+        formationText: "Una formación profesional robusta, desarrollada para quienes desean crear productos con seriedad, profundidad técnica y visión de mercado — y no solo aprender a mezclar ingredientes.",
+        directionTitle: "Cómo funciona el direccionamiento",
+        directionText: "El programa parte de una base sólida de formación en tea blending con técnicas avanzadas de grandes marcas y la jornada gana dirección a partir de la realidad de cada alumno.\n\nEn el onboarding, mapeamos objetivos, momento, contexto, capacidad de inversión y el tipo de producto o marca que la persona desea construir. El Smart Journey organiza esa mirada en un mapa personalizado, y las sesiones estratégicas ayudan a transformar la formación en un camino aplicable a la creación de la línea, al posicionamiento de la marca y a la entrada al mercado.",
+        cta: "Hacer el Diagnóstico Gratuito",
+      },
+      {
+        id: "sprint",
+        title: "Tea Mind Sprint Smart",
+        mainDescription: "Nuestro programa de diagnóstico estratégico y redireccionamiento para quienes ya comenzaron a invertir en su negocio de té, pero aún no tienen claridad ni seguridad sobre lo que están construyendo.",
+        bodyText: "Uno de los errores más comunes de quienes comienzan en el mercado del té es intentar vender antes de entender qué segmento del mercado desean ocupar.\n\nProducto, empaque y divulgación pueden dar la sensación de avance, pero los negocios consistentes nacen de otra lógica: mercado, estrategia, producto, posicionamiento y solo entonces venta.\n\nEl Sprint fue diseñado exactamente para corregir esa inversión: traer claridad, reorganizar prioridades y estructurar decisiones con más inteligencia, antes de que más tiempo, energía y dinero se inviertan en el lugar equivocado.\n\nAquí el emprendedor pasa por un análisis aplicado de su momento, de las inversiones ya realizadas y de las decisiones que necesitan ser revisadas para reorganizar la base del negocio, evitar errores costosos y transformar movimiento en dirección.",
+        forWhoIntro: "Este programa es para quienes:",
+        forWhoItems: [
+          "Ya comenzaron a invertir en producto, empaque, marketing, operación o imagen, pero no estructuraron el negocio con base estratégica",
+          "Sienten que están haciendo muchas cosas al mismo tiempo, sin claridad de lo que realmente necesitan priorizar",
+          "Entraron en ejecución antes de comprender mercado, producto, posicionamiento y lógica de negocio",
+          "Desean revisar decisiones antes de continuar invirtiendo tiempo, energía y dinero",
+          "Necesitan una lectura estratégica de lo que ya construyeron y lo que necesita corregirse",
+          "Quieren salir de la improvisación y reorganizar el negocio con más seguridad",
+        ],
+        includesTitle: "Qué incluye",
+        includesItems: [
+          "Formulario de análisis del negocio",
+          "Documento devolutivo con diagnóstico",
+          "3 sesiones estratégicas",
+          "30 días de soporte vía WhatsApp",
+          "30 días de acceso a Business AI",
+          "Un curso de té para quienes aún necesitan consolidar la base de conocimiento del sector",
+          "Un material digital de apoyo a la estructuración de negocios de té",
+        ],
+        formationText: "",
+        directionTitle: "Cómo funciona el direccionamiento",
+        directionText: "El Sprint comienza con un análisis del negocio para entender lo que ya se hizo, lo que se invirtió, cuáles decisiones necesitan revisarse y dónde están los principales cuellos de botella.\n\nA partir de eso, el alumno recibe un diagnóstico devolutivo y recorre tres sesiones estratégicas enfocadas en reorganizar prioridades, corregir la base del negocio y orientar próximos pasos más seguros y coherentes con la realidad actual.",
+        cta: "Hacer el Diagnóstico Gratuito",
+      },
+      {
+        id: "arquitetura",
+        title: "Tea Mind Arquitectura del Negocio del Té",
+        mainDescription: "Nuestro programa premium de formación profunda y dirección estratégica para quienes desean acceder al capital intelectual más completo de Tea Mind y construir su trayectoria o negocio en el mercado del té con más repertorio, claridad y consistencia.",
+        bodyText: "En Tea Mind Arquitectura del Negocio del Té, el alumno recorre la jornada más completa del hub, reuniendo formaciones, especializaciones y Encuentros de Arquitectura Estratégica para transformar conocimiento en construcción real, con profundidad técnica, visión de mercado y dirección aplicada a lo que desea desarrollar.",
+        forWhoIntro: "Este programa es para quienes:",
+        forWhoItems: [
+          "Desean acceder a la jornada más completa de Tea Mind, con profundidad técnica y visión estratégica",
+          "Valoran el estudio serio, repertorio amplio y formación consistente en el mercado del té",
+          "Quieren reunir, en un mismo programa, diferentes frentes de formación, especialización y direccionamiento aplicado",
+          "Buscan construir una trayectoria profesional o un negocio con más estructura, claridad y madurez",
+          "Entienden que resultados más consistentes exigen profundización, tiempo de construcción y apoyo estratégico en momentos clave",
+          "Desean tener acceso al núcleo más robusto del capital intelectual de Tea Mind",
+        ],
+        includesTitle: "Qué incluye",
+        includesItems: [
+          "Tea Mind Actuación con Té",
+          "Tea Mind Laboratorio de Marcas de Té",
+          "Especialización en Eventos y Experiencias con Té",
+          "Especialización en MasterChef de Armonización",
+          "2 Tea Boxes, una de cada formación principal",
+          "Onboarding estratégico",
+          "Smart Journey | Mapa estratégico Tea Mind",
+          "6 Encuentros de Arquitectura Estratégica",
+          "36 meses de acceso al contenido incluido en el programa",
+          "24 meses para utilizar los Encuentros de Arquitectura Estratégica",
+        ],
+        formationText: "Una jornada premium y profunda para quienes desean desarrollar repertorio técnico, visión de mercado y dirección estratégica en un nivel más amplio, consistente e integrado dentro del universo del té.",
+        directionTitle: "Cómo funciona el direccionamiento",
+        directionText: "La Arquitectura parte de una jornada robusta de formación y especializaciones, pero gana dirección a partir de la realidad de cada alumno.\n\nEn el onboarding, mapeamos contexto, objetivos, ambición y posibilidades. El Smart Journey organiza esa mirada en un mapa estratégico personalizado, y los Encuentros de Arquitectura Estratégica ayudan a transformar estudio en construcción real, apoyando decisiones importantes a lo largo de hasta 24 meses, según la evolución de cada persona.",
+        cta: "Hacer el Diagnóstico Gratuito",
+      },
+    ],
+  },
+};
