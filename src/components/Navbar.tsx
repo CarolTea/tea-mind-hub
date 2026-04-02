@@ -15,6 +15,9 @@ const Navbar = () => {
 
   const navLinks = [
     { label: t.nav.about, href: "#about" },
+    { label: t.nav.founders, href: "#founders" },
+    { label: t.nav.partners, href: "#partners" },
+    { label: t.nav.innovations, href: "#innovations" },
     { label: t.nav.society, href: "#society" },
     { label: t.nav.contact, href: "#footer" },
   ];
@@ -41,28 +44,18 @@ const Navbar = () => {
         </button>
 
         {/* Desktop nav */}
-        <ul className="hidden md:flex items-center gap-10">
+        <ul className="hidden lg:flex items-center gap-7">
           {navLinks.slice(0, 1).map((link) => (
             <li key={link.label}>
-              <a
-                href={link.href}
-                className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
-              >
+              <a href={link.href} className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300">
                 {link.label}
               </a>
             </li>
           ))}
 
           {/* Programs dropdown */}
-          <li
-            className="relative"
-            onMouseEnter={() => setProgramsOpen(true)}
-            onMouseLeave={() => setProgramsOpen(false)}
-          >
-            <a
-              href="#programs"
-              className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
-            >
+          <li className="relative" onMouseEnter={() => setProgramsOpen(true)} onMouseLeave={() => setProgramsOpen(false)}>
+            <a href="#programs" className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300">
               {t.nav.programs}
             </a>
             {programsOpen && (
@@ -87,10 +80,7 @@ const Navbar = () => {
 
           {navLinks.slice(1).map((link) => (
             <li key={link.label}>
-              <a
-                href={link.href}
-                className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
-              >
+              <a href={link.href} className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300">
                 {link.label}
               </a>
             </li>
@@ -108,11 +98,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile toggle */}
-        <button
-          className="md:hidden flex flex-col gap-1.5"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
+        <button className="lg:hidden flex flex-col gap-1.5" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
           <span className={`block w-6 h-px bg-foreground transition-transform duration-300 ${menuOpen ? "rotate-45 translate-y-[3.5px]" : ""}`} />
           <span className={`block w-6 h-px bg-foreground transition-opacity duration-300 ${menuOpen ? "opacity-0" : ""}`} />
           <span className={`block w-6 h-px bg-foreground transition-transform duration-300 ${menuOpen ? "-rotate-45 -translate-y-[3.5px]" : ""}`} />
@@ -121,57 +107,36 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-background/98 backdrop-blur-sm border-t border-border">
+        <div className="lg:hidden bg-background/98 backdrop-blur-sm border-t border-border">
           <ul className="flex flex-col items-center gap-6 py-8">
             {navLinks.slice(0, 1).map((link) => (
               <li key={link.label}>
-                <a
-                  href={link.href}
-                  className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground"
-                  onClick={() => setMenuOpen(false)}
-                >
+                <a href={link.href} className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground" onClick={() => setMenuOpen(false)}>
                   {link.label}
                 </a>
               </li>
             ))}
             <li className="flex flex-col items-center gap-3">
-              <a
-                href="#programs"
-                className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground"
-                onClick={() => setMenuOpen(false)}
-              >
+              <a href="#programs" className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground" onClick={() => setMenuOpen(false)}>
                 {t.nav.programs}
               </a>
-              <button
-                onClick={() => { setMenuOpen(false); navigate(neuroRoutes[lang]); }}
-                className="text-xs font-sans tracking-wide text-foreground/60 hover:text-foreground transition-colors"
-              >
+              <button onClick={() => { setMenuOpen(false); navigate(neuroRoutes[lang]); }} className="text-xs font-sans tracking-wide text-foreground/60 hover:text-foreground transition-colors">
                 → {t.nav.neurogastronomy}
               </button>
-              <button
-                onClick={() => { setMenuOpen(false); navigate(neuralRoutes[lang]); }}
-                className="text-xs font-sans tracking-wide text-foreground/60 hover:text-foreground transition-colors"
-              >
+              <button onClick={() => { setMenuOpen(false); navigate(neuralRoutes[lang]); }} className="text-xs font-sans tracking-wide text-foreground/60 hover:text-foreground transition-colors">
                 → Neural System
               </button>
             </li>
             {navLinks.slice(1).map((link) => (
               <li key={link.label}>
-                <a
-                  href={link.href}
-                  className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground"
-                  onClick={() => setMenuOpen(false)}
-                >
+                <a href={link.href} className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground" onClick={() => setMenuOpen(false)}>
                   {link.label}
                 </a>
               </li>
             ))}
             {nextLangs.map((l) => (
               <li key={l}>
-                <button
-                  onClick={() => { setMenuOpen(false); navigate(langRoutes[l]); }}
-                  className="text-xs font-sans font-medium tracking-wider uppercase border border-foreground/20 px-3 py-1.5 text-foreground/70 hover:text-foreground"
-                >
+                <button onClick={() => { setMenuOpen(false); navigate(langRoutes[l]); }} className="text-xs font-sans font-medium tracking-wider uppercase border border-foreground/20 px-3 py-1.5 text-foreground/70 hover:text-foreground">
                   {l.toUpperCase()}
                 </button>
               </li>

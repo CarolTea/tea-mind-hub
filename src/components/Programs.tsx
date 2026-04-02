@@ -1,55 +1,52 @@
-import { useNavigate } from "react-router-dom";
 import { useFadeIn } from "@/hooks/useFadeIn";
 import { useLang } from "@/contexts/LanguageContext";
-import program1 from "@/assets/program-1.jpg";
-import program2 from "@/assets/program-2.jpg";
-
-const neuroRoutes = { en: "/neurogastronomy", es: "/es/neurogastronomia", pt: "/pt/neurogastronomia" } as const;
-
-const programImages = [
-  { image: program1, alt: "Professional tea cupping and evaluation setup" },
-  { image: program2, alt: "Sensory analysis and neurogastronomy exploration" },
-];
 
 const Programs = () => {
   const { ref, isVisible } = useFadeIn();
-  const { lang, t } = useLang();
-  const navigate = useNavigate();
+  const { t } = useLang();
 
   return (
-    <section id="programs" className="py-32 lg:py-40">
+    <section id="programs" className="py-32 lg:py-40 bg-primary text-primary-foreground">
       <div ref={ref} className={`max-w-7xl mx-auto px-6 lg:px-12 fade-in-section ${isVisible ? "is-visible" : ""}`}>
-        <h2 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-20 text-center leading-tight">
+        <p className="font-sans text-xs tracking-[0.3em] uppercase text-accent mb-4 text-center">
+          {t.programs.eyebrow}
+        </p>
+        <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium mb-6 text-center leading-tight max-w-3xl mx-auto">
           {t.programs.heading}
         </h2>
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
-          {t.programs.items.map((program, i) => {
-            const isNeuro = i === 1;
-            return (
-              <div key={program.title} className="group relative border border-border/60 transition-all duration-500 hover:border-foreground/20 overflow-hidden flex flex-col">
-                <div className="relative h-56 overflow-hidden">
-                  <img src={programImages[i].image} alt={programImages[i].alt} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
-                  <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/40 transition-colors duration-500" />
-                </div>
-                <div className="p-8 lg:p-10 flex flex-col flex-1">
-                  <h3 className="font-serif text-xl md:text-2xl font-medium text-foreground mb-4">{program.title}</h3>
-                  <div className="w-10 h-px bg-accent mb-6" />
-                  <p className="font-sans text-sm md:text-base text-muted-foreground leading-relaxed mb-8">{program.description}</p>
-                  {isNeuro && (
-                    <div className="mt-auto">
-                      <button
-                        onClick={() => navigate(neuroRoutes[lang])}
-                        className="font-sans text-sm tracking-wider uppercase border border-foreground/30 px-6 py-3 text-foreground/80 hover:text-foreground hover:border-foreground/60 transition-all duration-300"
-                      >
-                        {t.programs.cta}
-                      </button>
-                    </div>
-                  )}
-                </div>
-              </div>
-            );
-          })}
+        <p className="font-sans text-base md:text-lg text-primary-foreground/60 leading-relaxed text-center max-w-2xl mx-auto mb-8">
+          {t.programs.subtitle}
+        </p>
+        <div className="text-center mb-16">
+          <a href="#" className="inline-flex items-center px-8 py-3.5 bg-accent text-accent-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:opacity-90">
+            {t.programs.diagnosisCta}
+          </a>
         </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {t.programs.items.map((program, i) => (
+            <div
+              key={i}
+              className={`border border-primary-foreground/10 p-8 flex flex-col transition-all duration-500 hover:border-primary-foreground/30 ${i === 4 ? "md:col-span-2 lg:col-span-1" : ""}`}
+            >
+              <h3 className="font-serif text-xl font-medium mb-4">{program.title}</h3>
+              <div className="w-10 h-px bg-accent mb-6" />
+              <p className="font-sans text-sm text-primary-foreground/60 leading-relaxed mb-8 flex-1">
+                {program.description}
+              </p>
+              <button className="font-sans text-sm tracking-wider text-accent hover:text-accent/80 transition-colors duration-300 text-left">
+                {t.programs.cardCta}
+              </button>
+            </div>
+          ))}
+        </div>
+
+        <p className="font-sans text-sm text-primary-foreground/40 text-center italic">
+          {t.programs.footerNote}{" "}
+          <a href="#" className="text-accent hover:text-accent/80 transition-colors not-italic">
+            {t.programs.footerCta}
+          </a>
+        </p>
       </div>
     </section>
   );

@@ -2,11 +2,14 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import type { Lang } from "@/lib/translations";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Intelligence from "@/components/Intelligence";
+import Positioning from "@/components/Positioning";
 import Programs from "@/components/Programs";
+import SocialProof from "@/components/SocialProof";
+import Innovations from "@/components/Innovations";
+import Founders from "@/components/Founders";
 import Society from "@/components/Society";
-import Philosophy from "@/components/Philosophy";
+import Partners from "@/components/Partners";
+import CtaFinal from "@/components/CtaFinal";
 import Footer from "@/components/Footer";
 
 const Index = ({ lang = "en" }: { lang?: Lang }) => {
@@ -16,11 +19,14 @@ const Index = ({ lang = "en" }: { lang?: Lang }) => {
         <Navbar />
         <main>
           <Hero />
-          <About />
-          <Intelligence />
+          <Positioning />
           <Programs />
+          <SocialProof />
+          <Innovations />
+          <Founders />
           <Society />
-          <Philosophy />
+          <Partners />
+          <CtaFinal />
         </main>
         <Footer />
       </div>

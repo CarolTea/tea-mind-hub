@@ -1,205 +1,706 @@
 export type Lang = "en" | "es" | "pt";
 
 export const translations = {
+  pt: {
+    nav: {
+      about: "Sobre",
+      programs: "Programas",
+      founders: "Fundadoras",
+      partners: "Partners",
+      innovations: "Inovações",
+      society: "Tea Mind Society",
+      contact: "Contato",
+      neurogastronomy: "Neurogastronomia",
+      neuralSystem: "Neural System",
+    },
+    hero: {
+      eyebrow: "INTELIGÊNCIA ESTRATÉGICA PARA A INDÚSTRIA DO CHÁ",
+      title1: "Pensamos em mercados,",
+      title2: "não em xícaras.",
+      subtitle:
+        "A Tea Mind é um hub de inteligência estratégica e desenvolvimento profissional para quem deseja atuar, empreender ou crescer no mercado do chá — com método, acompanhamento e visão de negócio real.",
+      cta1: "Conheça os Programas",
+      cta2: "Fazer o Diagnóstico Gratuito",
+      socialProof:
+        "1.400+ profissionais formados · 100+ negócios mentorados · Alunas premiadas em concursos nacionais de chá · Investimento no Shark Tank",
+    },
+    positioning: {
+      eyebrow: "A inteligência por trás da indústria",
+      title: "Onde conhecimento técnico encontra visão de negócio.",
+      description:
+        "O mercado brasileiro de chá está sendo construído agora — e quem entra com método, clareza e visão estratégica tem uma vantagem real. A Tea Mind existe para garantir que você seja essa pessoa.",
+      pillars: [
+        {
+          icon: "🧭",
+          title: "Diagnóstico antes de tudo",
+          description:
+            "Não encaixamos pessoas em programas. Lemos o seu momento, seus objetivos e sua realidade antes de indicar qualquer caminho. O programa certo é o que faz sentido para você — não para a média.",
+        },
+        {
+          icon: "🏗️",
+          title: "Formação técnica com visão de negócio",
+          description:
+            "Você não aprende chá aqui para depois aprender a trabalhar com ele. As duas coisas acontecem juntas, porque é assim que o mercado funciona.",
+        },
+        {
+          icon: "🎯",
+          title: "Acompanhamento real",
+          description:
+            "Sessões individuais, mapa estratégico personalizado e direcionamento aplicado à sua realidade. Você não fica sozinho no meio do caminho.",
+        },
+        {
+          icon: "🌍",
+          title: "Visão global",
+          description:
+            "O chá é uma indústria global de mais de 5 mil anos. Formamos profissionais que pensam e atuam com essa dimensão.",
+        },
+      ],
+      closing: "Nosso trabalho não é sobre consumo. É sobre construção.",
+    },
+    programs: {
+      eyebrow: "Nossos Programas",
+      heading:
+        "Cada trajetória começa de um lugar diferente. O programa certo é o que foi feito para o seu momento.",
+      subtitle:
+        "Antes de escolher, recomendamos o nosso diagnóstico gratuito. Em menos de 5 minutos você entende qual programa faz mais sentido para onde você está agora.",
+      diagnosisCta: "Fazer o Diagnóstico Gratuito →",
+      cardCta: "Quero conhecer esse programa →",
+      footerNote: "Ainda explorando o universo do chá? Comece pelo diagnóstico.",
+      footerCta: "Fazer o Diagnóstico Gratuito →",
+      items: [
+        {
+          title: "Tea Mind Atuação com Chá",
+          description:
+            "Para quem deseja atuar com chá com mais clareza, direção e visão de mercado.",
+        },
+        {
+          title: "Tea Mind Laboratório de Marcas de Chá",
+          description:
+            "Para quem deseja criar uma linha de chás com assinatura própria, padrão premium e potencial real de mercado.",
+        },
+        {
+          title: "Tea Mind Sprint Smart",
+          description:
+            "Para quem já começou mas ainda não tem clareza nem segurança sobre o que está construindo.",
+        },
+        {
+          title: "Tea Mind Arquitetura de Negócios de Chá",
+          description:
+            "Para quem quer construir algo completo, sólido e de longo prazo no mercado do chá.",
+        },
+        {
+          title: "Especialização em Neurogastronomia de Chás e Ervas",
+          description:
+            "Em parceria com especialista convidada. Programa de vanguarda que explora como a neurociência transforma a degustação de chá, a experiência do cliente e o desenvolvimento de produtos.",
+        },
+      ],
+    },
+    socialProof: {
+      stats: [
+        { number: "3.000+", label: "alunos" },
+        { number: "1.400+", label: "profissionais formados" },
+        { number: "300+", label: "Sommeliers" },
+        { number: "100+", label: "Tea Blenders" },
+        { number: "100+", label: "negócios mentorados" },
+        { number: "10+", label: "anos no mercado" },
+      ],
+      eyebrow: "Resultados reais",
+      title:
+        "Não ensinamos sobre o mercado do chá. Nós o construímos — junto com nossos alunos.",
+      transition:
+        "Mais de 300 Sommeliers e 100 Tea Blenders formados. Cada um construindo sua própria história no mercado do chá.",
+      cta: "Conheça nossos profissionais formados →",
+    },
+    innovations: {
+      eyebrow: "Tea Mind Inovações",
+      title: "Pioneiros no mercado do chá. Dentro e fora da xícara.",
+      subtitle:
+        "Da primeira infraestrutura de IA proprietária do mundo para o mercado do chá ao maior evento de negócios do chá do Brasil — a Tea Mind está construindo o futuro da indústria.",
+      cards: [
+        {
+          icon: "🤖",
+          title: "Tea Mind AI",
+          description:
+            "A primeira infraestrutura de IA do mundo para o mercado do chá. Ecossistema pioneiro de sistemas de IA proprietários, desenvolvidos e treinados com nossa metodologia de classe mundial. Três agentes exclusivos para profissionais certificados do chá.",
+          cta: "Conhecer as IAs →",
+        },
+        {
+          icon: "🫖",
+          title: "Tea Fest in Rio",
+          description:
+            "O maior evento de negócios, conhecimento e conexão do mercado de chá do Brasil. Para profissionais, empreendedores e apaixonados que vibram na mesma frequência! 2025 foi um sucesso! Prepare-se para 2026!",
+          cta: "Conhecer o Tea Fest →",
+        },
+      ],
+      closing: "Não seguimos o mercado do chá. Nós o construímos.",
+      cta: "Explorar todas as inovações →",
+    },
+    founders: {
+      eyebrow: "Quem está por trás da Tea Mind",
+      title: "Aprendemos com o mercado. Construímos com ele.",
+      subtitle:
+        "A Tea Mind nasceu da experiência real de quem não apenas estudou o mercado do chá — mas o construiu, o ensinou e o transformou por mais de uma década.",
+      profiles: [
+        {
+          name: "Carol Tavares",
+          titles:
+            "Co-fundadora · Sommelier de Chá · Tea Tender · Estrategista de Negócios · Chief Product Manager Chat Pay Labs",
+          initials: "CT",
+        },
+        {
+          name: "Carla Vicente",
+          titles:
+            "Co-fundadora · Sommelier de Chá · Tea Barista · Especialista em Chás Gelados",
+          initials: "CV",
+        },
+      ],
+      cta: "Conheça nossa história →",
+    },
+    society: {
+      eyebrow: "Tea Mind Society",
+      title: "Ninguém constrói um mercado sozinho.",
+      description:
+        "A Tea Mind Society é a comunidade exclusiva para nossos alunos e profissionais formados que estão construindo o mercado do chá — com propósito, estratégia e paixão pelo que fazem.",
+      pillars: [
+        {
+          icon: "🤝",
+          title: "Conexão real entre profissionais",
+          description:
+            "Troca de experiências, parcerias e networking com quem está no mesmo caminho — no Brasil e no mundo. Aqui você não está cercado de curiosos. Está cercado de construtores.",
+        },
+        {
+          icon: "📲",
+          title: "Comunidade ativa no WhatsApp",
+          description:
+            "Acesso direto e contínuo a uma comunidade viva — com movimento, trocas reais e suporte de quem entende o mercado do chá de verdade.",
+        },
+        {
+          icon: "🎯",
+          title: "Lives e conteúdos exclusivos",
+          description:
+            "Encontros com especialistas convidados, conteúdos aprofundados e novidades do mercado disponíveis apenas para membros da Society.",
+        },
+        {
+          icon: "🏆",
+          title: "Uma rede que cresce com você",
+          description:
+            "Quanto mais você avança na sua trajetória, mais a Society cresce com você. Alunos ativos, profissionais formados e parceiros estratégicos — todos na mesma rede.",
+        },
+      ],
+      closing:
+        "O mercado do chá no Brasil está sendo construído por pessoas como você. A Society é onde essas pessoas se encontram.",
+      cta: "Quero fazer parte da Tea Mind Society →",
+    },
+    partners: {
+      eyebrow: "Tea Mind Partners",
+      title: "Os melhores profissionais do mercado do chá estão aqui.",
+      subtitle:
+        "A Tea Mind atrai e conecta especialistas reconhecidos no mercado do chá — no Brasil e no mundo. Nossos partners contribuem com seu conhecimento, experiência e visão para enriquecer a jornada dos nossos alunos.",
+      closing:
+        "A Tea Mind não é apenas um hub de formação. É um ecossistema onde os melhores se encontram.",
+      cta: "Conhecer todos os partners →",
+      placeholders: [
+        { name: "Partner 1", specialty: "Especialidade", bio: "Mini bio do partner — a ser preenchido." },
+        { name: "Partner 2", specialty: "Especialidade", bio: "Mini bio do partner — a ser preenchido." },
+        { name: "Partner 3", specialty: "Especialidade", bio: "Mini bio do partner — a ser preenchido." },
+      ],
+    },
+    ctaFinal: {
+      eyebrow: "Seu próximo passo começa aqui",
+      title: "Pronto para construir sua trajetória no mercado do chá?",
+      subtitle:
+        "Não sabe por onde começar? Faça o diagnóstico gratuito e descubra em menos de 5 minutos qual programa foi feito para o seu momento.",
+      cta1: "Fazer o Diagnóstico Gratuito →",
+      cta2: "Conheça os Programas →",
+    },
+    footer: {
+      tagline: "Strategic Intelligence for the Tea Industry",
+      aboutText:
+        "Hub de inteligência estratégica e desenvolvimento profissional no mercado do chá.",
+      locations: "São Paulo · Rio de Janeiro · Curitiba · Recife · Espanha · Portugal · USA",
+      navigation: "Navegação",
+      programsTitle: "Programas",
+      innovationsTitle: "Inovações",
+      programsList: [
+        "Atuação com Chá",
+        "Laboratório de Marcas",
+        "Sprint Smart",
+        "Arquitetura de Negócios",
+        "Neurogastronomia",
+      ],
+      innovationsList: ["Tea Mind AI", "Tea Fest in Rio", "Tea Mind Society"],
+      contactTitle: "Contato",
+      copyright: "Todos os direitos reservados.",
+      terms: "Termos e Condições",
+      privacy: "Política de Privacidade",
+    },
+  },
   en: {
     nav: {
       about: "About",
       programs: "Programs",
-      society: "Society",
+      founders: "Founders",
+      partners: "Partners",
+      innovations: "Innovations",
+      society: "Tea Mind Society",
       contact: "Contact",
-      neurogastronomy: "Neurogastronomy Program",
+      neurogastronomy: "Neurogastronomy",
+      neuralSystem: "Neural System",
     },
     hero: {
+      eyebrow: "STRATEGIC INTELLIGENCE FOR THE TEA INDUSTRY",
       title1: "We think in markets,",
       title2: "not in cups.",
-      subtitle: "A professional development hub operating at the intersection of market intelligence and sensory expertise.",
+      subtitle:
+        "Tea Mind is a strategic intelligence and professional development hub for those who want to work, build, or grow in the tea market — with method, guidance, and real business vision.",
       cta1: "Explore Programs",
-      cta2: "Enter the Society",
+      cta2: "Take the Free Diagnosis",
+      socialProof:
+        "1,400+ professionals trained · 100+ businesses mentored · Award-winning students · Shark Tank investment",
     },
-    about: {
-      title1: "The Intelligence Behind",
-      title2: "the Industry",
+    positioning: {
+      eyebrow: "The intelligence behind the industry",
+      title: "Where technical knowledge meets business vision.",
       description:
-        "Tea Mind Business Hub is a strategic intelligence and professional development hub dedicated to structuring the global tea industry.",
-      bullets: [
-        "Market strategy",
-        "Sensory science",
-        "Industry positioning",
-        "Professional authority",
+        "The Brazilian tea market is being built right now — and those who enter with method, clarity, and strategic vision have a real advantage. Tea Mind exists to make sure you are that person.",
+      pillars: [
+        {
+          icon: "🧭",
+          title: "Diagnosis first",
+          description:
+            "We don't fit people into programs. We read your moment, your goals, and your reality before recommending any path. The right program is the one that makes sense for you — not for the average.",
+        },
+        {
+          icon: "🏗️",
+          title: "Technical training with business vision",
+          description:
+            "You don't learn tea here to later learn how to work with it. Both happen together, because that's how the market works.",
+        },
+        {
+          icon: "🎯",
+          title: "Real mentorship",
+          description:
+            "Individual sessions, personalized strategic map, and applied guidance for your reality. You don't walk the path alone.",
+        },
+        {
+          icon: "🌍",
+          title: "Global vision",
+          description:
+            "Tea is a global industry with over 5,000 years of history. We train professionals who think and act on that scale.",
+        },
       ],
-      operateAt: "We operate at the intersection of:",
-      closing1: "Our work is not about consumption.",
-      closing2: "It is about construction.",
-    },
-    intelligence: {
-      title: "The World's First AI Infrastructure for the Tea Market",
-      intro: "Tea Mind Business Hub integrates a pioneering ecosystem of proprietary AI systems, specifically engineered and trained on our comprehensive professional methodology. We have moved beyond generic assistants to create a sophisticated neural layer that embodies the technical depth, rigor, and expertise of our world-class programs.",
-      cta: "Explore Neural System",
+      closing: "Our work is not about consumption. It is about construction.",
     },
     programs: {
-      heading: "Our Programs",
-      cta: "Explore Program",
+      eyebrow: "Our Programs",
+      heading:
+        "Every journey starts from a different place. The right program is the one made for your moment.",
+      subtitle:
+        "Before choosing, we recommend our free diagnosis. In less than 5 minutes you'll understand which program makes the most sense for where you are now.",
+      diagnosisCta: "Take the Free Diagnosis →",
+      cardCta: "I want to know more about this program →",
+      footerNote: "Still exploring the tea universe? Start with the diagnosis.",
+      footerCta: "Take the Free Diagnosis →",
       items: [
         {
-          title: "Tea Program",
+          title: "Tea Mind Working with Tea",
           description:
-            "Comprehensive program covering tea market dynamics, sourcing strategy, sensory analysis, and professional certification pathways for the global tea sector.",
+            "For those who want to work with tea with more clarity, direction, and market vision.",
         },
         {
-          title: "Neurogastronomy Program",
+          title: "Tea Mind Tea Brand Lab",
           description:
-            "Cutting-edge program exploring the science of flavor perception, multisensory experiences, and how neuroscience reshapes tea tasting, customer experience and product development.",
+            "For those who want to create a tea line with their own signature, premium standards, and real market potential.",
+        },
+        {
+          title: "Tea Mind Sprint Smart",
+          description:
+            "For those who have already started but still lack clarity or confidence about what they're building.",
+        },
+        {
+          title: "Tea Mind Tea Business Architecture",
+          description:
+            "For those who want to build something complete, solid, and long-term in the tea market.",
+        },
+        {
+          title: "Specialization in Neurogastronomy of Teas & Herbs",
+          description:
+            "In partnership with a guest specialist. A cutting-edge program exploring how neuroscience transforms tea tasting, customer experience, and product development.",
         },
       ],
     },
-    society: {
-      title: "The Inner Circle",
-      description:
-        "The Tea Mind Society is a selective professional network reserved for those who shape markets, define standards, and influence the future of the global tea industry.",
-      cta: "Discover the Society",
+    socialProof: {
+      stats: [
+        { number: "3,000+", label: "students" },
+        { number: "1,400+", label: "professionals trained" },
+        { number: "300+", label: "Sommeliers" },
+        { number: "100+", label: "Tea Blenders" },
+        { number: "100+", label: "businesses mentored" },
+        { number: "10+", label: "years in the market" },
+      ],
+      eyebrow: "Real results",
+      title:
+        "We don't teach about the tea market. We build it — together with our students.",
+      transition:
+        "Over 300 Sommeliers and 100 Tea Blenders trained. Each one building their own story in the tea market.",
+      cta: "Meet our trained professionals →",
     },
-    philosophy: {
-      quote: "\u201CWe structure what others consume.\u201D",
+    innovations: {
+      eyebrow: "Tea Mind Innovations",
+      title: "Pioneers in the tea market. Inside and outside the cup.",
+      subtitle:
+        "From the world's first proprietary AI infrastructure for the tea market to the largest tea business event in Brazil — Tea Mind is building the future of the industry.",
+      cards: [
+        {
+          icon: "🤖",
+          title: "Tea Mind AI",
+          description:
+            "The world's first AI infrastructure for the tea market. A pioneering ecosystem of proprietary AI systems, developed and trained with our world-class methodology. Three exclusive agents for certified tea professionals.",
+          cta: "Discover the AIs →",
+        },
+        {
+          icon: "🫖",
+          title: "Tea Fest in Rio",
+          description:
+            "The largest business, knowledge, and connection event in the Brazilian tea market. For professionals, entrepreneurs, and enthusiasts on the same wavelength! 2025 was a success! Get ready for 2026!",
+          cta: "Discover Tea Fest →",
+        },
+      ],
+      closing: "We don't follow the tea market. We build it.",
+      cta: "Explore all innovations →",
+    },
+    founders: {
+      eyebrow: "Who's behind Tea Mind",
+      title: "We learned from the market. We built with it.",
+      subtitle:
+        "Tea Mind was born from the real experience of those who didn't just study the tea market — but built it, taught it, and transformed it for over a decade.",
+      profiles: [
+        {
+          name: "Carol Tavares",
+          titles:
+            "Co-founder · Tea Sommelier · Tea Tender · Business Strategist · Chief Product Manager Chat Pay Labs",
+          initials: "CT",
+        },
+        {
+          name: "Carla Vicente",
+          titles:
+            "Co-founder · Tea Sommelier · Tea Barista · Iced Tea Specialist",
+          initials: "CV",
+        },
+      ],
+      cta: "Discover our story →",
+    },
+    society: {
+      eyebrow: "Tea Mind Society",
+      title: "Nobody builds a market alone.",
+      description:
+        "Tea Mind Society is the exclusive community for our students and trained professionals who are building the tea market — with purpose, strategy, and passion for what they do.",
+      pillars: [
+        {
+          icon: "🤝",
+          title: "Real connections between professionals",
+          description:
+            "Exchange experiences, partnerships, and networking with those on the same path — in Brazil and worldwide. Here you're not surrounded by the curious. You're surrounded by builders.",
+        },
+        {
+          icon: "📲",
+          title: "Active WhatsApp community",
+          description:
+            "Direct and continuous access to a living community — with movement, real exchanges, and support from those who truly understand the tea market.",
+        },
+        {
+          icon: "🎯",
+          title: "Exclusive lives and content",
+          description:
+            "Meetings with guest specialists, in-depth content, and market news available only to Society members.",
+        },
+        {
+          icon: "🏆",
+          title: "A network that grows with you",
+          description:
+            "The further you advance in your journey, the more the Society grows with you. Active students, trained professionals, and strategic partners — all in the same network.",
+        },
+      ],
+      closing:
+        "The tea market in Brazil is being built by people like you. The Society is where these people meet.",
+      cta: "I want to join Tea Mind Society →",
+    },
+    partners: {
+      eyebrow: "Tea Mind Partners",
+      title: "The best tea market professionals are here.",
+      subtitle:
+        "Tea Mind attracts and connects recognized specialists in the tea market — in Brazil and worldwide. Our partners contribute their knowledge, experience, and vision to enrich our students' journey.",
+      closing:
+        "Tea Mind is not just a training hub. It's an ecosystem where the best come together.",
+      cta: "Meet all partners →",
+      placeholders: [
+        { name: "Partner 1", specialty: "Specialty", bio: "Partner mini bio — to be filled." },
+        { name: "Partner 2", specialty: "Specialty", bio: "Partner mini bio — to be filled." },
+        { name: "Partner 3", specialty: "Specialty", bio: "Partner mini bio — to be filled." },
+      ],
+    },
+    ctaFinal: {
+      eyebrow: "Your next step starts here",
+      title: "Ready to build your path in the tea market?",
+      subtitle:
+        "Don't know where to start? Take the free diagnosis and discover in less than 5 minutes which program was made for your moment.",
+      cta1: "Take the Free Diagnosis →",
+      cta2: "Explore Programs →",
     },
     footer: {
-      tagline: "A professional development hub operating at the intersection of market intelligence and sensory expertise.",
+      tagline: "Strategic Intelligence for the Tea Industry",
+      aboutText:
+        "Strategic intelligence and professional development hub for the tea market.",
+      locations: "São Paulo · Rio de Janeiro · Curitiba · Recife · Spain · Portugal · USA",
       navigation: "Navigation",
+      programsTitle: "Programs",
+      innovationsTitle: "Innovations",
+      programsList: [
+        "Working with Tea",
+        "Tea Brand Lab",
+        "Sprint Smart",
+        "Tea Business Architecture",
+        "Neurogastronomy",
+      ],
+      innovationsList: ["Tea Mind AI", "Tea Fest in Rio", "Tea Mind Society"],
       contactTitle: "Contact",
       copyright: "All rights reserved.",
+      terms: "Terms & Conditions",
+      privacy: "Privacy Policy",
     },
   },
   es: {
     nav: {
       about: "Nosotros",
       programs: "Programas",
-      society: "Sociedad",
+      founders: "Fundadoras",
+      partners: "Partners",
+      innovations: "Innovaciones",
+      society: "Tea Mind Society",
       contact: "Contacto",
-      neurogastronomy: "Programa de Neurogastronomía",
+      neurogastronomy: "Neurogastronomía",
+      neuralSystem: "Neural System",
     },
     hero: {
+      eyebrow: "INTELIGENCIA ESTRATÉGICA PARA LA INDUSTRIA DEL TÉ",
       title1: "Pensamos en mercados,",
       title2: "no en tazas.",
-      subtitle: "Un hub de desarrollo profesional que opera en la intersección de inteligencia de mercado y expertise sensorial.",
-      cta1: "Explorar Programas",
-      cta2: "Entrar a la Sociedad",
+      subtitle:
+        "Tea Mind es un hub de inteligencia estratégica y desarrollo profesional para quienes desean actuar, emprender o crecer en el mercado del té — con método, acompañamiento y visión de negocio real.",
+      cta1: "Conoce los Programas",
+      cta2: "Hacer el Diagnóstico Gratuito",
+      socialProof:
+        "1.400+ profesionales formados · 100+ negocios mentoreados · Alumnas premiadas en concursos nacionales de té · Inversión en Shark Tank",
     },
-    about: {
-      title1: "La Inteligencia Detrás",
-      title2: "de la Industria",
+    positioning: {
+      eyebrow: "La inteligencia detrás de la industria",
+      title: "Donde el conocimiento técnico encuentra la visión de negocio.",
       description:
-        "Tea Mind Business Hub es un hub de inteligencia estratégica y desarrollo profesional dedicado a estructurar la industria global del té.",
-      bullets: [
-        "Estrategia de mercado",
-        "Ciencia sensorial",
-        "Posicionamiento en la industria",
-        "Autoridad profesional",
+        "El mercado brasileño del té se está construyendo ahora — y quien entra con método, claridad y visión estratégica tiene una ventaja real. Tea Mind existe para garantizar que seas esa persona.",
+      pillars: [
+        {
+          icon: "🧭",
+          title: "Diagnóstico antes de todo",
+          description:
+            "No encajamos personas en programas. Leemos tu momento, tus objetivos y tu realidad antes de indicar cualquier camino. El programa correcto es el que tiene sentido para ti — no para el promedio.",
+        },
+        {
+          icon: "🏗️",
+          title: "Formación técnica con visión de negocio",
+          description:
+            "No aprendes té aquí para después aprender a trabajar con él. Las dos cosas suceden juntas, porque así funciona el mercado.",
+        },
+        {
+          icon: "🎯",
+          title: "Acompañamiento real",
+          description:
+            "Sesiones individuales, mapa estratégico personalizado y dirección aplicada a tu realidad. No caminas solo en el proceso.",
+        },
+        {
+          icon: "🌍",
+          title: "Visión global",
+          description:
+            "El té es una industria global con más de 5 mil años de historia. Formamos profesionales que piensan y actúan con esa dimensión.",
+        },
       ],
-      operateAt: "Operamos en la intersección de:",
-      closing1: "Nuestro trabajo no se trata de consumo.",
-      closing2: "Se trata de construcción.",
-    },
-    intelligence: {
-      title: "La Primera Infraestructura de IA del Mundo para el Mercado del Té",
-      intro: "Tea Mind Business Hub integra un ecosistema pionero de sistemas de IA propietarios, específicamente diseñados y entrenados con nuestra metodología profesional integral. Hemos ido más allá de los asistentes genéricos para crear una sofisticada capa neural que encarna la profundidad técnica, el rigor y la expertise de nuestros programas de clase mundial.",
-      cta: "Explorar Neural System",
+      closing: "Nuestro trabajo no es sobre consumo. Es sobre construcción.",
     },
     programs: {
-      heading: "Nuestros Programas",
-      cta: "Explorar Programa",
+      eyebrow: "Nuestros Programas",
+      heading:
+        "Cada trayectoria comienza en un lugar diferente. El programa correcto es el que fue hecho para tu momento.",
+      subtitle:
+        "Antes de elegir, recomendamos nuestro diagnóstico gratuito. En menos de 5 minutos entenderás qué programa tiene más sentido para donde estás ahora.",
+      diagnosisCta: "Hacer el Diagnóstico Gratuito →",
+      cardCta: "Quiero conocer este programa →",
+      footerNote: "¿Aún explorando el universo del té? Comienza por el diagnóstico.",
+      footerCta: "Hacer el Diagnóstico Gratuito →",
       items: [
         {
-          title: "Programa de Té",
+          title: "Tea Mind Actuación con Té",
           description:
-            "Programa integral que cubre la dinámica del mercado del té, estrategia de abastecimiento, análisis sensorial y vías de certificación profesional para el sector global del té.",
+            "Para quienes desean trabajar con té con más claridad, dirección y visión de mercado.",
         },
         {
-          title: "Programa de Neurogastronomía",
+          title: "Tea Mind Laboratorio de Marcas de Té",
           description:
-            "Programa de vanguardia que explora la ciencia de la percepción del sabor, experiencias multisensoriales y cómo la neurociencia transforma la degustación de té, la experiencia del cliente y el desarrollo de productos.",
+            "Para quienes desean crear una línea de tés con firma propia, estándar premium y potencial real de mercado.",
+        },
+        {
+          title: "Tea Mind Sprint Smart",
+          description:
+            "Para quienes ya comenzaron pero aún no tienen claridad ni seguridad sobre lo que están construyendo.",
+        },
+        {
+          title: "Tea Mind Arquitectura de Negocios de Té",
+          description:
+            "Para quienes quieren construir algo completo, sólido y a largo plazo en el mercado del té.",
+        },
+        {
+          title: "Especialización en Neurogastronomía de Tés y Hierbas",
+          description:
+            "En asociación con especialista invitada. Programa de vanguardia que explora cómo la neurociencia transforma la degustación de té, la experiencia del cliente y el desarrollo de productos.",
         },
       ],
     },
-    society: {
-      title: "The Inner Circle",
-      description:
-        "La Tea Mind Society es una red profesional selectiva reservada para quienes moldean mercados, definen estándares e influyen en el futuro de la industria global del té.",
-      cta: "Descubrir la Sociedad",
+    socialProof: {
+      stats: [
+        { number: "3.000+", label: "alumnos" },
+        { number: "1.400+", label: "profesionales formados" },
+        { number: "300+", label: "Sommeliers" },
+        { number: "100+", label: "Tea Blenders" },
+        { number: "100+", label: "negocios mentoreados" },
+        { number: "10+", label: "años en el mercado" },
+      ],
+      eyebrow: "Resultados reales",
+      title:
+        "No enseñamos sobre el mercado del té. Lo construimos — junto con nuestros alumnos.",
+      transition:
+        "Más de 300 Sommeliers y 100 Tea Blenders formados. Cada uno construyendo su propia historia en el mercado del té.",
+      cta: "Conoce a nuestros profesionales formados →",
     },
-    philosophy: {
-      quote: "\u201CEstructuramos lo que otros consumen.\u201D",
+    innovations: {
+      eyebrow: "Tea Mind Innovaciones",
+      title: "Pioneros en el mercado del té. Dentro y fuera de la taza.",
+      subtitle:
+        "Desde la primera infraestructura de IA propietaria del mundo para el mercado del té hasta el mayor evento de negocios del té de Brasil — Tea Mind está construyendo el futuro de la industria.",
+      cards: [
+        {
+          icon: "🤖",
+          title: "Tea Mind AI",
+          description:
+            "La primera infraestructura de IA del mundo para el mercado del té. Ecosistema pionero de sistemas de IA propietarios, desarrollados y entrenados con nuestra metodología de clase mundial. Tres agentes exclusivos para profesionales certificados del té.",
+          cta: "Conocer las IAs →",
+        },
+        {
+          icon: "🫖",
+          title: "Tea Fest in Rio",
+          description:
+            "El mayor evento de negocios, conocimiento y conexión del mercado de té de Brasil. ¡Para profesionales, emprendedores y apasionados que vibran en la misma frecuencia! ¡2025 fue un éxito! ¡Prepárate para 2026!",
+          cta: "Conocer el Tea Fest →",
+        },
+      ],
+      closing: "No seguimos el mercado del té. Lo construimos.",
+      cta: "Explorar todas las innovaciones →",
+    },
+    founders: {
+      eyebrow: "Quiénes están detrás de Tea Mind",
+      title: "Aprendimos del mercado. Construimos con él.",
+      subtitle:
+        "Tea Mind nació de la experiencia real de quienes no solo estudiaron el mercado del té — sino que lo construyeron, lo enseñaron y lo transformaron por más de una década.",
+      profiles: [
+        {
+          name: "Carol Tavares",
+          titles:
+            "Co-fundadora · Sommelier de Té · Tea Tender · Estratega de Negocios · Chief Product Manager Chat Pay Labs",
+          initials: "CT",
+        },
+        {
+          name: "Carla Vicente",
+          titles:
+            "Co-fundadora · Sommelier de Té · Tea Barista · Especialista en Tés Helados",
+          initials: "CV",
+        },
+      ],
+      cta: "Conoce nuestra historia →",
+    },
+    society: {
+      eyebrow: "Tea Mind Society",
+      title: "Nadie construye un mercado solo.",
+      description:
+        "Tea Mind Society es la comunidad exclusiva para nuestros alumnos y profesionales formados que están construyendo el mercado del té — con propósito, estrategia y pasión por lo que hacen.",
+      pillars: [
+        {
+          icon: "🤝",
+          title: "Conexión real entre profesionales",
+          description:
+            "Intercambio de experiencias, alianzas y networking con quienes están en el mismo camino — en Brasil y en el mundo. Aquí no estás rodeado de curiosos. Estás rodeado de constructores.",
+        },
+        {
+          icon: "📲",
+          title: "Comunidad activa en WhatsApp",
+          description:
+            "Acceso directo y continuo a una comunidad viva — con movimiento, intercambios reales y apoyo de quienes entienden el mercado del té de verdad.",
+        },
+        {
+          icon: "🎯",
+          title: "Lives y contenidos exclusivos",
+          description:
+            "Encuentros con especialistas invitados, contenidos profundos y novedades del mercado disponibles solo para miembros de la Society.",
+        },
+        {
+          icon: "🏆",
+          title: "Una red que crece contigo",
+          description:
+            "Cuanto más avanzas en tu trayectoria, más crece la Society contigo. Alumnos activos, profesionales formados y socios estratégicos — todos en la misma red.",
+        },
+      ],
+      closing:
+        "El mercado del té en Brasil está siendo construido por personas como tú. La Society es donde esas personas se encuentran.",
+      cta: "Quiero hacer parte de Tea Mind Society →",
+    },
+    partners: {
+      eyebrow: "Tea Mind Partners",
+      title: "Los mejores profesionales del mercado del té están aquí.",
+      subtitle:
+        "Tea Mind atrae y conecta especialistas reconocidos en el mercado del té — en Brasil y en el mundo. Nuestros partners contribuyen con su conocimiento, experiencia y visión para enriquecer el viaje de nuestros alumnos.",
+      closing:
+        "Tea Mind no es solo un hub de formación. Es un ecosistema donde los mejores se encuentran.",
+      cta: "Conocer a todos los partners →",
+      placeholders: [
+        { name: "Partner 1", specialty: "Especialidad", bio: "Mini bio del partner — por completar." },
+        { name: "Partner 2", specialty: "Especialidad", bio: "Mini bio del partner — por completar." },
+        { name: "Partner 3", specialty: "Especialidad", bio: "Mini bio del partner — por completar." },
+      ],
+    },
+    ctaFinal: {
+      eyebrow: "Tu próximo paso comienza aquí",
+      title: "¿Listo para construir tu trayectoria en el mercado del té?",
+      subtitle:
+        "¿No sabes por dónde empezar? Haz el diagnóstico gratuito y descubre en menos de 5 minutos qué programa fue hecho para tu momento.",
+      cta1: "Hacer el Diagnóstico Gratuito →",
+      cta2: "Conoce los Programas →",
     },
     footer: {
-      tagline: "Un hub de desarrollo profesional que opera en la intersección de inteligencia de mercado y expertise sensorial.",
+      tagline: "Strategic Intelligence for the Tea Industry",
+      aboutText:
+        "Hub de inteligencia estratégica y desarrollo profesional en el mercado del té.",
+      locations: "São Paulo · Rio de Janeiro · Curitiba · Recife · España · Portugal · USA",
       navigation: "Navegación",
+      programsTitle: "Programas",
+      innovationsTitle: "Innovaciones",
+      programsList: [
+        "Actuación con Té",
+        "Laboratorio de Marcas",
+        "Sprint Smart",
+        "Arquitectura de Negocios",
+        "Neurogastronomía",
+      ],
+      innovationsList: ["Tea Mind AI", "Tea Fest in Rio", "Tea Mind Society"],
       contactTitle: "Contacto",
       copyright: "Todos los derechos reservados.",
-    },
-  },
-  pt: {
-    nav: {
-      about: "Sobre",
-      programs: "Programas",
-      society: "Sociedade",
-      contact: "Contato",
-      neurogastronomy: "Programa de Neurogastronomia",
-    },
-    hero: {
-      title1: "Pensamos em mercados,",
-      title2: "n\u00E3o em x\u00EDcaras.",
-      subtitle: "Hub de inteligência estratégica & desenvolvimento profissional no mercado do chá.",
-      cta1: "Explorar Programas",
-      cta2: "Entrar na Sociedade",
-    },
-    about: {
-      title1: "A Inteligência Por Trás",
-      title2: "da Indústria",
-      description:
-        "O Tea Mind Business Hub é um hub de inteligência estratégica e desenvolvimento profissional dedicado a estruturar a indústria global do chá.",
-      bullets: [
-        "Estratégia de mercado",
-        "Ciência sensorial",
-        "Posicionamento na indústria",
-        "Autoridade profissional",
-      ],
-      operateAt: "Operamos na interseção de:",
-      closing1: "Nosso trabalho não é sobre consumo.",
-      closing2: "É sobre construção.",
-    },
-    intelligence: {
-      title: "A Primeira Infraestrutura de IA do Mundo para o Mercado do Chá",
-      intro: "O Tea Mind Business Hub integra um ecossistema pioneiro de sistemas de IA proprietários, especificamente projetados e treinados com nossa metodologia profissional abrangente. Fomos além dos assistentes genéricos para criar uma sofisticada camada neural que incorpora a profundidade técnica, o rigor e a expertise dos nossos programas de classe mundial.",
-      cta: "Explorar Neural System",
-    },
-    programs: {
-      heading: "Nossos Programas",
-      cta: "Explorar Programa",
-      items: [
-        {
-          title: "Programa de Chá",
-          description:
-            "Programa abrangente cobrindo dinâmicas do mercado de chá, estratégia de sourcing, análise sensorial e caminhos de certificação profissional para o setor global do chá.",
-        },
-        {
-          title: "Programa de Neurogastronomia",
-          description:
-            "Programa de vanguarda que explora a ciência da percepção de sabor, experiências multissensoriais e como a neurociência transforma a degustação de chá, a experiência do cliente e o desenvolvimento de produtos.",
-        },
-      ],
-    },
-    society: {
-      title: "The Inner Circle",
-      description:
-        "A Tea Mind Society \u00E9 uma rede profissional seletiva reservada para aqueles que moldam mercados, definem padr\u00F5es e influenciam o futuro da ind\u00FAstria global do ch\u00E1.",
-      cta: "Descubra a Sociedade",
-    },
-    philosophy: {
-      quote: "\u201CEstruturamos o que outros consomem.\u201D",
-    },
-    footer: {
-      tagline: "Hub de inteligência estratégica & desenvolvimento profissional no mercado do chá.",
-      navigation: "Navega\u00E7\u00E3o",
-      contactTitle: "Contato",
-      copyright: "Todos os direitos reservados.",
+      terms: "Términos y Condiciones",
+      privacy: "Política de Privacidad",
     },
   },
 } as const;
