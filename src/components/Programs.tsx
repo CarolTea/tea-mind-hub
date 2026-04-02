@@ -1,9 +1,13 @@
 import { useFadeIn } from "@/hooks/useFadeIn";
 import { useLang } from "@/contexts/LanguageContext";
+import { useNavigate } from "react-router-dom";
+
+const programsRoutes = { en: "/programs", es: "/es/programas", pt: "/pt/programas" } as const;
 
 const Programs = () => {
   const { ref, isVisible } = useFadeIn();
-  const { t } = useLang();
+  const { lang, t } = useLang();
+  const navigate = useNavigate();
 
   return (
     <section id="programs" className="py-32 lg:py-40 bg-primary text-primary-foreground">
@@ -34,7 +38,10 @@ const Programs = () => {
               <p className="font-sans text-sm text-primary-foreground/60 leading-relaxed mb-8 flex-1">
                 {program.description}
               </p>
-              <button className="font-sans text-sm tracking-wider text-accent hover:text-accent/80 transition-colors duration-300 text-left">
+              <button
+                onClick={() => navigate(programsRoutes[lang])}
+                className="font-sans text-sm tracking-wider text-accent hover:text-accent/80 transition-colors duration-300 text-left"
+              >
                 {t.programs.cardCta}
               </button>
             </div>
@@ -43,9 +50,9 @@ const Programs = () => {
 
         <p className="font-sans text-sm text-primary-foreground/40 text-center italic">
           {t.programs.footerNote}{" "}
-          <a href="#" className="text-accent hover:text-accent/80 transition-colors not-italic">
+          <button onClick={() => navigate(programsRoutes[lang])} className="text-accent hover:text-accent/80 transition-colors not-italic">
             {t.programs.footerCta}
-          </a>
+          </button>
         </p>
       </div>
     </section>
