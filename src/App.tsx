@@ -5,8 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
-import Neurogastronomy from "./pages/Neurogastronomy";
-import NeuralSystem from "./pages/NeuralSystem";
+import ProgramsPage from "./pages/ProgramsPage";
 import HotmartNeuralSystem from "./pages/HotmartNeuralSystem";
 import NotFound from "./pages/NotFound";
 
@@ -23,12 +22,9 @@ const App = () => (
           <Route path="/" element={<Index lang="en" />} />
           <Route path="/es" element={<Index lang="es" />} />
           <Route path="/pt" element={<Index lang="pt" />} />
-          <Route path="/neurogastronomy" element={<Neurogastronomy lang="en" />} />
-          <Route path="/es/neurogastronomia" element={<Neurogastronomy lang="es" />} />
-          <Route path="/pt/neurogastronomia" element={<Neurogastronomy lang="pt" />} />
-          <Route path="/neural-system" element={<NeuralSystem lang="en" />} />
-          <Route path="/es/sistema-neural" element={<NeuralSystem lang="es" />} />
-          <Route path="/pt/sistema-neural" element={<NeuralSystem lang="pt" />} />
+          <Route path="/programs" element={<ProgramsPage lang="en" />} />
+          <Route path="/es/programas" element={<ProgramsPage lang="es" />} />
+          <Route path="/pt/programas" element={<ProgramsPage lang="pt" />} />
           <Route path="/hotmart/neural-system" element={<HotmartNeuralSystem />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -1,9 +1,73 @@
 import { useState } from "react";
-import { neuralTranslations } from "@/lib/neural-translations";
 import { useFadeIn } from "@/hooks/useFadeIn";
 import { Switch } from "@/components/ui/switch";
 
-const t = neuralTranslations.pt;
+const t = {
+  hero: {
+    badge: "Neural System",
+    title: "Neural System",
+    subtitle: "Uma infraestrutura de inteligência artificial treinada para pensar, criar e decidir com você dentro do mercado do chá.",
+    intro: "Três agentes especializados — sensorial, produto e negócio — projetados para potencializar sua atuação profissional com repertório técnico, visão estratégica e apoio contínuo.",
+  },
+  layers: {
+    heading: "Os Agentes do Neural System",
+    subtitle: "Cada agente foi treinado com o capital intelectual da Tea Mind para atuar como uma extensão da sua capacidade profissional.",
+    items: [
+      {
+        number: "01",
+        name: "Sensory AI",
+        tag: "Inteligência sensorial aplicada",
+        headline: "O olhar treinado que organiza percepção em linguagem técnica.",
+        body: "O Sensory AI é o agente especializado em análise sensorial de chás e infusões. Ele foi treinado para descrever aromas, sabores e texturas com precisão técnica, criar cartas de chás para restaurantes e hotéis, propor harmonizações por perfil aromático e apoiar a construção de experiências sensoriais com profundidade.\n\nÉ a ferramenta ideal para quem atua com curadoria, serviço, hospitalidade, eventos e educação sensorial no universo do chá.",
+        capabilitiesIntro: "O QUE ELE FAZ",
+        capabilities: [
+          "Análises sensoriais detalhadas com vocabulário técnico padronizado",
+          "Criação de cartas de chás para restaurantes, hotéis e casas de chá",
+          "Harmonizações com alimentos por perfil aromático e sensorial",
+          "Apoio à construção de experiências e eventos com base sensorial",
+          "Conteúdos e aulas especializadas sobre análise sensorial de chá",
+        ],
+        closing: "O Sensory AI transforma percepção em linguagem — e linguagem em valor profissional.",
+      },
+      {
+        number: "02",
+        name: "Blend AI",
+        tag: "Inteligência de produto aplicada",
+        headline: "O parceiro técnico que transforma ideia em produto real.",
+        body: "O Blend AI é o agente especializado em desenvolvimento de blends e produtos à base de chá. Ele foi treinado para auxiliar na formulação de receitas com equilíbrio sensorial, ajustar proporções, sugerir combinações por perfil aromático, orientar processos de diluição e fixação de aromas, e apoiar a construção de linhas de produto com identidade e viabilidade comercial.\n\nÉ a ferramenta ideal para quem deseja criar blends autorais, linhas de chá com assinatura própria ou produtos para venda com padrão premium.",
+        capabilitiesIntro: "O QUE ELE FAZ",
+        capabilities: [
+          "Desenvolvimento de blends autorais com equilíbrio técnico",
+          "Ajuste de proporções e perfil sensorial de misturas",
+          "Sugestões de combinações por afinidade aromática",
+          "Orientação sobre diluição, fixação e estabilidade de aromas",
+          "Apoio à conformidade com normas da Anvisa para comercialização",
+        ],
+        closing: "O Blend AI transforma intenção criativa em produto com critério — e critério em diferenciação real.",
+      },
+      {
+        number: "03",
+        name: "Business AI",
+        tag: "Inteligência de negócio aplicada",
+        headline: "O estrategista que organiza decisões e aponta caminhos.",
+        body: "O Business AI é o agente especializado em estratégia e desenvolvimento de negócios no mercado do chá. Ele foi treinado para ajudar na construção de planos de negócio, precificação de produtos e serviços, análise de mercado, posicionamento de marca e definição de estratégias de crescimento.\n\nÉ a ferramenta ideal para quem deseja estruturar, reorganizar ou expandir um negócio no setor de chá com mais clareza, consistência e visão estratégica.",
+        capabilitiesIntro: "O QUE ELE FAZ",
+        capabilities: [
+          "Elaboração de planos de negócio para o setor de chá",
+          "Precificação de produtos, serviços e experiências",
+          "Análise de mercado, concorrência e posicionamento",
+          "Estratégias de crescimento, expansão e diferenciação",
+          "Apoio à tomada de decisão com base em dados e cenários",
+        ],
+        closing: "O Business AI transforma visão em estrutura — e estrutura em negócio com direção.",
+      },
+    ],
+  },
+  cta: {
+    statement: "O Neural System não substitui o profissional. Ele potencializa quem já decidiu construir com seriedade.",
+    button: "Fale conosco",
+  },
+};
 
 const Fade = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => {
   const { ref, isVisible } = useFadeIn();
