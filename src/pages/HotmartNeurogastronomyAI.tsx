@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { useFadeIn } from "@/hooks/useFadeIn";
-import { Switch } from "@/components/ui/switch";
 
 const Fade = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => {
   const { ref, isVisible } = useFadeIn();
@@ -121,164 +119,101 @@ const ClosingBlock = () => (
 );
 
 /* ─── Pricing ─── */
-const PricingSection = () => {
-  const [isAnnual, setIsAnnual] = useState(true);
+const PricingSection = () => (
+  <section className="bg-primary text-primary-foreground py-24 md:py-32">
+    <div className="max-w-4xl mx-auto px-6">
+      <Fade>
+        <h2 className="font-serif text-3xl md:text-4xl text-center mb-8">
+          Escolha o plano ideal para você.
+        </h2>
 
-  const plans = [
-    {
-      name: "Plano Anual",
-      description: "Acesso completo com o melhor custo-benefício.",
-      monthly: null,
-      annual: {
-        installment: "12x de R$ 107",
-        price: "R$ 1.000 à vista",
-        link: "https://pay.hotmart.com/A105211518D?off=vig97m2v&checkoutMode=6",
-      },
-      features: [
-        "Acesso ilimitado à Neurogastronomy AI",
-        "Criação de blends com fitoquímica sensorial",
-        "Design de experiências e cartas sensoriais",
-        "Embasamento científico sob demanda",
-        "Consultoria estratégica para negócios",
-      ],
-    },
-    {
-      name: "Plano Mensal",
-      description: "Flexibilidade para começar agora.",
-      monthly: {
-        price: "R$ 150 / mês",
-        link: "https://pay.hotmart.com/A105211518D?off=byzkffdp&checkoutMode=6",
-      },
-      annual: null,
-      features: [
-        "Acesso ilimitado à Neurogastronomy AI",
-        "Criação de blends com fitoquímica sensorial",
-        "Design de experiências e cartas sensoriais",
-        "Embasamento científico sob demanda",
-        "Consultoria estratégica para negócios",
-      ],
-    },
-  ];
+        {/* Coupon Banner */}
+        <div className="border-2 border-accent/60 bg-accent/10 px-6 py-4 text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-sm md:text-base font-sans text-primary-foreground/90">
+            🎁 Use o cupom <span className="font-bold text-accent tracking-wider">ALUNOS10</span> e ganhe{" "}
+            <span className="font-bold text-accent">10% de desconto</span> em todos os planos.
+          </p>
+        </div>
+      </Fade>
 
-  return (
-    <section className="bg-primary text-primary-foreground py-24 md:py-32">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="grid sm:grid-cols-2 gap-6">
+        {/* Annual Card */}
         <Fade>
-          <h2 className="font-serif text-3xl md:text-4xl text-center mb-8">
-            Escolha o plano ideal para você.
-          </h2>
-
-          {/* Coupon Banner */}
-          <div className="border-2 border-accent/60 bg-accent/10 px-6 py-4 text-center mb-12 max-w-2xl mx-auto">
-            <p className="text-sm md:text-base font-sans text-primary-foreground/90">
-              🎁 Use o cupom <span className="font-bold text-accent tracking-wider">ALUNOS10</span> e ganhe{" "}
-              <span className="font-bold text-accent">10% de desconto</span> em todos os planos.
+          <div className="relative border-2 border-accent p-6 md:p-8 flex flex-col h-full">
+            <div className="absolute -top-3.5 left-6 bg-accent px-4 py-1">
+              <span className="text-[10px] tracking-wider uppercase font-sans text-secondary font-medium">
+                Recomendado
+              </span>
+            </div>
+            <h3 className="font-serif text-lg md:text-xl mb-2 mt-2 text-accent">Plano Anual</h3>
+            <p className="text-xs tracking-wider uppercase text-primary-foreground/50 font-sans mb-6">
+              Acesso completo com o melhor custo-benefício.
             </p>
-          </div>
-
-          {/* Toggle */}
-          <div className="flex items-center justify-center gap-4 mb-16">
-            <span className={`text-sm font-sans tracking-wider uppercase transition-colors ${!isAnnual ? "text-accent" : "text-primary-foreground/50"}`}>
-              Mensal
-            </span>
-            <Switch checked={isAnnual} onCheckedChange={setIsAnnual} />
-            <span className={`text-sm font-sans tracking-wider uppercase transition-colors ${isAnnual ? "text-accent" : "text-primary-foreground/50"}`}>
-              Anual
-            </span>
+            <div className="mb-6">
+              <p className="font-serif text-2xl md:text-3xl text-accent">12x de R$ 107</p>
+              <p className="text-sm text-primary-foreground/50 font-sans mt-2">ou R$ 1.000 à vista</p>
+            </div>
+            <ul className="space-y-2 mb-6">
+              {["Acesso ilimitado à Neurogastronomy AI", "Criação de blends com fitoquímica sensorial", "Design de experiências e cartas sensoriais", "Embasamento científico sob demanda", "Consultoria estratégica para negócios"].map((f, j) => (
+                <li key={j} className="flex items-start gap-2 text-sm text-primary-foreground/70 font-sans">
+                  <span className="text-accent mt-0.5 text-xs">◆</span>
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-auto">
+              <a
+                href="https://pay.hotmart.com/A105211518D?off=vig97m2v&checkoutMode=6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center px-4 py-3 text-sm tracking-[0.15em] uppercase font-sans font-medium bg-accent text-secondary hover:bg-accent/90 transition-colors duration-300"
+              >
+                Assinar anual
+              </a>
+            </div>
           </div>
         </Fade>
 
-        <div className="grid sm:grid-cols-2 gap-6">
-          {/* Annual Card */}
-          <Fade>
-            <div className={`relative border-2 ${isAnnual ? "border-accent" : "border-primary-foreground/20"} p-6 md:p-8 flex flex-col h-full transition-colors`}>
-              {isAnnual && (
-                <div className="absolute -top-3.5 left-6 bg-accent px-4 py-1">
-                  <span className="text-[10px] tracking-wider uppercase font-sans text-secondary font-medium">
-                    Recomendado
-                  </span>
-                </div>
-              )}
-              <h3 className={`font-serif text-lg md:text-xl mb-2 ${isAnnual ? "mt-2 text-accent" : ""}`}>{plans[0].name}</h3>
-              <p className="text-xs tracking-wider uppercase text-primary-foreground/50 font-sans mb-6">
-                {plans[0].description}
-              </p>
-              <div className="mb-6">
-                <p className={`font-serif text-2xl md:text-3xl ${isAnnual ? "text-accent" : ""}`}>{plans[0].annual!.installment}</p>
-                <p className="text-sm text-primary-foreground/50 font-sans mt-2">ou {plans[0].annual!.price}</p>
-              </div>
-              <ul className="space-y-2 mb-6">
-                {plans[0].features.map((f, j) => (
-                  <li key={j} className="flex items-start gap-2 text-sm text-primary-foreground/70 font-sans">
-                    <span className="text-accent mt-0.5 text-xs">◆</span>
-                    <span>{f}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-auto">
-                <a
-                  href={plans[0].annual!.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`block text-center px-4 py-3 text-sm tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300 ${
-                    isAnnual
-                      ? "bg-accent text-secondary hover:bg-accent/90"
-                      : "border border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10"
-                  }`}
-                >
-                  Assinar anual
-                </a>
-              </div>
+        {/* Monthly Card */}
+        <Fade>
+          <div className="relative border-2 border-primary-foreground/20 p-6 md:p-8 flex flex-col h-full">
+            <div className="absolute -top-3.5 left-6 bg-accent px-4 py-1">
+              <span className="text-[10px] tracking-wider uppercase font-sans text-secondary font-medium">
+                Flexível
+              </span>
             </div>
-          </Fade>
-
-          {/* Monthly Card */}
-          <Fade>
-            <div className={`relative border-2 ${!isAnnual ? "border-accent" : "border-primary-foreground/20"} p-6 md:p-8 flex flex-col h-full transition-colors`}>
-              {!isAnnual && (
-                <div className="absolute -top-3.5 left-6 bg-accent px-4 py-1">
-                  <span className="text-[10px] tracking-wider uppercase font-sans text-secondary font-medium">
-                    Flexível
-                  </span>
-                </div>
-              )}
-              <h3 className={`font-serif text-lg md:text-xl mb-2 ${!isAnnual ? "mt-2 text-accent" : ""}`}>{plans[1].name}</h3>
-              <p className="text-xs tracking-wider uppercase text-primary-foreground/50 font-sans mb-6">
-                {plans[1].description}
-              </p>
-              <div className="mb-6">
-                <p className={`font-serif text-2xl md:text-3xl ${!isAnnual ? "text-accent" : ""}`}>{plans[1].monthly!.price}</p>
-                <p className="text-sm text-primary-foreground/50 font-sans mt-2">sem compromisso de permanência</p>
-              </div>
-              <ul className="space-y-2 mb-6">
-                {plans[1].features.map((f, j) => (
-                  <li key={j} className="flex items-start gap-2 text-sm text-primary-foreground/70 font-sans">
-                    <span className="text-accent mt-0.5 text-xs">◆</span>
-                    <span>{f}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-auto">
-                <a
-                  href={plans[1].monthly!.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`block text-center px-4 py-3 text-sm tracking-[0.15em] uppercase font-sans font-medium transition-colors duration-300 ${
-                    !isAnnual
-                      ? "bg-accent text-secondary hover:bg-accent/90"
-                      : "border border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10"
-                  }`}
-                >
-                  Assinar mensal
-                </a>
-              </div>
+            <h3 className="font-serif text-lg md:text-xl mb-2 mt-2">Plano Mensal</h3>
+            <p className="text-xs tracking-wider uppercase text-primary-foreground/50 font-sans mb-6">
+              Flexibilidade para começar agora.
+            </p>
+            <div className="mb-6">
+              <p className="font-serif text-2xl md:text-3xl">R$ 150 / mês</p>
+              <p className="text-sm text-primary-foreground/50 font-sans mt-2">sem compromisso de permanência</p>
             </div>
-          </Fade>
-        </div>
+            <ul className="space-y-2 mb-6">
+              {["Acesso ilimitado à Neurogastronomy AI", "Criação de blends com fitoquímica sensorial", "Design de experiências e cartas sensoriais", "Embasamento científico sob demanda", "Consultoria estratégica para negócios"].map((f, j) => (
+                <li key={j} className="flex items-start gap-2 text-sm text-primary-foreground/70 font-sans">
+                  <span className="text-accent mt-0.5 text-xs">◆</span>
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-auto">
+              <a
+                href="https://pay.hotmart.com/A105211518D?off=byzkffdp&checkoutMode=6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center px-4 py-3 text-sm tracking-[0.15em] uppercase font-sans font-medium border border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 transition-colors duration-300"
+              >
+                Assinar mensal
+              </a>
+            </div>
+          </div>
+        </Fade>
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 /* ─── CTA ─── */
 const CtaSection = () => (
