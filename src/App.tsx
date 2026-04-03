@@ -7,6 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import ProgramsPage from "./pages/ProgramsPage";
 import HotmartNeuralSystem from "./pages/HotmartNeuralSystem";
+import HotmartNeurogastronomyAI from "./pages/HotmartNeurogastronomyAI";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/es/programas" element={<ProgramsPage lang="es" />} />
           <Route path="/pt/programas" element={<ProgramsPage lang="pt" />} />
           <Route path="/hotmart/neural-system" element={<HotmartNeuralSystem />} />
+          <Route path="/hotmart/neurogastronomy-ai" element={<HotmartNeurogastronomyAI />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
