@@ -21,7 +21,7 @@ const SocialProof = () => {
   }, [emblaApi, onSelect]);
 
   const testimonials = Array.from({ length: 6 }, (_, i) => ({
-    text: `"Depoimento placeholder ${i + 1} — conteúdo real a ser inserido."`,
+    text: `"Depoimento placeholder ${i + 1} , conteúdo real a ser inserido."`,
     name: `Profissional ${i + 1}`,
     title: "Sommelier de Chá · São Paulo · Atuação em consultoria",
   }));
