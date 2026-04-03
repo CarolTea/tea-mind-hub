@@ -27,6 +27,7 @@ const App = () => (
           <Route path="/es/programas" element={<ProgramsPage lang="es" />} />
           <Route path="/pt/programas" element={<ProgramsPage lang="pt" />} />
           <Route path="/hotmart/neural-system" element={<HotmartNeuralSystem />} />
+          <Route path="/hotmart/neurogastronomy-ai" element={<HotmartNeurogastronomyAI />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
