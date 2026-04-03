@@ -18,7 +18,7 @@ export const translations = {
       title1: "Pensamos em mercados,",
       title2: "não em xícaras.",
       subtitle:
-        "A Tea Mind é um hub de inteligência estratégica e desenvolvimento profissional para quem deseja atuar, empreender ou crescer no mercado do chá — com método, acompanhamento e visão de negócio real.",
+        "A Tea Mind é um hub de inteligência estratégica e desenvolvimento profissional para quem deseja atuar, empreender ou crescer no mercado do chá , com método, acompanhamento e visão de negócio real.",
       cta1: "Conheça os Programas",
       cta2: "Fazer o Diagnóstico Gratuito",
       socialProof:
@@ -28,13 +28,13 @@ export const translations = {
       eyebrow: "A inteligência por trás da indústria",
       title: "Onde conhecimento técnico encontra visão de negócio.",
       description:
-        "O mercado brasileiro de chá está sendo construído agora — e quem entra com método, clareza e visão estratégica tem uma vantagem real. A Tea Mind existe para garantir que você seja essa pessoa.",
+        "O mercado brasileiro de chá está sendo construído agora , e quem entra com método, clareza e visão estratégica tem uma vantagem real. A Tea Mind existe para garantir que você seja essa pessoa.",
       pillars: [
         {
           icon: "🧭",
           title: "Diagnóstico antes de tudo",
           description:
-            "Não encaixamos pessoas em programas. Lemos o seu momento, seus objetivos e sua realidade antes de indicar qualquer caminho. O programa certo é o que faz sentido para você — não para a média.",
+            "Não encaixamos pessoas em programas. Lemos o seu momento, seus objetivos e sua realidade antes de indicar qualquer caminho. O programa certo é o que faz sentido para você , não para a média.",
         },
         {
           icon: "🏗️",
@@ -106,7 +106,7 @@ export const translations = {
       ],
       eyebrow: "Resultados reais",
       title:
-        "Não ensinamos sobre o mercado do chá. Nós o construímos — junto com nossos alunos.",
+        "Não ensinamos sobre o mercado do chá. Nós o construímos , junto com nossos alunos.",
       transition:
         "Mais de 300 Sommeliers e 100 Tea Blenders formados. Cada um construindo sua própria história no mercado do chá.",
       cta: "Conheça nossos profissionais formados →",
@@ -115,7 +115,7 @@ export const translations = {
       eyebrow: "Tea Mind Inovações",
       title: "Pioneiros no mercado do chá. Dentro e fora da xícara.",
       subtitle:
-        "Da primeira infraestrutura de IA proprietária do mundo para o mercado do chá ao maior evento de negócios do chá do Brasil — a Tea Mind está construindo o futuro da indústria.",
+        "Da primeira infraestrutura de IA proprietária do mundo para o mercado do chá ao maior evento de negócios do chá do Brasil , a Tea Mind está construindo o futuro da indústria.",
       cards: [
         {
           icon: "🤖",
@@ -139,7 +139,7 @@ export const translations = {
       eyebrow: "Quem está por trás da Tea Mind",
       title: "Aprendemos com o mercado. Construímos com ele.",
       subtitle:
-        "A Tea Mind nasceu da experiência real de quem não apenas estudou o mercado do chá — mas o construiu, o ensinou e o transformou por mais de uma década.",
+        "A Tea Mind nasceu da experiência real de quem não apenas estudou o mercado do chá , mas o construiu, o ensinou e o transformou por mais de uma década.",
       profiles: [
         {
           name: "Carol Tavares",
@@ -160,19 +160,19 @@ export const translations = {
       eyebrow: "Tea Mind Society",
       title: "Ninguém constrói um mercado sozinho.",
       description:
-        "A Tea Mind Society é a comunidade exclusiva para nossos alunos e profissionais formados que estão construindo o mercado do chá — com propósito, estratégia e paixão pelo que fazem.",
+        "A Tea Mind Society é a comunidade exclusiva para nossos alunos e profissionais formados que estão construindo o mercado do chá , com propósito, estratégia e paixão pelo que fazem.",
       pillars: [
         {
           icon: "🤝",
           title: "Conexão real entre profissionais",
           description:
-            "Troca de experiências, parcerias e networking com quem está no mesmo caminho — no Brasil e no mundo. Aqui você não está cercado de curiosos. Está cercado de construtores.",
+            "Troca de experiências, parcerias e networking com quem está no mesmo caminho , no Brasil e no mundo. Aqui você não está cercado de curiosos. Está cercado de construtores.",
         },
         {
           icon: "📲",
           title: "Comunidade ativa no WhatsApp",
           description:
-            "Acesso direto e contínuo a uma comunidade viva — com movimento, trocas reais e suporte de quem entende o mercado do chá de verdade.",
+            "Acesso direto e contínuo a uma comunidade viva , com movimento, trocas reais e suporte de quem entende o mercado do chá de verdade.",
         },
         {
           icon: "🎯",
@@ -184,7 +184,7 @@ export const translations = {
           icon: "🏆",
           title: "Uma rede que cresce com você",
           description:
-            "Quanto mais você avança na sua trajetória, mais a Society cresce com você. Alunos ativos, profissionais formados e parceiros estratégicos — todos na mesma rede.",
+            "Quanto mais você avança na sua trajetória, mais a Society cresce com você. Alunos ativos, profissionais formados e parceiros estratégicos , todos na mesma rede.",
         },
       ],
       closing:
@@ -195,14 +195,14 @@ export const translations = {
       eyebrow: "Tea Mind Partners",
       title: "Os melhores profissionais do mercado do chá estão aqui.",
       subtitle:
-        "A Tea Mind atrai e conecta especialistas reconhecidos no mercado do chá — no Brasil e no mundo. Nossos partners contribuem com seu conhecimento, experiência e visão para enriquecer a jornada dos nossos alunos.",
+        "A Tea Mind atrai e conecta especialistas reconhecidos no mercado do chá , no Brasil e no mundo. Nossos partners contribuem com seu conhecimento, experiência e visão para enriquecer a jornada dos nossos alunos.",
       closing:
         "A Tea Mind não é apenas um hub de formação. É um ecossistema onde os melhores se encontram.",
       cta: "Conhecer todos os partners →",
       placeholders: [
-        { name: "Partner 1", specialty: "Especialidade", bio: "Mini bio do partner — a ser preenchido." },
-        { name: "Partner 2", specialty: "Especialidade", bio: "Mini bio do partner — a ser preenchido." },
-        { name: "Partner 3", specialty: "Especialidade", bio: "Mini bio do partner — a ser preenchido." },
+        { name: "Partner 1", specialty: "Especialidade", bio: "Mini bio do partner , a ser preenchido." },
+        { name: "Partner 2", specialty: "Especialidade", bio: "Mini bio do partner , a ser preenchido." },
+        { name: "Partner 3", specialty: "Especialidade", bio: "Mini bio do partner , a ser preenchido." },
       ],
     },
     ctaFinal: {
@@ -252,7 +252,7 @@ export const translations = {
       title1: "We think in markets,",
       title2: "not in cups.",
       subtitle:
-        "Tea Mind is a strategic intelligence and professional development hub for those who want to work, build, or grow in the tea market — with method, guidance, and real business vision.",
+        "Tea Mind is a strategic intelligence and professional development hub for those who want to work, build, or grow in the tea market , with method, guidance, and real business vision.",
       cta1: "Explore Programs",
       cta2: "Take the Free Diagnosis",
       socialProof:
@@ -262,13 +262,13 @@ export const translations = {
       eyebrow: "The intelligence behind the industry",
       title: "Where technical knowledge meets business vision.",
       description:
-        "The Brazilian tea market is being built right now — and those who enter with method, clarity, and strategic vision have a real advantage. Tea Mind exists to make sure you are that person.",
+        "The Brazilian tea market is being built right now , and those who enter with method, clarity, and strategic vision have a real advantage. Tea Mind exists to make sure you are that person.",
       pillars: [
         {
           icon: "🧭",
           title: "Diagnosis first",
           description:
-            "We don't fit people into programs. We read your moment, your goals, and your reality before recommending any path. The right program is the one that makes sense for you — not for the average.",
+            "We don't fit people into programs. We read your moment, your goals, and your reality before recommending any path. The right program is the one that makes sense for you , not for the average.",
         },
         {
           icon: "🏗️",
@@ -340,7 +340,7 @@ export const translations = {
       ],
       eyebrow: "Real results",
       title:
-        "We don't teach about the tea market. We build it — together with our students.",
+        "We don't teach about the tea market. We build it , together with our students.",
       transition:
         "Over 300 Sommeliers and 100 Tea Blenders trained. Each one building their own story in the tea market.",
       cta: "Meet our trained professionals →",
@@ -349,7 +349,7 @@ export const translations = {
       eyebrow: "Tea Mind Innovations",
       title: "Pioneers in the tea market. Inside and outside the cup.",
       subtitle:
-        "From the world's first proprietary AI infrastructure for the tea market to the largest tea business event in Brazil — Tea Mind is building the future of the industry.",
+        "From the world's first proprietary AI infrastructure for the tea market to the largest tea business event in Brazil , Tea Mind is building the future of the industry.",
       cards: [
         {
           icon: "🤖",
@@ -373,7 +373,7 @@ export const translations = {
       eyebrow: "Who's behind Tea Mind",
       title: "We learned from the market. We built with it.",
       subtitle:
-        "Tea Mind was born from the real experience of those who didn't just study the tea market — but built it, taught it, and transformed it for over a decade.",
+        "Tea Mind was born from the real experience of those who didn't just study the tea market , but built it, taught it, and transformed it for over a decade.",
       profiles: [
         {
           name: "Carol Tavares",
@@ -394,19 +394,19 @@ export const translations = {
       eyebrow: "Tea Mind Society",
       title: "Nobody builds a market alone.",
       description:
-        "Tea Mind Society is the exclusive community for our students and trained professionals who are building the tea market — with purpose, strategy, and passion for what they do.",
+        "Tea Mind Society is the exclusive community for our students and trained professionals who are building the tea market , with purpose, strategy, and passion for what they do.",
       pillars: [
         {
           icon: "🤝",
           title: "Real connections between professionals",
           description:
-            "Exchange experiences, partnerships, and networking with those on the same path — in Brazil and worldwide. Here you're not surrounded by the curious. You're surrounded by builders.",
+            "Exchange experiences, partnerships, and networking with those on the same path , in Brazil and worldwide. Here you're not surrounded by the curious. You're surrounded by builders.",
         },
         {
           icon: "📲",
           title: "Active WhatsApp community",
           description:
-            "Direct and continuous access to a living community — with movement, real exchanges, and support from those who truly understand the tea market.",
+            "Direct and continuous access to a living community , with movement, real exchanges, and support from those who truly understand the tea market.",
         },
         {
           icon: "🎯",
@@ -418,7 +418,7 @@ export const translations = {
           icon: "🏆",
           title: "A network that grows with you",
           description:
-            "The further you advance in your journey, the more the Society grows with you. Active students, trained professionals, and strategic partners — all in the same network.",
+            "The further you advance in your journey, the more the Society grows with you. Active students, trained professionals, and strategic partners , all in the same network.",
         },
       ],
       closing:
@@ -429,14 +429,14 @@ export const translations = {
       eyebrow: "Tea Mind Partners",
       title: "The best tea market professionals are here.",
       subtitle:
-        "Tea Mind attracts and connects recognized specialists in the tea market — in Brazil and worldwide. Our partners contribute their knowledge, experience, and vision to enrich our students' journey.",
+        "Tea Mind attracts and connects recognized specialists in the tea market , in Brazil and worldwide. Our partners contribute their knowledge, experience, and vision to enrich our students' journey.",
       closing:
         "Tea Mind is not just a training hub. It's an ecosystem where the best come together.",
       cta: "Meet all partners →",
       placeholders: [
-        { name: "Partner 1", specialty: "Specialty", bio: "Partner mini bio — to be filled." },
-        { name: "Partner 2", specialty: "Specialty", bio: "Partner mini bio — to be filled." },
-        { name: "Partner 3", specialty: "Specialty", bio: "Partner mini bio — to be filled." },
+        { name: "Partner 1", specialty: "Specialty", bio: "Partner mini bio , to be filled." },
+        { name: "Partner 2", specialty: "Specialty", bio: "Partner mini bio , to be filled." },
+        { name: "Partner 3", specialty: "Specialty", bio: "Partner mini bio , to be filled." },
       ],
     },
     ctaFinal: {
@@ -486,7 +486,7 @@ export const translations = {
       title1: "Pensamos en mercados,",
       title2: "no en tazas.",
       subtitle:
-        "Tea Mind es un hub de inteligencia estratégica y desarrollo profesional para quienes desean actuar, emprender o crecer en el mercado del té — con método, acompañamiento y visión de negocio real.",
+        "Tea Mind es un hub de inteligencia estratégica y desarrollo profesional para quienes desean actuar, emprender o crecer en el mercado del té , con método, acompañamiento y visión de negocio real.",
       cta1: "Conoce los Programas",
       cta2: "Hacer el Diagnóstico Gratuito",
       socialProof:
@@ -496,13 +496,13 @@ export const translations = {
       eyebrow: "La inteligencia detrás de la industria",
       title: "Donde el conocimiento técnico encuentra la visión de negocio.",
       description:
-        "El mercado brasileño del té se está construyendo ahora — y quien entra con método, claridad y visión estratégica tiene una ventaja real. Tea Mind existe para garantizar que seas esa persona.",
+        "El mercado brasileño del té se está construyendo ahora , y quien entra con método, claridad y visión estratégica tiene una ventaja real. Tea Mind existe para garantizar que seas esa persona.",
       pillars: [
         {
           icon: "🧭",
           title: "Diagnóstico antes de todo",
           description:
-            "No encajamos personas en programas. Leemos tu momento, tus objetivos y tu realidad antes de indicar cualquier camino. El programa correcto es el que tiene sentido para ti — no para el promedio.",
+            "No encajamos personas en programas. Leemos tu momento, tus objetivos y tu realidad antes de indicar cualquier camino. El programa correcto es el que tiene sentido para ti , no para el promedio.",
         },
         {
           icon: "🏗️",
@@ -574,7 +574,7 @@ export const translations = {
       ],
       eyebrow: "Resultados reales",
       title:
-        "No enseñamos sobre el mercado del té. Lo construimos — junto con nuestros alumnos.",
+        "No enseñamos sobre el mercado del té. Lo construimos , junto con nuestros alumnos.",
       transition:
         "Más de 300 Sommeliers y 100 Tea Blenders formados. Cada uno construyendo su propia historia en el mercado del té.",
       cta: "Conoce a nuestros profesionales formados →",
@@ -583,7 +583,7 @@ export const translations = {
       eyebrow: "Tea Mind Innovaciones",
       title: "Pioneros en el mercado del té. Dentro y fuera de la taza.",
       subtitle:
-        "Desde la primera infraestructura de IA propietaria del mundo para el mercado del té hasta el mayor evento de negocios del té de Brasil — Tea Mind está construyendo el futuro de la industria.",
+        "Desde la primera infraestructura de IA propietaria del mundo para el mercado del té hasta el mayor evento de negocios del té de Brasil , Tea Mind está construyendo el futuro de la industria.",
       cards: [
         {
           icon: "🤖",
@@ -607,7 +607,7 @@ export const translations = {
       eyebrow: "Quiénes están detrás de Tea Mind",
       title: "Aprendimos del mercado. Construimos con él.",
       subtitle:
-        "Tea Mind nació de la experiencia real de quienes no solo estudiaron el mercado del té — sino que lo construyeron, lo enseñaron y lo transformaron por más de una década.",
+        "Tea Mind nació de la experiencia real de quienes no solo estudiaron el mercado del té , sino que lo construyeron, lo enseñaron y lo transformaron por más de una década.",
       profiles: [
         {
           name: "Carol Tavares",
@@ -628,19 +628,19 @@ export const translations = {
       eyebrow: "Tea Mind Society",
       title: "Nadie construye un mercado solo.",
       description:
-        "Tea Mind Society es la comunidad exclusiva para nuestros alumnos y profesionales formados que están construyendo el mercado del té — con propósito, estrategia y pasión por lo que hacen.",
+        "Tea Mind Society es la comunidad exclusiva para nuestros alumnos y profesionales formados que están construyendo el mercado del té , con propósito, estrategia y pasión por lo que hacen.",
       pillars: [
         {
           icon: "🤝",
           title: "Conexión real entre profesionales",
           description:
-            "Intercambio de experiencias, alianzas y networking con quienes están en el mismo camino — en Brasil y en el mundo. Aquí no estás rodeado de curiosos. Estás rodeado de constructores.",
+            "Intercambio de experiencias, alianzas y networking con quienes están en el mismo camino , en Brasil y en el mundo. Aquí no estás rodeado de curiosos. Estás rodeado de constructores.",
         },
         {
           icon: "📲",
           title: "Comunidad activa en WhatsApp",
           description:
-            "Acceso directo y continuo a una comunidad viva — con movimiento, intercambios reales y apoyo de quienes entienden el mercado del té de verdad.",
+            "Acceso directo y continuo a una comunidad viva , con movimiento, intercambios reales y apoyo de quienes entienden el mercado del té de verdad.",
         },
         {
           icon: "🎯",
@@ -652,7 +652,7 @@ export const translations = {
           icon: "🏆",
           title: "Una red que crece contigo",
           description:
-            "Cuanto más avanzas en tu trayectoria, más crece la Society contigo. Alumnos activos, profesionales formados y socios estratégicos — todos en la misma red.",
+            "Cuanto más avanzas en tu trayectoria, más crece la Society contigo. Alumnos activos, profesionales formados y socios estratégicos , todos en la misma red.",
         },
       ],
       closing:
@@ -663,14 +663,14 @@ export const translations = {
       eyebrow: "Tea Mind Partners",
       title: "Los mejores profesionales del mercado del té están aquí.",
       subtitle:
-        "Tea Mind atrae y conecta especialistas reconocidos en el mercado del té — en Brasil y en el mundo. Nuestros partners contribuyen con su conocimiento, experiencia y visión para enriquecer el viaje de nuestros alumnos.",
+        "Tea Mind atrae y conecta especialistas reconocidos en el mercado del té , en Brasil y en el mundo. Nuestros partners contribuyen con su conocimiento, experiencia y visión para enriquecer el viaje de nuestros alumnos.",
       closing:
         "Tea Mind no es solo un hub de formación. Es un ecosistema donde los mejores se encuentran.",
       cta: "Conocer a todos los partners →",
       placeholders: [
-        { name: "Partner 1", specialty: "Especialidad", bio: "Mini bio del partner — por completar." },
-        { name: "Partner 2", specialty: "Especialidad", bio: "Mini bio del partner — por completar." },
-        { name: "Partner 3", specialty: "Especialidad", bio: "Mini bio del partner — por completar." },
+        { name: "Partner 1", specialty: "Especialidad", bio: "Mini bio del partner , por completar." },
+        { name: "Partner 2", specialty: "Especialidad", bio: "Mini bio del partner , por completar." },
+        { name: "Partner 3", specialty: "Especialidad", bio: "Mini bio del partner , por completar." },
       ],
     },
     ctaFinal: {

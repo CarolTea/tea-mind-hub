@@ -26,7 +26,7 @@ const Hero = () => (
         </h1>
         <div className="w-16 h-px bg-accent mx-auto mb-8" />
         <p className="text-lg md:text-xl text-secondary-foreground/70 max-w-2xl mx-auto mb-12 font-sans">
-          A única inteligência artificial do mundo dedicada à neurogastronomia do chá — seu braço direito para dominar a ciência por trás das experiências sensoriais.
+          A única inteligência artificial do mundo dedicada à neurogastronomia do chá , seu braço direito para dominar a ciência por trás das experiências sensoriais.
         </p>
         <p className="text-base md:text-lg text-secondary-foreground/60 max-w-2xl mx-auto leading-relaxed font-sans">
           Desenvolvida para ser o acelerador do método ensinado na Especialização em Neurogastronomia, ela une os pilares de Neurociência, Fitoquímica e Análise Sensorial em uma ferramenta tecnológica sem precedentes.
@@ -61,7 +61,7 @@ const MethodBlock = () => (
 const capabilities = [
   {
     title: "Criação Intencional",
-    body: "Auxilia no desenvolvimento de blends e produtos baseados em fitoquímica sensorial, garantindo que cada ingrediente — de flores a raízes — desperte emoções e memórias específicas no cérebro do cliente.",
+    body: "Auxilia no desenvolvimento de blends e produtos baseados em fitoquímica sensorial, garantindo que cada ingrediente , de flores a raízes , desperte emoções e memórias específicas no cérebro do cliente.",
   },
   {
     title: "Design de Experiências",
