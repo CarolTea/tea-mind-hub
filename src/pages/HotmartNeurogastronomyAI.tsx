@@ -1,6 +1,4 @@
 import { useFadeIn } from "@/hooks/useFadeIn";
-import { useFadeIn } from "@/hooks/useFadeIn";
-import { Switch } from "@/components/ui/switch";
 
 const Fade = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => {
   const { ref, isVisible } = useFadeIn();
