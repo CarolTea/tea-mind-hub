@@ -24,32 +24,70 @@ const Fade = ({ children, className = "" }: { children: ReactNode; className?: s
   );
 };
 
+const ProgramsHeroBackground = () => (
+  <svg
+    className="absolute inset-0 w-full h-full z-[2] pointer-events-none"
+    viewBox="0 0 1440 700"
+    preserveAspectRatio="xMidYMid slice"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M-100 300 Q 200 260, 500 320 T 900 280 T 1300 340 T 1700 300" stroke="hsl(0 0% 100% / 0.06)" strokeWidth="1.5" className="hero-line" />
+    <path d="M-50 400 Q 300 360, 600 420 T 1000 380 T 1400 440 T 1800 400" stroke="hsl(0 0% 100% / 0.04)" strokeWidth="1" className="hero-line-reverse" />
+    <path d="M-100 200 Q 350 170, 700 220 T 1100 190 T 1500 240" stroke="hsl(0 0% 100% / 0.03)" strokeWidth="1" className="hero-line-slow" />
+    <path d="M200 500 Q 450 460, 700 510 T 1100 480 T 1500 520" stroke="hsl(40 45% 57% / 0.12)" strokeWidth="0.8" className="hero-line-slow" />
+    <path d="M-50 150 Q 200 120, 450 160 T 850 130" stroke="hsl(40 45% 57% / 0.08)" strokeWidth="0.6" className="hero-line" />
+    <circle cx="350" cy="320" r="2" fill="hsl(0 0% 100% / 0.08)">
+      <animate attributeName="opacity" values="0.08;0.2;0.08" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="750" cy="280" r="2.5" fill="hsl(40 45% 57% / 0.15)">
+      <animate attributeName="opacity" values="0.15;0.35;0.15" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1100" cy="350" r="2" fill="hsl(0 0% 100% / 0.06)">
+      <animate attributeName="opacity" values="0.06;0.18;0.06" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="450" r="1.5" fill="hsl(40 45% 57% / 0.1)">
+      <animate attributeName="opacity" values="0.1;0.25;0.1" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+  </svg>
+);
+
 const ProgramsHero = () => {
   const { lang } = useLang();
   const t = programsTranslations[lang];
 
   return (
-    <section className="relative min-h-[70vh] flex items-center bg-primary text-primary-foreground pt-32 pb-20">
-      <div className="max-w-4xl mx-auto px-6 lg:px-12">
+    <section className="relative min-h-[80vh] flex items-center bg-primary text-primary-foreground pt-32 pb-24 overflow-hidden">
+      <ProgramsHeroBackground />
+      {/* Radial glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-3xl z-[1]" />
+
+      <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 text-center">
         <Fade>
-          <p className="font-sans text-xs tracking-[0.3em] uppercase text-accent mb-6 text-center">
+          <p className="font-sans text-xs tracking-[0.3em] uppercase text-accent mb-8">
             {t.hero.eyebrow}
           </p>
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium leading-tight text-center mb-8">
+        </Fade>
+        <Fade className="delay-100">
+          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium leading-[1.15] tracking-tight mb-10">
             {t.hero.title}
           </h1>
-          <p className="font-sans text-lg md:text-xl text-primary-foreground/70 leading-relaxed text-center mb-12">
+        </Fade>
+        <Fade className="delay-200">
+          <div className="w-16 h-px bg-accent mx-auto mb-10" />
+        </Fade>
+        <Fade className="delay-300">
+          <p className="font-sans text-lg md:text-xl text-primary-foreground/65 leading-relaxed max-w-2xl mx-auto mb-14">
             {t.hero.subtitle}
           </p>
         </Fade>
-        <Fade>
-          <div className="space-y-6">
-            {t.hero.introParagraphs.map((p, i) => (
-              <p key={i} className="font-sans text-base text-primary-foreground/60 leading-relaxed text-center">
-                {p}
-              </p>
-            ))}
-          </div>
+        <Fade className="delay-500">
+          <a
+            href="#programs-list"
+            className="inline-flex items-center px-10 py-4 bg-accent text-accent-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:opacity-90 hover:scale-105"
+          >
+            ↓ &nbsp; {lang === "pt" ? "Explorar Programas" : lang === "es" ? "Explorar Programas" : "Explore Programs"}
+          </a>
         </Fade>
       </div>
     </section>
