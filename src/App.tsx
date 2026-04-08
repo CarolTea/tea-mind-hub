@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import ProgramsPage from "./pages/ProgramsPage";
 import AboutPage from "./pages/AboutPage";
 import InnovationsPage from "./pages/InnovationsPage";
+import NeuralSystemPage from "./pages/NeuralSystemPage";
 import HotmartNeuralSystem from "./pages/HotmartNeuralSystem";
 import HotmartNeurogastronomyAI from "./pages/HotmartNeurogastronomyAI";
 import NotFound from "./pages/NotFound";
@@ -34,9 +35,9 @@ const App = () => (
           <Route path="/innovations" element={<InnovationsPage lang="en" />} />
           <Route path="/pt/inovacoes" element={<InnovationsPage lang="pt" />} />
           <Route path="/es/innovaciones" element={<InnovationsPage lang="es" />} />
-          <Route path="/neural-system" element={<HotmartNeuralSystem />} />
-          <Route path="/pt/sistema-neural" element={<HotmartNeuralSystem />} />
-          <Route path="/es/sistema-neural" element={<HotmartNeuralSystem />} />
+          <Route path="/neural-system" element={<NeuralSystemPage lang="en" />} />
+          <Route path="/pt/sistema-neural" element={<NeuralSystemPage lang="pt" />} />
+          <Route path="/es/sistema-neural" element={<NeuralSystemPage lang="es" />} />
           <Route path="/hotmart/neural-system" element={<HotmartNeuralSystem />} />
           <Route path="/hotmart/neurogastronomy-ai" element={<HotmartNeurogastronomyAI />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
