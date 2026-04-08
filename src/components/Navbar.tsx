@@ -4,6 +4,7 @@ import { useLang } from "@/contexts/LanguageContext";
 import teaMindLogo from "@/assets/tea-mind-logo-transparent.png";
 
 const programsRoutes = { en: "/programs", es: "/es/programas", pt: "/pt/programas" } as const;
+const aboutRoutes = { en: "/about", es: "/es/nosotros", pt: "/pt/sobre" } as const;
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const navLinks = [
-    { label: t.nav.about, href: "#about" },
+    { label: t.nav.about, href: aboutRoutes[lang], isRoute: true },
     { label: t.nav.programs, href: programsRoutes[lang], isRoute: true },
     { label: t.nav.founders, href: "#founders" },
     { label: t.nav.partners, href: "#partners" },

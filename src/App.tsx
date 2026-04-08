@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import ProgramsPage from "./pages/ProgramsPage";
+import AboutPage from "./pages/AboutPage";
 import HotmartNeuralSystem from "./pages/HotmartNeuralSystem";
 import HotmartNeurogastronomyAI from "./pages/HotmartNeurogastronomyAI";
 import NotFound from "./pages/NotFound";
@@ -26,6 +27,9 @@ const App = () => (
           <Route path="/programs" element={<ProgramsPage lang="en" />} />
           <Route path="/es/programas" element={<ProgramsPage lang="es" />} />
           <Route path="/pt/programas" element={<ProgramsPage lang="pt" />} />
+          <Route path="/about" element={<AboutPage lang="en" />} />
+          <Route path="/pt/sobre" element={<AboutPage lang="pt" />} />
+          <Route path="/es/nosotros" element={<AboutPage lang="es" />} />
           <Route path="/hotmart/neural-system" element={<HotmartNeuralSystem />} />
           <Route path="/hotmart/neurogastronomy-ai" element={<HotmartNeurogastronomyAI />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
