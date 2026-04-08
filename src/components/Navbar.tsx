@@ -15,7 +15,7 @@ const Navbar = () => {
   const navLinks = [
     { label: t.nav.about, href: aboutRoutes[lang], isRoute: true },
     { label: t.nav.programs, href: programsRoutes[lang], isRoute: true },
-    { label: t.nav.founders, href: "#founders" },
+    
     { label: t.nav.partners, href: "#partners" },
     { label: t.nav.innovations, href: "#innovations" },
     { label: t.nav.society, href: "#society" },
