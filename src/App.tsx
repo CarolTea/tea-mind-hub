@@ -7,6 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import ProgramsPage from "./pages/ProgramsPage";
 import AboutPage from "./pages/AboutPage";
+import InnovationsPage from "./pages/InnovationsPage";
 import HotmartNeuralSystem from "./pages/HotmartNeuralSystem";
 import HotmartNeurogastronomyAI from "./pages/HotmartNeurogastronomyAI";
 import NotFound from "./pages/NotFound";
@@ -30,6 +31,9 @@ const App = () => (
           <Route path="/about" element={<AboutPage lang="en" />} />
           <Route path="/pt/sobre" element={<AboutPage lang="pt" />} />
           <Route path="/es/nosotros" element={<AboutPage lang="es" />} />
+          <Route path="/innovations" element={<InnovationsPage lang="en" />} />
+          <Route path="/pt/inovacoes" element={<InnovationsPage lang="pt" />} />
+          <Route path="/es/innovaciones" element={<InnovationsPage lang="es" />} />
           <Route path="/hotmart/neural-system" element={<HotmartNeuralSystem />} />
           <Route path="/hotmart/neurogastronomy-ai" element={<HotmartNeurogastronomyAI />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
