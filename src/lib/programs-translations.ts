@@ -20,7 +20,6 @@ export interface ProgramsPageTranslation {
     eyebrow: string;
     title: string;
     subtitle: string;
-    introParagraphs: string[];
   };
   diagnosis: {
     text: string;
@@ -38,12 +37,6 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       eyebrow: "Tea Mind Programas",
       title: "Programas desenhados para diferentes momentos, perfis e realidades no mercado do chá",
       subtitle: "Na Tea Mind, cada programa parte de uma estrutura sólida de formação e direcionamento estratégico, mas ganha forma a partir de quem entra: seus objetivos, seu momento, sua capacidade de investimento, seu contexto local e aquilo que você deseja criar no mundo do chá.",
-      introParagraphs: [
-        "Trabalhamos com diferentes formatos de construção no mercado do chá. Há quem deseje começar de forma solo, integrar o chá ao que já faz ou desenvolver uma atuação autoral. Há também quem queira criar marcas, experiências ou negócios mais robustos. O que conecta todos esses caminhos é a necessidade de direção, formação séria e visão de mercado.",
-        "Por isso, nossos programas são conduzidos com olhar aplicado à realidade de cada aluno.",
-        "Ao ingressar, a pessoa passa por um onboarding estratégico, recebe um Smart Journey | mapa personalizado e percorre sua jornada com sessões estratégicas que ajudam a organizar decisões, ajustar caminhos e transformar conhecimento em construção real.",
-        "Mais do que ensinar, a Tea Mind orienta, reposiciona e direciona a jornada para que cada programa se conecte ao que faz sentido para a realidade de quem entra."
-      ],
     },
     diagnosis: {
       text: "Nem sempre é fácil saber sozinho qual programa se adequa melhor ao seu momento.\n\nPor isso, recomendamos começar pelo diagnóstico gratuito: uma leitura inicial que ajuda a compreender qual trajetória faz mais sentido para o seu perfil, sua realidade e o que você deseja construir no mercado do chá.",
@@ -178,12 +171,6 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       eyebrow: "Tea Mind Programs",
       title: "Programs designed for different moments, profiles, and realities in the tea market",
       subtitle: "At Tea Mind, each program is built on a solid foundation of training and strategic guidance, but takes shape based on who enters: your goals, your stage, your investment capacity, your local context, and what you want to create in the world of tea.",
-      introParagraphs: [
-        "We work with different formats of building in the tea market. Some want to start solo, integrate tea into what they already do, or develop an authorial practice. Others want to create brands, experiences, or more robust businesses. What connects all these paths is the need for direction, serious training, and market vision.",
-        "That's why our programs are conducted with a perspective applied to each student's reality.",
-        "Upon joining, each person goes through a strategic onboarding, receives a Smart Journey | personalized map, and follows their journey with strategic sessions that help organize decisions, adjust paths, and transform knowledge into real construction.",
-        "More than teaching, Tea Mind guides, repositions, and directs the journey so that each program connects to what makes sense for the reality of who enters."
-      ],
     },
     diagnosis: {
       text: "It's not always easy to know on your own which program best suits your current moment.\n\nThat's why we recommend starting with the free diagnosis: an initial reading that helps you understand which trajectory makes the most sense for your profile, your reality, and what you want to build in the tea market.",
@@ -318,12 +305,6 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       eyebrow: "Tea Mind Programas",
       title: "Programas diseñados para diferentes momentos, perfiles y realidades en el mercado del té",
       subtitle: "En Tea Mind, cada programa parte de una estructura sólida de formación y dirección estratégica, pero toma forma a partir de quien ingresa: sus objetivos, su momento, su capacidad de inversión, su contexto local y lo que desea crear en el mundo del té.",
-      introParagraphs: [
-        "Trabajamos con diferentes formatos de construcción en el mercado del té. Hay quienes desean comenzar de forma individual, integrar el té a lo que ya hacen o desarrollar una actuación autoral. También hay quienes quieren crear marcas, experiencias o negocios más robustos. Lo que conecta todos estos caminos es la necesidad de dirección, formación seria y visión de mercado.",
-        "Por eso, nuestros programas se conducen con una mirada aplicada a la realidad de cada alumno.",
-        "Al ingresar, la persona pasa por un onboarding estratégico, recibe un Smart Journey | mapa personalizado y recorre su jornada con sesiones estratégicas que ayudan a organizar decisiones, ajustar caminos y transformar conocimiento en construcción real.",
-        "Más que enseñar, Tea Mind orienta, reposiciona y dirige la jornada para que cada programa se conecte con lo que tiene sentido para la realidad de quien ingresa."
-      ],
     },
     diagnosis: {
       text: "No siempre es fácil saber por cuenta propia cuál programa se adecua mejor a tu momento.\n\nPor eso, recomendamos comenzar por el diagnóstico gratuito: una lectura inicial que ayuda a comprender cuál trayectoria tiene más sentido para tu perfil, tu realidad y lo que deseas construir en el mercado del té.",
