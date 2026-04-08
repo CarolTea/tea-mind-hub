@@ -241,7 +241,7 @@ const AIBlock = () => {
             </Fade>
             <Fade delay={350}>
               <button
-                onClick={() => navigate("/hotmart/neural-system")}
+                onClick={() => navigate(neuralRoutes[lang])}
                 className="font-sans text-sm tracking-wider uppercase border border-accent text-accent px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
               >
                 {t.cta}
