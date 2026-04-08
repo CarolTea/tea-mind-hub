@@ -34,6 +34,9 @@ const App = () => (
           <Route path="/innovations" element={<InnovationsPage lang="en" />} />
           <Route path="/pt/inovacoes" element={<InnovationsPage lang="pt" />} />
           <Route path="/es/innovaciones" element={<InnovationsPage lang="es" />} />
+          <Route path="/neural-system" element={<HotmartNeuralSystem />} />
+          <Route path="/pt/sistema-neural" element={<HotmartNeuralSystem />} />
+          <Route path="/es/sistema-neural" element={<HotmartNeuralSystem />} />
           <Route path="/hotmart/neural-system" element={<HotmartNeuralSystem />} />
           <Route path="/hotmart/neurogastronomy-ai" element={<HotmartNeurogastronomyAI />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
