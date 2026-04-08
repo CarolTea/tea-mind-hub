@@ -1,71 +1,61 @@
 
 
-# Create About / Founders Page
+# Create Innovations Page
 
 ## Overview
 
-Create a new dedicated About page (`/about`, `/pt/sobre`, `/es/nosotros`) with 5 content blocks: Hero, Origin story, Carol profile, Carla profile, and closing statement. The design prioritizes visual experience over dense text, with image placeholders, alternating layouts, and generous spacing. Update navbar to link to this page. Translations for EN/ES included.
+Create a new dedicated Innovations page (`/innovations`, `/pt/inovacoes`, `/es/innovaciones`) with 6 content blocks. Follow the same pattern as AboutPage.tsx (Fade helper, inline translations, LanguageProvider wrapper). Update navbar to link to this page instead of the `#innovations` anchor.
 
 ## Architecture
 
 ```text
-New page: src/pages/AboutPage.tsx
-  Block 1 — Hero (dark bg, animated SVG lines like ProgramsPage)
-  Block 2 — Origin (light bg, split layout: text + image placeholder)
-  Block 3 — Carol (dark bg, image left + text right)
-  Block 4 — Carla (light bg, image right + text left, mirrored)
-  Block 5 — Closing quote (dark bg, large serif centered)
+New page: src/pages/InnovationsPage.tsx
+  Block 1 — Hero (dark bg, animated SVG lines)
+  Block 2 — Vision (light bg, centered text)
+  Block 3 — Tea Mind AI (dark bg, feature points + button to /hotmart/neural-system)
+  Block 4 — Tea Fest in Rio (light bg, image placeholder + text)
+  Block 5 — Other Innovation Fronts (dark bg, text + visual)
+  Block 6 — Closing (light bg, quote + two CTAs)
 ```
-
-## Design Approach
-
-- Alternating dark/light sections for visual rhythm
-- Each founder gets a side-by-side layout (image placeholder + bio) instead of stacked text blocks
-- Hero text is condensed: eyebrow + title + subtitle + market stats as a highlighted callout card, not inline paragraphs
-- Origin block uses a two-column layout with image placeholder on one side
-- Founder bios are broken into digestible chunks with subtle accent dividers between roles/achievements
-- Closing quote is a full-width dark section with large italic serif text
-- Reuses `Fade` component pattern from ProgramsPage for scroll animations
-- Image placeholders use `aspect-ratio` containers with initials/icons
 
 ## Files Changed
 
-### 1. `src/pages/AboutPage.tsx` — NEW
+### 1. `src/pages/InnovationsPage.tsx` — NEW
 
-Self-contained page following ProgramsPage pattern (Fade wrapper, LanguageProvider, Navbar + Footer).
+Self-contained page following AboutPage pattern (Fade wrapper, LanguageProvider, Navbar + Footer, inline translations object for PT/EN/ES).
 
-**Block 1 — Hero:** Dark primary bg with animated SVG background (reuse ProgramsHeroBackground pattern). Eyebrow, title, subtitle (condensed to 2 sentences). Below: a subtle accent-bordered card with the market data stats (25% growth, Google Trends) and the closing paragraph about Tea Mind's role.
+**Block 1 — Hero:** Dark primary bg with animated SVG background. Eyebrow "Tea Mind Inovações", title, subtitle. Same visual treatment as AboutPage hero.
 
-**Block 2 — Origin:** Light bg, `grid md:grid-cols-2` layout. Left: image placeholder (aspect-4/5). Right: title "Da experiência pratica ao nascimento da Tea Mind", two text blocks with accent left-border styling, closing paragraph about Cha Pra Que transition.
+**Block 2 — Vision:** Light bg section. Centered title "Inovar, para nós, é construir o que o mercado ainda precisa." Text paragraph + closing line with accent left-border styling.
 
-**Block 3 — Carol:** Dark bg. `grid md:grid-cols-5` — image placeholder (col-span-2, aspect-3/4) left, bio right (col-span-3). Name + role tags as small accent badges. Bio split into 3-4 short paragraphs with breathing room. Key highlights (13 years, 100+ businesses, hackathons, AI ecosystem) can be pulled into small accent-colored stat callouts.
+**Block 3 — Tea Mind AI:** Dark bg. Title with accent badge. Description paragraph. Four feature points displayed as a 2x2 grid of small cards (icon + text). CTA button linking to `/hotmart/neural-system`.
 
-**Block 4 — Carla:** Light bg. Mirrored layout — bio left, image right. Same badge/stat treatment. Sri Lanka trip as a highlighted callout.
+**Block 4 — Tea Fest in Rio:** Light bg. `grid md:grid-cols-2` with image placeholder on one side. Title, two text paragraphs, CTA button for 2025 edition / 2026 waitlist.
 
-**Block 5 — Closing:** Dark bg, full-width section. Large italic Playfair Display quote centered: "Mais de uma década construindo o mercado do chá no Brasil. A Tea Mind é o próximo capítulo." Accent divider above.
+**Block 5 — Other Fronts:** Dark bg. Centered title + paragraph about HackaTEA and NFTs. Could include small visual icons.
 
-All copy inlined in a translations object within the file (PT provided, EN/ES translated).
+**Block 6 — Closing:** Dark accent bg or light bg. Large serif italic quote "Não seguimos o mercado do chá. Nós o expandimos." Closing paragraph. Two CTA buttons side by side: "Explorar os Programas" (links to programs route) and "Conhecer a Tea Mind Society" (links to `#society` or society section).
 
 ### 2. `src/App.tsx` — Add routes
 
 ```
-/about → AboutPage lang="en"
-/pt/sobre → AboutPage lang="pt"
-/es/nosotros → AboutPage lang="es"
+/innovations → InnovationsPage lang="en"
+/pt/inovacoes → InnovationsPage lang="pt"
+/es/innovaciones → InnovationsPage lang="es"
 ```
 
-### 3. `src/components/Navbar.tsx` — Update nav links
+### 3. `src/components/Navbar.tsx` — Update nav link
 
-Change the "Founders" / "Fundadoras" / "Fundadoras" nav item from `href: "#founders"` anchor to a route link pointing to `/about`, `/pt/sobre`, `/es/nosotros` (same pattern as Programs). Add `aboutRoutes` const and set `isRoute: true`.
+Change `{ label: t.nav.innovations, href: "#innovations" }` to a route link using `innovationsRoutes` const (same pattern as about/programs). Add `isRoute: true`.
 
-### 4. `src/lib/translations.ts` — Minor update
+### 4. Home page `Innovations.tsx` component — No changes
 
-Rename `nav.founders` label if needed (currently "Fundadoras" / "Founders" / "Fundadoras" — keep as-is or change to "Sobre" / "About" / "Nosotros" to match the nav item pointing to the about page). Since the nav already has `nav.about` = "Sobre" / "About" / "Nosotros", use that existing key instead of `nav.founders` for this link.
+Stays as-is on the homepage as a summary section.
 
 ## Technical Notes
 
-- Follows ProgramsPage pattern exactly: LanguageProvider wrapper, Fade component, Navbar + Footer
-- Image placeholders: colored div containers with aspect-ratio and initials, ready for real photos
-- No changes to Founders.tsx homepage component (it stays as a summary on the home page)
-- The navbar "Sobre"/"About" link currently points to `#about` anchor on homepage; it will become a route to the new page. The "Fundadoras" link can be removed from navbar since the About page covers founders.
+- All copy provided in PT; EN/ES translated inline
+- Tea Mind AI block includes a navigate button to `/hotmart/neural-system`
+- Tea Fest CTA can be an external link or placeholder `#`
+- Follows exact same code patterns as AboutPage (Fade, HeroBackground SVG, aspect-ratio placeholders)
 
