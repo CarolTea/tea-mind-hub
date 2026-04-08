@@ -279,12 +279,20 @@ const OriginBlock = () => {
 };
 
 /* ─── Founder Block (reusable) ─── */
+interface FounderData {
+  name: string;
+  roles: readonly string[];
+  bio: readonly string[];
+  stats: readonly { value: string; label: string }[];
+  highlight?: string;
+}
+
 const FounderBlock = ({
   founder,
   isDark,
   imageRight = false,
 }: {
-  founder: (typeof aboutT)["pt"]["carol"];
+  founder: FounderData;
   isDark: boolean;
   imageRight?: boolean;
 }) => {
@@ -336,7 +344,7 @@ const FounderBlock = ({
               </div>
 
               {/* Highlight callout */}
-              {"highlight" in founder && founder.highlight && (
+              {founder.highlight && (
                 <div className="mt-8 border-l-2 border-accent pl-5">
                   <p className={`font-sans text-sm italic ${textMuted}`}>{founder.highlight}</p>
                 </div>
