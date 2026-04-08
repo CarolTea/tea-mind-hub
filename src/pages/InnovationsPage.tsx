@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState, type ReactNode } from "react";
 import { useNavigate } from "react-router-dom";
-import { LanguageProvider, useLang, type Lang } from "@/contexts/LanguageContext";
+import { LanguageProvider, useLang } from "@/contexts/LanguageContext";
+import type { Lang } from "@/lib/translations";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
