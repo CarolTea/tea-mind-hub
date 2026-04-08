@@ -1,61 +1,66 @@
 
 
-# Create Innovations Page
+# Fix Neural System Navigation
 
-## Overview
+## Problem
 
-Create a new dedicated Innovations page (`/innovations`, `/pt/inovacoes`, `/es/innovaciones`) with 6 content blocks. Follow the same pattern as AboutPage.tsx (Fade helper, inline translations, LanguageProvider wrapper). Update navbar to link to this page instead of the `#innovations` anchor.
+Two issues found:
 
-## Architecture
+1. **InnovationsPage.tsx** (the dedicated Innovations page): The Tea Mind AI button navigates to `/hotmart/neural-system`, which is the Hotmart sales/pricing page. The user wants it to link to a separate informational Neural System page.
 
-```text
-New page: src/pages/InnovationsPage.tsx
-  Block 1 — Hero (dark bg, animated SVG lines)
-  Block 2 — Vision (light bg, centered text)
-  Block 3 — Tea Mind AI (dark bg, feature points + button to /hotmart/neural-system)
-  Block 4 — Tea Fest in Rio (light bg, image placeholder + text)
-  Block 5 — Other Innovation Fronts (dark bg, text + visual)
-  Block 6 — Closing (light bg, quote + two CTAs)
+2. **Innovations.tsx** (homepage component): References routes `/neural-system`, `/es/sistema-neural`, `/pt/sistema-neural` that were never created in `App.tsx`, causing 404 errors.
+
+The root cause: there is no non-Hotmart Neural System page. Only `/hotmart/neural-system` exists (the pricing/sales page).
+
+## Solution
+
+We need to either:
+- **Option A**: Create a new informational Neural System page at `/neural-system` (and localized variants) separate from the Hotmart sales page, and link both components to it.
+- **Option B**: Point both components to the existing `/hotmart/neural-system` page (if that's acceptable).
+
+Since the user explicitly said the button should NOT lead to the Hotmart page, we go with **Option A**: create a dedicated informational page about the Neural System, and reserve `/hotmart/neural-system` as the sales/checkout page.
+
+However, since we don't have content for this new page yet, the simplest fix is to point the Innovations page button to the Innovations dedicated page's own section or to a defined route. But the user said "tem que levar para a página da Neural System que não é da Hotmart" — implying such a page should exist.
+
+## Proposed Fix
+
+### 1. Create routes for a Neural System info page
+
+Add to `App.tsx`:
+```
+/neural-system → (new page or redirect)
+/pt/sistema-neural → (same)
+/es/sistema-neural → (same)
 ```
 
-## Files Changed
+Since there's no separate content for a non-Hotmart Neural System page, and the existing HotmartNeuralSystem page has all the product info, the cleanest approach is to **reuse the existing `HotmartNeuralSystem` component** at the new routes — or ask the user what content should differ.
 
-### 1. `src/pages/InnovationsPage.tsx` — NEW
+### 2. Update InnovationsPage.tsx
 
-Self-contained page following AboutPage pattern (Fade wrapper, LanguageProvider, Navbar + Footer, inline translations object for PT/EN/ES).
-
-**Block 1 — Hero:** Dark primary bg with animated SVG background. Eyebrow "Tea Mind Inovações", title, subtitle. Same visual treatment as AboutPage hero.
-
-**Block 2 — Vision:** Light bg section. Centered title "Inovar, para nós, é construir o que o mercado ainda precisa." Text paragraph + closing line with accent left-border styling.
-
-**Block 3 — Tea Mind AI:** Dark bg. Title with accent badge. Description paragraph. Four feature points displayed as a 2x2 grid of small cards (icon + text). CTA button linking to `/hotmart/neural-system`.
-
-**Block 4 — Tea Fest in Rio:** Light bg. `grid md:grid-cols-2` with image placeholder on one side. Title, two text paragraphs, CTA button for 2025 edition / 2026 waitlist.
-
-**Block 5 — Other Fronts:** Dark bg. Centered title + paragraph about HackaTEA and NFTs. Could include small visual icons.
-
-**Block 6 — Closing:** Dark accent bg or light bg. Large serif italic quote "Não seguimos o mercado do chá. Nós o expandimos." Closing paragraph. Two CTA buttons side by side: "Explorar os Programas" (links to programs route) and "Conhecer a Tea Mind Society" (links to `#society` or society section).
-
-### 2. `src/App.tsx` — Add routes
-
+Change line 244 from:
+```ts
+onClick={() => navigate("/hotmart/neural-system")}
 ```
-/innovations → InnovationsPage lang="en"
-/pt/inovacoes → InnovationsPage lang="pt"
-/es/innovaciones → InnovationsPage lang="es"
+to use localized routes based on lang prop:
+```ts
+onClick={() => navigate(neuralRoutes[lang])}
+```
+Where `neuralRoutes = { en: "/neural-system", es: "/es/sistema-neural", pt: "/pt/sistema-neural" }`.
+
+### 3. App.tsx — Add missing routes
+
+Add the three localized routes pointing to `HotmartNeuralSystem` (or a new component if different content is needed):
+```
+<Route path="/neural-system" element={<HotmartNeuralSystem />} />
+<Route path="/pt/sistema-neural" element={<HotmartNeuralSystem />} />
+<Route path="/es/sistema-neural" element={<HotmartNeuralSystem />} />
 ```
 
-### 3. `src/components/Navbar.tsx` — Update nav link
+This fixes both the InnovationsPage and the homepage Innovations component buttons.
 
-Change `{ label: t.nav.innovations, href: "#innovations" }` to a route link using `innovationsRoutes` const (same pattern as about/programs). Add `isRoute: true`.
+### Files Changed
 
-### 4. Home page `Innovations.tsx` component — No changes
-
-Stays as-is on the homepage as a summary section.
-
-## Technical Notes
-
-- All copy provided in PT; EN/ES translated inline
-- Tea Mind AI block includes a navigate button to `/hotmart/neural-system`
-- Tea Fest CTA can be an external link or placeholder `#`
-- Follows exact same code patterns as AboutPage (Fade, HeroBackground SVG, aspect-ratio placeholders)
+1. **`src/App.tsx`** — Add 3 new routes for `/neural-system`, `/pt/sistema-neural`, `/es/sistema-neural`
+2. **`src/pages/InnovationsPage.tsx`** — Update navigate target to use localized neural system routes based on lang
+3. **`src/components/Innovations.tsx`** — No changes needed (already uses correct routes)
 
