@@ -151,6 +151,7 @@ const innovT = {
 };
 
 const programsRoutes = { en: "/programs", es: "/es/programas", pt: "/pt/programas" } as const;
+const neuralRoutes = { en: "/neural-system", es: "/es/sistema-neural", pt: "/pt/sistema-neural" } as const;
 
 /* ── Hero Background SVG ── */
 const HeroBackground = () => (
