@@ -11,6 +11,7 @@ import InnovationsPage from "./pages/InnovationsPage";
 import NeuralSystemPage from "./pages/NeuralSystemPage";
 import HotmartNeuralSystem from "./pages/HotmartNeuralSystem";
 import HotmartNeurogastronomyAI from "./pages/HotmartNeurogastronomyAI";
+import PartnersPage from "./pages/PartnersPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

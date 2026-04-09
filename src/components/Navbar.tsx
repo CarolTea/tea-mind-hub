@@ -6,6 +6,7 @@ import teaMindLogo from "@/assets/tea-mind-logo-transparent.png";
 const programsRoutes = { en: "/programs", es: "/es/programas", pt: "/pt/programas" } as const;
 const aboutRoutes = { en: "/about", es: "/es/nosotros", pt: "/pt/sobre" } as const;
 const innovationsRoutes = { en: "/innovations", es: "/es/innovaciones", pt: "/pt/inovacoes" } as const;
+const partnersRoutes = { en: "/partners", es: "/es/socios", pt: "/pt/parceiros" } as const;
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
     { label: t.nav.about, href: aboutRoutes[lang], isRoute: true },
     { label: t.nav.programs, href: programsRoutes[lang], isRoute: true },
     
-    { label: t.nav.partners, href: "#partners" },
+    { label: t.nav.partners, href: partnersRoutes[lang], isRoute: true },
     { label: t.nav.innovations, href: innovationsRoutes[lang], isRoute: true },
     { label: t.nav.society, href: "#society" },
     { label: t.nav.contact, href: "#footer" },
