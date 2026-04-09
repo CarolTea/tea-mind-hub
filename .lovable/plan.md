@@ -1,59 +1,51 @@
 
 
-# Create Partners Page
+# Create Tea Mind Society Page
 
 ## Overview
 
-Create a new dedicated Partners page (`/partners`, `/pt/parceiros`, `/es/socios`) with 6 content blocks following the same pattern as AboutPage and InnovationsPage. Update navbar to route to this page instead of the `#partners` anchor.
+Create a dedicated Society page (`/society`, `/pt/sociedade`, `/es/sociedad`) with 5 content blocks following the established pattern. Update navbar to route there instead of the `#society` anchor.
 
 ## Architecture
 
 ```text
-New page: src/pages/PartnersPage.tsx
-  Block 1 — Hero (dark bg, animated SVG lines)
-  Block 2 — Vision (light bg, centered text with accent border)
-  Block 3 — Partner Cards (dark bg, grid of cards with photo placeholders)
-  Block 4 — How Partners Participate (light bg, icon list of contribution types)
-  Block 5 — What It Means for Students (dark bg, text + accent callout)
-  Block 6 — Closing (light bg, large quote + dual CTAs)
+src/pages/SocietyPage.tsx
+  Block 1 — Hero (dark bg, animated SVG, eyebrow + title + subtitle + bullet list)
+  Block 2 — Vision (light bg, centered title + text + italic closing)
+  Block 3 — What is the Society (dark bg, title + text + 5 feature items with icons)
+  Block 4 — Differentiator (light bg, title + text + accent-border closing quote)
+  Block 5 — Closing (dark bg, large serif title + text + CTA button with email/contact link)
 ```
 
 ## Files Changed
 
-### 1. `src/pages/PartnersPage.tsx` — NEW
+### 1. `src/pages/SocietyPage.tsx` — NEW
 
-Self-contained page following AboutPage pattern (Fade wrapper, LanguageProvider, Navbar + Footer, inline translations for PT/EN/ES).
+Follows PartnersPage/InnovationsPage pattern exactly: Fade helper, HeroBackground SVG, LanguageProvider wrapper, Navbar + Footer, inline `societyT` translations for PT/EN/ES.
 
-**Block 1 — Hero:** Dark primary bg with animated SVG background (reuse HeroBackground pattern). Eyebrow "Tea Mind Special Partners", title, subtitle.
+- **Block 1 — Hero:** Dark primary bg with animated SVG lines. Eyebrow "Tea Mind Society", title "Ninguém constrói um mercado sozinho.", subtitle paragraph. Below subtitle, a styled bullet list (5 items) showing "Este espaço é para quem..." with subtle accent markers.
+- **Block 2 — Vision:** Light bg. Title "A xícara não se esvazia quando o programa acaba." Text paragraph. Italic closing with accent left-border.
+- **Block 3 — What is the Society:** Dark bg. Title + intro text. Five feature items displayed as a vertical or grid list with icons (MessageCircle, Calendar, BookOpen, TrendingUp, Users from lucide-react) representing: lives mensais, entrevistas/encontros, conteúdos, discussões, acesso contínuo.
+- **Block 4 — Differentiator:** Light bg. Title "Uma extensão viva do ecossistema Tea Mind." Text paragraph. Accent-bordered closing callout: "Aqui, o valor está na curadoria, na continuidade e no acesso."
+- **Block 5 — Closing:** Dark bg. Large serif title "Continuar perto também é uma forma de crescer." Text paragraph. CTA button "Solicite sua entrada gratuita" linking to email or contact section.
 
-**Block 2 — Vision:** Light bg. Centered title with accent left-border styling for the text paragraph. Closing line in italic.
-
-**Block 3 — Partner Cards:** Dark bg. Grid of partner cards (`grid md:grid-cols-3`). Each card: aspect-ratio photo placeholder with hover effect, name, specialty badge, mini bio (2-4 lines). Uses placeholder data (3-6 cards) ready for real content. Cards have subtle border animation on hover.
-
-**Block 4 — How Partners Participate:** Light bg. Title + intro text. Five participation formats displayed as a horizontal/grid layout of small cards with icons (especializações, aulas especiais, lives, experiências/eventos, projetos de inovação). Clean icon + label design.
-
-**Block 5 — Student Value:** Dark bg. Title + text. Closing line as an accent-bordered callout quote: "É assim que um hub se diferencia: pela qualidade das conexões que é capaz de reunir."
-
-**Block 6 — Closing:** Light bg. Large serif italic quote. Two CTA buttons: "Conheça os Programas" (links to programs route) and "Explorar o ecossistema Tea Mind" (links to homepage).
-
-All copy inlined in translations object (PT provided, EN/ES translated).
-
-### 2. `src/App.tsx` — Add routes
+### 2. `src/App.tsx` — Add routes + import
 
 ```
-/partners → PartnersPage lang="en"
-/pt/parceiros → PartnersPage lang="pt"
-/es/socios → PartnersPage lang="es"
+/society → SocietyPage lang="en"
+/pt/sociedade → SocietyPage lang="pt"
+/es/sociedad → SocietyPage lang="es"
 ```
 
-### 3. `src/components/Navbar.tsx` — Update nav link
+### 3. `src/components/Navbar.tsx` — Update society link
 
-Change `{ label: t.nav.partners, href: "#partners" }` to a route link using `partnersRoutes` const with `isRoute: true`.
+Add `societyRoutes` const. Change `{ label: t.nav.society, href: "#society" }` to use `societyRoutes[lang]` with `isRoute: true`.
 
 ## Technical Notes
 
-- Follows exact same code patterns as AboutPage/InnovationsPage (Fade, HeroBackground SVG, LanguageProvider)
-- Partner cards use placeholder data with aspect-ratio containers ready for real photos
-- Homepage `Partners.tsx` component stays unchanged (summary on home page)
-- Alternating dark/light sections for visual rhythm
+- Same visual rhythm as other pages: alternating dark/light sections
+- Hero bullet list adds visual interest beyond plain text
+- Block 3 icons provide movement and scannability
+- Homepage `Society.tsx` component stays unchanged
+- All copy translated to EN/ES inline
 
