@@ -12,6 +12,7 @@ import NeuralSystemPage from "./pages/NeuralSystemPage";
 import HotmartNeuralSystem from "./pages/HotmartNeuralSystem";
 import HotmartNeurogastronomyAI from "./pages/HotmartNeurogastronomyAI";
 import PartnersPage from "./pages/PartnersPage";
+import SocietyPage from "./pages/SocietyPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +43,9 @@ const App = () => (
           <Route path="/partners" element={<PartnersPage lang="en" />} />
           <Route path="/pt/parceiros" element={<PartnersPage lang="pt" />} />
           <Route path="/es/socios" element={<PartnersPage lang="es" />} />
+          <Route path="/society" element={<SocietyPage lang="en" />} />
+          <Route path="/pt/sociedade" element={<SocietyPage lang="pt" />} />
+          <Route path="/es/sociedad" element={<SocietyPage lang="es" />} />
           <Route path="/hotmart/neural-system" element={<HotmartNeuralSystem />} />
           <Route path="/hotmart/neurogastronomy-ai" element={<HotmartNeurogastronomyAI />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
