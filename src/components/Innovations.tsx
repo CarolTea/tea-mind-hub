@@ -25,7 +25,7 @@ const Innovations = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {t.innovations.cards.map((card, i) => (
             <div key={i} className="border border-primary-foreground/10 p-10 flex flex-col transition-all duration-500 hover:border-primary-foreground/30">
-              <span className="text-3xl mb-4">{card.icon}</span>
+              <span className="font-serif text-2xl font-medium text-accent mb-4">{card.icon}</span>
               <h3 className="font-serif text-2xl font-medium mb-4">{card.title}</h3>
               <div className="w-10 h-px bg-accent mb-6" />
               <p className="font-sans text-sm text-primary-foreground/60 leading-relaxed mb-8 flex-1">

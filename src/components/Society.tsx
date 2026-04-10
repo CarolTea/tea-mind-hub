@@ -25,7 +25,7 @@ const Society = () => {
         <div className="grid md:grid-cols-2 gap-10 lg:gap-12 mb-16">
           {t.society.pillars.map((pillar, i) => (
             <div key={i} className="flex gap-4">
-              <span className="text-2xl flex-shrink-0 mt-1">{pillar.icon}</span>
+              <span className="font-serif text-lg font-medium text-accent flex-shrink-0 mt-1">{pillar.icon}</span>
               <div>
                 <h3 className="font-serif text-lg font-medium text-secondary-foreground mb-2">{pillar.title}</h3>
                 <p className="font-sans text-sm text-secondary-foreground/60 leading-relaxed">

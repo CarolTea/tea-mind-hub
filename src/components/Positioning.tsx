@@ -33,7 +33,7 @@ const Positioning = () => {
         <div className="grid md:grid-cols-2 gap-10 lg:gap-16 mb-16">
           {t.positioning.pillars.map((pillar, i) => (
             <div key={i} className="flex gap-4">
-              <span className="text-2xl flex-shrink-0 mt-1">{pillar.icon}</span>
+              <span className="font-serif text-lg font-medium text-accent flex-shrink-0 mt-1">{pillar.icon}</span>
               <div>
                 <h3 className="font-serif text-lg font-medium text-foreground mb-2">{pillar.title}</h3>
                 <p className="font-sans text-sm md:text-base text-muted-foreground leading-relaxed">

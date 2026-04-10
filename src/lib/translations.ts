@@ -31,25 +31,25 @@ export const translations = {
         "O mercado brasileiro de chá está sendo construído agora , e quem entra com método, clareza e visão estratégica tem uma vantagem real. A Tea Mind existe para garantir que você seja essa pessoa.",
       pillars: [
         {
-          icon: "🧭",
+          icon: "01",
           title: "Diagnóstico antes de tudo",
           description:
             "Não encaixamos pessoas em programas. Lemos o seu momento, seus objetivos e sua realidade antes de indicar qualquer caminho. O programa certo é o que faz sentido para você , não para a média.",
         },
         {
-          icon: "🏗️",
+          icon: "02",
           title: "Formação técnica com visão de negócio",
           description:
             "Você não aprende chá aqui para depois aprender a trabalhar com ele. As duas coisas acontecem juntas, porque é assim que o mercado funciona.",
         },
         {
-          icon: "🎯",
+          icon: "03",
           title: "Acompanhamento real",
           description:
             "Sessões individuais, mapa estratégico personalizado e direcionamento aplicado à sua realidade. Você não fica sozinho no meio do caminho.",
         },
         {
-          icon: "🌍",
+          icon: "04",
           title: "Visão global",
           description:
             "O chá é uma indústria global de mais de 5 mil anos. Formamos profissionais que pensam e atuam com essa dimensão.",
@@ -118,14 +118,14 @@ export const translations = {
         "Da primeira infraestrutura de IA proprietária do mundo para o mercado do chá ao maior evento de negócios do chá do Brasil , a Tea Mind está construindo o futuro da indústria.",
       cards: [
         {
-          icon: "🤖",
+          icon: "01",
           title: "Tea Mind AI",
           description:
             "A primeira infraestrutura de IA do mundo para o mercado do chá. Ecossistema pioneiro de sistemas de IA proprietários, desenvolvidos e treinados com nossa metodologia de classe mundial. Três agentes exclusivos para profissionais certificados do chá.",
           cta: "Conhecer as IAs →",
         },
         {
-          icon: "🫖",
+          icon: "02",
           title: "Tea Fest in Rio",
           description:
             "O maior evento de negócios, conhecimento e conexão do mercado de chá do Brasil. Para profissionais, empreendedores e apaixonados que vibram na mesma frequência! 2025 foi um sucesso! Prepare-se para 2026!",
@@ -163,25 +163,25 @@ export const translations = {
         "A Tea Mind Society é a comunidade exclusiva para nossos alunos e profissionais formados que estão construindo o mercado do chá , com propósito, estratégia e paixão pelo que fazem.",
       pillars: [
         {
-          icon: "🤝",
+          icon: "01",
           title: "Conexão real entre profissionais",
           description:
             "Troca de experiências, parcerias e networking com quem está no mesmo caminho , no Brasil e no mundo. Aqui você não está cercado de curiosos. Está cercado de construtores.",
         },
         {
-          icon: "📲",
+          icon: "02",
           title: "Comunidade ativa no WhatsApp",
           description:
             "Acesso direto e contínuo a uma comunidade viva , com movimento, trocas reais e suporte de quem entende o mercado do chá de verdade.",
         },
         {
-          icon: "🎯",
+          icon: "03",
           title: "Lives e conteúdos exclusivos",
           description:
             "Encontros com especialistas convidados, conteúdos aprofundados e novidades do mercado disponíveis apenas para membros da Society.",
         },
         {
-          icon: "🏆",
+          icon: "04",
           title: "Uma rede que cresce com você",
           description:
             "Quanto mais você avança na sua trajetória, mais a Society cresce com você. Alunos ativos, profissionais formados e parceiros estratégicos , todos na mesma rede.",
@@ -265,25 +265,25 @@ export const translations = {
         "The Brazilian tea market is being built right now , and those who enter with method, clarity, and strategic vision have a real advantage. Tea Mind exists to make sure you are that person.",
       pillars: [
         {
-          icon: "🧭",
+          icon: "01",
           title: "Diagnosis first",
           description:
             "We don't fit people into programs. We read your moment, your goals, and your reality before recommending any path. The right program is the one that makes sense for you , not for the average.",
         },
         {
-          icon: "🏗️",
+          icon: "02",
           title: "Technical training with business vision",
           description:
             "You don't learn tea here to later learn how to work with it. Both happen together, because that's how the market works.",
         },
         {
-          icon: "🎯",
+          icon: "03",
           title: "Real mentorship",
           description:
             "Individual sessions, personalized strategic map, and applied guidance for your reality. You don't walk the path alone.",
         },
         {
-          icon: "🌍",
+          icon: "04",
           title: "Global vision",
           description:
             "Tea is a global industry with over 5,000 years of history. We train professionals who think and act on that scale.",
@@ -352,14 +352,14 @@ export const translations = {
         "From the world's first proprietary AI infrastructure for the tea market to the largest tea business event in Brazil , Tea Mind is building the future of the industry.",
       cards: [
         {
-          icon: "🤖",
+          icon: "01",
           title: "Tea Mind AI",
           description:
             "The world's first AI infrastructure for the tea market. A pioneering ecosystem of proprietary AI systems, developed and trained with our world-class methodology. Three exclusive agents for certified tea professionals.",
           cta: "Discover the AIs →",
         },
         {
-          icon: "🫖",
+          icon: "02",
           title: "Tea Fest in Rio",
           description:
             "The largest business, knowledge, and connection event in the Brazilian tea market. For professionals, entrepreneurs, and enthusiasts on the same wavelength! 2025 was a success! Get ready for 2026!",
@@ -397,25 +397,25 @@ export const translations = {
         "Tea Mind Society is the exclusive community for our students and trained professionals who are building the tea market , with purpose, strategy, and passion for what they do.",
       pillars: [
         {
-          icon: "🤝",
+          icon: "01",
           title: "Real connections between professionals",
           description:
             "Exchange experiences, partnerships, and networking with those on the same path , in Brazil and worldwide. Here you're not surrounded by the curious. You're surrounded by builders.",
         },
         {
-          icon: "📲",
+          icon: "02",
           title: "Active WhatsApp community",
           description:
             "Direct and continuous access to a living community , with movement, real exchanges, and support from those who truly understand the tea market.",
         },
         {
-          icon: "🎯",
+          icon: "03",
           title: "Exclusive lives and content",
           description:
             "Meetings with guest specialists, in-depth content, and market news available only to Society members.",
         },
         {
-          icon: "🏆",
+          icon: "04",
           title: "A network that grows with you",
           description:
             "The further you advance in your journey, the more the Society grows with you. Active students, trained professionals, and strategic partners , all in the same network.",
@@ -499,25 +499,25 @@ export const translations = {
         "El mercado brasileño del té se está construyendo ahora , y quien entra con método, claridad y visión estratégica tiene una ventaja real. Tea Mind existe para garantizar que seas esa persona.",
       pillars: [
         {
-          icon: "🧭",
+          icon: "01",
           title: "Diagnóstico antes de todo",
           description:
             "No encajamos personas en programas. Leemos tu momento, tus objetivos y tu realidad antes de indicar cualquier camino. El programa correcto es el que tiene sentido para ti , no para el promedio.",
         },
         {
-          icon: "🏗️",
+          icon: "02",
           title: "Formación técnica con visión de negocio",
           description:
             "No aprendes té aquí para después aprender a trabajar con él. Las dos cosas suceden juntas, porque así funciona el mercado.",
         },
         {
-          icon: "🎯",
+          icon: "03",
           title: "Acompañamiento real",
           description:
             "Sesiones individuales, mapa estratégico personalizado y dirección aplicada a tu realidad. No caminas solo en el proceso.",
         },
         {
-          icon: "🌍",
+          icon: "04",
           title: "Visión global",
           description:
             "El té es una industria global con más de 5 mil años de historia. Formamos profesionales que piensan y actúan con esa dimensión.",
@@ -586,14 +586,14 @@ export const translations = {
         "Desde la primera infraestructura de IA propietaria del mundo para el mercado del té hasta el mayor evento de negocios del té de Brasil , Tea Mind está construyendo el futuro de la industria.",
       cards: [
         {
-          icon: "🤖",
+          icon: "01",
           title: "Tea Mind AI",
           description:
             "La primera infraestructura de IA del mundo para el mercado del té. Ecosistema pionero de sistemas de IA propietarios, desarrollados y entrenados con nuestra metodología de clase mundial. Tres agentes exclusivos para profesionales certificados del té.",
           cta: "Conocer las IAs →",
         },
         {
-          icon: "🫖",
+          icon: "02",
           title: "Tea Fest in Rio",
           description:
             "El mayor evento de negocios, conocimiento y conexión del mercado de té de Brasil. ¡Para profesionales, emprendedores y apasionados que vibran en la misma frecuencia! ¡2025 fue un éxito! ¡Prepárate para 2026!",
@@ -631,25 +631,25 @@ export const translations = {
         "Tea Mind Society es la comunidad exclusiva para nuestros alumnos y profesionales formados que están construyendo el mercado del té , con propósito, estrategia y pasión por lo que hacen.",
       pillars: [
         {
-          icon: "🤝",
+          icon: "01",
           title: "Conexión real entre profesionales",
           description:
             "Intercambio de experiencias, alianzas y networking con quienes están en el mismo camino , en Brasil y en el mundo. Aquí no estás rodeado de curiosos. Estás rodeado de constructores.",
         },
         {
-          icon: "📲",
+          icon: "02",
           title: "Comunidad activa en WhatsApp",
           description:
             "Acceso directo y continuo a una comunidad viva , con movimiento, intercambios reales y apoyo de quienes entienden el mercado del té de verdad.",
         },
         {
-          icon: "🎯",
+          icon: "03",
           title: "Lives y contenidos exclusivos",
           description:
             "Encuentros con especialistas invitados, contenidos profundos y novedades del mercado disponibles solo para miembros de la Society.",
         },
         {
-          icon: "🏆",
+          icon: "04",
           title: "Una red que crece contigo",
           description:
             "Cuanto más avanzas en tu trayectoria, más crece la Society contigo. Alumnos activos, profesionales formados y socios estratégicos , todos en la misma red.",
