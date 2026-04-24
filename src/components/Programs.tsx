@@ -62,7 +62,14 @@ const Programs = () => {
                       }`}
                     >
                       <div className="flex items-start justify-between gap-4 mb-4">
-                        <h4 className="font-serif text-xl font-medium">{program.title}</h4>
+                        <div className="flex-1">
+                          <h4 className="font-serif text-xl font-medium">{program.title}</h4>
+                          {"subtitle" in program && program.subtitle && (
+                            <p className="font-sans text-xs tracking-[0.2em] uppercase text-accent mt-2">
+                              {program.subtitle}
+                            </p>
+                          )}
+                        </div>
                         {isComingSoon && (
                           <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-accent-foreground bg-accent px-2 py-1 whitespace-nowrap shrink-0">
                             {t.programs.comingSoonLabel}
