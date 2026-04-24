@@ -795,36 +795,6 @@ const esCategories: ProgramCategory[] = [
       "Especializaciones para profesionales del té que desean profundizar repertorio técnico, ampliar áreas de actuación y diferenciar su presencia en el mercado.",
     programs: [
       {
-        id: "neurogastronomia",
-        title: "Especialización en Neurogastronomía de Tés y Hierbas",
-        subtitle: "Especialización",
-        shortDescription:
-          "Programa de vanguardia que explora cómo la neurociencia transforma la degustación de té, la experiencia del cliente y el desarrollo de productos.",
-        mainDescription:
-          "Especialización de vanguardia, en alianza con especialista invitada, para profesionales que desean unir ciencia sensorial, neurogastronomía y mercado del té.",
-        bodyText:
-          "La Neurogastronomía aplica los principios de la neurociencia a la experiencia sensorial. Esta especialización lleva esa mirada al universo del té, ampliando el repertorio técnico del profesional y abriendo nuevas posibilidades para curaduría, atención, creación de experiencias y desarrollo de productos con diferenciación real.",
-        forWhoIntro: esCommon.forWhoIntro,
-        forWhoItems: [
-          "Ya actúa o se forma como Sommelier de Té, Tea Blender o profesional del sector",
-          "Desea agregar una capa científica y sensorial a su actuación",
-          "Quiere crear experiencias y productos con base en percepción, memoria y placer sensorial",
-          "Busca diferenciación técnica en un mercado en formación",
-        ],
-        includesTitle: esCommon.includesLabel,
-        includesItems: [
-          "Clases con especialista invitada en Neurogastronomía",
-          "Material de apoyo y referencias aplicadas al té",
-          "Estudios de caso y ejercicios sensoriales",
-          "Certificación de especialización",
-        ],
-        formationText: "",
-        directionTitle: "Cómo funciona",
-        directionText:
-          "Una especialización objetiva y aplicada, dirigida a quienes ya tienen base en el mercado del té y desean sumar una capa técnica y sensorial sofisticada a su trayectoria.",
-        cta: esCommon.cta,
-      },
-      {
         id: "eventos",
         title: "Especialización en Eventos con Té",
         subtitle: "Especialización",
@@ -859,29 +829,70 @@ const esCategories: ProgramCategory[] = [
         title: "Especialización en Maridaje con Tés",
         subtitle: "Especialización",
         shortDescription:
-          "Para quienes desean dominar el arte del maridaje entre tés, alimentos y ocasiones, creando experiencias sensoriales sofisticadas.",
+          "Domina el maridaje entre tés, alimentos y bebidas con la técnica HARCOR, creando experiencias gastronómicas sofisticadas.",
         mainDescription:
-          "Especialización para profesionales que desean dominar el arte del maridaje entre tés, alimentos y ocasiones, creando experiencias sensoriales sofisticadas y únicas.",
+          "Especialización para profesionales que desean dominar el maridaje entre tés y alimentos, creando experiencias gastronómicas sensoriales, sofisticadas y técnicamente consistentes.",
         bodyText:
-          "El maridaje con tés es una de las competencias más valoradas en hospitalidad premium y curaduría gastronómica. Esta especialización profundiza criterios técnicos, sensoriales y culturales para crear combinaciones con lógica, belleza y diferenciación real.",
+          "El maridaje con tés es una de las competencias más relevantes para quienes trabajan en hospitalidad, gastronomía, eventos, consultorías, experiencias premium y curaduría sensorial. En esta especialización el alumno profundiza criterios técnicos, culturales y sensoriales para crear combinaciones con lógica, belleza y diferenciación real.\n\nUno de los diferenciales de nuestro programa es la técnica HARCOR, desarrollada por la profesora Carol Tavares, que amplía la mirada tradicional del maridaje más allá de la semejanza y el contraste. A partir de ella, el alumno aprende a construir maridajes más profundos, considerando textura, estructura, intensidad, contexto sensorial y narrativa de la experiencia.",
         forWhoIntro: esCommon.forWhoIntro,
         forWhoItems: [
-          "Desean especializarse en maridaje entre tés, alimentos y ocasiones",
-          "Actúan o pretenden actuar en hospitalidad, restaurantes, hoteles o eventos premium",
+          "Desean especializarse en maridaje entre tés, alimentos y bebidas",
+          "Actúan o pretenden actuar en hospitalidad, restaurantes, hoteles, consultorías, eventos o experiencias gastronómicas",
           "Quieren ampliar repertorio técnico y crear combinaciones con criterio profesional",
-          "Buscan diferenciar su actuación con una capa sensorial sofisticada",
+          "Buscan diferenciar su actuación con una capa sensorial más sofisticada",
+          "Desean aplicar el té en experiencias con quesos, chocolates, vinos, cenas y menús maridados",
         ],
         includesTitle: esCommon.includesLabel,
         includesItems: [
           "Clases aplicadas al maridaje entre tés y alimentos",
-          "Criterios técnicos, sensoriales y culturales",
+          "Técnica HARCOR de maridaje desarrollada por la profesora Carol Tavares",
+          "Criterios técnicos, sensoriales, culturales y gastronómicos",
           "Estudios de caso y ejercicios prácticos",
+          "Clase práctica de cena maridada con tés",
+          "Clase práctica de maridaje con quesos",
+          "Clase práctica de maridaje con chocolates",
+          "Clase práctica de maridaje con vinos",
           "Certificación de especialización",
         ],
         formationText: "",
         directionTitle: "Cómo funciona",
         directionText:
-          "Una especialización sensorial y aplicada, dirigida a quienes desean construir una firma técnica en maridaje y llevarla a su actuación profesional.",
+          "En esta especialización sensorial el objetivo es que el alumno salga con más seguridad, repertorio técnico y método para crear maridajes coherentes, memorables y estratégicamente pensados.",
+        cta: esCommon.cta,
+      },
+      {
+        id: "neurogastronomia",
+        title: "Especialización en Neurogastronomía de Tés y Hierbas",
+        subtitle: "Especialización",
+        shortDescription:
+          "1ª Especialización en Neurogastronomía de Tés y Hierbas de América Latina. 8 clases del Método SENSO, 30 horas, con Raquel Magalhães.",
+        mainDescription:
+          "1ª Especialización en Neurogastronomía de Tés y Hierbas de América Latina, creada para profesionales que desean unir ciencia, sensorialidad y aplicación práctica real en el mercado de tés y hierbas.",
+        bodyText:
+          "Comprende cómo sabor, aroma, contexto, percepción y emoción se articulan en la experiencia con tés y hierbas, y transforma ese conocimiento en repertorio práctico para tu actuación profesional. La formación amplía tu lectura sobre cómo se construyen las experiencias sensoriales en el cerebro humano, a partir del Método SENSO creado por Raquel Magalhães.\n\nUn enfoque integrado que une áreas que normalmente no dialogan en el mercado del té: Neurociencia, Fitoquímica, Tés y Hierbas, Sensorialidad, Emoción y Diseño de Experiencia. Contenido estructurado sobre base científica para que descubras cómo comunicar mejor, cerrar más contratos y aumentar tus ventas.",
+        forWhoIntro: esCommon.forWhoIntro,
+        forWhoItems: [
+          "Sommeliers de Té, Tea Blenders y Tea Baristas",
+          "Emprendedores y marcas del universo del té",
+          "Profesionales de eventos, consultorías y experiencias",
+          "Profesionales de la gastronomía y del bienestar integrativo",
+          "Estudiosos y apasionados por el universo del té",
+        ],
+        includesTitle: esCommon.includesLabel,
+        includesItems: [
+          "8 clases grabadas del Método SENSO, creado por Raquel Magalhães",
+          "Clase 0 de nivelación en tés para quienes aún no son profesionales del té",
+          "Encuentros en vivo de preguntas y respuestas",
+          "30 días de acceso a la IA propia de la Especialización (bono de la 2ª promoción)",
+          "Acceso a las grabaciones por 12 meses",
+          "Material de apoyo en PDF y ejercicios",
+          "30 horas de contenido entre clases, nivelación y materiales complementarios",
+          "Certificado digital como Especialista en Neurogastronomía de Tés y Hierbas",
+        ],
+        formationText: "",
+        directionTitle: "Estructura del programa",
+        directionText:
+          "Clase 1, Fundamentos del Análisis Sensorial. Clase 2, Fundamentos de la Neurogastronomía. Clase 3, Los 5 Sentidos y la Neurogastronomía. Clase 4, Comportamiento Alimentario. Clase 5, Fitoquímica Sensorial. Clase 6, Camellia sinensis en el contexto de la Neurogastronomía. Clase 7, Maridaje basado en Neurogastronomía. Clase 8, Diseño Sensorial y Posicionamiento Profesional.\n\nConducida por Raquel Magalhães (creadora del Método SENSO, profesora invitada del Le Cordon Bleu Río de Janeiro), Carol Tavares y Carla Vicente.",
         cta: esCommon.cta,
       },
     ],
