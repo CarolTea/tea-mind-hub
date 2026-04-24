@@ -223,28 +223,14 @@ const AboutHero = () => {
           <div className="w-16 h-px bg-accent mx-auto mb-10" />
         </Fade>
         <Fade className="delay-300">
-          <p className="font-sans text-lg md:text-xl text-primary-foreground/65 leading-relaxed max-w-2xl mx-auto text-center mb-6">
+          <p className="font-sans text-lg md:text-xl text-primary-foreground/65 leading-relaxed max-w-2xl mx-auto text-center mb-14">
             {t.subtitle}
-          </p>
-          <p className="font-sans text-base text-primary-foreground/50 leading-relaxed max-w-2xl mx-auto text-center mb-14">
-            {t.subtitle2}
           </p>
         </Fade>
 
         {/* Stats card */}
         <Fade className="delay-500">
           <div className="border border-accent/20 rounded-sm p-8 max-w-2xl mx-auto mb-10">
-            <div className="grid sm:grid-cols-2 gap-8 mb-8">
-              <div className="text-center">
-                <p className="font-serif text-3xl font-medium text-accent mb-2">{t.statGrowth}</p>
-                <p className="font-sans text-xs tracking-wider text-primary-foreground/50 uppercase">{t.statGrowthLabel}</p>
-              </div>
-              <div className="text-center">
-                <p className="font-serif text-3xl font-medium text-accent mb-2">{t.statTrend}</p>
-                <p className="font-sans text-xs tracking-wider text-primary-foreground/50 uppercase">{t.statTrendLabel}</p>
-              </div>
-            </div>
-            <div className="w-12 h-px bg-accent/30 mx-auto mb-6" />
             <p className="font-sans text-sm text-primary-foreground/60 leading-relaxed text-center">{t.closing}</p>
           </div>
         </Fade>
