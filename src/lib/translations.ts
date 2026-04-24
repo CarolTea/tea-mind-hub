@@ -600,25 +600,25 @@ export const translations = {
           cta: "Conocer el Tea Fest →",
         },
       ],
-      closing: "No seguimos el mercado del té. Lo construimos.",
+      closing: "Mientras muchos observan el mercado, nosotros creamos lo que aún necesita.",
       cta: "Explorar todas las innovaciones →",
     },
     founders: {
       eyebrow: "Quiénes están detrás de Tea Mind",
-      title: "Aprendimos del mercado. Construimos con él.",
+      title: "Visión global. Lectura crítica. Construcción local.",
       subtitle:
-        "Tea Mind nació de la experiencia real de quienes no solo estudiaron el mercado del té , sino que lo construyeron, lo enseñaron y lo transformaron por más de una década.",
+        "Tea Mind nace de la trayectoria de quienes estudian, enseñan y ayudan a estructurar el mercado del té en Brasil, ampliando sus posibilidades a lo largo de más de una década.",
       profiles: [
         {
           name: "Carol Tavares",
           titles:
-            "Co-fundadora · Sommelier de Té · Tea Tender · Estratega de Negocios · Chief Product Manager Chat Pay Labs",
+            "Co-fundadora · Sommelier de Té · Especialista en Drinks con Tés y Maridajes · Estratega de Negocios · Directora de Innovación, Productos y Negocios",
           initials: "CT",
         },
         {
           name: "Carla Vicente",
           titles:
-            "Co-fundadora · Sommelier de Té · Tea Barista · Especialista en Tés Helados",
+            "Co-fundadora · Sommelier de Té · Tea Barista · Especialista en Tés Helados · Directora Pedagógica y de Creación",
           initials: "CV",
         },
       ],
