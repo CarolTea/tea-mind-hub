@@ -1,29 +1,17 @@
-## Plan: Add Carla's and Carol's Photos to Home and About Pages
+## Mudanças aprovadas
 
-### Asset Setup
-- Copy `user-uploads://Carol_Tavares.png` to `src/assets/carol-tavares.png`
-- Copy `user-uploads://Carla_Vicente.png` to `src/assets/carla-vicente.png`
+### 1. `src/lib/translations.ts`
+- **Typo PT (Positioning)**: remover o espaço antes da vírgula em "mercado do chá , com método" → "mercado do chá, com método".
+- **Renomear `footer.events` → `footer.contact`** nos três idiomas (PT/EN/ES) com copy mais genérica focada em contato:
+  - PT: eyebrow "Contato", título "Vamos conversar.", texto sobre eventos/parcerias/imprensa, CTA "Falar no WhatsApp →".
+  - EN/ES: equivalentes traduzidos.
 
-### Home Page — `src/components/Founders.tsx`
-- Import both images as ES modules (so Vite optimizes/bundles them).
-- Map by initials (`CT` → Carol, `CV` → Carla).
-- Replace the placeholder `<span>` with serif initials inside `aspect-[4/5]` with an `<img>` using `w-full h-full object-cover object-top` (object-top to preserve faces in the editorial 4:5 crop).
-- Keep existing border, hover effect (`hover:border-foreground/20`), and fade animations untouched.
+### 2. `src/components/Footer.tsx`
+- Trocar `t.footer.events` por `t.footer.contact`.
+- Renomear constantes `eventsMessages` → `contactMessages` com mensagem genérica de contato no WhatsApp (mesmo número `5521981126981`).
+- Manter o botão WhatsApp, o layout em duas colunas e o estilo dourado.
+- **Manter intacto**: link "Eventos" no Navbar, página `/events` (`/pt/eventos`, `/es/eventos`) e o array `navLinks` que já aponta para a rota da página.
 
-### About Page — `src/pages/AboutPage.tsx`
-- Import both images.
-- Inside `FounderBlock`, replace the initials placeholder block with an `<img>` in the existing `aspect-[3/4]` container using `w-full h-full object-cover object-top`.
-- Preserve the alternating left/right layout (`imageRight` prop), dark/light theme alternation (`isDark`), borders, and `Fade` animations.
-
-### Quality / No regressions
-- No layout shifts: image containers keep their existing aspect ratios.
-- No changes to translations, routes, or copy.
-- Alt text uses each founder's name for accessibility.
-
-### Files to modify
-- `src/components/Founders.tsx`
-- `src/pages/AboutPage.tsx`
-
-### Files to create
-- `src/assets/carol-tavares.png` (from upload)
-- `src/assets/carla-vicente.png` (from upload)
+### Escopo
+- Sem alterações em rotas, navbar ou página de Eventos.
+- Apenas o bloco promocional do rodapé vira "Contato" e o typo PT é corrigido.
