@@ -72,7 +72,6 @@ const Navbar = () => {
               ) : link.external ? (
                 <a
                   href={link.href}
-                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
                 >
@@ -121,7 +120,6 @@ const Navbar = () => {
                 ) : link.external ? (
                   <a
                     href={link.href}
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground"
                     onClick={() => setMenuOpen(false)}
