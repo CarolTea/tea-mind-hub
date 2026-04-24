@@ -7,7 +7,6 @@ import Programs from "@/components/Programs";
 import SocialProof from "@/components/SocialProof";
 import Innovations from "@/components/Innovations";
 import Founders from "@/components/Founders";
-import Society from "@/components/Society";
 import CtaFinal from "@/components/CtaFinal";
 import Footer from "@/components/Footer";
 
@@ -23,7 +22,6 @@ const Index = ({ lang = "en" }: { lang?: Lang }) => {
           <SocialProof />
           <Innovations />
           <Founders />
-          <Society />
           <CtaFinal />
         </main>
         <Footer />

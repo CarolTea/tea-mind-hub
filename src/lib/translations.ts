@@ -102,9 +102,9 @@ export const translations = {
           description:
             "Trajetórias completas de formação para quem deseja atuar, criar produtos ou construir um negócio no mercado do chá.",
           items: [
-            { id: "atuacao", title: "Tea Mind Atuação com Chá", description: "Para quem deseja atuar como Sommelier de Chá com mais clareza, direção e visão de mercado." },
-            { id: "laboratorio", title: "Tea Mind Laboratório de Marcas de Chá", description: "Para quem deseja se tornar um Tea Blender e criar uma linha de chás com assinatura própria, padrão premium e potencial real de mercado." },
-            { id: "full-experience", title: "Tea Mind Full Experience", description: "Para quem quer construir algo completo, sólido e de longo prazo no mercado do chá." },
+            { id: "atuacao", title: "Tea Mind Atuação com Chá", subtitle: "Sommelier de Chá", description: "Para quem deseja atuar como Sommelier de Chá com mais clareza, direção e visão de mercado." },
+            { id: "laboratorio", title: "Tea Mind Laboratório de Marcas de Chá", subtitle: "Tea Blender", description: "Para quem deseja se tornar um Tea Blender e criar uma linha de chás com assinatura própria, padrão premium e potencial real de mercado." },
+            { id: "full-experience", title: "Tea Mind Full Experience", subtitle: "Sommelier de Chá + Tea Blender", description: "Para quem quer construir algo completo, sólido e de longo prazo no mercado do chá." },
           ],
         },
         {
@@ -127,7 +127,7 @@ export const translations = {
             "Diagnóstico estratégico e estruturação para empreendedores que já iniciaram e precisam reorganizar a base do negócio.",
           items: [
             { id: "sprint", title: "Tea Mind Sprint Smart", description: "Para quem já começou mas ainda não tem clareza nem segurança sobre o que está construindo." },
-            { id: "arquitetura-comercial", title: "Tea Mind Arquitetura Comercial", description: "Programa de aceleração comercial para negócios de chá. Em desenvolvimento.", comingSoon: true },
+            { id: "arquitetura-comercial", title: "Tea Mind Arquitetura Comercial", description: "Programa de aceleração comercial para negócios de chá.", comingSoon: true },
           ],
         },
       ],
@@ -305,7 +305,7 @@ export const translations = {
       innovationsList: ["Tea Mind AI", "Tea Fest in Rio", "Tea Mind Society"],
       contactTitle: "Eventos",
       contact: {
-        eyebrow: "01 , Contato",
+        eyebrow: "Contato",
         title: "Vamos conversar.",
         text: "Para eventos, parcerias, imprensa ou conversas sobre o mercado do chá, fale diretamente com a nossa equipe.",
         cta: "Falar no WhatsApp →",
@@ -416,9 +416,9 @@ export const translations = {
           description:
             "Complete training journeys for those who want to work, create products, or build a business in the tea market.",
           items: [
-            { id: "atuacao", title: "Tea Mind Working with Tea", description: "For those who want to work as a Tea Sommelier with more clarity, direction, and market vision." },
-            { id: "laboratorio", title: "Tea Mind Tea Brand Lab", description: "For those who want to become a Tea Blender and create a tea line with their own signature, premium standards, and real market potential." },
-            { id: "full-experience", title: "Tea Mind Full Experience", description: "For those who want to build something complete, solid, and long-term in the tea market." },
+            { id: "atuacao", title: "Tea Mind Working with Tea", subtitle: "Tea Sommelier", description: "For those who want to work as a Tea Sommelier with more clarity, direction, and market vision." },
+            { id: "laboratorio", title: "Tea Mind Tea Brand Lab", subtitle: "Tea Blender", description: "For those who want to become a Tea Blender and create a tea line with their own signature, premium standards, and real market potential." },
+            { id: "full-experience", title: "Tea Mind Full Experience", subtitle: "Tea Sommelier + Tea Blender", description: "For those who want to build something complete, solid, and long-term in the tea market." },
           ],
         },
         {
@@ -441,7 +441,7 @@ export const translations = {
             "Strategic diagnosis and structuring for entrepreneurs who have already started and need to reorganize the foundation of the business.",
           items: [
             { id: "sprint", title: "Tea Mind Sprint Smart", description: "For those who have already started but still lack clarity or confidence about what they're building." },
-            { id: "arquitetura-comercial", title: "Tea Mind Commercial Architecture", description: "Commercial acceleration program for tea businesses. In development.", comingSoon: true },
+            { id: "arquitetura-comercial", title: "Tea Mind Commercial Architecture", description: "Commercial acceleration program for tea businesses.", comingSoon: true },
           ],
         },
       ],
@@ -619,7 +619,7 @@ export const translations = {
       innovationsList: ["Tea Mind AI", "Tea Fest in Rio", "Tea Mind Society"],
       contactTitle: "Events",
       contact: {
-        eyebrow: "01 , Contact",
+        eyebrow: "Contact",
         title: "Let's talk.",
         text: "For events, partnerships, press or conversations about the tea market, reach our team directly.",
         cta: "Chat on WhatsApp →",
@@ -730,9 +730,9 @@ export const translations = {
           description:
             "Trayectorias completas de formación para quienes desean actuar, crear productos o construir un negocio en el mercado del té.",
           items: [
-            { id: "atuacao", title: "Tea Mind Actuación con Té", description: "Para quienes desean actuar como Sommelier de Té con más claridad, dirección y visión de mercado." },
-            { id: "laboratorio", title: "Tea Mind Laboratorio de Marcas de Té", description: "Para quienes desean convertirse en Tea Blender y crear una línea de tés con firma propia, estándar premium y potencial real de mercado." },
-            { id: "full-experience", title: "Tea Mind Full Experience", description: "Para quienes quieren construir algo completo, sólido y a largo plazo en el mercado del té." },
+            { id: "atuacao", title: "Tea Mind Actuación con Té", subtitle: "Sommelier de Té", description: "Para quienes desean actuar como Sommelier de Té con más claridad, dirección y visión de mercado." },
+            { id: "laboratorio", title: "Tea Mind Laboratorio de Marcas de Té", subtitle: "Tea Blender", description: "Para quienes desean convertirse en Tea Blender y crear una línea de tés con firma propia, estándar premium y potencial real de mercado." },
+            { id: "full-experience", title: "Tea Mind Full Experience", subtitle: "Sommelier de Té + Tea Blender", description: "Para quienes quieren construir algo completo, sólido y a largo plazo en el mercado del té." },
           ],
         },
         {
@@ -755,7 +755,7 @@ export const translations = {
             "Diagnóstico estratégico y estructuración para emprendedores que ya iniciaron y necesitan reorganizar la base del negocio.",
           items: [
             { id: "sprint", title: "Tea Mind Sprint Smart", description: "Para quienes ya comenzaron pero aún no tienen claridad ni seguridad sobre lo que están construyendo." },
-            { id: "arquitetura-comercial", title: "Tea Mind Arquitectura Comercial", description: "Programa de aceleración comercial para negocios de té. En desarrollo.", comingSoon: true },
+            { id: "arquitetura-comercial", title: "Tea Mind Arquitectura Comercial", description: "Programa de aceleración comercial para negocios de té.", comingSoon: true },
           ],
         },
       ],
@@ -933,7 +933,7 @@ export const translations = {
       innovationsList: ["Tea Mind AI", "Tea Fest in Rio", "Tea Mind Society"],
       contactTitle: "Eventos",
       contact: {
-        eyebrow: "01 , Contacto",
+        eyebrow: "Contacto",
         title: "Hablemos.",
         text: "Para eventos, alianzas, prensa o conversaciones sobre el mercado del té, habla directamente con nuestro equipo.",
         cta: "Hablar por WhatsApp →",
