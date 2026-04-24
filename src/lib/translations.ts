@@ -400,7 +400,7 @@ export const translations = {
           icon: "01",
           title: "Real connections between professionals",
           description:
-            "Exchange experiences, partnerships, and networking with those on the same path , in Brazil and worldwide. Here you're not surrounded by the curious. You're surrounded by builders.",
+            "Exchange experiences, partnerships, and networking with those on the same path, in Brazil and worldwide. Here you're not surrounded by the curious. You're surrounded by builders.",
         },
         {
           icon: "02",
@@ -423,13 +423,13 @@ export const translations = {
       ],
       closing:
         "The tea market in Brazil is being built by people like you. The Society is where these people meet.",
-      cta: "I want to join Tea Mind Society →",
+      cta: "Are you our student and not yet part of the Society? Click to request access →",
     },
     partners: {
       eyebrow: "Tea Mind Partners",
       title: "The best tea market professionals are here.",
       subtitle:
-        "Tea Mind attracts and connects recognized specialists in the tea market , in Brazil and worldwide. Our partners contribute their knowledge, experience, and vision to enrich our students' journey.",
+        "Tea Mind attracts and connects recognized specialists in the tea market, in Brazil and worldwide. Our partners contribute their knowledge, experience, and vision to enrich our students' journey.",
       closing:
         "Tea Mind is not just a training hub. It's an ecosystem where the best come together.",
       cta: "Meet all partners →",
@@ -634,7 +634,7 @@ export const translations = {
           icon: "01",
           title: "Conexión real entre profesionales",
           description:
-            "Intercambio de experiencias, alianzas y networking con quienes están en el mismo camino , en Brasil y en el mundo. Aquí no estás rodeado de curiosos. Estás rodeado de constructores.",
+            "Intercambio de experiencias, alianzas y networking con quienes están en el mismo camino, en Brasil y en el mundo. Aquí no estás rodeado de curiosos. Estás rodeado de constructores.",
         },
         {
           icon: "02",
@@ -657,13 +657,13 @@ export const translations = {
       ],
       closing:
         "El mercado del té en Brasil está siendo construido por personas como tú. La Society es donde esas personas se encuentran.",
-      cta: "Quiero hacer parte de Tea Mind Society →",
+      cta: "¿Eres nuestro alumno y aún no haces parte de la Society? Haz clic para solicitar tu entrada →",
     },
     partners: {
       eyebrow: "Tea Mind Partners",
       title: "Los mejores profesionales del mercado del té están aquí.",
       subtitle:
-        "Tea Mind atrae y conecta especialistas reconocidos en el mercado del té , en Brasil y en el mundo. Nuestros partners contribuyen con su conocimiento, experiencia y visión para enriquecer el viaje de nuestros alumnos.",
+        "Tea Mind atrae y conecta especialistas reconocidos en el mercado del té, en Brasil y en el mundo. Nuestros partners contribuyen con su conocimiento, experiencia y visión para enriquecer el viaje de nuestros alumnos.",
       closing:
         "Tea Mind no es solo un hub de formación. Es un ecosistema donde los mejores se encuentran.",
       cta: "Conocer a todos los partners →",
