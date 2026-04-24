@@ -633,12 +633,12 @@ export const translations = {
         {
           title: "Tea Mind Actuación con Té",
           description:
-            "Para quienes desean trabajar con té con más claridad, dirección y visión de mercado.",
+            "Para quienes desean actuar como Sommelier de Té con más claridad, dirección y visión de mercado.",
         },
         {
           title: "Tea Mind Laboratorio de Marcas de Té",
           description:
-            "Para quienes desean crear una línea de tés con firma propia, estándar premium y potencial real de mercado.",
+            "Para quienes desean convertirse en Tea Blender y crear una línea de tés con firma propia, estándar premium y potencial real de mercado.",
         },
         {
           title: "Tea Mind Sprint Smart",
@@ -654,6 +654,16 @@ export const translations = {
           title: "Especialización en Neurogastronomía de Tés y Hierbas",
           description:
             "En asociación con especialista invitada. Programa de vanguardia que explora cómo la neurociencia transforma la degustación de té, la experiencia del cliente y el desarrollo de productos.",
+        },
+        {
+          title: "Especialización en Eventos con Té",
+          description:
+            "Para quienes desean crear, producir y conducir experiencias y eventos con té con estándar profesional, identidad propia y visión de mercado.",
+        },
+        {
+          title: "Especialización en Maridaje con Tés",
+          description:
+            "Para quienes desean dominar el arte del maridaje entre tés, alimentos y ocasiones, creando experiencias sensoriales sofisticadas y únicas.",
         },
       ],
     },
