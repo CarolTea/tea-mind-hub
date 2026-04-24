@@ -50,6 +50,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       {
         id: "atuacao",
         title: "Tea Mind Atuação com Chá",
+        subtitle: "Sommelier de Chá",
         mainDescription: "Nosso programa de formação profissional e acompanhamento estratégico para quem deseja atuar com chá com mais clareza, direção e visão de mercado.",
         bodyText: "No Tea Mind Atuação com Chá, o aluno ingressa na formação de Sommelier de Chá & Tea Barista empreendedor e desenvolve sua trajetória ao longo de uma jornada acompanhada por onboarding estratégico, Smart Journey e sessões estratégicas aplicadas à sua realidade, para transformar conhecimento em atuação profissional real.",
         forWhoIntro: "Este programa é para quem:",
@@ -79,6 +80,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       {
         id: "laboratorio",
         title: "Tea Mind Laboratório de Marcas de Chá",
+        subtitle: "Tea Blender",
         mainDescription: "Nosso programa de formação profissional e acompanhamento estratégico para quem deseja criar uma linha de chás com assinatura própria, padrão premium e posicionamento de mercado.",
         bodyText: "No Tea Mind Laboratório de Marcas de Chá, o aluno ingressa na formação em Tea Blender empreendedor e percorre uma jornada acompanhada por onboarding estratégico, Smart Journey e sessões estratégicas aplicadas à sua realidade, estruturadas para transformar ideias em produtos com identidade, viabilidade comercial e potencial real de venda.",
         forWhoIntro: "Este programa é para quem:",
@@ -135,9 +137,9 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       },
       {
         id: "arquitetura",
-        title: "Tea Mind Arquitetura do Negócio do Chá",
+        title: "Tea Mind Full Experience",
         mainDescription: "Nosso programa premium de formação aprofundada e direção estratégica para quem deseja acessar o capital intelectual mais completo da Tea Mind e construir sua trajetória ou negócio no mercado do chá com mais repertório, clareza e consistência.",
-        bodyText: "Na Tea Mind Arquitetura do Negócio do Chá, o aluno percorre a jornada mais completa do hub, reunindo formações, especializações e Encontros de Arquitetura Estratégica para transformar conhecimento em construção real, com profundidade técnica, visão de mercado e direção aplicada ao que deseja desenvolver.",
+        bodyText: "No Tea Mind Full Experience, o aluno percorre a jornada mais completa do hub, reunindo formações, especializações e Encontros de Arquitetura Estratégica para transformar conhecimento em construção real, com profundidade técnica, visão de mercado e direção aplicada ao que deseja desenvolver.",
         forWhoIntro: "Este programa é para quem:",
         forWhoItems: [
           "Deseja acessar a jornada mais completa da Tea Mind, com profundidade técnica e visão estratégica",
@@ -162,7 +164,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
         ],
         formationText: "Uma jornada premium e aprofundada para quem deseja desenvolver repertório técnico, visão de mercado e direção estratégica em um nível mais amplo, consistente e integrado dentro do universo do chá.",
         directionTitle: "Como funciona o direcionamento",
-        directionText: "A Arquitetura parte de uma jornada robusta de formação e especializações, mas ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos contexto, objetivos, ambição e possibilidades. O Smart Journey organiza esse olhar em um mapa estratégico personalizado, e os Encontros de Arquitetura Estratégica ajudam a transformar estudo em construção real, apoiando decisões importantes ao longo de até 24 meses, conforme a evolução de cada pessoa.",
+        directionText: "O Full Experience parte de uma jornada robusta de formação e especializações, mas ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos contexto, objetivos, ambição e possibilidades. O Smart Journey organiza esse olhar em um mapa estratégico personalizado, e os Encontros de Arquitetura Estratégica ajudam a transformar estudo em construção real, apoiando decisões importantes ao longo de até 24 meses, conforme a evolução de cada pessoa.",
         cta: "Fazer o Diagnóstico Gratuito",
       },
     ],
