@@ -249,15 +249,38 @@ const ProgramsContent = () => {
       <ProgramsHero />
       <DiagnosisBlock />
       <div id="programs-list">
-        {t.programs.map((program, i) => (
-          <ProgramSection
-            key={program.id}
-            program={program}
-            index={i}
-            forWhoTitle={t.forWhoTitle}
-            includesTitle={t.includesTitle}
-          />
-        ))}
+        {t.categories.map((category, catIdx) => {
+          const catIsDark = catIdx % 2 === 0;
+          return (
+            <div key={category.id}>
+              <CategoryDivider category={category} isDark={catIsDark} />
+              {category.programs.map((program, i) => {
+                // alternate fundo dentro da categoria, começando oposto ao divider
+                const isDark = (catIdx + i + 1) % 2 === 0;
+                if (program.comingSoon) {
+                  return (
+                    <ComingSoonSection
+                      key={program.id}
+                      program={program}
+                      isDark={isDark}
+                      label={t.comingSoonLabel}
+                      text={t.comingSoonText}
+                    />
+                  );
+                }
+                return (
+                  <ProgramSection
+                    key={program.id}
+                    program={program}
+                    isDark={isDark}
+                    forWhoTitle={t.forWhoTitle}
+                    includesTitle={t.includesTitle}
+                  />
+                );
+              })}
+            </div>
+          );
+        })}
       </div>
       <Footer />
     </>
