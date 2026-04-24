@@ -1,4 +1,5 @@
 import { useLang } from "@/contexts/LanguageContext";
+import { Link } from "react-router-dom";
 import teaHubLogo from "@/assets/tea-hub-logo-transparent.png";
 
 const WHATSAPP_NUMBER = "5521981126981";
@@ -7,6 +8,8 @@ const eventsMessages = {
   en: "Hi! I'd like to know more about Tea Mind's personalized, corporate and themed events.",
   es: "¡Hola! Me gustaría saber más sobre los eventos personalizados, corporativos y temáticos de Tea Mind.",
 } as const;
+
+const eventsRoutes = { en: "/events", es: "/es/eventos", pt: "/pt/eventos" } as const;
 
 const Footer = () => {
   const { t, lang } = useLang();
@@ -19,7 +22,7 @@ const Footer = () => {
     { label: t.nav.founders, href: "#founders" },
     { label: t.nav.innovations, href: "#innovations" },
     { label: t.nav.society, href: "#society" },
-    { label: t.nav.contact, href: eventsHref, external: true },
+    { label: t.nav.contact, href: eventsRoutes[lang], isRoute: true },
   ];
 
   return (
@@ -75,13 +78,21 @@ const Footer = () => {
             <ul className="space-y-3">
               {navLinks.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
-                    {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                    className="font-sans text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors duration-300"
-                  >
-                    {link.label}
-                  </a>
+                  {link.isRoute ? (
+                    <Link
+                      to={link.href}
+                      className="font-sans text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors duration-300"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="font-sans text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors duration-300"
+                    >
+                      {link.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
