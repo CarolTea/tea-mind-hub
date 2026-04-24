@@ -366,25 +366,25 @@ export const translations = {
           cta: "Discover Tea Fest →",
         },
       ],
-      closing: "We don't follow the tea market. We build it.",
+      closing: "While many observe the market, we create what it still needs.",
       cta: "Explore all innovations →",
     },
     founders: {
       eyebrow: "Who's behind Tea Mind",
-      title: "We learned from the market. We built with it.",
+      title: "Global vision. Critical reading. Local construction.",
       subtitle:
-        "Tea Mind was born from the real experience of those who didn't just study the tea market , but built it, taught it, and transformed it for over a decade.",
+        "Tea Mind is born from the journey of those who study, teach, and help structure the tea market in Brazil, expanding its possibilities over more than a decade.",
       profiles: [
         {
           name: "Carol Tavares",
           titles:
-            "Co-founder · Tea Sommelier · Tea Tender · Business Strategist · Chief Product Manager Chat Pay Labs",
+            "Co-founder · Tea Sommelier · Tea Drinks & Pairings Specialist · Business Strategist · Director of Innovation, Products and Business",
           initials: "CT",
         },
         {
           name: "Carla Vicente",
           titles:
-            "Co-founder · Tea Sommelier · Tea Barista · Iced Tea Specialist",
+            "Co-founder · Tea Sommelier · Tea Barista · Iced Tea Specialist · Pedagogical and Creative Director",
           initials: "CV",
         },
       ],
