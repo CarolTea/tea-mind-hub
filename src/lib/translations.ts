@@ -721,41 +721,42 @@ export const translations = {
       cardCta: "Quiero conocer este programa →",
       footerNote: "¿Aún explorando el universo del té? Comienza por el diagnóstico.",
       footerCta: "Hacer el Diagnóstico Gratuito →",
-      items: [
+      comingSoonLabel: "Próximamente",
+      categories: [
         {
-          title: "Tea Mind Actuación con Té",
+          id: "profissionalizantes",
+          eyebrow: "01 , Profesionales",
+          title: "Programas Profesionales",
           description:
-            "Para quienes desean actuar como Sommelier de Té con más claridad, dirección y visión de mercado.",
+            "Trayectorias completas de formación para quienes desean actuar, crear productos o construir un negocio en el mercado del té.",
+          items: [
+            { id: "atuacao", title: "Tea Mind Actuación con Té", description: "Para quienes desean actuar como Sommelier de Té con más claridad, dirección y visión de mercado." },
+            { id: "laboratorio", title: "Tea Mind Laboratorio de Marcas de Té", description: "Para quienes desean convertirse en Tea Blender y crear una línea de tés con firma propia, estándar premium y potencial real de mercado." },
+            { id: "full-experience", title: "Tea Mind Full Experience", description: "Para quienes quieren construir algo completo, sólido y a largo plazo en el mercado del té." },
+          ],
         },
         {
-          title: "Tea Mind Laboratorio de Marcas de Té",
+          id: "aprimoramento",
+          eyebrow: "02 , Perfeccionamiento",
+          title: "Programas de Perfeccionamiento",
           description:
-            "Para quienes desean convertirse en Tea Blender y crear una línea de tés con firma propia, estándar premium y potencial real de mercado.",
+            "Especializaciones para profesionales del té que desean profundizar repertorio técnico y diferenciar su actuación.",
+          items: [
+            { id: "neurogastronomia", title: "Especialización en Neurogastronomía de Tés y Hierbas", description: "En asociación con especialista invitada. Programa de vanguardia que explora cómo la neurociencia transforma la degustación de té, la experiencia del cliente y el desarrollo de productos." },
+            { id: "eventos", title: "Especialización en Eventos con Té", description: "Para quienes desean crear, producir y conducir experiencias y eventos con té con estándar profesional, identidad propia y visión de mercado." },
+            { id: "harmonizacao", title: "Especialización en Maridaje con Tés", description: "Para quienes desean dominar el arte del maridaje entre tés, alimentos y ocasiones, creando experiencias sensoriales sofisticadas y únicas." },
+          ],
         },
         {
-          title: "Tea Mind Sprint Smart",
+          id: "aceleracao",
+          eyebrow: "03 , Aceleración",
+          title: "Programas de Aceleración",
           description:
-            "Para quienes ya comenzaron pero aún no tienen claridad ni seguridad sobre lo que están construyendo.",
-        },
-        {
-          title: "Tea Mind Full Experience",
-          description:
-            "Para quienes quieren construir algo completo, sólido y a largo plazo en el mercado del té.",
-        },
-        {
-          title: "Especialización en Neurogastronomía de Tés y Hierbas",
-          description:
-            "En asociación con especialista invitada. Programa de vanguardia que explora cómo la neurociencia transforma la degustación de té, la experiencia del cliente y el desarrollo de productos.",
-        },
-        {
-          title: "Especialización en Eventos con Té",
-          description:
-            "Para quienes desean crear, producir y conducir experiencias y eventos con té con estándar profesional, identidad propia y visión de mercado.",
-        },
-        {
-          title: "Especialización en Maridaje con Tés",
-          description:
-            "Para quienes desean dominar el arte del maridaje entre tés, alimentos y ocasiones, creando experiencias sensoriales sofisticadas y únicas.",
+            "Diagnóstico estratégico y estructuración para emprendedores que ya iniciaron y necesitan reorganizar la base del negocio.",
+          items: [
+            { id: "sprint", title: "Tea Mind Sprint Smart", description: "Para quienes ya comenzaron pero aún no tienen claridad ni seguridad sobre lo que están construyendo." },
+            { id: "arquitetura-comercial", title: "Tea Mind Arquitectura Comercial", description: "Programa de aceleración comercial para negocios de té. En desarrollo.", comingSoon: true },
+          ],
         },
       ],
     },
