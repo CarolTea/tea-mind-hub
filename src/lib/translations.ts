@@ -84,7 +84,7 @@ export const translations = {
             "Para quem já começou mas ainda não tem clareza nem segurança sobre o que está construindo.",
         },
         {
-          title: "Tea Mind Arquitetura de Negócios de Chá",
+          title: "Tea Mind Full Experience",
           description:
             "Para quem quer construir algo completo, sólido e de longo prazo no mercado do chá.",
         },
@@ -272,7 +272,7 @@ export const translations = {
         "Atuação com Chá",
         "Laboratório de Marcas",
         "Sprint Smart",
-        "Arquitetura de Negócios",
+        "Full Experience",
         "Neurogastronomia",
       ],
       innovationsList: ["Tea Mind AI", "Tea Fest in Rio", "Tea Mind Society"],
@@ -365,7 +365,7 @@ export const translations = {
             "For those who have already started but still lack clarity or confidence about what they're building.",
         },
         {
-          title: "Tea Mind Tea Business Architecture",
+          title: "Tea Mind Full Experience",
           description:
             "For those who want to build something complete, solid, and long-term in the tea market.",
         },
@@ -553,7 +553,7 @@ export const translations = {
         "Working with Tea",
         "Tea Brand Lab",
         "Sprint Smart",
-        "Tea Business Architecture",
+        "Full Experience",
         "Neurogastronomy",
       ],
       innovationsList: ["Tea Mind AI", "Tea Fest in Rio", "Tea Mind Society"],
@@ -646,7 +646,7 @@ export const translations = {
             "Para quienes ya comenzaron pero aún no tienen claridad ni seguridad sobre lo que están construyendo.",
         },
         {
-          title: "Tea Mind Arquitectura de Negocios de Té",
+          title: "Tea Mind Full Experience",
           description:
             "Para quienes quieren construir algo completo, sólido y a largo plazo en el mercado del té.",
         },
@@ -834,7 +834,7 @@ export const translations = {
         "Actuación con Té",
         "Laboratorio de Marcas",
         "Sprint Smart",
-        "Arquitectura de Negocios",
+        "Full Experience",
         "Neurogastronomía",
       ],
       innovationsList: ["Tea Mind AI", "Tea Fest in Rio", "Tea Mind Society"],
