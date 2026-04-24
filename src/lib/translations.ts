@@ -107,6 +107,43 @@ export const translations = {
       eyebrow: "Resultados reais",
       title:
         "Não ensinamos sobre o mercado do chá. Nós o construímos junto de nossos alunos.",
+      testimonials: [
+        {
+          text: "Foi tudo encantador. Aborda os conteúdos de forma abrangente e permite ao aluno se desenvolver. Muito bem organizado, professores competentes, queridos e comprometidos com o aprendizado do aluno.",
+          name: "Liane Dorneles",
+          title: "Tea Blender & Especialista em Neurogastronomia de Chás & Ervas",
+        },
+        {
+          text: "Aprender a lidar com o chá e extrair dele o seu melhor e tudo que ele pode dar, foi uma experiência muito prazerosa e gratificante através do que as Professoras Carla e Carol fazem com maestria. Obrigada por essa jornada incrível!",
+          name: "Valéria Molinaro",
+          title: "Tea Blender & Sommelier de Chá & Especialista em Eventos/Experiências de Chá",
+        },
+        {
+          text: "Minha experiência foi maravilhosa. Foram todos muito atenciosos e os Cursos ministrados são excelentes. As profissionais Carla e Carol têm um profundo conhecimento sobre o assunto e transmitem com clareza esse conhecimento. Para quem quer empreender no Mundo do Chá, com certeza receberá todo suporte!",
+          name: "Marcia Pepin",
+          title: "Sommelier de Chá & Tea Barista",
+        },
+        {
+          text: "Uma experiência maravilhosa. Um curso sério e completo. O curso não se limitou apenas a ensinar a arte de “blendear”, que por sinal foi excelente do início ao fim dos módulos. Trouxe também muito conteúdo e ensinamentos sobre processos do chá, infusões, boas práticas, regras da Anvisa, marketing, vendas e muito mais. Entregou aquilo que propôs. Obrigada professoras!",
+          name: "Valeria Lodo",
+          title: "Tea Blender",
+        },
+        {
+          text: "A Carla e a Carol são MUITO atenciosas com tudo, de início a fim. O conteúdo das aulas é maravilhoso. Hoje sou uma profissional do chá com muito orgulho graças as meninas. Muito obrigada!",
+          name: "Érika Knop",
+          title: "Sommelier de Chá & Tea Barista",
+        },
+        {
+          text: "Fiz a formação profissional de Sommelier de Chá. Fiquei maravilhada com tudo! A equipe e as professoras são super atenciosas. Possui muito conteúdo, com módulos sobre cultura do chá, receitas clássicas e modernas, além da parte de gerenciamento e criação da empresa de chá e eventos. Acredito que não exista outro tão completo nessa área. Parabéns!",
+          name: "Elisa Raisa",
+          title: "Sommelier de Chá & Tea Barista",
+        },
+        {
+          text: "Descobri e ainda venho descobrindo o quanto é prazeroso preparar, servir e tomar uma xícara de chá perfeita. É uma satisfação enorme ter concluído a formação profissional de Sommelier e Tea Barista com a Carla e Carol, duas professoras exemplares.",
+          name: "Gabriela Ferreira",
+          title: "Sommelier de Chá · Especialista em Eventos & Experiências com Chá · Tea Blender em formação",
+        },
+      ],
       transition:
         "Sommeliers de Chá, Tea Blenders, Especialistas em Eventos, Mestres em Harmonização, Especialistas em Neurogastronomia de Chás & Ervas, Especialistas em Negócios de Chás. Cada um construindo sua própria história no mercado do chá.",
       cta: "Conheça nossos profissionais formados & empreendedores →",
