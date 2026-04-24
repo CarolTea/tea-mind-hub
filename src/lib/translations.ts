@@ -12,6 +12,32 @@ export const translations = {
       contact: "Eventos",
       neurogastronomy: "Neurogastronomia",
       neuralSystem: "Neural System",
+      programsGroups: {
+        profissionalizantes: {
+          label: "Programas Profissionalizantes",
+          items: [
+            { label: "Tea Mind Atuação com Chá", anchor: "atuacao" },
+            { label: "Tea Mind Laboratório de Marcas de Chá", anchor: "laboratorio" },
+            { label: "Tea Mind Full Experience", anchor: "full-experience" },
+          ],
+        },
+        aprimoramento: {
+          label: "Programas de Aprimoramento",
+          items: [
+            { label: "Neurogastronomia de Chás e Ervas", anchor: "neurogastronomia" },
+            { label: "Eventos com Chá", anchor: "eventos" },
+            { label: "Harmonização com Chás", anchor: "harmonizacao" },
+          ],
+        },
+        aceleracao: {
+          label: "Programas de Aceleração",
+          items: [
+            { label: "Sprint Smart", anchor: "sprint" },
+            { label: "Arquitetura Comercial", anchor: "arquitetura-comercial", comingSoon: true },
+          ],
+        },
+        comingSoonLabel: "em breve",
+      },
     },
     hero: {
       eyebrow: "INTELIGÊNCIA ESTRATÉGICA PARA A INDÚSTRIA DO CHÁ",
