@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import carolImg from "@/assets/carol-tavares.png";
 import carlaImg from "@/assets/carla-vicente.png";
+import camelliaImg from "@/assets/camellia-sinensis.png";
 
 const founderPhotos: Record<string, string> = {
   "Carol Tavares": carolImg,
@@ -261,10 +262,15 @@ const OriginBlock = () => {
     <section className="py-20 lg:py-28 bg-background">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image placeholder */}
+          {/* Image */}
           <Fade>
-            <div className="aspect-[4/5] bg-muted rounded-sm flex items-center justify-center">
-              <span className="font-serif text-4xl text-muted-foreground/30">TM</span>
+            <div className="aspect-[4/5] bg-muted rounded-sm overflow-hidden">
+              <img
+                src={camelliaImg}
+                alt="Folhas de Camellia sinensis ao sol"
+                loading="lazy"
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.03]"
+              />
             </div>
           </Fade>
 
