@@ -22,7 +22,7 @@ export const translations = {
       cta1: "Conheça os Programas",
       cta2: "Fazer o Diagnóstico Gratuito",
       socialProof:
-        "1.400+ profissionais formados · 100+ negócios mentorados · Alunas premiadas em concursos nacionais de chá · Investimento no Shark Tank",
+        "1.400+ profissionais formados · 100+ negócios mentorados · Alunas premiadas em concursos nacionais de chá · Alunas com investimento no Shark Tank",
     },
     positioning: {
       eyebrow: "A inteligência por trás da indústria",
@@ -34,13 +34,13 @@ export const translations = {
           icon: "01",
           title: "Diagnóstico antes de tudo",
           description:
-            "Não encaixamos pessoas em programas. Lemos o seu momento, seus objetivos e sua realidade antes de indicar qualquer caminho. O programa certo é o que faz sentido para você , não para a média.",
+            "Não encaixamos pessoas em cursos. Lemos o seu momento, seus objetivos e sua realidade antes de indicar o melhor caminho. O programa certo é o que faz sentido para você, não para os outros.",
         },
         {
           icon: "02",
-          title: "Formação técnica com visão de negócio",
+          title: "Formação técnica com visão de negócio desde o primeiro dia",
           description:
-            "Você não aprende chá aqui para depois aprender a trabalhar com ele. As duas coisas acontecem juntas, porque é assim que o mercado funciona.",
+            "Você não aprende sobre chá para depois aprender a trabalhar com ele. Os dois acontecem juntos, porque é assim que o mercado funciona.",
         },
         {
           icon: "03",
@@ -62,7 +62,7 @@ export const translations = {
       heading:
         "Cada trajetória começa de um lugar diferente. O programa certo é o que foi feito para o seu momento.",
       subtitle:
-        "Antes de escolher, recomendamos o nosso diagnóstico gratuito. Em menos de 5 minutos você entende qual programa faz mais sentido para onde você está agora.",
+        "Antes de escolher, recomendamos o nosso diagnóstico gratuito. Em menos de 5 minutos você entende qual programa faz mais sentido para o seu momento atual e onde você deseja chegar.",
       diagnosisCta: "Fazer o Diagnóstico Gratuito →",
       cardCta: "Quero conhecer esse programa →",
       footerNote: "Ainda explorando o universo do chá? Comece pelo diagnóstico.",
@@ -106,10 +106,47 @@ export const translations = {
       ],
       eyebrow: "Resultados reais",
       title:
-        "Não ensinamos sobre o mercado do chá. Nós o construímos , junto com nossos alunos.",
+        "Não ensinamos sobre o mercado do chá. Nós o construímos junto de nossos alunos.",
+      testimonials: [
+        {
+          text: "Foi tudo encantador. Aborda os conteúdos de forma abrangente e permite ao aluno se desenvolver. Muito bem organizado, professores competentes, queridos e comprometidos com o aprendizado do aluno.",
+          name: "Liane Dorneles",
+          title: "Tea Blender & Especialista em Neurogastronomia de Chás & Ervas",
+        },
+        {
+          text: "Aprender a lidar com o chá e extrair dele o seu melhor e tudo que ele pode dar, foi uma experiência muito prazerosa e gratificante através do que as Professoras Carla e Carol fazem com maestria. Obrigada por essa jornada incrível!",
+          name: "Valéria Molinaro",
+          title: "Tea Blender & Sommelier de Chá & Especialista em Eventos/Experiências de Chá",
+        },
+        {
+          text: "Minha experiência foi maravilhosa. Foram todos muito atenciosos e os Cursos ministrados são excelentes. As profissionais Carla e Carol têm um profundo conhecimento sobre o assunto e transmitem com clareza esse conhecimento. Para quem quer empreender no Mundo do Chá, com certeza receberá todo suporte!",
+          name: "Marcia Pepin",
+          title: "Sommelier de Chá & Tea Barista",
+        },
+        {
+          text: "Uma experiência maravilhosa. Um curso sério e completo. O curso não se limitou apenas a ensinar a arte de “blendear”, que por sinal foi excelente do início ao fim dos módulos. Trouxe também muito conteúdo e ensinamentos sobre processos do chá, infusões, boas práticas, regras da Anvisa, marketing, vendas e muito mais. Entregou aquilo que propôs. Obrigada professoras!",
+          name: "Valeria Lodo",
+          title: "Tea Blender",
+        },
+        {
+          text: "A Carla e a Carol são MUITO atenciosas com tudo, de início a fim. O conteúdo das aulas é maravilhoso. Hoje sou uma profissional do chá com muito orgulho graças as meninas. Muito obrigada!",
+          name: "Érika Knop",
+          title: "Sommelier de Chá & Tea Barista",
+        },
+        {
+          text: "Fiz a formação profissional de Sommelier de Chá. Fiquei maravilhada com tudo! A equipe e as professoras são super atenciosas. Possui muito conteúdo, com módulos sobre cultura do chá, receitas clássicas e modernas, além da parte de gerenciamento e criação da empresa de chá e eventos. Acredito que não exista outro tão completo nessa área. Parabéns!",
+          name: "Elisa Raisa",
+          title: "Sommelier de Chá & Tea Barista",
+        },
+        {
+          text: "Descobri e ainda venho descobrindo o quanto é prazeroso preparar, servir e tomar uma xícara de chá perfeita. É uma satisfação enorme ter concluído a formação profissional de Sommelier e Tea Barista com a Carla e Carol, duas professoras exemplares.",
+          name: "Gabriela Ferreira",
+          title: "Sommelier de Chá · Especialista em Eventos & Experiências com Chá · Tea Blender em formação",
+        },
+      ],
       transition:
-        "Mais de 300 Sommeliers e 100 Tea Blenders formados. Cada um construindo sua própria história no mercado do chá.",
-      cta: "Conheça nossos profissionais formados →",
+        "Sommeliers de Chá, Tea Blenders, Especialistas em Eventos, Mestres em Harmonização, Especialistas em Neurogastronomia de Chás & Ervas, Especialistas em Negócios de Chás. Cada um construindo sua própria história no mercado do chá.",
+      cta: "Conheça nossos profissionais formados & empreendedores →",
     },
     innovations: {
       eyebrow: "Tea Mind Inovações",
@@ -132,25 +169,25 @@ export const translations = {
           cta: "Conhecer o Tea Fest →",
         },
       ],
-      closing: "Não seguimos o mercado do chá. Nós o construímos.",
+      closing: "Enquanto muitos observam o mercado, nós criamos o que ele ainda precisa.",
       cta: "Explorar todas as inovações →",
     },
     founders: {
       eyebrow: "Quem está por trás da Tea Mind",
-      title: "Aprendemos com o mercado. Construímos com ele.",
+      title: "Visão global. Leitura crítica. Construção local.",
       subtitle:
-        "A Tea Mind nasceu da experiência real de quem não apenas estudou o mercado do chá , mas o construiu, o ensinou e o transformou por mais de uma década.",
+        "A Tea Mind nasce da trajetória de quem estuda, ensina e ajuda a estruturar o mercado do chá no Brasil, ampliando suas possibilidades ao longo de mais de uma década.",
       profiles: [
         {
           name: "Carol Tavares",
           titles:
-            "Co-fundadora · Sommelier de Chá · Tea Tender · Estrategista de Negócios · Chief Product Manager Chat Pay Labs",
+            "Co-fundadora · Sommelier de Chá · Especialista em Drinks com Chás & Harmonizações · Estrategista de Negócios · Diretora de Inovações, Produtos e Negócios",
           initials: "CT",
         },
         {
           name: "Carla Vicente",
           titles:
-            "Co-fundadora · Sommelier de Chá · Tea Barista · Especialista em Chás Gelados",
+            "Co-fundadora · Sommelier de Chá · Tea Barista · Especialista em Chás Gelados · Diretora Pedagógica e de Criação",
           initials: "CV",
         },
       ],
@@ -166,7 +203,7 @@ export const translations = {
           icon: "01",
           title: "Conexão real entre profissionais",
           description:
-            "Troca de experiências, parcerias e networking com quem está no mesmo caminho , no Brasil e no mundo. Aqui você não está cercado de curiosos. Está cercado de construtores.",
+            "Troca de experiências, parcerias e networking com quem está no mesmo caminho, no Brasil e no mundo. Aqui você não está cercado de curiosos. Está cercado de construtores.",
         },
         {
           icon: "02",
@@ -189,13 +226,13 @@ export const translations = {
       ],
       closing:
         "O mercado do chá no Brasil está sendo construído por pessoas como você. A Society é onde essas pessoas se encontram.",
-      cta: "Quero fazer parte da Tea Mind Society →",
+      cta: "Você é nosso aluno e ainda não faz parte da Society? Clique para solicitar sua entrada →",
     },
     partners: {
       eyebrow: "Tea Mind Partners",
       title: "Os melhores profissionais do mercado do chá estão aqui.",
       subtitle:
-        "A Tea Mind atrai e conecta especialistas reconhecidos no mercado do chá , no Brasil e no mundo. Nossos partners contribuem com seu conhecimento, experiência e visão para enriquecer a jornada dos nossos alunos.",
+        "A Tea Mind atrai e conecta especialistas reconhecidos no mercado do chá, no Brasil e no mundo. Nossos partners contribuem com seu conhecimento, experiência e visão para enriquecer a jornada dos nossos alunos.",
       closing:
         "A Tea Mind não é apenas um hub de formação. É um ecossistema onde os melhores se encontram.",
       cta: "Conhecer todos os partners →",
@@ -256,7 +293,7 @@ export const translations = {
       cta1: "Explore Programs",
       cta2: "Take the Free Diagnosis",
       socialProof:
-        "1,400+ professionals trained · 100+ businesses mentored · Award-winning students · Shark Tank investment",
+        "1,400+ professionals trained · 100+ businesses mentored · Award-winning students in national tea competitions · Students with Shark Tank investment",
     },
     positioning: {
       eyebrow: "The intelligence behind the industry",
@@ -340,10 +377,47 @@ export const translations = {
       ],
       eyebrow: "Real results",
       title:
-        "We don't teach about the tea market. We build it , together with our students.",
+        "We don't teach about the tea market. We build it together with our students.",
+      testimonials: [
+        {
+          text: "It was all enchanting. The content is comprehensive and lets the student grow. Very well organized, with competent, caring teachers truly committed to student learning.",
+          name: "Liane Dorneles",
+          title: "Tea Blender & Specialist in Neurogastronomy of Teas & Herbs",
+        },
+        {
+          text: "Learning to handle tea and bring out everything it can offer was a deeply rewarding experience thanks to what teachers Carla and Carol do with mastery. Thank you for this incredible journey!",
+          name: "Valéria Molinaro",
+          title: "Tea Blender & Tea Sommelier & Tea Events / Experiences Specialist",
+        },
+        {
+          text: "My experience was wonderful. Everyone was very attentive and the courses are excellent. Carla and Carol have deep knowledge of the subject and share it clearly. Anyone wanting to build a tea business will find full support here!",
+          name: "Marcia Pepin",
+          title: "Tea Sommelier & Tea Barista",
+        },
+        {
+          text: "A wonderful experience. A serious, complete course that goes far beyond the art of blending. It also covers tea processes, infusions, best practices, regulations, marketing, sales and more. It delivered everything it promised. Thank you, teachers!",
+          name: "Valeria Lodo",
+          title: "Tea Blender",
+        },
+        {
+          text: "Carla and Carol are incredibly attentive from start to finish. The class content is wonderful. Today I am proudly a tea professional thanks to them. Thank you so much!",
+          name: "Érika Knop",
+          title: "Tea Sommelier & Tea Barista",
+        },
+        {
+          text: "I completed the Tea Sommelier professional training and was amazed by everything. The team and teachers are outstanding. The program covers tea culture, classic and modern recipes, plus the management and creation of a tea and events business. I don't believe there is anything as complete as this. Congratulations!",
+          name: "Elisa Raisa",
+          title: "Tea Sommelier & Tea Barista",
+        },
+        {
+          text: "I discovered, and continue to discover, how rewarding it is to prepare, serve and drink the perfect cup of tea. It is a great satisfaction to have completed the Sommelier and Tea Barista training with Carla and Carol — two exemplary teachers.",
+          name: "Gabriela Ferreira",
+          title: "Tea Sommelier · Tea Events & Experiences Specialist · Tea Blender in training",
+        },
+      ],
       transition:
-        "Over 300 Sommeliers and 100 Tea Blenders trained. Each one building their own story in the tea market.",
-      cta: "Meet our trained professionals →",
+        "Tea Sommeliers, Tea Blenders, Event Specialists, Pairing Masters, Specialists in Neurogastronomy of Teas & Herbs, Tea Business Specialists. Each one building their own story in the tea market.",
+      cta: "Meet our trained professionals & entrepreneurs →",
     },
     innovations: {
       eyebrow: "Tea Mind Innovations",
@@ -366,25 +440,25 @@ export const translations = {
           cta: "Discover Tea Fest →",
         },
       ],
-      closing: "We don't follow the tea market. We build it.",
+      closing: "While many observe the market, we create what it still needs.",
       cta: "Explore all innovations →",
     },
     founders: {
       eyebrow: "Who's behind Tea Mind",
-      title: "We learned from the market. We built with it.",
+      title: "Global vision. Critical reading. Local construction.",
       subtitle:
-        "Tea Mind was born from the real experience of those who didn't just study the tea market , but built it, taught it, and transformed it for over a decade.",
+        "Tea Mind is born from the journey of those who study, teach, and help structure the tea market in Brazil, expanding its possibilities over more than a decade.",
       profiles: [
         {
           name: "Carol Tavares",
           titles:
-            "Co-founder · Tea Sommelier · Tea Tender · Business Strategist · Chief Product Manager Chat Pay Labs",
+            "Co-founder · Tea Sommelier · Tea Drinks & Pairings Specialist · Business Strategist · Director of Innovation, Products and Business",
           initials: "CT",
         },
         {
           name: "Carla Vicente",
           titles:
-            "Co-founder · Tea Sommelier · Tea Barista · Iced Tea Specialist",
+            "Co-founder · Tea Sommelier · Tea Barista · Iced Tea Specialist · Pedagogical and Creative Director",
           initials: "CV",
         },
       ],
@@ -400,7 +474,7 @@ export const translations = {
           icon: "01",
           title: "Real connections between professionals",
           description:
-            "Exchange experiences, partnerships, and networking with those on the same path , in Brazil and worldwide. Here you're not surrounded by the curious. You're surrounded by builders.",
+            "Exchange experiences, partnerships, and networking with those on the same path, in Brazil and worldwide. Here you're not surrounded by the curious. You're surrounded by builders.",
         },
         {
           icon: "02",
@@ -423,13 +497,13 @@ export const translations = {
       ],
       closing:
         "The tea market in Brazil is being built by people like you. The Society is where these people meet.",
-      cta: "I want to join Tea Mind Society →",
+      cta: "Are you our student and not yet part of the Society? Click to request access →",
     },
     partners: {
       eyebrow: "Tea Mind Partners",
       title: "The best tea market professionals are here.",
       subtitle:
-        "Tea Mind attracts and connects recognized specialists in the tea market , in Brazil and worldwide. Our partners contribute their knowledge, experience, and vision to enrich our students' journey.",
+        "Tea Mind attracts and connects recognized specialists in the tea market, in Brazil and worldwide. Our partners contribute their knowledge, experience, and vision to enrich our students' journey.",
       closing:
         "Tea Mind is not just a training hub. It's an ecosystem where the best come together.",
       cta: "Meet all partners →",
@@ -490,7 +564,7 @@ export const translations = {
       cta1: "Conoce los Programas",
       cta2: "Hacer el Diagnóstico Gratuito",
       socialProof:
-        "1.400+ profesionales formados · 100+ negocios mentoreados · Alumnas premiadas en concursos nacionales de té · Inversión en Shark Tank",
+        "1.400+ profesionales formados · 100+ negocios mentoreados · Alumnas premiadas en concursos nacionales de té · Alumnas con inversión en Shark Tank",
     },
     positioning: {
       eyebrow: "La inteligencia detrás de la industria",
@@ -574,10 +648,47 @@ export const translations = {
       ],
       eyebrow: "Resultados reales",
       title:
-        "No enseñamos sobre el mercado del té. Lo construimos , junto con nuestros alumnos.",
+        "No enseñamos sobre el mercado del té. Lo construimos junto a nuestros alumnos.",
+      testimonials: [
+        {
+          text: "Todo fue encantador. Aborda los contenidos de forma amplia y permite al alumno desarrollarse. Muy bien organizado, profesoras competentes, queridas y comprometidas con el aprendizaje del alumno.",
+          name: "Liane Dorneles",
+          title: "Tea Blender y Especialista en Neurogastronomía de Tés y Hierbas",
+        },
+        {
+          text: "Aprender a tratar el té y extraer de él lo mejor fue una experiencia muy placentera y gratificante gracias a lo que las profesoras Carla y Carol hacen con maestría. ¡Gracias por este viaje increíble!",
+          name: "Valéria Molinaro",
+          title: "Tea Blender y Sommelier de Té y Especialista en Eventos / Experiencias de Té",
+        },
+        {
+          text: "Mi experiencia fue maravillosa. Todos fueron muy atentos y los cursos son excelentes. Carla y Carol tienen un profundo conocimiento del tema y lo transmiten con claridad. Para quien quiere emprender en el mundo del té, recibirá todo el apoyo.",
+          name: "Marcia Pepin",
+          title: "Sommelier de Té y Tea Barista",
+        },
+        {
+          text: "Una experiencia maravillosa. Un curso serio y completo. No se limitó a enseñar el arte del blending; también trajo procesos del té, infusiones, buenas prácticas, normativas, marketing, ventas y mucho más. Cumplió lo que prometió. ¡Gracias profesoras!",
+          name: "Valeria Lodo",
+          title: "Tea Blender",
+        },
+        {
+          text: "Carla y Carol son MUY atentas con todo, de principio a fin. El contenido de las clases es maravilloso. Hoy soy una profesional del té con mucho orgullo gracias a ellas. ¡Muchas gracias!",
+          name: "Érika Knop",
+          title: "Sommelier de Té y Tea Barista",
+        },
+        {
+          text: "Hice la formación profesional de Sommelier de Té y quedé maravillada con todo. El equipo y las profesoras son super atentos. Tiene mucho contenido sobre cultura del té, recetas clásicas y modernas, además de la gestión y creación de la empresa de té y eventos. Creo que no existe otro tan completo. ¡Felicidades!",
+          name: "Elisa Raisa",
+          title: "Sommelier de Té y Tea Barista",
+        },
+        {
+          text: "Descubrí y sigo descubriendo lo placentero que es preparar, servir y beber una taza de té perfecta. Es una gran satisfacción haber concluido la formación de Sommelier y Tea Barista con Carla y Carol, dos profesoras ejemplares.",
+          name: "Gabriela Ferreira",
+          title: "Sommelier de Té · Especialista en Eventos y Experiencias con Té · Tea Blender en formación",
+        },
+      ],
       transition:
-        "Más de 300 Sommeliers y 100 Tea Blenders formados. Cada uno construyendo su propia historia en el mercado del té.",
-      cta: "Conoce a nuestros profesionales formados →",
+        "Sommeliers de Té, Tea Blenders, Especialistas en Eventos, Maestros en Maridaje, Especialistas en Neurogastronomía de Tés & Hierbas, Especialistas en Negocios de Té. Cada uno construyendo su propia historia en el mercado del té.",
+      cta: "Conoce a nuestros profesionales formados y emprendedores →",
     },
     innovations: {
       eyebrow: "Tea Mind Innovaciones",
@@ -600,25 +711,25 @@ export const translations = {
           cta: "Conocer el Tea Fest →",
         },
       ],
-      closing: "No seguimos el mercado del té. Lo construimos.",
+      closing: "Mientras muchos observan el mercado, nosotros creamos lo que aún necesita.",
       cta: "Explorar todas las innovaciones →",
     },
     founders: {
       eyebrow: "Quiénes están detrás de Tea Mind",
-      title: "Aprendimos del mercado. Construimos con él.",
+      title: "Visión global. Lectura crítica. Construcción local.",
       subtitle:
-        "Tea Mind nació de la experiencia real de quienes no solo estudiaron el mercado del té , sino que lo construyeron, lo enseñaron y lo transformaron por más de una década.",
+        "Tea Mind nace de la trayectoria de quienes estudian, enseñan y ayudan a estructurar el mercado del té en Brasil, ampliando sus posibilidades a lo largo de más de una década.",
       profiles: [
         {
           name: "Carol Tavares",
           titles:
-            "Co-fundadora · Sommelier de Té · Tea Tender · Estratega de Negocios · Chief Product Manager Chat Pay Labs",
+            "Co-fundadora · Sommelier de Té · Especialista en Drinks con Tés y Maridajes · Estratega de Negocios · Directora de Innovación, Productos y Negocios",
           initials: "CT",
         },
         {
           name: "Carla Vicente",
           titles:
-            "Co-fundadora · Sommelier de Té · Tea Barista · Especialista en Tés Helados",
+            "Co-fundadora · Sommelier de Té · Tea Barista · Especialista en Tés Helados · Directora Pedagógica y de Creación",
           initials: "CV",
         },
       ],
@@ -634,7 +745,7 @@ export const translations = {
           icon: "01",
           title: "Conexión real entre profesionales",
           description:
-            "Intercambio de experiencias, alianzas y networking con quienes están en el mismo camino , en Brasil y en el mundo. Aquí no estás rodeado de curiosos. Estás rodeado de constructores.",
+            "Intercambio de experiencias, alianzas y networking con quienes están en el mismo camino, en Brasil y en el mundo. Aquí no estás rodeado de curiosos. Estás rodeado de constructores.",
         },
         {
           icon: "02",
@@ -657,13 +768,13 @@ export const translations = {
       ],
       closing:
         "El mercado del té en Brasil está siendo construido por personas como tú. La Society es donde esas personas se encuentran.",
-      cta: "Quiero hacer parte de Tea Mind Society →",
+      cta: "¿Eres nuestro alumno y aún no haces parte de la Society? Haz clic para solicitar tu entrada →",
     },
     partners: {
       eyebrow: "Tea Mind Partners",
       title: "Los mejores profesionales del mercado del té están aquí.",
       subtitle:
-        "Tea Mind atrae y conecta especialistas reconocidos en el mercado del té , en Brasil y en el mundo. Nuestros partners contribuyen con su conocimiento, experiencia y visión para enriquecer el viaje de nuestros alumnos.",
+        "Tea Mind atrae y conecta especialistas reconocidos en el mercado del té, en Brasil y en el mundo. Nuestros partners contribuyen con su conocimiento, experiencia y visión para enriquecer el viaje de nuestros alumnos.",
       closing:
         "Tea Mind no es solo un hub de formación. Es un ecosistema donde los mejores se encuentran.",
       cta: "Conocer a todos los partners →",

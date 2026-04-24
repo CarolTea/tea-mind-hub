@@ -44,7 +44,7 @@ const Positioning = () => {
           ))}
         </div>
 
-        <p className="font-serif text-xl md:text-2xl text-foreground font-medium text-center italic">
+        <p className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground font-medium text-center italic leading-snug">
           {t.positioning.closing}
         </p>
       </div>

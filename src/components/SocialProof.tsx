@@ -20,11 +20,7 @@ const SocialProof = () => {
     onSelect();
   }, [emblaApi, onSelect]);
 
-  const testimonials = Array.from({ length: 6 }, (_, i) => ({
-    text: `"Depoimento placeholder ${i + 1} , conteúdo real a ser inserido."`,
-    name: `Profissional ${i + 1}`,
-    title: "Sommelier de Chá · São Paulo · Atuação em consultoria",
-  }));
+  const testimonials = t.socialProof.testimonials;
 
   return (
     <section id="social-proof" className="py-32 lg:py-40 bg-background">
@@ -53,7 +49,7 @@ const SocialProof = () => {
               <div key={i} className="flex-[0_0_100%] md:flex-[0_0_48%] lg:flex-[0_0_31%] min-w-0">
                 <div className="border border-border/60 p-8 h-full flex flex-col">
                   <p className="font-sans text-sm text-muted-foreground leading-relaxed mb-6 flex-1 italic">
-                    {item.text}
+                    “{item.text}”
                   </p>
                   <div>
                     <p className="font-serif text-base font-medium text-foreground">{item.name}</p>
