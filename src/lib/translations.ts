@@ -62,7 +62,7 @@ export const translations = {
       heading:
         "Cada trajetória começa de um lugar diferente. O programa certo é o que foi feito para o seu momento.",
       subtitle:
-        "Antes de escolher, recomendamos o nosso diagnóstico gratuito. Em menos de 5 minutos você entende qual programa faz mais sentido para onde você está agora.",
+        "Antes de escolher, recomendamos o nosso diagnóstico gratuito. Em menos de 5 minutos você entende qual programa faz mais sentido para o seu momento atual e onde você deseja chegar.",
       diagnosisCta: "Fazer o Diagnóstico Gratuito →",
       cardCta: "Quero conhecer esse programa →",
       footerNote: "Ainda explorando o universo do chá? Comece pelo diagnóstico.",
