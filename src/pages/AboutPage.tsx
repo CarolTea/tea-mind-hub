@@ -3,6 +3,13 @@ import { LanguageProvider, useLang } from "@/contexts/LanguageContext";
 import type { Lang } from "@/lib/translations";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import carolImg from "@/assets/carol-tavares.png";
+import carlaImg from "@/assets/carla-vicente.png";
+
+const founderPhotos: Record<string, string> = {
+  "Carol Tavares": carolImg,
+  "Carla Vicente": carlaImg,
+};
 
 /* ─── Fade helper ─── */
 const Fade = ({ children, className = "" }: { children: ReactNode; className?: string }) => {
