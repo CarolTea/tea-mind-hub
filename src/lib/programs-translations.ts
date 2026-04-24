@@ -499,36 +499,6 @@ const enCategories: ProgramCategory[] = [
       "Specializations for tea professionals who want to deepen technical repertoire, expand areas of practice, and differentiate their presence in the market.",
     programs: [
       {
-        id: "neurogastronomia",
-        title: "Specialization in Neurogastronomy of Teas & Herbs",
-        subtitle: "Specialization",
-        shortDescription:
-          "A cutting-edge program exploring how neuroscience transforms tea tasting, customer experience, and product development.",
-        mainDescription:
-          "A cutting-edge specialization, in partnership with a guest specialist, for professionals who want to combine sensory science, neurogastronomy, and the tea market.",
-        bodyText:
-          "Neurogastronomy applies the principles of neuroscience to sensory experience. This specialization brings that perspective to the tea universe, expanding the professional's technical repertoire and opening new possibilities for curation, service, experience design, and product development with real differentiation.",
-        forWhoIntro: enCommon.forWhoIntro,
-        forWhoItems: [
-          "Already work or are training as a Tea Sommelier, Tea Blender, or industry professional",
-          "Want to add a scientific and sensory layer to their practice",
-          "Want to create experiences and products grounded in perception, memory, and sensory pleasure",
-          "Seek technical differentiation in an emerging market",
-        ],
-        includesTitle: enCommon.includesLabel,
-        includesItems: [
-          "Classes with a guest specialist in Neurogastronomy",
-          "Support material and references applied to tea",
-          "Case studies and sensory exercises",
-          "Specialization certification",
-        ],
-        formationText: "",
-        directionTitle: "How it works",
-        directionText:
-          "An objective and applied specialization for professionals who already have a tea-market base and want to add a sophisticated technical and sensory layer to their trajectory.",
-        cta: enCommon.cta,
-      },
-      {
         id: "eventos",
         title: "Specialization in Tea Events",
         subtitle: "Specialization",
@@ -563,29 +533,70 @@ const enCategories: ProgramCategory[] = [
         title: "Specialization in Tea Pairing",
         subtitle: "Specialization",
         shortDescription:
-          "For those who want to master the art of pairing teas with food and occasions, crafting sophisticated and unique sensory experiences.",
+          "Master tea pairing with food and beverages through the HARCOR technique, creating sophisticated gastronomic experiences.",
         mainDescription:
-          "A specialization for professionals who want to master the art of pairing teas with food and occasions, crafting sophisticated and unique sensory experiences.",
+          "A specialization for professionals who want to master the pairing of teas with food, creating sensory, sophisticated, and technically consistent gastronomic experiences.",
         bodyText:
-          "Tea pairing is one of the most valued skills in premium hospitality and gastronomic curation. This specialization deepens technical, sensory, and cultural criteria to create combinations with logic, beauty, and real differentiation.",
+          "Tea pairing is one of the most relevant skills for those working in hospitality, gastronomy, events, consulting, premium experiences, and sensory curation. In this specialization, students deepen technical, cultural, and sensory criteria to craft combinations with logic, beauty, and real differentiation.\n\nOne of our program's differentiators is the HARCOR technique, developed by Professor Carol Tavares, which broadens the traditional view of pairing beyond similarity and contrast. Through it, students learn to build deeper pairings, considering texture, structure, intensity, sensory context, and the narrative of the experience.",
         forWhoIntro: enCommon.forWhoIntro,
         forWhoItems: [
-          "Want to specialize in pairing tea with food and occasions",
-          "Work or plan to work in hospitality, restaurants, hotels, or premium events",
+          "Want to specialize in pairing teas with food and beverages",
+          "Work or plan to work in hospitality, restaurants, hotels, consulting, events, or gastronomic experiences",
           "Want to expand technical repertoire and create combinations with professional criteria",
-          "Seek to differentiate their practice with a sophisticated sensory layer",
+          "Seek to differentiate their practice with a more sophisticated sensory layer",
+          "Want to apply tea in experiences with cheeses, chocolates, wines, dinners, and paired menus",
         ],
         includesTitle: enCommon.includesLabel,
         includesItems: [
           "Classes applied to pairing teas with food",
-          "Technical, sensory, and cultural criteria",
+          "HARCOR pairing technique developed by Professor Carol Tavares",
+          "Technical, sensory, cultural, and gastronomic criteria",
           "Case studies and practical exercises",
+          "Hands-on class: tea-paired dinner",
+          "Hands-on class: pairing with cheeses",
+          "Hands-on class: pairing with chocolates",
+          "Hands-on class: pairing with wines",
           "Specialization certification",
         ],
         formationText: "",
         directionTitle: "How it works",
         directionText:
-          "A sensory and applied specialization for those who want to build a technical signature in pairing and bring it to their professional practice.",
+          "In this sensory specialization, the goal is for students to leave with greater confidence, technical repertoire, and method to create coherent, memorable, and strategically conceived pairings.",
+        cta: enCommon.cta,
+      },
+      {
+        id: "neurogastronomia",
+        title: "Specialization in Neurogastronomy of Teas & Herbs",
+        subtitle: "Specialization",
+        shortDescription:
+          "Latin America's first Specialization in Neurogastronomy of Teas & Herbs. 8 classes within the SENSO Method, 30 hours, with Raquel Magalhães.",
+        mainDescription:
+          "Latin America's first Specialization in Neurogastronomy of Teas & Herbs, designed for professionals who want to combine science, sensoriality, and real practical application in the tea and herbs market.",
+        bodyText:
+          "Understand how flavor, aroma, context, perception, and emotion come together in the experience with teas and herbs, and turn that knowledge into practical repertoire for your professional work. The program expands your reading of how sensory experiences are built in the human brain, based on the SENSO Method created by Raquel Magalhães.\n\nAn integrated approach uniting fields that rarely converse in the tea market: Neuroscience, Phytochemistry, Teas & Herbs, Sensoriality, Emotion, and Experience Design. Content structured on a scientific foundation so you can communicate better, close more deals, and grow your sales.",
+        forWhoIntro: enCommon.forWhoIntro,
+        forWhoItems: [
+          "Tea Sommeliers, Tea Blenders, and Tea Baristas",
+          "Entrepreneurs and brands in the tea universe",
+          "Professionals working in events, consulting, and experiences",
+          "Gastronomy and integrative wellness professionals",
+          "Scholars and enthusiasts of the tea universe",
+        ],
+        includesTitle: enCommon.includesLabel,
+        includesItems: [
+          "8 recorded classes within the SENSO Method, created by Raquel Magalhães",
+          "Class 0 — leveling class on tea for those who are not yet tea professionals",
+          "Live Q&A sessions",
+          "30 days of access to the program's proprietary AI (2nd cohort bonus)",
+          "Access to recordings for 12 months",
+          "PDF support material and exercises",
+          "30 hours of content across classes, leveling, and complementary materials",
+          "Digital certificate as a Specialist in Neurogastronomy of Teas & Herbs",
+        ],
+        formationText: "",
+        directionTitle: "Program structure",
+        directionText:
+          "Class 1, Foundations of Sensory Analysis. Class 2, Foundations of Neurogastronomy. Class 3, The 5 Senses and Neurogastronomy. Class 4, Eating Behavior. Class 5, Sensory Phytochemistry. Class 6, Camellia sinensis in the Context of Neurogastronomy. Class 7, Pairing Based on Neurogastronomy. Class 8, Sensory Design and Professional Positioning.\n\nLed by Raquel Magalhães (creator of the SENSO Method, guest professor at Le Cordon Bleu Rio de Janeiro), Carol Tavares, and Carla Vicente.",
         cta: enCommon.cta,
       },
     ],
