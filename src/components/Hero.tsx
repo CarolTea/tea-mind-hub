@@ -50,7 +50,7 @@ const Hero = () => {
               {t.hero.cta2}
             </a>
           </div>
-          <p className="font-sans text-xs md:text-sm text-primary-foreground/40 mt-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.6s" }}>
+          <p className="font-sans text-sm md:text-base text-primary-foreground/60 mt-8 opacity-0 animate-fade-in max-w-xl" style={{ animationDelay: "0.6s" }}>
             {t.hero.socialProof}
           </p>
         </div>
