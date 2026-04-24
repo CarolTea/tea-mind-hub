@@ -1,5 +1,12 @@
 import { useFadeIn } from "@/hooks/useFadeIn";
 import { useLang } from "@/contexts/LanguageContext";
+import carolImg from "@/assets/carol-tavares.png";
+import carlaImg from "@/assets/carla-vicente.png";
+
+const founderPhotos: Record<string, string> = {
+  CT: carolImg,
+  CV: carlaImg,
+};
 
 const Founders = () => {
   const { ref, isVisible } = useFadeIn();
@@ -21,8 +28,19 @@ const Founders = () => {
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto mb-12">
           {t.founders.profiles.map((profile, i) => (
             <div key={i} className="border border-border/60 overflow-hidden transition-all duration-500 hover:border-foreground/20">
-              <div className="aspect-[4/5] bg-muted flex items-center justify-center">
-                <span className="font-serif text-5xl text-muted-foreground/30">{profile.initials}</span>
+              <div className="aspect-[4/5] bg-muted overflow-hidden">
+                {founderPhotos[profile.initials] ? (
+                  <img
+                    src={founderPhotos[profile.initials]}
+                    alt={profile.name}
+                    loading="lazy"
+                    className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-[1.03]"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <span className="font-serif text-5xl text-muted-foreground/30">{profile.initials}</span>
+                  </div>
+                )}
               </div>
               <div className="p-8">
                 <h3 className="font-serif text-xl font-medium text-foreground mb-2">{profile.name}</h3>

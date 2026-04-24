@@ -3,6 +3,13 @@ import { LanguageProvider, useLang } from "@/contexts/LanguageContext";
 import type { Lang } from "@/lib/translations";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import carolImg from "@/assets/carol-tavares.png";
+import carlaImg from "@/assets/carla-vicente.png";
+
+const founderPhotos: Record<string, string> = {
+  "Carol Tavares": carolImg,
+  "Carla Vicente": carlaImg,
+};
 
 /* ─── Fade helper ─── */
 const Fade = ({ children, className = "" }: { children: ReactNode; className?: string }) => {
@@ -307,10 +314,21 @@ const FounderBlock = ({
         <div className={`grid md:grid-cols-5 gap-10 lg:gap-16 items-start ${imageRight ? "md:direction-rtl" : ""}`}>
           {/* Image */}
           <Fade className={`md:col-span-2 ${imageRight ? "md:order-2" : ""}`}>
-            <div className="aspect-[3/4] bg-muted rounded-sm flex items-center justify-center">
-              <span className="font-serif text-5xl text-muted-foreground/30">
-                {founder.name.split(" ").map((w) => w[0]).join("")}
-              </span>
+            <div className="aspect-[3/4] bg-muted rounded-sm overflow-hidden">
+              {founderPhotos[founder.name] ? (
+                <img
+                  src={founderPhotos[founder.name]}
+                  alt={founder.name}
+                  loading="lazy"
+                  className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-[1.03]"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center">
+                  <span className="font-serif text-5xl text-muted-foreground/30">
+                    {founder.name.split(" ").map((w) => w[0]).join("")}
+                  </span>
+                </div>
+              )}
             </div>
           </Fade>
 
