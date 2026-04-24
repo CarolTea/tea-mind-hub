@@ -18,7 +18,7 @@ export const translations = {
       title1: "Pensamos em mercados,",
       title2: "não em xícaras.",
       subtitle:
-        "A Tea Mind é um hub de inteligência estratégica e desenvolvimento profissional para quem deseja atuar, empreender ou crescer no mercado do chá , com método, acompanhamento e visão de negócio real.",
+        "A Tea Mind é um hub de inteligência estratégica e desenvolvimento profissional para quem deseja atuar, empreender ou crescer no mercado do chá, com método, acompanhamento e visão de negócio real.",
       cta1: "Conheça os Programas",
       cta2: "Fazer o Diagnóstico Gratuito",
       socialProof:
@@ -277,10 +277,10 @@ export const translations = {
       ],
       innovationsList: ["Tea Mind AI", "Tea Fest in Rio", "Tea Mind Society"],
       contactTitle: "Eventos",
-      events: {
-        eyebrow: "01 , Eventos",
-        title: "Eventos com Chá",
-        text: "Eventos personalizados, corporativos e temáticos com curadoria sensorial e narrativa autoral. Da concepção à experiência final, criamos encontros que transformam o chá em linguagem de marca, conexão e memória.",
+      contact: {
+        eyebrow: "01 , Contato",
+        title: "Vamos conversar.",
+        text: "Para eventos, parcerias, imprensa ou conversas sobre o mercado do chá, fale diretamente com a nossa equipe.",
         cta: "Falar no WhatsApp →",
       },
       copyright: "Todos os direitos reservados.",
@@ -564,10 +564,10 @@ export const translations = {
       ],
       innovationsList: ["Tea Mind AI", "Tea Fest in Rio", "Tea Mind Society"],
       contactTitle: "Events",
-      events: {
-        eyebrow: "01 , Events",
-        title: "Tea Events",
-        text: "Personalized, corporate and themed events with sensory curation and signature narrative. From concept to execution, we craft gatherings that turn tea into a language of brand, connection and memory.",
+      contact: {
+        eyebrow: "01 , Contact",
+        title: "Let's talk.",
+        text: "For events, partnerships, press or conversations about the tea market, reach our team directly.",
         cta: "Chat on WhatsApp →",
       },
       copyright: "All rights reserved.",
@@ -851,10 +851,10 @@ export const translations = {
       ],
       innovationsList: ["Tea Mind AI", "Tea Fest in Rio", "Tea Mind Society"],
       contactTitle: "Eventos",
-      events: {
-        eyebrow: "01 , Eventos",
-        title: "Eventos con Té",
-        text: "Eventos personalizados, corporativos y temáticos con curaduría sensorial y narrativa de autor. De la concepción a la experiencia final, creamos encuentros que transforman el té en lenguaje de marca, conexión y memoria.",
+      contact: {
+        eyebrow: "01 , Contacto",
+        title: "Hablemos.",
+        text: "Para eventos, alianzas, prensa o conversaciones sobre el mercado del té, habla directamente con nuestro equipo.",
         cta: "Hablar por WhatsApp →",
       },
       copyright: "Todos los derechos reservados.",
