@@ -42,7 +42,7 @@ const aboutT = {
       statGrowthLabel: "Crescimento do consumo nacional de chá (2013–2020)",
       statTrend: "55,8 → 78,1",
       statTrendLabel: "Google Trends para 'chá' no Brasil (2018–2022)",
-      closing: "A Tea Mind sabe exatamente como atuar nesse novo estágio. Formando profissionais preparados, estruturando negócios com visão de mercado e criando caminhos reais para quem deseja trabalhar com chá com profundidade, estratégia e valor.",
+      closing: "A Tea Mind sabe exatamente como atuar nesse novo estágio do mercado do chá. Formando profissionais preparados, estruturando negócios com visão de mercado e criando caminhos reais para quem deseja trabalhar com chá com profundidade, estratégia e valor.",
     },
     origin: {
       title: "Da experiência prática ao nascimento da Tea Mind",
