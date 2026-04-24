@@ -186,6 +186,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       {
         id: "atuacao",
         title: "Tea Mind Professional Practice",
+        subtitle: "Tea Sommelier",
         mainDescription: "Our professional training and strategic guidance program for those who want to work with tea with more clarity, direction, and market vision.",
         bodyText: "In Tea Mind Professional Practice, the student enters the Tea Sommelier & Entrepreneurial Tea Barista training and develops their trajectory along a journey accompanied by strategic onboarding, Smart Journey, and strategic sessions applied to their reality, to transform knowledge into real professional practice.",
         forWhoIntro: "This program is for those who:",
@@ -215,6 +216,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       {
         id: "laboratorio",
         title: "Tea Mind Tea Brand Lab",
+        subtitle: "Tea Blender",
         mainDescription: "Our professional training and strategic guidance program for those who want to create a tea line with their own signature, premium standards, and market positioning.",
         bodyText: "In Tea Mind Tea Brand Lab, the student enters the Entrepreneurial Tea Blender training and follows a journey accompanied by strategic onboarding, Smart Journey, and strategic sessions applied to their reality, structured to transform ideas into products with identity, commercial viability, and real sales potential.",
         forWhoIntro: "This program is for those who:",
@@ -271,9 +273,9 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       },
       {
         id: "arquitetura",
-        title: "Tea Mind Tea Business Architecture",
+        title: "Tea Mind Full Experience",
         mainDescription: "Our premium program of in-depth training and strategic direction for those who want to access Tea Mind's most complete intellectual capital and build their trajectory or business in the tea market with more repertoire, clarity, and consistency.",
-        bodyText: "In Tea Mind Tea Business Architecture, the student follows the hub's most complete journey, combining training, specializations, and Strategic Architecture Meetings to transform knowledge into real construction, with technical depth, market vision, and direction applied to what they want to develop.",
+        bodyText: "In Tea Mind Full Experience, the student follows the hub's most complete journey, combining training, specializations, and Strategic Architecture Meetings to transform knowledge into real construction, with technical depth, market vision, and direction applied to what they want to develop.",
         forWhoIntro: "This program is for those who:",
         forWhoItems: [
           "Want to access Tea Mind's most complete journey, with technical depth and strategic vision",
@@ -298,7 +300,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
         ],
         formationText: "A premium and in-depth journey for those who want to develop technical repertoire, market vision, and strategic direction at a broader, more consistent, and integrated level within the tea universe.",
         directionTitle: "How the guidance works",
-        directionText: "The Architecture starts from a robust journey of training and specializations, but gains direction from each student's reality.\n\nDuring onboarding, we map context, goals, ambition, and possibilities. The Smart Journey organizes this perspective into a personalized strategic map, and the Strategic Architecture Meetings help transform study into real construction, supporting important decisions over up to 24 months, according to each person's evolution.",
+        directionText: "Full Experience starts from a robust journey of training and specializations, but gains direction from each student's reality.\n\nDuring onboarding, we map context, goals, ambition, and possibilities. The Smart Journey organizes this perspective into a personalized strategic map, and the Strategic Architecture Meetings help transform study into real construction, supporting important decisions over up to 24 months, according to each person's evolution.",
         cta: "Take the Free Diagnosis",
       },
     ],
