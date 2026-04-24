@@ -407,41 +407,42 @@ export const translations = {
       cardCta: "I want to know more about this program →",
       footerNote: "Still exploring the tea universe? Start with the diagnosis.",
       footerCta: "Take the Free Diagnosis →",
-      items: [
+      comingSoonLabel: "Coming Soon",
+      categories: [
         {
-          title: "Tea Mind Working with Tea",
+          id: "profissionalizantes",
+          eyebrow: "01 , Professional",
+          title: "Professional Programs",
           description:
-            "For those who want to work as a Tea Sommelier with more clarity, direction, and market vision.",
+            "Complete training journeys for those who want to work, create products, or build a business in the tea market.",
+          items: [
+            { id: "atuacao", title: "Tea Mind Working with Tea", description: "For those who want to work as a Tea Sommelier with more clarity, direction, and market vision." },
+            { id: "laboratorio", title: "Tea Mind Tea Brand Lab", description: "For those who want to become a Tea Blender and create a tea line with their own signature, premium standards, and real market potential." },
+            { id: "full-experience", title: "Tea Mind Full Experience", description: "For those who want to build something complete, solid, and long-term in the tea market." },
+          ],
         },
         {
-          title: "Tea Mind Tea Brand Lab",
+          id: "aprimoramento",
+          eyebrow: "02 , Enhancement",
+          title: "Enhancement Programs",
           description:
-            "For those who want to become a Tea Blender and create a tea line with their own signature, premium standards, and real market potential.",
+            "Specializations for tea professionals who want to deepen technical repertoire and differentiate their practice.",
+          items: [
+            { id: "neurogastronomia", title: "Specialization in Neurogastronomy of Teas & Herbs", description: "In partnership with a guest specialist. A cutting-edge program exploring how neuroscience transforms tea tasting, customer experience, and product development." },
+            { id: "eventos", title: "Specialization in Tea Events", description: "For those who want to create, produce, and host tea experiences and events with professional standards, distinct identity, and market vision." },
+            { id: "harmonizacao", title: "Specialization in Tea Pairing", description: "For those who want to master the art of pairing teas with food and occasions, crafting sophisticated and unique sensory experiences." },
+          ],
         },
         {
-          title: "Tea Mind Sprint Smart",
+          id: "aceleracao",
+          eyebrow: "03 , Acceleration",
+          title: "Acceleration Programs",
           description:
-            "For those who have already started but still lack clarity or confidence about what they're building.",
-        },
-        {
-          title: "Tea Mind Full Experience",
-          description:
-            "For those who want to build something complete, solid, and long-term in the tea market.",
-        },
-        {
-          title: "Specialization in Neurogastronomy of Teas & Herbs",
-          description:
-            "In partnership with a guest specialist. A cutting-edge program exploring how neuroscience transforms tea tasting, customer experience, and product development.",
-        },
-        {
-          title: "Specialization in Tea Events",
-          description:
-            "For those who want to create, produce, and host tea experiences and events with professional standards, distinct identity, and market vision.",
-        },
-        {
-          title: "Specialization in Tea Pairing",
-          description:
-            "For those who want to master the art of pairing teas with food and occasions, crafting sophisticated and unique sensory experiences.",
+            "Strategic diagnosis and structuring for entrepreneurs who have already started and need to reorganize the foundation of the business.",
+          items: [
+            { id: "sprint", title: "Tea Mind Sprint Smart", description: "For those who have already started but still lack clarity or confidence about what they're building." },
+            { id: "arquitetura-comercial", title: "Tea Mind Commercial Architecture", description: "Commercial acceleration program for tea businesses. In development.", comingSoon: true },
+          ],
         },
       ],
     },
