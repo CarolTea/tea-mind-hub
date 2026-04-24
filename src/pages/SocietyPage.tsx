@@ -173,6 +173,14 @@ const SocietyContent = () => {
   const navigate = useNavigate();
   const t = societyT[lang];
 
+  const WHATSAPP_NUMBER = "5521981126981";
+  const societyMessages = {
+    pt: "Olá! Gostaria de solicitar minha entrada gratuita na Tea Mind Society.",
+    en: "Hi! I'd like to request my free entry to the Tea Mind Society.",
+    es: "¡Hola! Me gustaría solicitar mi entrada gratuita a la Tea Mind Society.",
+  } as const;
+  const societyHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(societyMessages[lang])}`;
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
@@ -279,7 +287,9 @@ const SocietyContent = () => {
           </Fade>
           <Fade delay={300}>
             <a
-              href="mailto:contato@teamind.com.br?subject=Tea Mind Society — Entrada gratuita"
+              href={societyHref}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-8 py-4 border border-[hsl(40,20%,94%)]/30 text-sm tracking-wider uppercase font-sans hover:bg-[hsl(40,20%,94%)]/10 transition-colors duration-500"
             >
               {t.closing.cta}
