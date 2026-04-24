@@ -12,15 +12,20 @@ const eventsRoutes = { en: "/events", es: "/es/eventos", pt: "/pt/eventos" } as 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [programsOpen, setProgramsOpen] = useState(false);
+  const [mobileProgramsOpen, setMobileProgramsOpen] = useState(false);
   const { lang, t } = useLang();
   const navigate = useNavigate();
 
-  const navLinks = [
-    { label: t.nav.about, href: aboutRoutes[lang], isRoute: true },
-    { label: t.nav.programs, href: programsRoutes[lang], isRoute: true },
-    { label: t.nav.innovations, href: innovationsRoutes[lang], isRoute: true },
-    { label: t.nav.society, href: societyRoutes[lang], isRoute: true },
-    { label: t.nav.contact, href: eventsRoutes[lang], isRoute: true },
+  const programsRoute = programsRoutes[lang];
+  const programsGroups = t.nav.programsGroups;
+  const groupKeys = ["profissionalizantes", "aprimoramento", "aceleracao"] as const;
+
+  const otherLinks = [
+    { label: t.nav.about, href: aboutRoutes[lang] },
+    { label: t.nav.innovations, href: innovationsRoutes[lang] },
+    { label: t.nav.society, href: societyRoutes[lang] },
+    { label: t.nav.contact, href: eventsRoutes[lang] },
   ];
 
   useEffect(() => {
@@ -46,16 +51,81 @@ const Navbar = () => {
 
         {/* Desktop nav */}
         <ul className="hidden lg:flex items-center gap-7">
-          {navLinks.map((link) => (
+          {/* About */}
+          <li>
+            <Link to={aboutRoutes[lang]} className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300">
+              {t.nav.about}
+            </Link>
+          </li>
+
+          {/* Programs (with submenu) */}
+          <li
+            className="relative"
+            onMouseEnter={() => setProgramsOpen(true)}
+            onMouseLeave={() => setProgramsOpen(false)}
+          >
+            <Link
+              to={programsRoute}
+              className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300 inline-flex items-center gap-1"
+            >
+              {t.nav.programs}
+              <svg className={`w-3 h-3 transition-transform duration-300 ${programsOpen ? "rotate-180" : ""}`} viewBox="0 0 12 12" fill="none">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
+
+            {programsOpen && (
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4">
+                <div
+                  className="grid grid-cols-3 gap-8 px-8 py-8 shadow-xl border border-foreground/10 min-w-[820px]"
+                  style={{ backgroundColor: "hsl(40, 20%, 94%)" }}
+                >
+                  {groupKeys.map((key) => {
+                    const group = programsGroups[key];
+                    return (
+                      <div key={key}>
+                        <Link
+                          to={`${programsRoute}#${key}`}
+                          onClick={() => setProgramsOpen(false)}
+                          className="block font-serif text-sm font-medium text-foreground mb-3 hover:text-accent transition-colors"
+                        >
+                          {group.label}
+                        </Link>
+                        <div className="w-8 h-px bg-accent mb-4" />
+                        <ul className="space-y-2.5">
+                          {group.items.map((item) => (
+                            <li key={item.anchor}>
+                              <Link
+                                to={`${programsRoute}#${item.anchor}`}
+                                onClick={() => setProgramsOpen(false)}
+                                className="font-sans text-xs tracking-wide text-foreground/70 hover:text-foreground transition-colors duration-300 leading-relaxed block"
+                              >
+                                {item.label}
+                                {"comingSoon" in item && item.comingSoon && (
+                                  <span className="ml-1.5 text-[9px] tracking-[0.15em] uppercase text-accent">
+                                    ({programsGroups.comingSoonLabel})
+                                  </span>
+                                )}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+          </li>
+
+          {otherLinks.map((link) => (
             <li key={link.label}>
-              <Link
-                to={link.href}
-                className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
-              >
+              <Link to={link.href} className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300">
                 {link.label}
               </Link>
             </li>
           ))}
+
           {nextLangs.map((l) => (
             <li key={l}>
               <button
@@ -79,18 +149,70 @@ const Navbar = () => {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="lg:hidden bg-background/98 backdrop-blur-sm border-t border-border">
-          <ul className="flex flex-col items-center gap-6 py-8">
-            {navLinks.map((link) => (
+          <ul className="flex flex-col items-center gap-5 py-8">
+            <li>
+              <Link to={aboutRoutes[lang]} onClick={() => setMenuOpen(false)} className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground">
+                {t.nav.about}
+              </Link>
+            </li>
+
+            {/* Programs accordion */}
+            <li className="w-full px-8">
+              <button
+                onClick={() => setMobileProgramsOpen(!mobileProgramsOpen)}
+                className="w-full flex items-center justify-center gap-2 text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground"
+              >
+                {t.nav.programs}
+                <svg className={`w-3 h-3 transition-transform ${mobileProgramsOpen ? "rotate-180" : ""}`} viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+              {mobileProgramsOpen && (
+                <div className="mt-4 space-y-5 text-center">
+                  {groupKeys.map((key) => {
+                    const group = programsGroups[key];
+                    return (
+                      <div key={key}>
+                        <Link
+                          to={`${programsRoute}#${key}`}
+                          onClick={() => { setMenuOpen(false); setMobileProgramsOpen(false); }}
+                          className="block font-serif text-sm font-medium text-foreground mb-2"
+                        >
+                          {group.label}
+                        </Link>
+                        <ul className="space-y-1.5">
+                          {group.items.map((item) => (
+                            <li key={item.anchor}>
+                              <Link
+                                to={`${programsRoute}#${item.anchor}`}
+                                onClick={() => { setMenuOpen(false); setMobileProgramsOpen(false); }}
+                                className="font-sans text-xs tracking-wide text-foreground/60 hover:text-foreground"
+                              >
+                                {item.label}
+                                {"comingSoon" in item && item.comingSoon && (
+                                  <span className="ml-1 text-[9px] uppercase tracking-[0.15em] text-accent">
+                                    ({programsGroups.comingSoonLabel})
+                                  </span>
+                                )}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </li>
+
+            {otherLinks.map((link) => (
               <li key={link.label}>
-                <Link
-                  to={link.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground"
-                >
+                <Link to={link.href} onClick={() => setMenuOpen(false)} className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground">
                   {link.label}
                 </Link>
               </li>
             ))}
+
             {nextLangs.map((l) => (
               <li key={l}>
                 <button onClick={() => { setMenuOpen(false); navigate(langRoutes[l]); }} className="text-xs font-sans font-medium tracking-wider uppercase border border-foreground/20 px-3 py-1.5 text-foreground/70 hover:text-foreground">
