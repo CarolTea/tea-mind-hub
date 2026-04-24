@@ -132,25 +132,25 @@ export const translations = {
           cta: "Conhecer o Tea Fest →",
         },
       ],
-      closing: "Não seguimos o mercado do chá. Nós o construímos.",
+      closing: "Enquanto muitos observam o mercado, nós criamos o que ele ainda precisa.",
       cta: "Explorar todas as inovações →",
     },
     founders: {
       eyebrow: "Quem está por trás da Tea Mind",
-      title: "Aprendemos com o mercado. Construímos com ele.",
+      title: "Visão global. Leitura crítica. Construção local.",
       subtitle:
-        "A Tea Mind nasceu da experiência real de quem não apenas estudou o mercado do chá , mas o construiu, o ensinou e o transformou por mais de uma década.",
+        "A Tea Mind nasce da trajetória de quem estuda, ensina e ajuda a estruturar o mercado do chá no Brasil, ampliando suas possibilidades ao longo de mais de uma década.",
       profiles: [
         {
           name: "Carol Tavares",
           titles:
-            "Co-fundadora · Sommelier de Chá · Tea Tender · Estrategista de Negócios · Chief Product Manager Chat Pay Labs",
+            "Co-fundadora · Sommelier de Chá · Especialista em Drinks com Chás & Harmonizações · Estrategista de Negócios · Diretora de Inovações, Produtos e Negócios",
           initials: "CT",
         },
         {
           name: "Carla Vicente",
           titles:
-            "Co-fundadora · Sommelier de Chá · Tea Barista · Especialista em Chás Gelados",
+            "Co-fundadora · Sommelier de Chá · Tea Barista · Especialista em Chás Gelados · Diretora Pedagógica e de Criação",
           initials: "CV",
         },
       ],
@@ -166,7 +166,7 @@ export const translations = {
           icon: "01",
           title: "Conexão real entre profissionais",
           description:
-            "Troca de experiências, parcerias e networking com quem está no mesmo caminho , no Brasil e no mundo. Aqui você não está cercado de curiosos. Está cercado de construtores.",
+            "Troca de experiências, parcerias e networking com quem está no mesmo caminho, no Brasil e no mundo. Aqui você não está cercado de curiosos. Está cercado de construtores.",
         },
         {
           icon: "02",
