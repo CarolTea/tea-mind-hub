@@ -22,7 +22,7 @@ export const translations = {
       cta1: "Conheça os Programas",
       cta2: "Fazer o Diagnóstico Gratuito",
       socialProof:
-        "1.400+ profissionais formados · 100+ negócios mentorados · Alunas premiadas em concursos nacionais de chá · Investimento no Shark Tank",
+        "1.400+ profissionais formados · 100+ negócios mentorados · Alunas premiadas em concursos nacionais de chá · Alunas com investimento no Shark Tank",
     },
     positioning: {
       eyebrow: "A inteligência por trás da indústria",
@@ -34,13 +34,13 @@ export const translations = {
           icon: "01",
           title: "Diagnóstico antes de tudo",
           description:
-            "Não encaixamos pessoas em programas. Lemos o seu momento, seus objetivos e sua realidade antes de indicar qualquer caminho. O programa certo é o que faz sentido para você , não para a média.",
+            "Não encaixamos pessoas em cursos. Lemos o seu momento, seus objetivos e sua realidade antes de indicar o melhor caminho. O programa certo é o que faz sentido para você, não para os outros.",
         },
         {
           icon: "02",
-          title: "Formação técnica com visão de negócio",
+          title: "Formação técnica com visão de negócio desde o primeiro dia",
           description:
-            "Você não aprende chá aqui para depois aprender a trabalhar com ele. As duas coisas acontecem juntas, porque é assim que o mercado funciona.",
+            "Você não aprende sobre chá para depois aprender a trabalhar com ele. Os dois acontecem juntos, porque é assim que o mercado funciona.",
         },
         {
           icon: "03",
