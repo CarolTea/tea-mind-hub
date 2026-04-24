@@ -48,26 +48,12 @@ const Navbar = () => {
         <ul className="hidden lg:flex items-center gap-7">
           {navLinks.map((link) => (
             <li key={link.label}>
-              {link.isRoute ? (
-                <Link
-                  to={link.href}
-                  className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
-                >
-                  {link.label}
-                </Link>
-              ) : link.external ? (
-                <a
-                  href={link.href}
-                  rel="noopener noreferrer"
-                  className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <a href={link.href} className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300">
-                  {link.label}
-                </a>
-              )}
+              <Link
+                to={link.href}
+                className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
+              >
+                {link.label}
+              </Link>
             </li>
           ))}
           {nextLangs.map((l) => (
@@ -96,28 +82,13 @@ const Navbar = () => {
           <ul className="flex flex-col items-center gap-6 py-8">
             {navLinks.map((link) => (
               <li key={link.label}>
-                {link.isRoute ? (
-                  <Link
-                    to={link.href}
-                    onClick={() => setMenuOpen(false)}
-                    className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground"
-                  >
-                    {link.label}
-                  </Link>
-                ) : link.external ? (
-                  <a
-                    href={link.href}
-                    rel="noopener noreferrer"
-                    className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {link.label}
-                  </a>
-                ) : (
-                  <a href={link.href} className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground" onClick={() => setMenuOpen(false)}>
-                    {link.label}
-                  </a>
-                )}
+                <Link
+                  to={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground"
+                >
+                  {link.label}
+                </Link>
               </li>
             ))}
             {nextLangs.map((l) => (
