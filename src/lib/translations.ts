@@ -378,6 +378,43 @@ export const translations = {
       eyebrow: "Real results",
       title:
         "We don't teach about the tea market. We build it together with our students.",
+      testimonials: [
+        {
+          text: "It was all enchanting. The content is comprehensive and lets the student grow. Very well organized, with competent, caring teachers truly committed to student learning.",
+          name: "Liane Dorneles",
+          title: "Tea Blender & Specialist in Neurogastronomy of Teas & Herbs",
+        },
+        {
+          text: "Learning to handle tea and bring out everything it can offer was a deeply rewarding experience thanks to what teachers Carla and Carol do with mastery. Thank you for this incredible journey!",
+          name: "Valéria Molinaro",
+          title: "Tea Blender & Tea Sommelier & Tea Events / Experiences Specialist",
+        },
+        {
+          text: "My experience was wonderful. Everyone was very attentive and the courses are excellent. Carla and Carol have deep knowledge of the subject and share it clearly. Anyone wanting to build a tea business will find full support here!",
+          name: "Marcia Pepin",
+          title: "Tea Sommelier & Tea Barista",
+        },
+        {
+          text: "A wonderful experience. A serious, complete course that goes far beyond the art of blending. It also covers tea processes, infusions, best practices, regulations, marketing, sales and more. It delivered everything it promised. Thank you, teachers!",
+          name: "Valeria Lodo",
+          title: "Tea Blender",
+        },
+        {
+          text: "Carla and Carol are incredibly attentive from start to finish. The class content is wonderful. Today I am proudly a tea professional thanks to them. Thank you so much!",
+          name: "Érika Knop",
+          title: "Tea Sommelier & Tea Barista",
+        },
+        {
+          text: "I completed the Tea Sommelier professional training and was amazed by everything. The team and teachers are outstanding. The program covers tea culture, classic and modern recipes, plus the management and creation of a tea and events business. I don't believe there is anything as complete as this. Congratulations!",
+          name: "Elisa Raisa",
+          title: "Tea Sommelier & Tea Barista",
+        },
+        {
+          text: "I discovered, and continue to discover, how rewarding it is to prepare, serve and drink the perfect cup of tea. It is a great satisfaction to have completed the Sommelier and Tea Barista training with Carla and Carol — two exemplary teachers.",
+          name: "Gabriela Ferreira",
+          title: "Tea Sommelier · Tea Events & Experiences Specialist · Tea Blender in training",
+        },
+      ],
       transition:
         "Tea Sommeliers, Tea Blenders, Event Specialists, Pairing Masters, Specialists in Neurogastronomy of Teas & Herbs, Tea Business Specialists. Each one building their own story in the tea market.",
       cta: "Meet our trained professionals & entrepreneurs →",
@@ -612,6 +649,43 @@ export const translations = {
       eyebrow: "Resultados reales",
       title:
         "No enseñamos sobre el mercado del té. Lo construimos junto a nuestros alumnos.",
+      testimonials: [
+        {
+          text: "Todo fue encantador. Aborda los contenidos de forma amplia y permite al alumno desarrollarse. Muy bien organizado, profesoras competentes, queridas y comprometidas con el aprendizaje del alumno.",
+          name: "Liane Dorneles",
+          title: "Tea Blender y Especialista en Neurogastronomía de Tés y Hierbas",
+        },
+        {
+          text: "Aprender a tratar el té y extraer de él lo mejor fue una experiencia muy placentera y gratificante gracias a lo que las profesoras Carla y Carol hacen con maestría. ¡Gracias por este viaje increíble!",
+          name: "Valéria Molinaro",
+          title: "Tea Blender y Sommelier de Té y Especialista en Eventos / Experiencias de Té",
+        },
+        {
+          text: "Mi experiencia fue maravillosa. Todos fueron muy atentos y los cursos son excelentes. Carla y Carol tienen un profundo conocimiento del tema y lo transmiten con claridad. Para quien quiere emprender en el mundo del té, recibirá todo el apoyo.",
+          name: "Marcia Pepin",
+          title: "Sommelier de Té y Tea Barista",
+        },
+        {
+          text: "Una experiencia maravillosa. Un curso serio y completo. No se limitó a enseñar el arte del blending; también trajo procesos del té, infusiones, buenas prácticas, normativas, marketing, ventas y mucho más. Cumplió lo que prometió. ¡Gracias profesoras!",
+          name: "Valeria Lodo",
+          title: "Tea Blender",
+        },
+        {
+          text: "Carla y Carol son MUY atentas con todo, de principio a fin. El contenido de las clases es maravilloso. Hoy soy una profesional del té con mucho orgullo gracias a ellas. ¡Muchas gracias!",
+          name: "Érika Knop",
+          title: "Sommelier de Té y Tea Barista",
+        },
+        {
+          text: "Hice la formación profesional de Sommelier de Té y quedé maravillada con todo. El equipo y las profesoras son super atentos. Tiene mucho contenido sobre cultura del té, recetas clásicas y modernas, además de la gestión y creación de la empresa de té y eventos. Creo que no existe otro tan completo. ¡Felicidades!",
+          name: "Elisa Raisa",
+          title: "Sommelier de Té y Tea Barista",
+        },
+        {
+          text: "Descubrí y sigo descubriendo lo placentero que es preparar, servir y beber una taza de té perfecta. Es una gran satisfacción haber concluido la formación de Sommelier y Tea Barista con Carla y Carol, dos profesoras ejemplares.",
+          name: "Gabriela Ferreira",
+          title: "Sommelier de Té · Especialista en Eventos y Experiencias con Té · Tea Blender en formación",
+        },
+      ],
       transition:
         "Sommeliers de Té, Tea Blenders, Especialistas en Eventos, Maestros en Maridaje, Especialistas en Neurogastronomía de Tés & Hierbas, Especialistas en Negocios de Té. Cada uno construyendo su propia historia en el mercado del té.",
       cta: "Conoce a nuestros profesionales formados y emprendedores →",
