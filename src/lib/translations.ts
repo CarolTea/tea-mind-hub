@@ -189,13 +189,13 @@ export const translations = {
       ],
       closing:
         "O mercado do chá no Brasil está sendo construído por pessoas como você. A Society é onde essas pessoas se encontram.",
-      cta: "Quero fazer parte da Tea Mind Society →",
+      cta: "Você é nosso aluno e ainda não faz parte da Society? Clique para solicitar sua entrada →",
     },
     partners: {
       eyebrow: "Tea Mind Partners",
       title: "Os melhores profissionais do mercado do chá estão aqui.",
       subtitle:
-        "A Tea Mind atrai e conecta especialistas reconhecidos no mercado do chá , no Brasil e no mundo. Nossos partners contribuem com seu conhecimento, experiência e visão para enriquecer a jornada dos nossos alunos.",
+        "A Tea Mind atrai e conecta especialistas reconhecidos no mercado do chá, no Brasil e no mundo. Nossos partners contribuem com seu conhecimento, experiência e visão para enriquecer a jornada dos nossos alunos.",
       closing:
         "A Tea Mind não é apenas um hub de formação. É um ecossistema onde os melhores se encontram.",
       cta: "Conhecer todos os partners →",
