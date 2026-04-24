@@ -1,8 +1,17 @@
 import { useLang } from "@/contexts/LanguageContext";
 import teaHubLogo from "@/assets/tea-hub-logo-transparent.png";
 
+const WHATSAPP_NUMBER = "5521981126981";
+const eventsMessages = {
+  pt: "Olá! Gostaria de saber mais sobre os eventos personalizados, corporativos e temáticos da Tea Mind.",
+  en: "Hi! I'd like to know more about Tea Mind's personalized, corporate and themed events.",
+  es: "¡Hola! Me gustaría saber más sobre los eventos personalizados, corporativos y temáticos de Tea Mind.",
+} as const;
+
 const Footer = () => {
-  const { t } = useLang();
+  const { t, lang } = useLang();
+
+  const eventsHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(eventsMessages[lang])}`;
 
   const navLinks = [
     { label: t.nav.about, href: "#about" },
@@ -10,12 +19,39 @@ const Footer = () => {
     { label: t.nav.founders, href: "#founders" },
     { label: t.nav.innovations, href: "#innovations" },
     { label: t.nav.society, href: "#society" },
-    { label: t.nav.contact, href: "#footer" },
+    { label: t.nav.contact, href: eventsHref, external: true },
   ];
 
   return (
     <footer id="footer" className="bg-primary text-primary-foreground py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        {/* Eventos band */}
+        <div className="mb-16 pb-16 border-b border-primary-foreground/10">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="font-sans text-xs tracking-[0.3em] uppercase text-accent mb-4">
+                {t.footer.events.eyebrow}
+              </p>
+              <h3 className="font-serif text-3xl md:text-4xl text-primary-foreground leading-tight mb-5">
+                {t.footer.events.title}
+              </h3>
+              <p className="font-sans text-sm text-primary-foreground/60 leading-relaxed max-w-xl">
+                {t.footer.events.text}
+              </p>
+            </div>
+            <div className="flex md:justify-end">
+              <a
+                href={eventsHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-accent text-accent hover:bg-accent hover:text-primary px-7 py-4 font-sans text-sm tracking-widest uppercase transition-all duration-300"
+              >
+                {t.footer.events.cta}
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10 mb-16">
           {/* Col 1 - About */}
           <div>
@@ -39,7 +75,11 @@ const Footer = () => {
             <ul className="space-y-3">
               {navLinks.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="font-sans text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors duration-300">
+                  <a
+                    href={link.href}
+                    {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    className="font-sans text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors duration-300"
+                  >
                     {link.label}
                   </a>
                 </li>
