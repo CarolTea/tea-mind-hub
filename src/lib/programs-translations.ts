@@ -3,6 +3,7 @@ import type { Lang } from "./translations";
 export interface ProgramData {
   id: string;
   title: string;
+  subtitle?: string;
   mainDescription: string;
   bodyText: string;
   forWhoIntro: string;
