@@ -106,10 +106,10 @@ export const translations = {
       ],
       eyebrow: "Resultados reais",
       title:
-        "Não ensinamos sobre o mercado do chá. Nós o construímos , junto com nossos alunos.",
+        "Não ensinamos sobre o mercado do chá. Nós o construímos junto de nossos alunos.",
       transition:
-        "Mais de 300 Sommeliers e 100 Tea Blenders formados. Cada um construindo sua própria história no mercado do chá.",
-      cta: "Conheça nossos profissionais formados →",
+        "Sommeliers de Chá, Tea Blenders, Especialistas em Eventos, Mestres em Harmonização, Especialistas em Neurogastronomia de Chás & Ervas, Especialistas em Negócios de Chás. Cada um construindo sua própria história no mercado do chá.",
+      cta: "Conheça nossos profissionais formados & empreendedores →",
     },
     innovations: {
       eyebrow: "Tea Mind Inovações",
