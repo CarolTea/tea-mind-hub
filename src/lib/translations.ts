@@ -256,7 +256,7 @@ export const translations = {
       cta1: "Explore Programs",
       cta2: "Take the Free Diagnosis",
       socialProof:
-        "1,400+ professionals trained · 100+ businesses mentored · Award-winning students · Shark Tank investment",
+        "1,400+ professionals trained · 100+ businesses mentored · Award-winning students in national tea competitions · Students with Shark Tank investment",
     },
     positioning: {
       eyebrow: "The intelligence behind the industry",
@@ -490,7 +490,7 @@ export const translations = {
       cta1: "Conoce los Programas",
       cta2: "Hacer el Diagnóstico Gratuito",
       socialProof:
-        "1.400+ profesionales formados · 100+ negocios mentoreados · Alumnas premiadas en concursos nacionales de té · Inversión en Shark Tank",
+        "1.400+ profesionales formados · 100+ negocios mentoreados · Alumnas premiadas en concursos nacionales de té · Alumnas con inversión en Shark Tank",
     },
     positioning: {
       eyebrow: "La inteligencia detrás de la industria",
