@@ -3,6 +3,7 @@ import type { Lang } from "./translations";
 export interface ProgramData {
   id: string;
   title: string;
+  subtitle?: string;
   mainDescription: string;
   bodyText: string;
   forWhoIntro: string;
@@ -49,6 +50,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       {
         id: "atuacao",
         title: "Tea Mind Atuação com Chá",
+        subtitle: "Sommelier de Chá",
         mainDescription: "Nosso programa de formação profissional e acompanhamento estratégico para quem deseja atuar com chá com mais clareza, direção e visão de mercado.",
         bodyText: "No Tea Mind Atuação com Chá, o aluno ingressa na formação de Sommelier de Chá & Tea Barista empreendedor e desenvolve sua trajetória ao longo de uma jornada acompanhada por onboarding estratégico, Smart Journey e sessões estratégicas aplicadas à sua realidade, para transformar conhecimento em atuação profissional real.",
         forWhoIntro: "Este programa é para quem:",
@@ -78,6 +80,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       {
         id: "laboratorio",
         title: "Tea Mind Laboratório de Marcas de Chá",
+        subtitle: "Tea Blender",
         mainDescription: "Nosso programa de formação profissional e acompanhamento estratégico para quem deseja criar uma linha de chás com assinatura própria, padrão premium e posicionamento de mercado.",
         bodyText: "No Tea Mind Laboratório de Marcas de Chá, o aluno ingressa na formação em Tea Blender empreendedor e percorre uma jornada acompanhada por onboarding estratégico, Smart Journey e sessões estratégicas aplicadas à sua realidade, estruturadas para transformar ideias em produtos com identidade, viabilidade comercial e potencial real de venda.",
         forWhoIntro: "Este programa é para quem:",
@@ -134,9 +137,9 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       },
       {
         id: "arquitetura",
-        title: "Tea Mind Arquitetura do Negócio do Chá",
+        title: "Tea Mind Full Experience",
         mainDescription: "Nosso programa premium de formação aprofundada e direção estratégica para quem deseja acessar o capital intelectual mais completo da Tea Mind e construir sua trajetória ou negócio no mercado do chá com mais repertório, clareza e consistência.",
-        bodyText: "Na Tea Mind Arquitetura do Negócio do Chá, o aluno percorre a jornada mais completa do hub, reunindo formações, especializações e Encontros de Arquitetura Estratégica para transformar conhecimento em construção real, com profundidade técnica, visão de mercado e direção aplicada ao que deseja desenvolver.",
+        bodyText: "No Tea Mind Full Experience, o aluno percorre a jornada mais completa do hub, reunindo formações, especializações e Encontros de Arquitetura Estratégica para transformar conhecimento em construção real, com profundidade técnica, visão de mercado e direção aplicada ao que deseja desenvolver.",
         forWhoIntro: "Este programa é para quem:",
         forWhoItems: [
           "Deseja acessar a jornada mais completa da Tea Mind, com profundidade técnica e visão estratégica",
@@ -161,7 +164,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
         ],
         formationText: "Uma jornada premium e aprofundada para quem deseja desenvolver repertório técnico, visão de mercado e direção estratégica em um nível mais amplo, consistente e integrado dentro do universo do chá.",
         directionTitle: "Como funciona o direcionamento",
-        directionText: "A Arquitetura parte de uma jornada robusta de formação e especializações, mas ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos contexto, objetivos, ambição e possibilidades. O Smart Journey organiza esse olhar em um mapa estratégico personalizado, e os Encontros de Arquitetura Estratégica ajudam a transformar estudo em construção real, apoiando decisões importantes ao longo de até 24 meses, conforme a evolução de cada pessoa.",
+        directionText: "O Full Experience parte de uma jornada robusta de formação e especializações, mas ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos contexto, objetivos, ambição e possibilidades. O Smart Journey organiza esse olhar em um mapa estratégico personalizado, e os Encontros de Arquitetura Estratégica ajudam a transformar estudo em construção real, apoiando decisões importantes ao longo de até 24 meses, conforme a evolução de cada pessoa.",
         cta: "Fazer o Diagnóstico Gratuito",
       },
     ],
@@ -183,6 +186,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       {
         id: "atuacao",
         title: "Tea Mind Professional Practice",
+        subtitle: "Tea Sommelier",
         mainDescription: "Our professional training and strategic guidance program for those who want to work with tea with more clarity, direction, and market vision.",
         bodyText: "In Tea Mind Professional Practice, the student enters the Tea Sommelier & Entrepreneurial Tea Barista training and develops their trajectory along a journey accompanied by strategic onboarding, Smart Journey, and strategic sessions applied to their reality, to transform knowledge into real professional practice.",
         forWhoIntro: "This program is for those who:",
@@ -212,6 +216,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       {
         id: "laboratorio",
         title: "Tea Mind Tea Brand Lab",
+        subtitle: "Tea Blender",
         mainDescription: "Our professional training and strategic guidance program for those who want to create a tea line with their own signature, premium standards, and market positioning.",
         bodyText: "In Tea Mind Tea Brand Lab, the student enters the Entrepreneurial Tea Blender training and follows a journey accompanied by strategic onboarding, Smart Journey, and strategic sessions applied to their reality, structured to transform ideas into products with identity, commercial viability, and real sales potential.",
         forWhoIntro: "This program is for those who:",
@@ -268,9 +273,9 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       },
       {
         id: "arquitetura",
-        title: "Tea Mind Tea Business Architecture",
+        title: "Tea Mind Full Experience",
         mainDescription: "Our premium program of in-depth training and strategic direction for those who want to access Tea Mind's most complete intellectual capital and build their trajectory or business in the tea market with more repertoire, clarity, and consistency.",
-        bodyText: "In Tea Mind Tea Business Architecture, the student follows the hub's most complete journey, combining training, specializations, and Strategic Architecture Meetings to transform knowledge into real construction, with technical depth, market vision, and direction applied to what they want to develop.",
+        bodyText: "In Tea Mind Full Experience, the student follows the hub's most complete journey, combining training, specializations, and Strategic Architecture Meetings to transform knowledge into real construction, with technical depth, market vision, and direction applied to what they want to develop.",
         forWhoIntro: "This program is for those who:",
         forWhoItems: [
           "Want to access Tea Mind's most complete journey, with technical depth and strategic vision",
@@ -295,7 +300,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
         ],
         formationText: "A premium and in-depth journey for those who want to develop technical repertoire, market vision, and strategic direction at a broader, more consistent, and integrated level within the tea universe.",
         directionTitle: "How the guidance works",
-        directionText: "The Architecture starts from a robust journey of training and specializations, but gains direction from each student's reality.\n\nDuring onboarding, we map context, goals, ambition, and possibilities. The Smart Journey organizes this perspective into a personalized strategic map, and the Strategic Architecture Meetings help transform study into real construction, supporting important decisions over up to 24 months, according to each person's evolution.",
+        directionText: "Full Experience starts from a robust journey of training and specializations, but gains direction from each student's reality.\n\nDuring onboarding, we map context, goals, ambition, and possibilities. The Smart Journey organizes this perspective into a personalized strategic map, and the Strategic Architecture Meetings help transform study into real construction, supporting important decisions over up to 24 months, according to each person's evolution.",
         cta: "Take the Free Diagnosis",
       },
     ],
@@ -317,6 +322,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       {
         id: "atuacao",
         title: "Tea Mind Actuación con Té",
+        subtitle: "Sommelier de Té",
         mainDescription: "Nuestro programa de formación profesional y acompañamiento estratégico para quienes desean actuar con té con más claridad, dirección y visión de mercado.",
         bodyText: "En Tea Mind Actuación con Té, el alumno ingresa a la formación de Sommelier de Té & Tea Barista emprendedor y desarrolla su trayectoria a lo largo de una jornada acompañada por onboarding estratégico, Smart Journey y sesiones estratégicas aplicadas a su realidad, para transformar conocimiento en actuación profesional real.",
         forWhoIntro: "Este programa es para quienes:",
@@ -346,6 +352,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       {
         id: "laboratorio",
         title: "Tea Mind Laboratorio de Marcas de Té",
+        subtitle: "Tea Blender",
         mainDescription: "Nuestro programa de formación profesional y acompañamiento estratégico para quienes desean crear una línea de tés con firma propia, estándar premium y posicionamiento de mercado.",
         bodyText: "En Tea Mind Laboratorio de Marcas de Té, el alumno ingresa a la formación en Tea Blender emprendedor y recorre una jornada acompañada por onboarding estratégico, Smart Journey y sesiones estratégicas aplicadas a su realidad, estructuradas para transformar ideas en productos con identidad, viabilidad comercial y potencial real de venta.",
         forWhoIntro: "Este programa es para quienes:",
@@ -402,9 +409,9 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
       },
       {
         id: "arquitetura",
-        title: "Tea Mind Arquitectura del Negocio del Té",
+        title: "Tea Mind Full Experience",
         mainDescription: "Nuestro programa premium de formación profunda y dirección estratégica para quienes desean acceder al capital intelectual más completo de Tea Mind y construir su trayectoria o negocio en el mercado del té con más repertorio, claridad y consistencia.",
-        bodyText: "En Tea Mind Arquitectura del Negocio del Té, el alumno recorre la jornada más completa del hub, reuniendo formaciones, especializaciones y Encuentros de Arquitectura Estratégica para transformar conocimiento en construcción real, con profundidad técnica, visión de mercado y dirección aplicada a lo que desea desarrollar.",
+        bodyText: "En Tea Mind Full Experience, el alumno recorre la jornada más completa del hub, reuniendo formaciones, especializaciones y Encuentros de Arquitectura Estratégica para transformar conocimiento en construcción real, con profundidad técnica, visión de mercado y dirección aplicada a lo que desea desarrollar.",
         forWhoIntro: "Este programa es para quienes:",
         forWhoItems: [
           "Desean acceder a la jornada más completa de Tea Mind, con profundidad técnica y visión estratégica",
@@ -429,7 +436,7 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
         ],
         formationText: "Una jornada premium y profunda para quienes desean desarrollar repertorio técnico, visión de mercado y dirección estratégica en un nivel más amplio, consistente e integrado dentro del universo del té.",
         directionTitle: "Cómo funciona el direccionamiento",
-        directionText: "La Arquitectura parte de una jornada robusta de formación y especializaciones, pero gana dirección a partir de la realidad de cada alumno.\n\nEn el onboarding, mapeamos contexto, objetivos, ambición y posibilidades. El Smart Journey organiza esa mirada en un mapa estratégico personalizado, y los Encuentros de Arquitectura Estratégica ayudan a transformar estudio en construcción real, apoyando decisiones importantes a lo largo de hasta 24 meses, según la evolución de cada persona.",
+        directionText: "El Full Experience parte de una jornada robusta de formación y especializaciones, pero gana dirección a partir de la realidad de cada alumno.\n\nEn el onboarding, mapeamos contexto, objetivos, ambición y posibilidades. El Smart Journey organiza esa mirada en un mapa estratégico personalizado, y los Encuentros de Arquitectura Estratégica ayudan a transformar estudio en construcción real, apoyando decisiones importantes a lo largo de hasta 24 meses, según la evolución de cada persona.",
         cta: "Hacer el Diagnóstico Gratuito",
       },
     ],
