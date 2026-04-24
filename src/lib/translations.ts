@@ -71,12 +71,12 @@ export const translations = {
         {
           title: "Tea Mind Atuação com Chá",
           description:
-            "Para quem deseja atuar com chá com mais clareza, direção e visão de mercado.",
+            "Para quem deseja atuar como Sommelier de Chá com mais clareza, direção e visão de mercado.",
         },
         {
           title: "Tea Mind Laboratório de Marcas de Chá",
           description:
-            "Para quem deseja criar uma linha de chás com assinatura própria, padrão premium e potencial real de mercado.",
+            "Para quem deseja se tornar um Tea Blender e criar uma linha de chás com assinatura própria, padrão premium e potencial real de mercado.",
         },
         {
           title: "Tea Mind Sprint Smart",
@@ -92,6 +92,16 @@ export const translations = {
           title: "Especialização em Neurogastronomia de Chás e Ervas",
           description:
             "Em parceria com especialista convidada. Programa de vanguarda que explora como a neurociência transforma a degustação de chá, a experiência do cliente e o desenvolvimento de produtos.",
+        },
+        {
+          title: "Especialização em Eventos com Chá",
+          description:
+            "Para quem deseja criar, produzir e conduzir experiências e eventos com chá com padrão profissional, identidade própria e visão de mercado.",
+        },
+        {
+          title: "Especialização em Harmonização com Chás",
+          description:
+            "Para quem deseja dominar a arte da harmonização entre chás, alimentos e ocasiões, criando experiências sensoriais sofisticadas e únicas.",
         },
       ],
     },
