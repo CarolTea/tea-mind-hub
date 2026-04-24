@@ -1,61 +1,78 @@
+## Plano para corrigir a aba Events
 
-# Renomear "Contato" para "Eventos" → WhatsApp
+### Objetivo
+Criar uma página própria de Events e fazer a Navbar apontar para essa página, em vez de abrir o WhatsApp diretamente. O WhatsApp continuará existindo como CTA dentro da página e no rodapé.
 
-## Visão Geral
+### O que será implementado
 
-Substituir o item de menu "Contato" por **"Eventos"** na Navbar e no Footer. O link abrirá o WhatsApp (+55 21 98112-6981) com uma mensagem pré-preenchida em português, falando sobre eventos personalizados, corporativos e temáticos. A copy aparecerá também numa pequena seção dentro do Footer (rodapé) para dar contexto visível antes do clique.
+1. Criar a página de Events
+- Adicionar uma nova página seguindo o padrão visual editorial já usado em Society e Innovations.
+- Estruturar a página com hero, bloco de proposta de valor, tipos de eventos e CTA final para WhatsApp.
+- Usar copy focada em:
+  - eventos personalizados
+  - eventos corporativos
+  - eventos temáticos
+  - curadoria sensorial
+  - experiência de marca e memória
 
-## Arquivos Alterados
+2. Adicionar rotas da nova página
+- Incluir novas rotas no `App.tsx`:
+  - `/events`
+  - `/pt/eventos`
+  - `/es/eventos`
+- Manter o padrão de idioma já usado no restante do site.
 
-### 1. `src/lib/translations.ts`
+3. Corrigir a Navbar
+- Alterar o item “Events/Eventos” para usar rota interna em vez de link externo do WhatsApp.
+- Ajustar desktop e mobile para o mesmo comportamento.
+- Preservar o restante da lógica de idiomas e navegação já existente.
 
-Renomear a chave de label de menu (`nav.contact`) para "Eventos" / "Events" / "Eventos" nos três idiomas:
+4. Ajustar o rodapé
+- Trocar o link de navegação “Events/Eventos” para a nova rota interna.
+- Manter o botão de WhatsApp da faixa de eventos como CTA direto.
+- Se necessário, transformar os links internos do rodapé em rotas coerentes para não depender de âncoras quando o usuário estiver fora da home.
 
-- **PT**: `contact: "Eventos"`
-- **EN**: `contact: "Events"`
-- **ES**: `contact: "Eventos"`
+5. Organizar traduções
+- Adicionar o conteúdo textual da nova página em PT, EN e ES.
+- Reaproveitar a copy institucional já criada para eventos, expandindo para blocos de página completos.
 
-Adicionar um novo bloco `events` dentro de `footer` (ou seção própria) com a copy curta para o rodapé:
+### Estrutura sugerida da página
+```text
+Hero
+  título + subtítulo + CTA WhatsApp
 
-- **PT**: 
-  - Título: "Eventos com Chá"
-  - Texto: "Eventos personalizados, corporativos e temáticos com curadoria sensorial e narrativa autoral. Da concepção à experiência final, criamos encontros que transformam o chá em linguagem de marca, conexão e memória."
-  - CTA: "Falar no WhatsApp →"
-- **EN**:
-  - Título: "Tea Events"
-  - Texto: "Personalized, corporate and themed events with sensory curation and signature narrative. From concept to execution, we craft gatherings that turn tea into a language of brand, connection and memory."
-  - CTA: "Chat on WhatsApp →"
-- **ES**:
-  - Título: "Eventos con Té"
-  - Texto: "Eventos personalizados, corporativos y temáticos con curaduría sensorial y narrativa de autor. De la concepción a la experiencia final, creamos encuentros que transforman el té en lenguaje de marca, conexión y memoria."
-  - CTA: "Hablar por WhatsApp →"
+Bloco 1
+  O que são os eventos da Tea Mind
 
-### 2. `src/components/Navbar.tsx`
+Bloco 2
+  Tipos de eventos
+    - personalizados
+    - corporativos
+    - temáticos
 
-- Trocar o link `{ label: t.nav.contact, href: "#footer" }` por um link externo para WhatsApp:
-  ```ts
-  { label: t.nav.contact, href: "https://wa.me/5521981126981?text=...", external: true }
-  ```
-- Mensagem pré-preenchida (PT, EN, ES conforme `lang`):
-  - PT: "Olá! Gostaria de saber mais sobre os eventos personalizados, corporativos e temáticos da Tea Mind."
-  - EN: "Hi! I'd like to know more about Tea Mind's personalized, corporate and themed events."
-  - ES: "¡Hola! Me gustaría saber más sobre los eventos personalizados, corporativos y temáticos de Tea Mind."
-- Renderizar como `<a target="_blank" rel="noopener noreferrer">` (desktop e mobile).
+Bloco 3
+  Diferenciais
+    - curadoria sensorial
+    - narrativa autoral
+    - experiência premium
+    - conexão com marca/memória
 
-### 3. `src/components/Footer.tsx`
+Closing CTA
+  botão para WhatsApp
+```
 
-- Substituir o link "Contato" do array `navLinks` por um link WhatsApp (mesma URL com mensagem pré-preenchida).
-- Adicionar uma faixa nova **acima da grid de 4 colunas**, com fundo levemente diferenciado (border-top em accent), contendo:
-  - Eyebrow "01 — Eventos" em serif/dourado
-  - Título da seção (`t.footer.events.title`)
-  - Texto curto (`t.footer.events.text`)
-  - Botão CTA dourado linkando para o WhatsApp (`t.footer.events.cta`)
-- Layout: `grid md:grid-cols-2 gap-8 items-center` para que título/texto fiquem à esquerda e o CTA à direita, mantendo o ar editorial do site.
+### Arquivos que devem ser alterados
+- `src/App.tsx`
+- `src/components/Navbar.tsx`
+- `src/components/Footer.tsx`
+- `src/lib/translations.ts`
+- novo arquivo de página, por exemplo: `src/pages/EventsPage.tsx`
 
-## Notas Técnicas
+### Detalhes técnicos
+- O problema atual é estrutural: hoje não existe rota nem página de Events; a Navbar foi configurada para abrir `wa.me` diretamente.
+- A correção deve substituir esse comportamento por navegação client-side com `Link`.
+- O WhatsApp continuará usando `encodeURIComponent` para mensagem pré-preenchida, mas dentro dos CTAs da página/rodapé.
+- A implementação deve seguir o design system atual: Playfair Display, Inter, fundo escuro premium, acentos dourados e blocos editoriais.
 
-- **Número WhatsApp**: `+55 21 98112-6981` → URL `https://wa.me/5521981126981`
-- **Mensagem pré-preenchida**: codificada via `encodeURIComponent` no momento de montar a URL.
-- O item de menu continua usando a chave `nav.contact` por trás (sem refator de chaves), apenas o **valor** muda para "Eventos". Isso minimiza diff e mantém a estabilidade do código.
-- Não cria nova rota nem nova página — clique sai direto para o WhatsApp.
-- Mantém o `id="footer"` no rodapé (outras âncoras do app ainda funcionam).
+### Resultado esperado
+Ao clicar em “Events/Eventos” na Navbar, o usuário abrirá a página de Events. Dentro dela, encontrará a apresentação da oferta e os botões para falar no WhatsApp.
