@@ -325,6 +325,32 @@ export const translations = {
       contact: "Events",
       neurogastronomy: "Neurogastronomy",
       neuralSystem: "Neural System",
+      programsGroups: {
+        profissionalizantes: {
+          label: "Professional Programs",
+          items: [
+            { label: "Tea Mind Working with Tea", anchor: "atuacao" },
+            { label: "Tea Mind Tea Brand Lab", anchor: "laboratorio" },
+            { label: "Tea Mind Full Experience", anchor: "full-experience" },
+          ],
+        },
+        aprimoramento: {
+          label: "Enhancement Programs",
+          items: [
+            { label: "Neurogastronomy of Teas & Herbs", anchor: "neurogastronomia" },
+            { label: "Tea Events", anchor: "eventos" },
+            { label: "Tea Pairing", anchor: "harmonizacao" },
+          ],
+        },
+        aceleracao: {
+          label: "Acceleration Programs",
+          items: [
+            { label: "Sprint Smart", anchor: "sprint" },
+            { label: "Commercial Architecture", anchor: "arquitetura-comercial", comingSoon: true },
+          ],
+        },
+        comingSoonLabel: "coming soon",
+      },
     },
     hero: {
       eyebrow: "STRATEGIC INTELLIGENCE FOR THE TEA INDUSTRY",
