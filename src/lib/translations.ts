@@ -24,9 +24,9 @@ export const translations = {
         aprimoramento: {
           label: "Programas de Aprimoramento",
           items: [
-            { label: "Neurogastronomia de Chás e Ervas", anchor: "neurogastronomia" },
             { label: "Eventos com Chá", anchor: "eventos" },
             { label: "Harmonização com Chás", anchor: "harmonizacao" },
+            { label: "Neurogastronomia de Chás e Ervas", anchor: "neurogastronomia" },
           ],
         },
         aceleracao: {
@@ -114,9 +114,9 @@ export const translations = {
           description:
             "Especializações para profissionais do chá que desejam aprofundar repertório técnico e diferenciar sua atuação.",
           items: [
-            { id: "neurogastronomia", title: "Especialização em Neurogastronomia de Chás e Ervas", description: "Em parceria com especialista convidada. Programa de vanguarda que explora como a neurociência transforma a degustação de chá, a experiência do cliente e o desenvolvimento de produtos." },
             { id: "eventos", title: "Especialização em Eventos com Chá", description: "Para quem deseja criar, produzir e conduzir experiências e eventos com chá com padrão profissional, identidade própria e visão de mercado." },
-            { id: "harmonizacao", title: "Especialização em Harmonização com Chás", description: "Para quem deseja dominar a arte da harmonização entre chás, alimentos e ocasiões, criando experiências sensoriais sofisticadas e únicas." },
+            { id: "harmonizacao", title: "Especialização em Harmonização com Chás", description: "Domine a harmonização entre chás, alimentos e bebidas com a técnica HARCOR, criando experiências gastronômicas sofisticadas." },
+            { id: "neurogastronomia", title: "Especialização em Neurogastronomia de Chás e Ervas", description: "1ª Especialização em Neurogastronomia de Chás e Ervas da América Latina. 8 aulas no Método SENSO, 30 horas, com Raquel Magalhães." },
           ],
         },
         {
@@ -338,9 +338,9 @@ export const translations = {
         aprimoramento: {
           label: "Enhancement Programs",
           items: [
-            { label: "Neurogastronomy of Teas & Herbs", anchor: "neurogastronomia" },
             { label: "Tea Events", anchor: "eventos" },
             { label: "Tea Pairing", anchor: "harmonizacao" },
+            { label: "Neurogastronomy of Teas & Herbs", anchor: "neurogastronomia" },
           ],
         },
         aceleracao: {
@@ -428,9 +428,9 @@ export const translations = {
           description:
             "Specializations for tea professionals who want to deepen technical repertoire and differentiate their practice.",
           items: [
-            { id: "neurogastronomia", title: "Specialization in Neurogastronomy of Teas & Herbs", description: "In partnership with a guest specialist. A cutting-edge program exploring how neuroscience transforms tea tasting, customer experience, and product development." },
             { id: "eventos", title: "Specialization in Tea Events", description: "For those who want to create, produce, and host tea experiences and events with professional standards, distinct identity, and market vision." },
-            { id: "harmonizacao", title: "Specialization in Tea Pairing", description: "For those who want to master the art of pairing teas with food and occasions, crafting sophisticated and unique sensory experiences." },
+            { id: "harmonizacao", title: "Specialization in Tea Pairing", description: "Master tea pairing with food and beverages through the HARCOR technique, creating sophisticated gastronomic experiences." },
+            { id: "neurogastronomia", title: "Specialization in Neurogastronomy of Teas & Herbs", description: "Latin America's first Specialization in Neurogastronomy of Teas & Herbs. 8 classes within the SENSO Method, 30 hours, with Raquel Magalhães." },
           ],
         },
         {
@@ -652,9 +652,9 @@ export const translations = {
         aprimoramento: {
           label: "Programas de Perfeccionamiento",
           items: [
-            { label: "Neurogastronomía de Tés y Hierbas", anchor: "neurogastronomia" },
             { label: "Eventos con Té", anchor: "eventos" },
             { label: "Maridaje con Tés", anchor: "harmonizacao" },
+            { label: "Neurogastronomía de Tés y Hierbas", anchor: "neurogastronomia" },
           ],
         },
         aceleracao: {
@@ -742,9 +742,9 @@ export const translations = {
           description:
             "Especializaciones para profesionales del té que desean profundizar repertorio técnico y diferenciar su actuación.",
           items: [
-            { id: "neurogastronomia", title: "Especialización en Neurogastronomía de Tés y Hierbas", description: "En asociación con especialista invitada. Programa de vanguardia que explora cómo la neurociencia transforma la degustación de té, la experiencia del cliente y el desarrollo de productos." },
             { id: "eventos", title: "Especialización en Eventos con Té", description: "Para quienes desean crear, producir y conducir experiencias y eventos con té con estándar profesional, identidad propia y visión de mercado." },
-            { id: "harmonizacao", title: "Especialización en Maridaje con Tés", description: "Para quienes desean dominar el arte del maridaje entre tés, alimentos y ocasiones, creando experiencias sensoriales sofisticadas y únicas." },
+            { id: "harmonizacao", title: "Especialización en Maridaje con Tés", description: "Domina el maridaje entre tés, alimentos y bebidas con la técnica HARCOR, creando experiencias gastronómicas sofisticadas." },
+            { id: "neurogastronomia", title: "Especialización en Neurogastronomía de Tés y Hierbas", description: "1ª Especialización en Neurogastronomía de Tés y Hierbas de América Latina. 8 clases del Método SENSO, 30 horas, con Raquel Magalhães." },
           ],
         },
         {
