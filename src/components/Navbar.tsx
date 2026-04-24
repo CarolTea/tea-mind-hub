@@ -7,13 +7,7 @@ const programsRoutes = { en: "/programs", es: "/es/programas", pt: "/pt/programa
 const aboutRoutes = { en: "/about", es: "/es/nosotros", pt: "/pt/sobre" } as const;
 const innovationsRoutes = { en: "/innovations", es: "/es/innovaciones", pt: "/pt/inovacoes" } as const;
 const societyRoutes = { en: "/society", es: "/es/sociedad", pt: "/pt/sociedade" } as const;
-
-const WHATSAPP_NUMBER = "5521981126981";
-const eventsMessages = {
-  pt: "Olá! Gostaria de saber mais sobre os eventos personalizados, corporativos e temáticos da Tea Mind.",
-  en: "Hi! I'd like to know more about Tea Mind's personalized, corporate and themed events.",
-  es: "¡Hola! Me gustaría saber más sobre los eventos personalizados, corporativos y temáticos de Tea Mind.",
-} as const;
+const eventsRoutes = { en: "/events", es: "/es/eventos", pt: "/pt/eventos" } as const;
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -21,14 +15,12 @@ const Navbar = () => {
   const { lang, t } = useLang();
   const navigate = useNavigate();
 
-  const eventsHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(eventsMessages[lang])}`;
-
   const navLinks = [
     { label: t.nav.about, href: aboutRoutes[lang], isRoute: true },
     { label: t.nav.programs, href: programsRoutes[lang], isRoute: true },
     { label: t.nav.innovations, href: innovationsRoutes[lang], isRoute: true },
     { label: t.nav.society, href: societyRoutes[lang], isRoute: true },
-    { label: t.nav.contact, href: eventsHref, external: true },
+    { label: t.nav.contact, href: eventsRoutes[lang], isRoute: true },
   ];
 
   useEffect(() => {
