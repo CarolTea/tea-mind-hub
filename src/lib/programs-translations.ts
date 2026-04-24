@@ -203,36 +203,6 @@ const ptCategories: ProgramCategory[] = [
       "Especializações para profissionais do chá que desejam aprofundar repertório técnico, ampliar áreas de atuação e diferenciar sua presença no mercado.",
     programs: [
       {
-        id: "neurogastronomia",
-        title: "Especialização em Neurogastronomia de Chás e Ervas",
-        subtitle: "Especialização",
-        shortDescription:
-          "Programa de vanguarda que explora como a neurociência transforma a degustação de chá, a experiência do cliente e o desenvolvimento de produtos.",
-        mainDescription:
-          "Especialização de vanguarda, em parceria com especialista convidada, para profissionais que desejam unir ciência sensorial, neurogastronomia e mercado do chá.",
-        bodyText:
-          "A Neurogastronomia aplica os princípios da neurociência à experiência sensorial. Esta especialização traz esse olhar para o universo do chá, ampliando o repertório técnico do profissional e abrindo novas possibilidades para curadoria, atendimento, criação de experiências e desenvolvimento de produtos com diferenciação real.",
-        forWhoIntro: ptCommon.forWhoIntro,
-        forWhoItems: [
-          "Já atua ou se forma como Sommelier de Chá, Tea Blender ou profissional do setor",
-          "Deseja agregar uma camada científica e sensorial à sua atuação",
-          "Quer criar experiências e produtos com base em percepção, memória e prazer sensorial",
-          "Busca diferenciação técnica em um mercado em formação",
-        ],
-        includesTitle: ptCommon.includesLabel,
-        includesItems: [
-          "Aulas com especialista convidada em Neurogastronomia",
-          "Material de apoio e referências aplicadas ao chá",
-          "Estudos de caso e exercícios sensoriais",
-          "Certificação de especialização",
-        ],
-        formationText: "",
-        directionTitle: "Como funciona",
-        directionText:
-          "Uma especialização objetiva e aplicada, voltada a quem já tem base no mercado do chá e deseja somar uma camada técnica e sensorial sofisticada à sua trajetória.",
-        cta: ptCommon.cta,
-      },
-      {
         id: "eventos",
         title: "Especialização em Eventos com Chá",
         subtitle: "Especialização",
@@ -267,29 +237,70 @@ const ptCategories: ProgramCategory[] = [
         title: "Especialização em Harmonização com Chás",
         subtitle: "Especialização",
         shortDescription:
-          "Para quem deseja dominar a arte da harmonização entre chás, alimentos e ocasiões, criando experiências sensoriais sofisticadas.",
+          "Domine a harmonização entre chás, alimentos e bebidas com a técnica HARCOR, criando experiências gastronômicas sofisticadas.",
         mainDescription:
-          "Especialização para profissionais que desejam dominar a arte da harmonização entre chás, alimentos e ocasiões, criando experiências sensoriais sofisticadas e únicas.",
+          "Especialização para profissionais que desejam dominar a harmonização entre chás e alimentos, criando experiências gastronômicas sensoriais, sofisticadas e tecnicamente consistentes.",
         bodyText:
-          "A harmonização com chás é uma das competências mais valorizadas em hospitalidade premium e em curadoria gastronômica. Esta especialização aprofunda critérios técnicos, sensoriais e culturais para criar combinações com lógica, beleza e diferenciação real.",
+          "A harmonização com chás é uma das competências mais relevantes para quem atua com hospitalidade, gastronomia, eventos, consultorias, experiências premium e curadoria sensorial. Nesta especialização, o aluno aprofunda critérios técnicos, culturais e sensoriais para criar combinações com lógica, beleza e diferenciação real.\n\nUm dos diferenciais do nosso programa é a técnica HARCOR, desenvolvida pela professora Carol Tavares, que amplia o olhar tradicional da harmonização para além da semelhança e do contraste. A partir dela, o aluno aprende a construir harmonizações mais profundas, considerando textura, estrutura, intensidade, contexto sensorial e narrativa da experiência.",
         forWhoIntro: ptCommon.forWhoIntro,
         forWhoItems: [
-          "Deseja se especializar em harmonização entre chás, alimentos e ocasiões",
-          "Atua ou pretende atuar em hospitalidade, restaurantes, hotéis ou eventos premium",
+          "Deseja se especializar em harmonização entre chás, alimentos e bebidas",
+          "Atua ou pretende atuar em hospitalidade, restaurantes, hotéis, consultorias, eventos ou experiências gastronômicas",
           "Quer ampliar repertório técnico e criar combinações com critério profissional",
-          "Busca diferenciar sua atuação com uma camada sensorial sofisticada",
+          "Busca diferenciar sua atuação com uma camada sensorial mais sofisticada",
+          "Deseja aplicar o chá em experiências com queijos, chocolates, vinhos, jantares e menus harmonizados",
         ],
         includesTitle: ptCommon.includesLabel,
         includesItems: [
           "Aulas aplicadas à harmonização entre chás e alimentos",
-          "Critérios técnicos, sensoriais e culturais",
+          "Técnica HARCOR de harmonização desenvolvida pela professora Carol Tavares",
+          "Critérios técnicos, sensoriais, culturais e gastronômicos",
           "Estudos de caso e exercícios práticos",
+          "Aula prática de jantar harmonizado com chás",
+          "Aula prática de harmonização com queijos",
+          "Aula prática de harmonização com chocolates",
+          "Aula prática de harmonização com vinhos",
           "Certificação de especialização",
         ],
         formationText: "",
         directionTitle: "Como funciona",
         directionText:
-          "Uma especialização sensorial e aplicada, voltada a quem deseja construir uma assinatura técnica em harmonização e levá-la para a sua atuação profissional.",
+          "Nesta especialização sensorial o objetivo é que o aluno saia com mais segurança, repertório técnico e método para criar harmonizações coerentes, memoráveis e estrategicamente pensadas.",
+        cta: ptCommon.cta,
+      },
+      {
+        id: "neurogastronomia",
+        title: "Especialização em Neurogastronomia de Chás e Ervas",
+        subtitle: "Especialização",
+        shortDescription:
+          "1ª Especialização em Neurogastronomia de Chás e Ervas da América Latina. 8 aulas no Método SENSO, 30 horas, com Raquel Magalhães.",
+        mainDescription:
+          "1ª Especialização em Neurogastronomia de Chás e Ervas da América Latina, criada para profissionais que desejam unir ciência, sensorialidade e aplicação prática real no mercado de chás e ervas.",
+        bodyText:
+          "Compreenda como sabor, aroma, contexto, percepção e emoção se articulam na experiência com chás e ervas, e transforme esse conhecimento em repertório prático para sua atuação profissional. A formação amplia sua leitura sobre como experiências sensoriais são construídas no cérebro humano, a partir do Método SENSO criado por Raquel Magalhães.\n\nUma abordagem integrada que une áreas que normalmente não se conversam no mercado do chá: Neurociência, Fitoquímica, Chás e Ervas, Sensorialidade, Emoção e Design de Experiência. Conteúdo estruturado sobre base científica para que você descubra como comunicar melhor, fechar mais contratos e aumentar suas vendas.",
+        forWhoIntro: ptCommon.forWhoIntro,
+        forWhoItems: [
+          "Sommeliers de Chá, Tea Blenders e Tea Baristas",
+          "Empreendedores e marcas do universo do chá",
+          "Profissionais de eventos, consultorias e experiências",
+          "Profissionais da gastronomia e do bem-estar integrativo",
+          "Estudiosos e apaixonados pelo universo do chá",
+        ],
+        includesTitle: ptCommon.includesLabel,
+        includesItems: [
+          "8 aulas gravadas no Método SENSO, criado por Raquel Magalhães",
+          "Aula 0 de nivelamento em chás para quem ainda não é profissional do chá",
+          "Encontros ao vivo de perguntas e respostas",
+          "30 dias de acesso à IA proprietária da Especialização (bônus da 2ª turma)",
+          "Acesso às gravações por 12 meses",
+          "Material de apoio em PDF e exercícios",
+          "30 horas de conteúdo entre aulas, nivelamento e materiais complementares",
+          "Certificado digital como Especialista em Neurogastronomia de Chás e Ervas",
+        ],
+        formationText: "",
+        directionTitle: "Estrutura do programa",
+        directionText:
+          "Aula 1, Fundamentos da Análise Sensorial. Aula 2, Fundamentos da Neurogastronomia. Aula 3, Os 5 Sentidos e a Neurogastronomia. Aula 4, Comportamento Alimentar. Aula 5, Fitoquímica Sensorial. Aula 6, Camellia sinensis no contexto da Neurogastronomia. Aula 7, Harmonização com base na Neurogastronomia. Aula 8, Design Sensorial e Posicionamento Profissional.\n\nConduzida por Raquel Magalhães (criadora do Método SENSO, professora convidada do Le Cordon Bleu Rio de Janeiro), Carol Tavares e Carla Vicente.",
         cta: ptCommon.cta,
       },
     ],
@@ -488,36 +499,6 @@ const enCategories: ProgramCategory[] = [
       "Specializations for tea professionals who want to deepen technical repertoire, expand areas of practice, and differentiate their presence in the market.",
     programs: [
       {
-        id: "neurogastronomia",
-        title: "Specialization in Neurogastronomy of Teas & Herbs",
-        subtitle: "Specialization",
-        shortDescription:
-          "A cutting-edge program exploring how neuroscience transforms tea tasting, customer experience, and product development.",
-        mainDescription:
-          "A cutting-edge specialization, in partnership with a guest specialist, for professionals who want to combine sensory science, neurogastronomy, and the tea market.",
-        bodyText:
-          "Neurogastronomy applies the principles of neuroscience to sensory experience. This specialization brings that perspective to the tea universe, expanding the professional's technical repertoire and opening new possibilities for curation, service, experience design, and product development with real differentiation.",
-        forWhoIntro: enCommon.forWhoIntro,
-        forWhoItems: [
-          "Already work or are training as a Tea Sommelier, Tea Blender, or industry professional",
-          "Want to add a scientific and sensory layer to their practice",
-          "Want to create experiences and products grounded in perception, memory, and sensory pleasure",
-          "Seek technical differentiation in an emerging market",
-        ],
-        includesTitle: enCommon.includesLabel,
-        includesItems: [
-          "Classes with a guest specialist in Neurogastronomy",
-          "Support material and references applied to tea",
-          "Case studies and sensory exercises",
-          "Specialization certification",
-        ],
-        formationText: "",
-        directionTitle: "How it works",
-        directionText:
-          "An objective and applied specialization for professionals who already have a tea-market base and want to add a sophisticated technical and sensory layer to their trajectory.",
-        cta: enCommon.cta,
-      },
-      {
         id: "eventos",
         title: "Specialization in Tea Events",
         subtitle: "Specialization",
@@ -552,29 +533,70 @@ const enCategories: ProgramCategory[] = [
         title: "Specialization in Tea Pairing",
         subtitle: "Specialization",
         shortDescription:
-          "For those who want to master the art of pairing teas with food and occasions, crafting sophisticated and unique sensory experiences.",
+          "Master tea pairing with food and beverages through the HARCOR technique, creating sophisticated gastronomic experiences.",
         mainDescription:
-          "A specialization for professionals who want to master the art of pairing teas with food and occasions, crafting sophisticated and unique sensory experiences.",
+          "A specialization for professionals who want to master the pairing of teas with food, creating sensory, sophisticated, and technically consistent gastronomic experiences.",
         bodyText:
-          "Tea pairing is one of the most valued skills in premium hospitality and gastronomic curation. This specialization deepens technical, sensory, and cultural criteria to create combinations with logic, beauty, and real differentiation.",
+          "Tea pairing is one of the most relevant skills for those working in hospitality, gastronomy, events, consulting, premium experiences, and sensory curation. In this specialization, students deepen technical, cultural, and sensory criteria to craft combinations with logic, beauty, and real differentiation.\n\nOne of our program's differentiators is the HARCOR technique, developed by Professor Carol Tavares, which broadens the traditional view of pairing beyond similarity and contrast. Through it, students learn to build deeper pairings, considering texture, structure, intensity, sensory context, and the narrative of the experience.",
         forWhoIntro: enCommon.forWhoIntro,
         forWhoItems: [
-          "Want to specialize in pairing tea with food and occasions",
-          "Work or plan to work in hospitality, restaurants, hotels, or premium events",
+          "Want to specialize in pairing teas with food and beverages",
+          "Work or plan to work in hospitality, restaurants, hotels, consulting, events, or gastronomic experiences",
           "Want to expand technical repertoire and create combinations with professional criteria",
-          "Seek to differentiate their practice with a sophisticated sensory layer",
+          "Seek to differentiate their practice with a more sophisticated sensory layer",
+          "Want to apply tea in experiences with cheeses, chocolates, wines, dinners, and paired menus",
         ],
         includesTitle: enCommon.includesLabel,
         includesItems: [
           "Classes applied to pairing teas with food",
-          "Technical, sensory, and cultural criteria",
+          "HARCOR pairing technique developed by Professor Carol Tavares",
+          "Technical, sensory, cultural, and gastronomic criteria",
           "Case studies and practical exercises",
+          "Hands-on class: tea-paired dinner",
+          "Hands-on class: pairing with cheeses",
+          "Hands-on class: pairing with chocolates",
+          "Hands-on class: pairing with wines",
           "Specialization certification",
         ],
         formationText: "",
         directionTitle: "How it works",
         directionText:
-          "A sensory and applied specialization for those who want to build a technical signature in pairing and bring it to their professional practice.",
+          "In this sensory specialization, the goal is for students to leave with greater confidence, technical repertoire, and method to create coherent, memorable, and strategically conceived pairings.",
+        cta: enCommon.cta,
+      },
+      {
+        id: "neurogastronomia",
+        title: "Specialization in Neurogastronomy of Teas & Herbs",
+        subtitle: "Specialization",
+        shortDescription:
+          "Latin America's first Specialization in Neurogastronomy of Teas & Herbs. 8 classes within the SENSO Method, 30 hours, with Raquel Magalhães.",
+        mainDescription:
+          "Latin America's first Specialization in Neurogastronomy of Teas & Herbs, designed for professionals who want to combine science, sensoriality, and real practical application in the tea and herbs market.",
+        bodyText:
+          "Understand how flavor, aroma, context, perception, and emotion come together in the experience with teas and herbs, and turn that knowledge into practical repertoire for your professional work. The program expands your reading of how sensory experiences are built in the human brain, based on the SENSO Method created by Raquel Magalhães.\n\nAn integrated approach uniting fields that rarely converse in the tea market: Neuroscience, Phytochemistry, Teas & Herbs, Sensoriality, Emotion, and Experience Design. Content structured on a scientific foundation so you can communicate better, close more deals, and grow your sales.",
+        forWhoIntro: enCommon.forWhoIntro,
+        forWhoItems: [
+          "Tea Sommeliers, Tea Blenders, and Tea Baristas",
+          "Entrepreneurs and brands in the tea universe",
+          "Professionals working in events, consulting, and experiences",
+          "Gastronomy and integrative wellness professionals",
+          "Scholars and enthusiasts of the tea universe",
+        ],
+        includesTitle: enCommon.includesLabel,
+        includesItems: [
+          "8 recorded classes within the SENSO Method, created by Raquel Magalhães",
+          "Class 0 — leveling class on tea for those who are not yet tea professionals",
+          "Live Q&A sessions",
+          "30 days of access to the program's proprietary AI (2nd cohort bonus)",
+          "Access to recordings for 12 months",
+          "PDF support material and exercises",
+          "30 hours of content across classes, leveling, and complementary materials",
+          "Digital certificate as a Specialist in Neurogastronomy of Teas & Herbs",
+        ],
+        formationText: "",
+        directionTitle: "Program structure",
+        directionText:
+          "Class 1, Foundations of Sensory Analysis. Class 2, Foundations of Neurogastronomy. Class 3, The 5 Senses and Neurogastronomy. Class 4, Eating Behavior. Class 5, Sensory Phytochemistry. Class 6, Camellia sinensis in the Context of Neurogastronomy. Class 7, Pairing Based on Neurogastronomy. Class 8, Sensory Design and Professional Positioning.\n\nLed by Raquel Magalhães (creator of the SENSO Method, guest professor at Le Cordon Bleu Rio de Janeiro), Carol Tavares, and Carla Vicente.",
         cta: enCommon.cta,
       },
     ],
@@ -773,36 +795,6 @@ const esCategories: ProgramCategory[] = [
       "Especializaciones para profesionales del té que desean profundizar repertorio técnico, ampliar áreas de actuación y diferenciar su presencia en el mercado.",
     programs: [
       {
-        id: "neurogastronomia",
-        title: "Especialización en Neurogastronomía de Tés y Hierbas",
-        subtitle: "Especialización",
-        shortDescription:
-          "Programa de vanguardia que explora cómo la neurociencia transforma la degustación de té, la experiencia del cliente y el desarrollo de productos.",
-        mainDescription:
-          "Especialización de vanguardia, en alianza con especialista invitada, para profesionales que desean unir ciencia sensorial, neurogastronomía y mercado del té.",
-        bodyText:
-          "La Neurogastronomía aplica los principios de la neurociencia a la experiencia sensorial. Esta especialización lleva esa mirada al universo del té, ampliando el repertorio técnico del profesional y abriendo nuevas posibilidades para curaduría, atención, creación de experiencias y desarrollo de productos con diferenciación real.",
-        forWhoIntro: esCommon.forWhoIntro,
-        forWhoItems: [
-          "Ya actúa o se forma como Sommelier de Té, Tea Blender o profesional del sector",
-          "Desea agregar una capa científica y sensorial a su actuación",
-          "Quiere crear experiencias y productos con base en percepción, memoria y placer sensorial",
-          "Busca diferenciación técnica en un mercado en formación",
-        ],
-        includesTitle: esCommon.includesLabel,
-        includesItems: [
-          "Clases con especialista invitada en Neurogastronomía",
-          "Material de apoyo y referencias aplicadas al té",
-          "Estudios de caso y ejercicios sensoriales",
-          "Certificación de especialización",
-        ],
-        formationText: "",
-        directionTitle: "Cómo funciona",
-        directionText:
-          "Una especialización objetiva y aplicada, dirigida a quienes ya tienen base en el mercado del té y desean sumar una capa técnica y sensorial sofisticada a su trayectoria.",
-        cta: esCommon.cta,
-      },
-      {
         id: "eventos",
         title: "Especialización en Eventos con Té",
         subtitle: "Especialización",
@@ -837,29 +829,70 @@ const esCategories: ProgramCategory[] = [
         title: "Especialización en Maridaje con Tés",
         subtitle: "Especialización",
         shortDescription:
-          "Para quienes desean dominar el arte del maridaje entre tés, alimentos y ocasiones, creando experiencias sensoriales sofisticadas.",
+          "Domina el maridaje entre tés, alimentos y bebidas con la técnica HARCOR, creando experiencias gastronómicas sofisticadas.",
         mainDescription:
-          "Especialización para profesionales que desean dominar el arte del maridaje entre tés, alimentos y ocasiones, creando experiencias sensoriales sofisticadas y únicas.",
+          "Especialización para profesionales que desean dominar el maridaje entre tés y alimentos, creando experiencias gastronómicas sensoriales, sofisticadas y técnicamente consistentes.",
         bodyText:
-          "El maridaje con tés es una de las competencias más valoradas en hospitalidad premium y curaduría gastronómica. Esta especialización profundiza criterios técnicos, sensoriales y culturales para crear combinaciones con lógica, belleza y diferenciación real.",
+          "El maridaje con tés es una de las competencias más relevantes para quienes trabajan en hospitalidad, gastronomía, eventos, consultorías, experiencias premium y curaduría sensorial. En esta especialización el alumno profundiza criterios técnicos, culturales y sensoriales para crear combinaciones con lógica, belleza y diferenciación real.\n\nUno de los diferenciales de nuestro programa es la técnica HARCOR, desarrollada por la profesora Carol Tavares, que amplía la mirada tradicional del maridaje más allá de la semejanza y el contraste. A partir de ella, el alumno aprende a construir maridajes más profundos, considerando textura, estructura, intensidad, contexto sensorial y narrativa de la experiencia.",
         forWhoIntro: esCommon.forWhoIntro,
         forWhoItems: [
-          "Desean especializarse en maridaje entre tés, alimentos y ocasiones",
-          "Actúan o pretenden actuar en hospitalidad, restaurantes, hoteles o eventos premium",
+          "Desean especializarse en maridaje entre tés, alimentos y bebidas",
+          "Actúan o pretenden actuar en hospitalidad, restaurantes, hoteles, consultorías, eventos o experiencias gastronómicas",
           "Quieren ampliar repertorio técnico y crear combinaciones con criterio profesional",
-          "Buscan diferenciar su actuación con una capa sensorial sofisticada",
+          "Buscan diferenciar su actuación con una capa sensorial más sofisticada",
+          "Desean aplicar el té en experiencias con quesos, chocolates, vinos, cenas y menús maridados",
         ],
         includesTitle: esCommon.includesLabel,
         includesItems: [
           "Clases aplicadas al maridaje entre tés y alimentos",
-          "Criterios técnicos, sensoriales y culturales",
+          "Técnica HARCOR de maridaje desarrollada por la profesora Carol Tavares",
+          "Criterios técnicos, sensoriales, culturales y gastronómicos",
           "Estudios de caso y ejercicios prácticos",
+          "Clase práctica de cena maridada con tés",
+          "Clase práctica de maridaje con quesos",
+          "Clase práctica de maridaje con chocolates",
+          "Clase práctica de maridaje con vinos",
           "Certificación de especialización",
         ],
         formationText: "",
         directionTitle: "Cómo funciona",
         directionText:
-          "Una especialización sensorial y aplicada, dirigida a quienes desean construir una firma técnica en maridaje y llevarla a su actuación profesional.",
+          "En esta especialización sensorial el objetivo es que el alumno salga con más seguridad, repertorio técnico y método para crear maridajes coherentes, memorables y estratégicamente pensados.",
+        cta: esCommon.cta,
+      },
+      {
+        id: "neurogastronomia",
+        title: "Especialización en Neurogastronomía de Tés y Hierbas",
+        subtitle: "Especialización",
+        shortDescription:
+          "1ª Especialización en Neurogastronomía de Tés y Hierbas de América Latina. 8 clases del Método SENSO, 30 horas, con Raquel Magalhães.",
+        mainDescription:
+          "1ª Especialización en Neurogastronomía de Tés y Hierbas de América Latina, creada para profesionales que desean unir ciencia, sensorialidad y aplicación práctica real en el mercado de tés y hierbas.",
+        bodyText:
+          "Comprende cómo sabor, aroma, contexto, percepción y emoción se articulan en la experiencia con tés y hierbas, y transforma ese conocimiento en repertorio práctico para tu actuación profesional. La formación amplía tu lectura sobre cómo se construyen las experiencias sensoriales en el cerebro humano, a partir del Método SENSO creado por Raquel Magalhães.\n\nUn enfoque integrado que une áreas que normalmente no dialogan en el mercado del té: Neurociencia, Fitoquímica, Tés y Hierbas, Sensorialidad, Emoción y Diseño de Experiencia. Contenido estructurado sobre base científica para que descubras cómo comunicar mejor, cerrar más contratos y aumentar tus ventas.",
+        forWhoIntro: esCommon.forWhoIntro,
+        forWhoItems: [
+          "Sommeliers de Té, Tea Blenders y Tea Baristas",
+          "Emprendedores y marcas del universo del té",
+          "Profesionales de eventos, consultorías y experiencias",
+          "Profesionales de la gastronomía y del bienestar integrativo",
+          "Estudiosos y apasionados por el universo del té",
+        ],
+        includesTitle: esCommon.includesLabel,
+        includesItems: [
+          "8 clases grabadas del Método SENSO, creado por Raquel Magalhães",
+          "Clase 0 de nivelación en tés para quienes aún no son profesionales del té",
+          "Encuentros en vivo de preguntas y respuestas",
+          "30 días de acceso a la IA propia de la Especialización (bono de la 2ª promoción)",
+          "Acceso a las grabaciones por 12 meses",
+          "Material de apoyo en PDF y ejercicios",
+          "30 horas de contenido entre clases, nivelación y materiales complementarios",
+          "Certificado digital como Especialista en Neurogastronomía de Tés y Hierbas",
+        ],
+        formationText: "",
+        directionTitle: "Estructura del programa",
+        directionText:
+          "Clase 1, Fundamentos del Análisis Sensorial. Clase 2, Fundamentos de la Neurogastronomía. Clase 3, Los 5 Sentidos y la Neurogastronomía. Clase 4, Comportamiento Alimentario. Clase 5, Fitoquímica Sensorial. Clase 6, Camellia sinensis en el contexto de la Neurogastronomía. Clase 7, Maridaje basado en Neurogastronomía. Clase 8, Diseño Sensorial y Posicionamiento Profesional.\n\nConducida por Raquel Magalhães (creadora del Método SENSO, profesora invitada del Le Cordon Bleu Río de Janeiro), Carol Tavares y Carla Vicente.",
         cta: esCommon.cta,
       },
     ],
