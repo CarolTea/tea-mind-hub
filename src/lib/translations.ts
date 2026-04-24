@@ -340,10 +340,10 @@ export const translations = {
       ],
       eyebrow: "Real results",
       title:
-        "We don't teach about the tea market. We build it , together with our students.",
+        "We don't teach about the tea market. We build it together with our students.",
       transition:
-        "Over 300 Sommeliers and 100 Tea Blenders trained. Each one building their own story in the tea market.",
-      cta: "Meet our trained professionals →",
+        "Tea Sommeliers, Tea Blenders, Event Specialists, Pairing Masters, Specialists in Neurogastronomy of Teas & Herbs, Tea Business Specialists. Each one building their own story in the tea market.",
+      cta: "Meet our trained professionals & entrepreneurs →",
     },
     innovations: {
       eyebrow: "Tea Mind Innovations",
@@ -574,10 +574,10 @@ export const translations = {
       ],
       eyebrow: "Resultados reales",
       title:
-        "No enseñamos sobre el mercado del té. Lo construimos , junto con nuestros alumnos.",
+        "No enseñamos sobre el mercado del té. Lo construimos junto a nuestros alumnos.",
       transition:
-        "Más de 300 Sommeliers y 100 Tea Blenders formados. Cada uno construyendo su propia historia en el mercado del té.",
-      cta: "Conoce a nuestros profesionales formados →",
+        "Sommeliers de Té, Tea Blenders, Especialistas en Eventos, Maestros en Maridaje, Especialistas en Neurogastronomía de Tés & Hierbas, Especialistas en Negocios de Té. Cada uno construyendo su propia historia en el mercado del té.",
+      cta: "Conoce a nuestros profesionales formados y emprendedores →",
     },
     innovations: {
       eyebrow: "Tea Mind Innovaciones",
