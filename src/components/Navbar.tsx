@@ -8,18 +8,27 @@ const aboutRoutes = { en: "/about", es: "/es/nosotros", pt: "/pt/sobre" } as con
 const innovationsRoutes = { en: "/innovations", es: "/es/innovaciones", pt: "/pt/inovacoes" } as const;
 const societyRoutes = { en: "/society", es: "/es/sociedad", pt: "/pt/sociedade" } as const;
 
+const WHATSAPP_NUMBER = "5521981126981";
+const eventsMessages = {
+  pt: "Olá! Gostaria de saber mais sobre os eventos personalizados, corporativos e temáticos da Tea Mind.",
+  en: "Hi! I'd like to know more about Tea Mind's personalized, corporate and themed events.",
+  es: "¡Hola! Me gustaría saber más sobre los eventos personalizados, corporativos y temáticos de Tea Mind.",
+} as const;
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { lang, t } = useLang();
   const navigate = useNavigate();
 
+  const eventsHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(eventsMessages[lang])}`;
+
   const navLinks = [
     { label: t.nav.about, href: aboutRoutes[lang], isRoute: true },
     { label: t.nav.programs, href: programsRoutes[lang], isRoute: true },
     { label: t.nav.innovations, href: innovationsRoutes[lang], isRoute: true },
     { label: t.nav.society, href: societyRoutes[lang], isRoute: true },
-    { label: t.nav.contact, href: "#footer" },
+    { label: t.nav.contact, href: eventsHref, external: true },
   ];
 
   useEffect(() => {
@@ -60,6 +69,15 @@ const Navbar = () => {
                 >
                   {link.label}
                 </button>
+              ) : link.external ? (
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
+                >
+                  {link.label}
+                </a>
               ) : (
                 <a href={link.href} className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300">
                   {link.label}
@@ -100,6 +118,16 @@ const Navbar = () => {
                   >
                     {link.label}
                   </button>
+                ) : link.external ? (
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
                 ) : (
                   <a href={link.href} className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground" onClick={() => setMenuOpen(false)}>
                     {link.label}
