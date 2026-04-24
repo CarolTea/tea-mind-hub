@@ -142,6 +142,11 @@ const ProgramSection = ({ program, index, forWhoTitle, includesTitle }: { progra
           <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium mb-4 text-center">
             {program.title}
           </h2>
+          {program.subtitle && (
+            <p className="font-sans text-xs tracking-[0.3em] uppercase text-accent text-center mb-4">
+              {program.subtitle}
+            </p>
+          )}
           <div className="w-12 h-px bg-accent mx-auto mb-8" />
           <p className={`font-sans text-lg md:text-xl ${isDark ? "text-primary-foreground/70" : "text-foreground/70"} leading-relaxed text-center mb-10`}>
             {program.mainDescription}
