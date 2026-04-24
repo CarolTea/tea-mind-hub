@@ -638,6 +638,32 @@ export const translations = {
       contact: "Eventos",
       neurogastronomy: "Neurogastronomía",
       neuralSystem: "Neural System",
+      programsGroups: {
+        profissionalizantes: {
+          label: "Programas Profesionales",
+          items: [
+            { label: "Tea Mind Actuación con Té", anchor: "atuacao" },
+            { label: "Tea Mind Laboratorio de Marcas de Té", anchor: "laboratorio" },
+            { label: "Tea Mind Full Experience", anchor: "full-experience" },
+          ],
+        },
+        aprimoramento: {
+          label: "Programas de Perfeccionamiento",
+          items: [
+            { label: "Neurogastronomía de Tés y Hierbas", anchor: "neurogastronomia" },
+            { label: "Eventos con Té", anchor: "eventos" },
+            { label: "Maridaje con Tés", anchor: "harmonizacao" },
+          ],
+        },
+        aceleracao: {
+          label: "Programas de Aceleración",
+          items: [
+            { label: "Sprint Smart", anchor: "sprint" },
+            { label: "Arquitectura Comercial", anchor: "arquitetura-comercial", comingSoon: true },
+          ],
+        },
+        comingSoonLabel: "próximamente",
+      },
     },
     hero: {
       eyebrow: "INTELIGENCIA ESTRATÉGICA PARA LA INDUSTRIA DEL TÉ",
