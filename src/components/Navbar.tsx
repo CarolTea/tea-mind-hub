@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useLang } from "@/contexts/LanguageContext";
 import teaMindLogo from "@/assets/tea-mind-logo-transparent.png";
 
@@ -41,12 +41,6 @@ const Navbar = () => {
   const langOrder: Array<"en" | "es" | "pt"> = ["en", "es", "pt"];
   const nextLangs = langOrder.filter((l) => l !== lang);
 
-  const handleNavClick = (link: { href: string; isRoute?: boolean }) => {
-    if (link.isRoute) {
-      navigate(link.href);
-    }
-  };
-
   return (
     <header
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm shadow-sm transition-all duration-500"
@@ -63,12 +57,12 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li key={link.label}>
               {link.isRoute ? (
-                <button
-                  onClick={() => handleNavClick(link)}
+                <Link
+                  to={link.href}
                   className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
                 >
                   {link.label}
-                </button>
+                </Link>
               ) : link.external ? (
                 <a
                   href={link.href}
@@ -111,12 +105,13 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <li key={link.label}>
                 {link.isRoute ? (
-                  <button
-                    onClick={() => { setMenuOpen(false); handleNavClick(link); }}
+                  <Link
+                    to={link.href}
+                    onClick={() => setMenuOpen(false)}
                     className="text-sm font-sans tracking-wider uppercase text-foreground/80 hover:text-foreground"
                   >
                     {link.label}
-                  </button>
+                  </Link>
                 ) : link.external ? (
                   <a
                     href={link.href}
