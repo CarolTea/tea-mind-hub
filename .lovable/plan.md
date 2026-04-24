@@ -1,56 +1,61 @@
 
+# Renomear "Contato" para "Eventos" → WhatsApp
 
-# Remove Lovable Branding & Replace Emoji Icons
+## Visão Geral
 
-## Overview
+Substituir o item de menu "Contato" por **"Eventos"** na Navbar e no Footer. O link abrirá o WhatsApp (+55 21 98112-6981) com uma mensagem pré-preenchida em português, falando sobre eventos personalizados, corporativos e temáticos. A copy aparecerá também numa pequena seção dentro do Footer (rodapé) para dar contexto visível antes do clique.
 
-Two issues to fix:
-1. **Favicon**: The `public/favicon.ico` (Lovable default) overrides `favicon.png` in Google search results because browsers request `/favicon.ico` by default. Need to delete `favicon.ico` and ensure a proper Tea Mind favicon is in place.
-2. **Emoji icons on homepage**: The Positioning, Innovations, and Society sections use emoji icons (🧭, 🏗️, 🎯, 🌍, 🤖, 🫖, 🤝, 📲, 🏆) which look unprofessional and don't match the premium design. Replace them with minimal decorative elements (accent-colored dashes, numbers, or simple SVG line icons from lucide-react).
-3. **Lovable badge**: Hide the "Edit with Lovable" badge on published deployments.
+## Arquivos Alterados
 
-## Files Changed
+### 1. `src/lib/translations.ts`
 
-### 1. Delete `public/favicon.ico`
-Remove the Lovable default favicon.ico so browsers use the `favicon.png` specified in index.html.
+Renomear a chave de label de menu (`nav.contact`) para "Eventos" / "Events" / "Eventos" nos três idiomas:
 
-> Note: If `favicon.png` is also the Lovable default, we should ask the user for a Tea Mind favicon image. But first we remove the .ico override.
+- **PT**: `contact: "Eventos"`
+- **EN**: `contact: "Events"`
+- **ES**: `contact: "Eventos"`
 
-### 2. Hide Lovable badge
-Use `publish_settings--set_badge_visibility` to hide the badge.
+Adicionar um novo bloco `events` dentro de `footer` (ou seção própria) com a copy curta para o rodapé:
 
-### 3. `src/lib/translations.ts` — Replace emoji icons
+- **PT**: 
+  - Título: "Eventos com Chá"
+  - Texto: "Eventos personalizados, corporativos e temáticos com curadoria sensorial e narrativa autoral. Da concepção à experiência final, criamos encontros que transformam o chá em linguagem de marca, conexão e memória."
+  - CTA: "Falar no WhatsApp →"
+- **EN**:
+  - Título: "Tea Events"
+  - Texto: "Personalized, corporate and themed events with sensory curation and signature narrative. From concept to execution, we craft gatherings that turn tea into a language of brand, connection and memory."
+  - CTA: "Chat on WhatsApp →"
+- **ES**:
+  - Título: "Eventos con Té"
+  - Texto: "Eventos personalizados, corporativos y temáticos con curaduría sensorial y narrativa de autor. De la concepción a la experiencia final, creamos encuentros que transforman el té en lenguaje de marca, conexión y memoria."
+  - CTA: "Hablar por WhatsApp →"
 
-Replace all emoji `icon` values with either:
-- Short accent labels like `"01"`, `"02"`, `"03"`, `"04"` for Positioning pillars
-- Or descriptive icon keys (`"compass"`, `"build"`, `"target"`, `"globe"`) that map to lucide-react components
+### 2. `src/components/Navbar.tsx`
 
-The cleaner approach matching the premium aesthetic: replace emoji strings with simple index-based markers or thin SVG icons.
+- Trocar o link `{ label: t.nav.contact, href: "#footer" }` por um link externo para WhatsApp:
+  ```ts
+  { label: t.nav.contact, href: "https://wa.me/5521981126981?text=...", external: true }
+  ```
+- Mensagem pré-preenchida (PT, EN, ES conforme `lang`):
+  - PT: "Olá! Gostaria de saber mais sobre os eventos personalizados, corporativos e temáticos da Tea Mind."
+  - EN: "Hi! I'd like to know more about Tea Mind's personalized, corporate and themed events."
+  - ES: "¡Hola! Me gustaría saber más sobre los eventos personalizados, corporativos y temáticos de Tea Mind."
+- Renderizar como `<a target="_blank" rel="noopener noreferrer">` (desktop e mobile).
 
-**Positioning pillars** (3 languages × 4 pillars): Replace 🧭→"01", 🏗️→"02", 🎯→"03", 🌍→"04"
+### 3. `src/components/Footer.tsx`
 
-**Innovations cards** (3 languages × 2 cards): Replace 🤖→"01", 🫖→"02"
+- Substituir o link "Contato" do array `navLinks` por um link WhatsApp (mesma URL com mensagem pré-preenchida).
+- Adicionar uma faixa nova **acima da grid de 4 colunas**, com fundo levemente diferenciado (border-top em accent), contendo:
+  - Eyebrow "01 — Eventos" em serif/dourado
+  - Título da seção (`t.footer.events.title`)
+  - Texto curto (`t.footer.events.text`)
+  - Botão CTA dourado linkando para o WhatsApp (`t.footer.events.cta`)
+- Layout: `grid md:grid-cols-2 gap-8 items-center` para que título/texto fiquem à esquerda e o CTA à direita, mantendo o ar editorial do site.
 
-**Society pillars** (3 languages × 4 pillars): Replace 🤝→"01", 📲→"02", 🎯→"03", 🏆→"04"
+## Notas Técnicas
 
-### 4. `src/components/Positioning.tsx` — Update icon rendering
-
-Change `<span className="text-2xl">{pillar.icon}</span>` to render the value as a styled number/label:
-```tsx
-<span className="font-serif text-lg font-medium text-accent flex-shrink-0 mt-1">{pillar.icon}</span>
-```
-
-### 5. `src/components/Innovations.tsx` — Update icon rendering
-
-Change `<span className="text-3xl mb-4">{card.icon}</span>` to a styled accent label.
-
-### 6. `src/components/Society.tsx` — Update icon rendering
-
-Same pattern as Positioning — styled number labels instead of emoji.
-
-## Technical Notes
-
-- Numbered labels (01, 02, 03...) are a common premium design pattern and match the minimalist aesthetic
-- No new dependencies needed
-- All three languages updated consistently
-
+- **Número WhatsApp**: `+55 21 98112-6981` → URL `https://wa.me/5521981126981`
+- **Mensagem pré-preenchida**: codificada via `encodeURIComponent` no momento de montar a URL.
+- O item de menu continua usando a chave `nav.contact` por trás (sem refator de chaves), apenas o **valor** muda para "Eventos". Isso minimiza diff e mantém a estabilidade do código.
+- Não cria nova rota nem nova página — clique sai direto para o WhatsApp.
+- Mantém o `id="footer"` no rodapé (outras âncoras do app ainda funcionam).
