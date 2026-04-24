@@ -62,11 +62,8 @@ const Footer = () => {
             <p className="font-sans text-sm text-primary-foreground/50 leading-relaxed mb-4">
               {t.footer.aboutText}
             </p>
-            <p className="font-sans text-xs text-primary-foreground/30 leading-relaxed mb-4">
-              {t.footer.locations}
-            </p>
             <p className="font-sans text-xs text-primary-foreground/40">
-              contact@teamindbusinesshub.com
+              hello@teamindhub.com
             </p>
           </div>
 
