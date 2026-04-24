@@ -93,41 +93,42 @@ export const translations = {
       cardCta: "Quero conhecer esse programa →",
       footerNote: "Ainda explorando o universo do chá? Comece pelo diagnóstico.",
       footerCta: "Fazer o Diagnóstico Gratuito →",
-      items: [
+      comingSoonLabel: "Lançamento em Breve",
+      categories: [
         {
-          title: "Tea Mind Atuação com Chá",
+          id: "profissionalizantes",
+          eyebrow: "01 , Profissionalizantes",
+          title: "Programas Profissionalizantes",
           description:
-            "Para quem deseja atuar como Sommelier de Chá com mais clareza, direção e visão de mercado.",
+            "Trajetórias completas de formação para quem deseja atuar, criar produtos ou construir um negócio no mercado do chá.",
+          items: [
+            { id: "atuacao", title: "Tea Mind Atuação com Chá", description: "Para quem deseja atuar como Sommelier de Chá com mais clareza, direção e visão de mercado." },
+            { id: "laboratorio", title: "Tea Mind Laboratório de Marcas de Chá", description: "Para quem deseja se tornar um Tea Blender e criar uma linha de chás com assinatura própria, padrão premium e potencial real de mercado." },
+            { id: "full-experience", title: "Tea Mind Full Experience", description: "Para quem quer construir algo completo, sólido e de longo prazo no mercado do chá." },
+          ],
         },
         {
-          title: "Tea Mind Laboratório de Marcas de Chá",
+          id: "aprimoramento",
+          eyebrow: "02 , Aprimoramento",
+          title: "Programas de Aprimoramento",
           description:
-            "Para quem deseja se tornar um Tea Blender e criar uma linha de chás com assinatura própria, padrão premium e potencial real de mercado.",
+            "Especializações para profissionais do chá que desejam aprofundar repertório técnico e diferenciar sua atuação.",
+          items: [
+            { id: "neurogastronomia", title: "Especialização em Neurogastronomia de Chás e Ervas", description: "Em parceria com especialista convidada. Programa de vanguarda que explora como a neurociência transforma a degustação de chá, a experiência do cliente e o desenvolvimento de produtos." },
+            { id: "eventos", title: "Especialização em Eventos com Chá", description: "Para quem deseja criar, produzir e conduzir experiências e eventos com chá com padrão profissional, identidade própria e visão de mercado." },
+            { id: "harmonizacao", title: "Especialização em Harmonização com Chás", description: "Para quem deseja dominar a arte da harmonização entre chás, alimentos e ocasiões, criando experiências sensoriais sofisticadas e únicas." },
+          ],
         },
         {
-          title: "Tea Mind Sprint Smart",
+          id: "aceleracao",
+          eyebrow: "03 , Aceleração",
+          title: "Programas de Aceleração",
           description:
-            "Para quem já começou mas ainda não tem clareza nem segurança sobre o que está construindo.",
-        },
-        {
-          title: "Tea Mind Full Experience",
-          description:
-            "Para quem quer construir algo completo, sólido e de longo prazo no mercado do chá.",
-        },
-        {
-          title: "Especialização em Neurogastronomia de Chás e Ervas",
-          description:
-            "Em parceria com especialista convidada. Programa de vanguarda que explora como a neurociência transforma a degustação de chá, a experiência do cliente e o desenvolvimento de produtos.",
-        },
-        {
-          title: "Especialização em Eventos com Chá",
-          description:
-            "Para quem deseja criar, produzir e conduzir experiências e eventos com chá com padrão profissional, identidade própria e visão de mercado.",
-        },
-        {
-          title: "Especialização em Harmonização com Chás",
-          description:
-            "Para quem deseja dominar a arte da harmonização entre chás, alimentos e ocasiões, criando experiências sensoriais sofisticadas e únicas.",
+            "Diagnóstico estratégico e estruturação para empreendedores que já iniciaram e precisam reorganizar a base do negócio.",
+          items: [
+            { id: "sprint", title: "Tea Mind Sprint Smart", description: "Para quem já começou mas ainda não tem clareza nem segurança sobre o que está construindo." },
+            { id: "arquitetura-comercial", title: "Tea Mind Arquitetura Comercial", description: "Programa de aceleração comercial para negócios de chá. Em desenvolvimento.", comingSoon: true },
+          ],
         },
       ],
     },
