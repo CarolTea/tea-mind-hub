@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { useLang } from "@/contexts/LanguageContext";
 import { programsTranslations } from "@/lib/programs-translations";
-import type { ProgramData } from "@/lib/programs-translations";
+import type { ProgramData, ProgramCategory } from "@/lib/programs-translations";
 import type { Lang } from "@/lib/translations";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -129,9 +129,54 @@ const DiagnosisBlock = () => {
   );
 };
 
-const ProgramSection = ({ program, index, forWhoTitle, includesTitle }: { program: ProgramData; index: number; forWhoTitle: string; includesTitle: string }) => {
-  const isDark = index % 2 === 0;
+const CategoryDivider = ({ category, isDark }: { category: ProgramCategory; isDark: boolean }) => (
+  <section
+    id={category.id}
+    className={`py-20 lg:py-24 ${isDark ? "bg-primary text-primary-foreground" : "bg-background text-foreground"}`}
+  >
+    <div className="max-w-3xl mx-auto px-6 lg:px-12 text-center">
+      <Fade>
+        <p className="font-sans text-xs tracking-[0.3em] uppercase text-accent mb-6">
+          {category.eyebrow}
+        </p>
+        <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium leading-tight mb-6">
+          {category.title}
+        </h2>
+        <div className="w-16 h-px bg-accent mx-auto mb-8" />
+        <p className={`font-sans text-base md:text-lg ${isDark ? "text-primary-foreground/65" : "text-foreground/65"} leading-relaxed`}>
+          {category.description}
+        </p>
+      </Fade>
+    </div>
+  </section>
+);
 
+const ComingSoonSection = ({ program, isDark, label, text }: { program: ProgramData; isDark: boolean; label: string; text: string }) => (
+  <section
+    id={program.id}
+    className={`py-20 lg:py-28 ${isDark ? "bg-primary text-primary-foreground" : "bg-background text-foreground"}`}
+  >
+    <div className="max-w-3xl mx-auto px-6 lg:px-12 text-center">
+      <Fade>
+        <span className="inline-block font-sans text-xs tracking-[0.3em] uppercase text-accent-foreground bg-accent px-4 py-2 mb-8">
+          {label}
+        </span>
+        <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium mb-4">
+          {program.title}
+        </h2>
+        <div className="w-12 h-px bg-accent mx-auto mb-8" />
+        <p className={`font-sans text-base md:text-lg ${isDark ? "text-primary-foreground/65" : "text-foreground/65"} leading-relaxed mb-6`}>
+          {program.mainDescription}
+        </p>
+        <p className={`font-sans text-sm italic ${isDark ? "text-primary-foreground/50" : "text-foreground/50"} leading-relaxed`}>
+          {text}
+        </p>
+      </Fade>
+    </div>
+  </section>
+);
+
+const ProgramSection = ({ program, isDark, forWhoTitle, includesTitle }: { program: ProgramData; isDark: boolean; forWhoTitle: string; includesTitle: string }) => {
   return (
     <section
       id={program.id}
@@ -249,15 +294,38 @@ const ProgramsContent = () => {
       <ProgramsHero />
       <DiagnosisBlock />
       <div id="programs-list">
-        {t.programs.map((program, i) => (
-          <ProgramSection
-            key={program.id}
-            program={program}
-            index={i}
-            forWhoTitle={t.forWhoTitle}
-            includesTitle={t.includesTitle}
-          />
-        ))}
+        {t.categories.map((category, catIdx) => {
+          const catIsDark = catIdx % 2 === 0;
+          return (
+            <div key={category.id}>
+              <CategoryDivider category={category} isDark={catIsDark} />
+              {category.programs.map((program, i) => {
+                // alternate fundo dentro da categoria, começando oposto ao divider
+                const isDark = (catIdx + i + 1) % 2 === 0;
+                if (program.comingSoon) {
+                  return (
+                    <ComingSoonSection
+                      key={program.id}
+                      program={program}
+                      isDark={isDark}
+                      label={t.comingSoonLabel}
+                      text={t.comingSoonText}
+                    />
+                  );
+                }
+                return (
+                  <ProgramSection
+                    key={program.id}
+                    program={program}
+                    isDark={isDark}
+                    forWhoTitle={t.forWhoTitle}
+                    includesTitle={t.includesTitle}
+                  />
+                );
+              })}
+            </div>
+          );
+        })}
       </div>
       <Footer />
     </>
