@@ -1,78 +1,29 @@
-## Plano para corrigir a aba Events
+## Plan: Add Carla's and Carol's Photos to Home and About Pages
 
-### Objetivo
-Criar uma página própria de Events e fazer a Navbar apontar para essa página, em vez de abrir o WhatsApp diretamente. O WhatsApp continuará existindo como CTA dentro da página e no rodapé.
+### Asset Setup
+- Copy `user-uploads://Carol_Tavares.png` to `src/assets/carol-tavares.png`
+- Copy `user-uploads://Carla_Vicente.png` to `src/assets/carla-vicente.png`
 
-### O que será implementado
+### Home Page — `src/components/Founders.tsx`
+- Import both images as ES modules (so Vite optimizes/bundles them).
+- Map by initials (`CT` → Carol, `CV` → Carla).
+- Replace the placeholder `<span>` with serif initials inside `aspect-[4/5]` with an `<img>` using `w-full h-full object-cover object-top` (object-top to preserve faces in the editorial 4:5 crop).
+- Keep existing border, hover effect (`hover:border-foreground/20`), and fade animations untouched.
 
-1. Criar a página de Events
-- Adicionar uma nova página seguindo o padrão visual editorial já usado em Society e Innovations.
-- Estruturar a página com hero, bloco de proposta de valor, tipos de eventos e CTA final para WhatsApp.
-- Usar copy focada em:
-  - eventos personalizados
-  - eventos corporativos
-  - eventos temáticos
-  - curadoria sensorial
-  - experiência de marca e memória
+### About Page — `src/pages/AboutPage.tsx`
+- Import both images.
+- Inside `FounderBlock`, replace the initials placeholder block with an `<img>` in the existing `aspect-[3/4]` container using `w-full h-full object-cover object-top`.
+- Preserve the alternating left/right layout (`imageRight` prop), dark/light theme alternation (`isDark`), borders, and `Fade` animations.
 
-2. Adicionar rotas da nova página
-- Incluir novas rotas no `App.tsx`:
-  - `/events`
-  - `/pt/eventos`
-  - `/es/eventos`
-- Manter o padrão de idioma já usado no restante do site.
+### Quality / No regressions
+- No layout shifts: image containers keep their existing aspect ratios.
+- No changes to translations, routes, or copy.
+- Alt text uses each founder's name for accessibility.
 
-3. Corrigir a Navbar
-- Alterar o item “Events/Eventos” para usar rota interna em vez de link externo do WhatsApp.
-- Ajustar desktop e mobile para o mesmo comportamento.
-- Preservar o restante da lógica de idiomas e navegação já existente.
+### Files to modify
+- `src/components/Founders.tsx`
+- `src/pages/AboutPage.tsx`
 
-4. Ajustar o rodapé
-- Trocar o link de navegação “Events/Eventos” para a nova rota interna.
-- Manter o botão de WhatsApp da faixa de eventos como CTA direto.
-- Se necessário, transformar os links internos do rodapé em rotas coerentes para não depender de âncoras quando o usuário estiver fora da home.
-
-5. Organizar traduções
-- Adicionar o conteúdo textual da nova página em PT, EN e ES.
-- Reaproveitar a copy institucional já criada para eventos, expandindo para blocos de página completos.
-
-### Estrutura sugerida da página
-```text
-Hero
-  título + subtítulo + CTA WhatsApp
-
-Bloco 1
-  O que são os eventos da Tea Mind
-
-Bloco 2
-  Tipos de eventos
-    - personalizados
-    - corporativos
-    - temáticos
-
-Bloco 3
-  Diferenciais
-    - curadoria sensorial
-    - narrativa autoral
-    - experiência premium
-    - conexão com marca/memória
-
-Closing CTA
-  botão para WhatsApp
-```
-
-### Arquivos que devem ser alterados
-- `src/App.tsx`
-- `src/components/Navbar.tsx`
-- `src/components/Footer.tsx`
-- `src/lib/translations.ts`
-- novo arquivo de página, por exemplo: `src/pages/EventsPage.tsx`
-
-### Detalhes técnicos
-- O problema atual é estrutural: hoje não existe rota nem página de Events; a Navbar foi configurada para abrir `wa.me` diretamente.
-- A correção deve substituir esse comportamento por navegação client-side com `Link`.
-- O WhatsApp continuará usando `encodeURIComponent` para mensagem pré-preenchida, mas dentro dos CTAs da página/rodapé.
-- A implementação deve seguir o design system atual: Playfair Display, Inter, fundo escuro premium, acentos dourados e blocos editoriais.
-
-### Resultado esperado
-Ao clicar em “Events/Eventos” na Navbar, o usuário abrirá a página de Events. Dentro dela, encontrará a apresentação da oferta e os botões para falar no WhatsApp.
+### Files to create
+- `src/assets/carol-tavares.png` (from upload)
+- `src/assets/carla-vicente.png` (from upload)
