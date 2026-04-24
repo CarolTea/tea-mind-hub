@@ -1,6 +1,6 @@
 import { useFadeIn } from "@/hooks/useFadeIn";
 import { useLang } from "@/contexts/LanguageContext";
-import aboutTea from "@/assets/about-tea.jpg";
+import aboutTea from "@/assets/about-tea-study.png";
 
 const Positioning = () => {
   const { ref, isVisible } = useFadeIn();
@@ -25,7 +25,7 @@ const Positioning = () => {
             </p>
           </div>
           <div className="relative overflow-hidden aspect-[4/5]">
-            <img src={aboutTea} alt="Premium tea leaves macro shot" className="w-full h-full object-cover" />
+            <img src={aboutTea} alt="Estudo sensorial de folhas de chá com caderno e anotações" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
           </div>
         </div>
