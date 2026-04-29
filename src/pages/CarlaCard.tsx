@@ -115,11 +115,11 @@ const CarlaCard = () => {
           Carla Vicente
         </h1>
         <div className="flex items-center gap-3 mt-4 mb-10">
-          <span className="h-px w-8 bg-accent/60" />
-          <p className="font-sans text-[11px] tracking-[0.35em] uppercase text-accent">
-            Sommelier de Chá
+          <span className="h-px w-4 bg-accent/60" />
+          <p className="font-sans text-[11px] tracking-[0.25em] uppercase text-accent text-center">
+            CEO, Sommelier de Chá & Tea Barista
           </p>
-          <span className="h-px w-8 bg-accent/60" />
+          <span className="h-px w-4 bg-accent/60" />
         </div>
 
         <div className="w-full flex flex-col gap-3 mb-12">
