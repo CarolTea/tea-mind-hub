@@ -118,13 +118,9 @@ const CarlaCard = () => {
           <p className="font-sans text-[11px] tracking-[0.4em] uppercase text-accent">
             CEO
           </p>
-          <div className="flex items-center gap-3">
-            <span className="h-px w-6 bg-accent/60" />
-            <p className="font-sans text-[11px] tracking-[0.25em] uppercase text-accent/90 text-center">
-              Sommelier de Chá & Tea Barista
-            </p>
-            <span className="h-px w-6 bg-accent/60" />
-          </div>
+          <p className="font-sans text-[11px] tracking-[0.25em] uppercase text-accent/90 text-center whitespace-nowrap">
+            Sommelier de Chá & Tea Barista
+          </p>
         </div>
 
         <div className="w-full flex flex-col gap-3 mb-12">
