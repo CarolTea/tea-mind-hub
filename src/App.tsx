@@ -15,6 +15,7 @@ import PartnersPage from "./pages/PartnersPage";
 import SocietyPage from "./pages/SocietyPage";
 import EventsPage from "./pages/EventsPage";
 import NotFound from "./pages/NotFound";
+import CarlaCard from "./pages/CarlaCard";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,7 @@ const App = () => (
           <Route path="/es/eventos" element={<EventsPage lang="es" />} />
           <Route path="/hotmart/neural-system" element={<HotmartNeuralSystem />} />
           <Route path="/hotmart/neurogastronomy-ai" element={<HotmartNeurogastronomyAI />} />
+          <Route path="/carla" element={<CarlaCard />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
