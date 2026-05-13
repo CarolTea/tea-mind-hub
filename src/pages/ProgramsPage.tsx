@@ -111,7 +111,9 @@ const DiagnosisBlock = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#"
+              href="https://teamindquest.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-3.5 bg-accent text-accent-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:opacity-90"
             >
               {t.diagnosis.cta1}

@@ -22,7 +22,6 @@ const Navbar = () => {
   const groupKeys = ["profissionalizantes", "aprimoramento", "aceleracao"] as const;
 
   const otherLinks = [
-    { label: t.nav.about, href: aboutRoutes[lang] },
     { label: t.nav.innovations, href: innovationsRoutes[lang] },
     { label: t.nav.society, href: societyRoutes[lang] },
     { label: t.nav.contact, href: eventsRoutes[lang] },
