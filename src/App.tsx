@@ -16,6 +16,9 @@ import SocietyPage from "./pages/SocietyPage";
 import EventsPage from "./pages/EventsPage";
 import NotFound from "./pages/NotFound";
 import CarlaCard from "./pages/CarlaCard";
+import TermsPage from "./pages/TermsPage";
+import PrivacyPage from "./pages/PrivacyPage";
+import CookieConsent from "./components/CookieConsent";
 
 const queryClient = new QueryClient();
 
@@ -54,9 +57,16 @@ const App = () => (
           <Route path="/hotmart/neural-system" element={<HotmartNeuralSystem />} />
           <Route path="/hotmart/neurogastronomy-ai" element={<HotmartNeurogastronomyAI />} />
           <Route path="/carla" element={<CarlaCard />} />
+          <Route path="/terms" element={<TermsPage lang="en" />} />
+          <Route path="/pt/termos" element={<TermsPage lang="pt" />} />
+          <Route path="/es/terminos" element={<TermsPage lang="es" />} />
+          <Route path="/privacy" element={<PrivacyPage lang="en" />} />
+          <Route path="/pt/privacidade" element={<PrivacyPage lang="pt" />} />
+          <Route path="/es/privacidad" element={<PrivacyPage lang="es" />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <CookieConsent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
