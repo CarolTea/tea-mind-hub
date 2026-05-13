@@ -40,7 +40,7 @@ export const translations = {
       },
     },
     hero: {
-      eyebrow: "INTELIGÊNCIA ESTRATÉGICA PARA A INDÚSTRIA DO CHÁ",
+      eyebrow: "INTELIGÊNCIA ESTRATÉGICA PARA O MERCADO DO CHÁ",
       title1: "Pensamos em mercados,",
       title2: "não em xícaras.",
       subtitle:
