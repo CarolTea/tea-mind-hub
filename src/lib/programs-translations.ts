@@ -178,7 +178,7 @@ const ptCategories: ProgramCategory[] = [
           "Tea Mind Atuação com Chá",
           "Tea Mind Laboratório de Marcas de Chá",
           "Especialização em Eventos e Experiências com Chá",
-          "Especialização em MasterChef de Harmonização",
+          "Especialização em Harmonização com Chás",
           "2 Tea Boxes, uma de cada formação principal",
           "Onboarding estratégico",
           "Smart Journey | Mapa estratégico Tea Mind",
