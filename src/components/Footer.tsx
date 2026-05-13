@@ -10,6 +10,8 @@ const contactMessages = {
 } as const;
 
 const eventsRoutes = { en: "/events", es: "/es/eventos", pt: "/pt/eventos" } as const;
+const termsRoutes = { en: "/terms", es: "/es/terminos", pt: "/pt/termos" } as const;
+const privacyRoutes = { en: "/privacy", es: "/es/privacidad", pt: "/pt/privacidade" } as const;
 
 const Footer = () => {
   const { t, lang } = useLang();
@@ -133,12 +135,19 @@ const Footer = () => {
             © {new Date().getFullYear()} Tea Mind Business Hub. {t.footer.copyright}
           </p>
           <div className="flex gap-6">
-            <a href="#" className="font-sans text-xs text-primary-foreground/30 hover:text-primary-foreground/50 transition-colors">
+            <Link to={termsRoutes[lang]} className="font-sans text-xs text-primary-foreground/30 hover:text-primary-foreground/50 transition-colors">
               {t.footer.terms}
-            </a>
-            <a href="#" className="font-sans text-xs text-primary-foreground/30 hover:text-primary-foreground/50 transition-colors">
+            </Link>
+            <Link to={privacyRoutes[lang]} className="font-sans text-xs text-primary-foreground/30 hover:text-primary-foreground/50 transition-colors">
               {t.footer.privacy}
-            </a>
+            </Link>
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new CustomEvent("tmbh:open-cookies"))}
+              className="font-sans text-xs text-primary-foreground/30 hover:text-primary-foreground/50 transition-colors"
+            >
+              {t.footer.cookiePrefs}
+            </button>
           </div>
           <p className="font-sans text-xs text-primary-foreground/20 italic">
             {t.footer.tagline}
