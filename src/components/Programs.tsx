@@ -26,7 +26,12 @@ const Programs = () => {
           {t.programs.subtitle}
         </p>
         <div className="text-center mb-20">
-          <a href="#" className="inline-flex items-center px-8 py-3.5 bg-accent text-accent-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:opacity-90">
+          <a
+            href="https://teamindquest.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-8 py-3.5 bg-accent text-accent-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:opacity-90"
+          >
             {t.programs.diagnosisCta}
           </a>
         </div>
