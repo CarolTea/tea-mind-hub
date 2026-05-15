@@ -44,7 +44,7 @@ const WelcomePage = () => {
               <div>
                 <p className="text-[11px] tracking-[0.3em] uppercase text-accent mb-3">02 , Próximo passo</p>
                 <p>
-                  Você já deve ter recebido um e-mail da <strong className="text-primary">Hotmart</strong> com o seu acesso ao curso. Por favor, verifique também a sua caixa de <strong className="text-primary">spam</strong>, lixo eletrônico ou promoções, pois o e-mail pode chegar por lá.
+                  Você já deve ter recebido um e-mail da <strong className="text-primary">Hotmart</strong> com o seu acesso. Por favor, verifique também a sua caixa de <strong className="text-primary">spam</strong>, lixo eletrônico ou promoções, pois o e-mail pode chegar por lá.
                 </p>
               </div>
 
