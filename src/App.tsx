@@ -20,6 +20,7 @@ import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import WelcomePage from "./pages/WelcomePage";
 import CookieConsent from "./components/CookieConsent";
+import PtConversionTracker from "./components/PtConversionTracker";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <PtConversionTracker />
         <Routes>
           <Route path="/" element={<Index lang="en" />} />
           <Route path="/es" element={<Index lang="es" />} />
