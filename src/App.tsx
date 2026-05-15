@@ -18,6 +18,7 @@ import NotFound from "./pages/NotFound";
 import CarlaCard from "./pages/CarlaCard";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
+import WelcomePage from "./pages/WelcomePage";
 import CookieConsent from "./components/CookieConsent";
 
 const queryClient = new QueryClient();
@@ -63,6 +64,7 @@ const App = () => (
           <Route path="/privacy" element={<PrivacyPage lang="en" />} />
           <Route path="/pt/privacidade" element={<PrivacyPage lang="pt" />} />
           <Route path="/es/privacidad" element={<PrivacyPage lang="es" />} />
+          <Route path="/bem_vindo" element={<WelcomePage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
