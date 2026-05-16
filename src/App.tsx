@@ -19,6 +19,7 @@ import CarlaCard from "./pages/CarlaCard";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import WelcomePage from "./pages/WelcomePage";
+import SpecialPartnersPage from "./pages/SpecialPartnersPage";
 import CookieConsent from "./components/CookieConsent";
 import PtConversionTracker from "./components/PtConversionTracker";
 
@@ -67,6 +68,9 @@ const App = () => (
           <Route path="/pt/privacidade" element={<PrivacyPage lang="pt" />} />
           <Route path="/es/privacidad" element={<PrivacyPage lang="es" />} />
           <Route path="/bem_vindo" element={<WelcomePage />} />
+          <Route path="/special-partners" element={<SpecialPartnersPage lang="en" />} />
+          <Route path="/pt/parceiras-especiais" element={<SpecialPartnersPage lang="pt" />} />
+          <Route path="/es/socias-especiales" element={<SpecialPartnersPage lang="es" />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

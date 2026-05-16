@@ -12,6 +12,7 @@ export const translations = {
       contact: "Eventos",
       neurogastronomy: "Neurogastronomia",
       neuralSystem: "Neural System",
+      specialPartners: "Special Partners",
       programsGroups: {
         profissionalizantes: {
           label: "Programas Profissionalizantes",
@@ -344,6 +345,7 @@ export const translations = {
       contact: "Events",
       neurogastronomy: "Neurogastronomy",
       neuralSystem: "Neural System",
+      specialPartners: "Special Partners",
       programsGroups: {
         profissionalizantes: {
           label: "Professional Programs",
@@ -676,6 +678,7 @@ export const translations = {
       contact: "Eventos",
       neurogastronomy: "Neurogastronomía",
       neuralSystem: "Neural System",
+      specialPartners: "Special Partners",
       programsGroups: {
         profissionalizantes: {
           label: "Programas Profesionales",
