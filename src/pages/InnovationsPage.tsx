@@ -4,6 +4,7 @@ import { LanguageProvider, useLang } from "@/contexts/LanguageContext";
 import type { Lang } from "@/lib/translations";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import teaFestImg from "@/assets/tea-fest.jpeg";
 
 /* ── Fade helper ── */
 const Fade = ({ children, className = "", delay = 0 }: { children: ReactNode; className?: string; delay?: number }) => {
@@ -276,9 +277,12 @@ const TeaFestBlock = () => {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image placeholder */}
           <Fade>
-            <div className="aspect-[4/3] bg-muted flex items-center justify-center">
-              <span className="font-serif text-4xl text-muted-foreground/30">TF</span>
-            </div>
+            <img
+              src={teaFestImg}
+              alt="Tea Fest in Rio"
+              loading="lazy"
+              className="aspect-[4/3] w-full object-cover"
+            />
           </Fade>
 
           {/* Text */}
