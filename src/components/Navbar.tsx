@@ -8,6 +8,7 @@ const aboutRoutes = { en: "/about", es: "/es/nosotros", pt: "/pt/sobre" } as con
 const innovationsRoutes = { en: "/innovations", es: "/es/innovaciones", pt: "/pt/inovacoes" } as const;
 const societyRoutes = { en: "/society", es: "/es/sociedad", pt: "/pt/sociedade" } as const;
 const eventsRoutes = { en: "/events", es: "/es/eventos", pt: "/pt/eventos" } as const;
+const specialPartnersRoutes = { en: "/special-partners", es: "/es/socias-especiales", pt: "/pt/parceiras-especiais" } as const;
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,6 +25,7 @@ const Navbar = () => {
   const otherLinks = [
     { label: t.nav.innovations, href: innovationsRoutes[lang] },
     { label: t.nav.society, href: societyRoutes[lang] },
+    { label: t.nav.specialPartners, href: specialPartnersRoutes[lang] },
     { label: t.nav.contact, href: eventsRoutes[lang] },
   ];
 

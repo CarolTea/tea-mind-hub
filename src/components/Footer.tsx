@@ -12,6 +12,7 @@ const contactMessages = {
 const eventsRoutes = { en: "/events", es: "/es/eventos", pt: "/pt/eventos" } as const;
 const termsRoutes = { en: "/terms", es: "/es/terminos", pt: "/pt/termos" } as const;
 const privacyRoutes = { en: "/privacy", es: "/es/privacidad", pt: "/pt/privacidade" } as const;
+const specialPartnersRoutes = { en: "/special-partners", es: "/es/socias-especiales", pt: "/pt/parceiras-especiais" } as const;
 
 const Footer = () => {
   const { t, lang } = useLang();
@@ -24,6 +25,7 @@ const Footer = () => {
     { label: t.nav.founders, href: "#founders" },
     { label: t.nav.innovations, href: "#innovations" },
     { label: t.nav.society, href: "#society" },
+    { label: t.nav.specialPartners, href: specialPartnersRoutes[lang], isRoute: true },
     { label: t.nav.contact, href: eventsRoutes[lang], isRoute: true },
   ];
 
