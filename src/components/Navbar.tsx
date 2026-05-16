@@ -24,9 +24,9 @@ const Navbar = () => {
 
   const otherLinks = [
     { label: t.nav.innovations, href: innovationsRoutes[lang] },
-    { label: t.nav.society, href: societyRoutes[lang] },
     { label: t.nav.specialPartners, href: specialPartnersRoutes[lang] },
     { label: t.nav.contact, href: eventsRoutes[lang] },
+    { label: t.nav.society, href: societyRoutes[lang] },
   ];
 
   useEffect(() => {
