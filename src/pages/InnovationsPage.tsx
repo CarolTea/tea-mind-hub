@@ -54,7 +54,7 @@ const innovT = {
       title: "Um espaço de encontro ao vivo para quem está construindo o mercado do chá no Brasil.",
       text1: "Lançado em 2025, o Tea Fest in Rio nasceu como um encontro presencial entre profissionais, marcas, especialistas e apaixonados que vibram na mesma frequência e ajudam a impulsionar o mercado do chá no Brasil.",
       text2: "Na sua primeira edição, o evento reuniu palestrantes importantes, experiências marcantes e o Mercado do Chá, espaço onde muitos alunos apresentaram e venderam seus próprios produtos ao público. O Tea Fest expressa na prática a visão da Tea Mind sobre o futuro do mercado: mais profissionalização, mais visibilidade, mais conexão e mais movimento.",
-      cta: "Lista de espera para 2026",
+      cta: "Inscrições abertas Lote 01",
     },
     other: {
       title: "Inovação também é abrir linguagem e possibilidades.",
@@ -95,7 +95,7 @@ const innovT = {
       title: "A live gathering space for those building the tea market in Brazil.",
       text1: "Launched in 2025, Tea Fest in Rio was born as an in-person meeting between professionals, brands, specialists and enthusiasts who share the same frequency and help drive the tea market in Brazil.",
       text2: "In its first edition, the event gathered important speakers, remarkable experiences and the Tea Market, a space where many students presented and sold their own products to the public. Tea Fest embodies Tea Mind's vision for the future of the market: more professionalism, more visibility, more connection and more movement.",
-      cta: "Waitlist for 2026",
+      cta: "Registrations open Batch 01",
     },
     other: {
       title: "Innovation is also about opening language and possibilities.",
@@ -136,7 +136,7 @@ const innovT = {
       title: "Un espacio de encuentro en vivo para quienes construyen el mercado del té en Brasil.",
       text1: "Lanzado en 2025, el Tea Fest in Rio nació como un encuentro presencial entre profesionales, marcas, especialistas y apasionados que vibran en la misma frecuencia y ayudan a impulsar el mercado del té en Brasil.",
       text2: "En su primera edición, el evento reunió ponentes importantes, experiencias memorables y el Mercado del Té, un espacio donde muchos alumnos presentaron y vendieron sus propios productos al público. El Tea Fest expresa en la práctica la visión de Tea Mind sobre el futuro del mercado: más profesionalización, más visibilidad, más conexión y más movimiento.",
-      cta: "Lista de espera para 2026",
+      cta: "Inscripciones abiertas Lote 01",
     },
     other: {
       title: "La innovación también es abrir lenguaje y posibilidades.",
@@ -300,7 +300,7 @@ const TeaFestBlock = () => {
               <p className="font-sans text-sm md:text-base text-foreground/70 leading-relaxed mb-8">{t.text2}</p>
             </Fade>
             <Fade delay={350}>
-              <a href="#" className="inline-block font-sans text-sm tracking-wider uppercase border border-foreground/30 text-foreground px-8 py-3.5 hover:border-foreground hover:bg-foreground/5 transition-all duration-300">
+              <a href="https://tea-fest-in-rio-2026-eds0kfz.gamma.site/2026" target="_blank" rel="noopener noreferrer" className="inline-block font-sans text-sm tracking-wider uppercase border border-foreground/30 text-foreground px-8 py-3.5 hover:border-foreground hover:bg-foreground/5 transition-all duration-300">
                 {t.cta}
               </a>
             </Fade>
