@@ -22,7 +22,12 @@ const CtaFinal = () => {
           {t.ctaFinal.subtitle}
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <a href="#" className="inline-flex items-center px-8 py-3.5 bg-accent text-accent-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:opacity-90">
+          <a
+            href="https://teamindquest.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-8 py-3.5 bg-accent text-accent-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:opacity-90"
+          >
             {t.ctaFinal.cta1}
           </a>
           <a href="#programs" className="inline-flex items-center px-8 py-3.5 border border-primary-foreground/40 text-primary-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:border-primary-foreground hover:bg-primary-foreground/10">
