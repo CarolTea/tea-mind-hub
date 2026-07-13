@@ -121,6 +121,8 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "O programa parte de uma base técnica e profissional consistente, mas a forma como essa jornada se organiza ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos contexto, objetivos, repertório e possibilidades. O Smart Journey organiza esse olhar em um mapa personalizado, e as sessões estratégicas ajudam você a transformar a formação em um caminho aplicável ao tipo de atuação que você deseja construir.",
         cta: ptCommon.cta,
+        contentUrls: [{ label: "Conheça o conteúdo programático", url: "https://gamma.app/docs/Programa-Atuacao-com-Chas-lee9e9ao6tgwbxc" }],
+        hotmartUrl: "https://pay.hotmart.com/N105799398X",
       },
       {
         id: "laboratorio",
@@ -156,6 +158,8 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "O programa parte de uma base sólida de formação em tea blending com técnicas avançadas de grandes marcas e a jornada ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos objetivos, momento, contexto, capacidade de investimento e o tipo de produto ou marca que a pessoa deseja construir. O Smart Journey organiza esse olhar em um mapa personalizado, e as sessões estratégicas ajudam a transformar a formação em um caminho aplicável à criação da linha, ao posicionamento da marca e à entrada no mercado.",
         cta: ptCommon.cta,
+        contentUrls: [{ label: "Conheça o conteúdo programático", url: "https://gamma.app/docs/Programa-Laboratorio-de-Marcas-f2sp39blxam9xy9" }],
+        hotmartUrl: "https://pay.hotmart.com/N105798350Q",
       },
       {
         id: "full-experience",
@@ -194,6 +198,11 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "O Full Experience parte de uma jornada robusta de formação e especializações, mas ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos contexto, objetivos, ambição e possibilidades. O Smart Journey organiza esse olhar em um mapa estratégico personalizado, e os Encontros de Arquitetura Estratégica ajudam a transformar estudo em construção real, apoiando decisões importantes ao longo de até 24 meses, conforme a evolução de cada pessoa.",
         cta: ptCommon.cta,
+        contentUrls: [
+          { label: "Conteúdo Atuação com Chá", url: "https://gamma.app/docs/Programa-Atuacao-com-Chas-lee9e9ao6tgwbxc" },
+          { label: "Conteúdo Laboratório de Marcas", url: "https://gamma.app/docs/Programa-Laboratorio-de-Marcas-f2sp39blxam9xy9" },
+        ],
+        hotmartUrl: "https://pay.hotmart.com/W105798749J",
       },
     ],
   },
