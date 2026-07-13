@@ -16,6 +16,8 @@ export interface ProgramData {
   directionText: string;
   cta: string;
   comingSoon?: boolean;
+  contentUrls?: { label: string; url: string }[];
+  hotmartUrl?: string;
 }
 
 export interface ProgramCategory {
