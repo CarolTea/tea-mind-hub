@@ -242,6 +242,7 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "Uma especialização prática e aplicada, voltada a quem deseja transformar o chá em experiências comercializáveis, com padrão profissional e repertório próprio.",
         cta: ptCommon.cta,
+        hotmartUrl: "https://pay.hotmart.com/L104513681S",
       },
       {
         id: "harmonizacao",
@@ -278,6 +279,7 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "Nesta especialização sensorial o objetivo é que o aluno saia com mais segurança, repertório técnico e método para criar harmonizações coerentes, memoráveis e estrategicamente pensadas.",
         cta: ptCommon.cta,
+        hotmartUrl: "https://pay.hotmart.com/W104514736G",
       },
       {
         id: "neurogastronomia",
@@ -313,6 +315,7 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "Aula 1, Fundamentos da Análise Sensorial. Aula 2, Fundamentos da Neurogastronomia. Aula 3, Os 5 Sentidos e a Neurogastronomia. Aula 4, Comportamento Alimentar. Aula 5, Fitoquímica Sensorial. Aula 6, Camellia sinensis no contexto da Neurogastronomia. Aula 7, Harmonização com base na Neurogastronomia. Aula 8, Design Sensorial e Posicionamento Profissional.\n\nConduzida por Raquel Magalhães (criadora do Método SENSO, professora convidada do Le Cordon Bleu Rio de Janeiro), Carol Tavares e Carla Vicente.",
         cta: ptCommon.cta,
+        hotmartUrl: "https://pay.hotmart.com/Q104515097L",
       },
     ],
   },
@@ -356,6 +359,7 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "O Sprint começa com uma análise do negócio para entender o que já foi feito, o que foi investido, quais decisões precisam ser revistas e onde estão os principais gargalos.\n\nA partir disso, o aluno recebe um diagnóstico devolutivo e percorre três sessões estratégicas voltadas a reorganizar prioridades, corrigir a base do negócio e orientar próximos passos mais seguros e coerentes com a realidade atual.",
         cta: ptCommon.cta,
+        hotmartUrl: "https://pay.hotmart.com/T104679445G",
       },
       {
         id: "arquitetura-comercial",
