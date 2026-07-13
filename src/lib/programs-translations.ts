@@ -16,6 +16,8 @@ export interface ProgramData {
   directionText: string;
   cta: string;
   comingSoon?: boolean;
+  contentUrls?: { label: string; url: string }[];
+  hotmartUrl?: string;
 }
 
 export interface ProgramCategory {
@@ -119,6 +121,8 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "O programa parte de uma base técnica e profissional consistente, mas a forma como essa jornada se organiza ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos contexto, objetivos, repertório e possibilidades. O Smart Journey organiza esse olhar em um mapa personalizado, e as sessões estratégicas ajudam você a transformar a formação em um caminho aplicável ao tipo de atuação que você deseja construir.",
         cta: ptCommon.cta,
+        contentUrls: [{ label: "Conheça o conteúdo programático", url: "https://gamma.app/docs/Programa-Atuacao-com-Chas-lee9e9ao6tgwbxc" }],
+        hotmartUrl: "https://pay.hotmart.com/N105799398X",
       },
       {
         id: "laboratorio",
@@ -154,6 +158,8 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "O programa parte de uma base sólida de formação em tea blending com técnicas avançadas de grandes marcas e a jornada ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos objetivos, momento, contexto, capacidade de investimento e o tipo de produto ou marca que a pessoa deseja construir. O Smart Journey organiza esse olhar em um mapa personalizado, e as sessões estratégicas ajudam a transformar a formação em um caminho aplicável à criação da linha, ao posicionamento da marca e à entrada no mercado.",
         cta: ptCommon.cta,
+        contentUrls: [{ label: "Conheça o conteúdo programático", url: "https://gamma.app/docs/Programa-Laboratorio-de-Marcas-f2sp39blxam9xy9" }],
+        hotmartUrl: "https://pay.hotmart.com/N105798350Q",
       },
       {
         id: "full-experience",
@@ -192,6 +198,11 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "O Full Experience parte de uma jornada robusta de formação e especializações, mas ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos contexto, objetivos, ambição e possibilidades. O Smart Journey organiza esse olhar em um mapa estratégico personalizado, e os Encontros de Arquitetura Estratégica ajudam a transformar estudo em construção real, apoiando decisões importantes ao longo de até 24 meses, conforme a evolução de cada pessoa.",
         cta: ptCommon.cta,
+        contentUrls: [
+          { label: "Conteúdo Atuação com Chá", url: "https://gamma.app/docs/Programa-Atuacao-com-Chas-lee9e9ao6tgwbxc" },
+          { label: "Conteúdo Laboratório de Marcas", url: "https://gamma.app/docs/Programa-Laboratorio-de-Marcas-f2sp39blxam9xy9" },
+        ],
+        hotmartUrl: "https://pay.hotmart.com/W105798749J",
       },
     ],
   },
@@ -231,6 +242,7 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "Uma especialização prática e aplicada, voltada a quem deseja transformar o chá em experiências comercializáveis, com padrão profissional e repertório próprio.",
         cta: ptCommon.cta,
+        hotmartUrl: "https://pay.hotmart.com/L104513681S",
       },
       {
         id: "harmonizacao",
@@ -267,6 +279,7 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "Nesta especialização sensorial o objetivo é que o aluno saia com mais segurança, repertório técnico e método para criar harmonizações coerentes, memoráveis e estrategicamente pensadas.",
         cta: ptCommon.cta,
+        hotmartUrl: "https://pay.hotmart.com/W104514736G",
       },
       {
         id: "neurogastronomia",
@@ -302,6 +315,7 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "Aula 1, Fundamentos da Análise Sensorial. Aula 2, Fundamentos da Neurogastronomia. Aula 3, Os 5 Sentidos e a Neurogastronomia. Aula 4, Comportamento Alimentar. Aula 5, Fitoquímica Sensorial. Aula 6, Camellia sinensis no contexto da Neurogastronomia. Aula 7, Harmonização com base na Neurogastronomia. Aula 8, Design Sensorial e Posicionamento Profissional.\n\nConduzida por Raquel Magalhães (criadora do Método SENSO, professora convidada do Le Cordon Bleu Rio de Janeiro), Carol Tavares e Carla Vicente.",
         cta: ptCommon.cta,
+        hotmartUrl: "https://pay.hotmart.com/Q104515097L",
       },
     ],
   },
@@ -345,6 +359,7 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "O Sprint começa com uma análise do negócio para entender o que já foi feito, o que foi investido, quais decisões precisam ser revistas e onde estão os principais gargalos.\n\nA partir disso, o aluno recebe um diagnóstico devolutivo e percorre três sessões estratégicas voltadas a reorganizar prioridades, corrigir a base do negócio e orientar próximos passos mais seguros e coerentes com a realidade atual.",
         cta: ptCommon.cta,
+        hotmartUrl: "https://pay.hotmart.com/T104679445G",
       },
       {
         id: "arquitetura-comercial",

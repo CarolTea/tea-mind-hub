@@ -272,10 +272,41 @@ const ProgramSection = ({ program, isDark, forWhoTitle, includesTitle }: { progr
 
         {/* CTA */}
         <Fade>
-          <div className="text-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
+            {program.hotmartUrl && (
+              <a
+                href={program.hotmartUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-3.5 bg-accent text-accent-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:opacity-90"
+              >
+                Comprar agora
+              </a>
+            )}
+            {program.contentUrls?.map((c) => (
+              <a
+                key={c.url}
+                href={c.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center justify-center px-8 py-3.5 border text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 ${
+                  isDark
+                    ? "border-primary-foreground/30 text-primary-foreground hover:border-primary-foreground/60"
+                    : "border-foreground/20 text-foreground hover:border-foreground/40"
+                }`}
+              >
+                {c.label}
+              </a>
+            ))}
             <a
-              href="#"
-              className="inline-flex items-center px-8 py-3.5 bg-accent text-accent-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:opacity-90"
+              href="https://teamindquest.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center justify-center px-8 py-3.5 text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 ${
+                program.hotmartUrl
+                  ? `border ${isDark ? "border-primary-foreground/30 text-primary-foreground hover:border-primary-foreground/60" : "border-foreground/20 text-foreground hover:border-foreground/40"}`
+                  : "bg-accent text-accent-foreground hover:opacity-90"
+              }`}
             >
               {program.cta}
             </a>
