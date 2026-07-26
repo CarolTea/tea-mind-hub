@@ -151,11 +151,10 @@ const ptCategories: ProgramCategory[] = [
           "Acesso à comunidade exclusiva Tea Mind Society",
           "Certificação após aprovação do seu blend profissional para avaliação",
         ],
-        formationText:
-          "Uma formação profissional robusta, desenvolvida para quem deseja criar produtos com seriedade, profundidade técnica e visão de mercado , e não apenas aprender a misturar ingredientes.",
-        directionTitle: "Como funciona o direcionamento",
+        formationText: "",
+        directionTitle: "Como funciona o nosso direcionamento",
         directionText:
-          "O programa parte de uma base sólida de formação em tea blending com técnicas avançadas de grandes marcas e a jornada ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos objetivos, momento, contexto, capacidade de investimento e o tipo de produto ou marca que a pessoa deseja construir. O Smart Journey organiza esse olhar em um mapa personalizado, e as sessões estratégicas ajudam a transformar a formação em um caminho aplicável à criação da linha, ao posicionamento da marca e à entrada no mercado.",
+          "O programa inicia com o onboarding (sessão online 1 a 1 com uma das fundadoras). Mapeamos seu contexto, objetivos, repertório e possibilidades.\n\nO resultado é o seu Smart Journey, que organiza esse olhar em um mapa personalizado. As sessões estratégicas ajudam você a transformar a formação em um caminho aplicável ao tipo de atuação que você deseja construir.",
         cta: ptCommon.cta,
         contentUrls: [{ label: "Conheça o conteúdo programático", url: "https://gamma.app/docs/Programa-Laboratorio-de-Marcas-f2sp39blxam9xy9" }],
         hotmartUrl: "https://pay.hotmart.com/N105798350Q",
