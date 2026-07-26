@@ -187,14 +187,14 @@ const ptCategories: ProgramCategory[] = [
           "Onboarding estratégico",
           "Smart Journey | Mapa estratégico Tea Mind",
           "6 Encontros de Arquitetura Estratégica",
-          "36 meses de acesso ao conteúdo incluído no programa",
-          "24 meses para utilizar os Encontros de Arquitetura Estratégica",
+          "Acesso Vitalício ao conteúdo e atualizações",
+          "36 meses para utilizar os Encontros de Direcionamento Estratégico",
+          "Acesso à comunidade exclusiva Tea Mind Society",
         ],
-        formationText:
-          "Uma jornada premium e aprofundada para quem deseja desenvolver repertório técnico, visão de mercado e direção estratégica em um nível mais amplo, consistente e integrado dentro do universo do chá.",
+        formationText: "",
         directionTitle: "Como funciona o direcionamento",
         directionText:
-          "O Full Experience parte de uma jornada robusta de formação e especializações, mas ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos contexto, objetivos, ambição e possibilidades. O Smart Journey organiza esse olhar em um mapa estratégico personalizado, e os Encontros de Arquitetura Estratégica ajudam a transformar estudo em construção real, apoiando decisões importantes ao longo de até 24 meses, conforme a evolução de cada pessoa.",
+          "O programa inicia com o onboarding (sessão online 1 a 1 com uma das fundadoras). Mapeamos seu contexto, objetivos, repertório e possibilidades.\n\nO resultado é o seu Smart Journey, que organiza esse olhar em um mapa personalizado. As sessões estratégicas ajudam você a transformar a formação em um caminho aplicável ao tipo de atuação que você deseja construir. O acesso é estendido para 36 meses para o direcionamento estratégico com as founders.",
         cta: ptCommon.cta,
         contentUrls: [
           { label: "Conteúdo Atuação com Chá", url: "https://gamma.app/docs/Programa-Atuacao-com-Chas-lee9e9ao6tgwbxc" },
