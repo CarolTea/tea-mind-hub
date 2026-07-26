@@ -42,13 +42,13 @@ const aboutT = {
       statGrowthLabel: "Crescimento do consumo nacional de chá (2013–2020)",
       statTrend: "55,8 → 78,1",
       statTrendLabel: "Google Trends para 'chá' no Brasil (2018–2022)",
-      closing: "A Tea Mind sabe exatamente como atuar nesse novo estágio do mercado do chá. Formando profissionais preparados, estruturando negócios com visão de mercado e criando caminhos reais para quem deseja trabalhar com chá com profundidade, estratégia e valor.",
+      closing: "",
     },
     origin: {
       title: "Da experiência prática ao nascimento da Tea Mind",
       p1: "A Tea Mind Business Hub nasce da evolução de uma trajetória construída no mercado do chá com profundidade, consistência e visão pioneira. Ao longo dos anos, Carol Tavares e Carla Vicente formaram profissionais, mentoraram negócios, desenvolveram experiências sensoriais e gastronômicas, venderam chás e abriram caminhos em um setor que cresce, se diversifica e exige cada vez mais inteligência para ser organizado.",
-      p2: "Sempre estivemos atentas a esse movimento. E foi justamente dessa leitura que surgiu uma convicção: o mercado do chá não se fortalece apenas com novos produtos, mas com formação profissional séria, visão de negócio e pessoas capazes de compreender, comunicar e elevar o valor desse mercado. Foi assim no mercado do vinho há 30 anos atrás e está sendo assim com o mercado do chá no Brasil.",
-      closing: "A transição da Chá Pra Quê para a Tea Mind não representa uma mudança de essência, mas um alinhamento mais preciso entre nome, posicionamento e aquilo que sempre esteve no centro do nosso trabalho: unir capital intelectual técnico, direção estratégica e desenvolvimento profissional para quem deseja construir algo real no mercado do chá.",
+      p2: "O mercado do chá não se fortalece apenas com novos produtos, mas com formação profissional séria, direcionamento adequado, visão de negócio e profissionais capazes de compreender, comunicar e elevar o valor desse mercado. Foi assim no mercado do vinho há 30 anos atrás e está sendo assim com o mercado do chá no Brasil.",
+      closing: "A transição da Chá Pra Quê para a Tea Mind não representa uma mudança de essência, mas um alinhamento mais preciso para aquilo que sempre esteve no centro do nosso trabalho: unir capital intelectual técnico, direção estratégica e desenvolvimento profissional para quem deseja construir algo real no mercado do chá.",
     },
     carol: {
       name: "Carol Tavares",
@@ -74,8 +74,8 @@ const aboutT = {
         "Na Tea Mind, Carla lidera a excelência pedagógica e a construção dos programas, garantindo que cada aluno percorra sua trajetória com profundidade técnica, clareza e confiança para atuar no mercado.",
       ],
       stats: [
-        { value: "10+", label: "anos formando profissionais" },
-        { value: "7", label: "regiões do Sri Lanka visitadas" },
+        { value: "13+", label: "anos no mercado do chá" },
+        { value: "", label: "Especialista em Ceylon Tea" },
       ],
       highlight: "Imersão nas 7 regiões produtoras de chá do Sri Lanka (2014)",
     },
@@ -229,11 +229,13 @@ const AboutHero = () => {
         </Fade>
 
         {/* Stats card */}
-        <Fade className="delay-500">
-          <div className="border border-accent/20 rounded-sm p-8 max-w-2xl mx-auto mb-10">
-            <p className="font-sans text-sm text-primary-foreground/60 leading-relaxed text-center">{t.closing}</p>
-          </div>
-        </Fade>
+        {t.closing && (
+          <Fade className="delay-500">
+            <div className="border border-accent/20 rounded-sm p-8 max-w-2xl mx-auto mb-10">
+              <p className="font-sans text-sm text-primary-foreground/60 leading-relaxed text-center">{t.closing}</p>
+            </div>
+          </Fade>
+        )}
       </div>
     </section>
   );
@@ -340,7 +342,7 @@ const FounderBlock = ({
               <div className="flex gap-8 mb-10">
                 {founder.stats.map((s) => (
                   <div key={s.label}>
-                    <p className="font-serif text-2xl font-medium text-accent">{s.value}</p>
+                    {s.value && <p className="font-serif text-2xl font-medium text-accent">{s.value}</p>}
                     <p className={`font-sans text-xs tracking-wider ${textMuted} uppercase`}>{s.label}</p>
                   </div>
                 ))}
