@@ -100,7 +100,8 @@ export const translations = {
           id: "profissionalizantes",
           eyebrow: "",
           title: "Programas Profissionalizantes",
-          description: "",
+          description:
+            "Trajetórias completas de formação profissional para quem deseja atuar, criar produtos ou construir um negócio no mercado do chá com profundidade técnica e visão estratégica.",
           items: [
             { id: "atuacao", title: "Tea Mind Atuação com Chá", subtitle: "Sommelier de Chá", description: "" },
             { id: "laboratorio", title: "Tea Mind Laboratório de Marcas de Chá", subtitle: "Tea Blender", description: "" },
