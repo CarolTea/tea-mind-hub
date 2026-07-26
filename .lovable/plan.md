@@ -1,17 +1,27 @@
-## Objetivo
+## 1. Remover todos os travessões
 
-Na seção "O QUE ELE FAZ" do agente **Sensory AI**, incluir um novo primeiro item sobre identificação de chás por foto, mantendo o mesmo padrão editorial (frase em negrito + complemento).
+Nas páginas do Neural System (`src/pages/NeuralSystemPage.tsx` e `src/pages/HotmartNeuralSystem.tsx`), substituir os travessões (—) por vírgulas, nos três idiomas. Ocorrências: as três frases de `intro` (hero) e as frases de `closing` dos três agentes em PT, EN e ES.
 
-## Copy proposta
+Exemplos:
+- "Três agentes especializados, sensorial, produto e negócio, projetados para..."
+- "O Sensory AI transforma percepção em linguagem, e linguagem em valor profissional."
 
-- PT: **Identifica chás por foto.** Envie uma imagem da folha seca, da infusão ou do líquor e receba tipo, provável origem, grau de oxidação e leitura sensorial do que está na xícara.
-- EN: **Identifies teas from a photo.** Send an image of the dry leaf, the infusion or the liquor and get type, likely origin, oxidation level and a sensory reading of what is in the cup.
-- ES: **Identifica tés por foto.** Envía una imagen de la hoja seca, la infusión o el licor y recibe tipo, probable origen, grado de oxidación y una lectura sensorial de lo que hay en la taza.
+## 2. Nova copy do Blend AI (O QUE ELE FAZ)
 
-O item entra como **primeiro** da lista, antes de "Traduz percepção em palavra técnica".
+Mesmo padrão editorial do Sensory AI (frase em negrito + complemento), incorporando montagem de ambiente de preparo, técnicas e utensílios, e testes de qualidade/durabilidade:
+
+- **Cria blends autorais com equilíbrio técnico.** Formulação de receitas com proporções calculadas, camadas aromáticas e assinatura própria, do primeiro rascunho à versão final.
+- **Ajusta proporções e corrige o perfil sensorial.** Diagnóstico do que está desequilibrado na mistura e o caminho técnico para acertar corpo, aroma e persistência.
+- **Sugere combinações por afinidade aromática.** Bases, ervas, especiarias, frutas e flores compatíveis, com a justificativa sensorial de cada escolha.
+- **Orienta diluição, fixação e estabilidade de aromas.** Como manter o perfil íntegro ao longo do tempo, do envase ao consumo.
+- **Estrutura o seu ambiente de preparo.** Montagem do espaço de blendagem, fluxo de trabalho, técnicas de manipulação e utensílios adequados a cada escala de produção.
+- **Conduz testes de qualidade e durabilidade.** Protocolos de prova, controle de lote, avaliação de shelf life e registro dos resultados.
+- **Apoia a conformidade para comercialização.** Orientação sobre normas da Anvisa, rotulagem e requisitos para colocar o produto no mercado.
+
+Traduções equivalentes em EN e ES, com o mesmo destaque em negrito.
 
 ## Detalhes técnicos
 
-- `src/pages/NeuralSystemPage.tsx`: adicionar o item no array `capabilities` do agente 01 (Sensory AI) nos três blocos de idioma (pt, en, es).
-- `src/pages/HotmartNeuralSystem.tsx`: aplicar a mesma inclusão nos três idiomas, mantendo as páginas sincronizadas.
-- Nenhuma mudança de renderização é necessária: o suporte a `**negrito**` já existe.
+- `src/pages/NeuralSystemPage.tsx`: atualizar `capabilities` do agente 02 nos blocos pt, en e es; limpar travessões em `intro` e `closing`.
+- `src/pages/HotmartNeuralSystem.tsx`: aplicar a mesma lista (PT) e remover travessões, mantendo as páginas sincronizadas.
+- A renderização já suporta `**negrito**`, sem mudanças de componente.

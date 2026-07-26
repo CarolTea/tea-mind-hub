@@ -7,7 +7,7 @@ const t = {
     badge: "Neural System",
     title: "Neural System",
     subtitle: "Uma infraestrutura de inteligência artificial treinada para pensar, criar e decidir com você dentro do mercado do chá.",
-    intro: "Três agentes especializados , sensorial, produto e negócio , projetados para potencializar sua atuação profissional com repertório técnico, visão estratégica e apoio contínuo.",
+    intro: "Três agentes especializados, sensorial, produto e negócio, projetados para potencializar sua atuação profissional com repertório técnico, visão estratégica e apoio contínuo.",
   },
   layers: {
     heading: "Os Agentes do Neural System",
@@ -29,7 +29,7 @@ const t = {
           "**Estrutura experiências, mini eventos e workshops.** Do roteiro sensorial à sequência de degustação, com o conteúdo que sustenta a experiência.",
           "**Prepara aulas e conteúdos especializados.** Roteiros, materiais e explicações técnicas sobre chá com clareza didática.",
         ],
-        closing: "O Sensory AI transforma percepção em linguagem , e linguagem em valor profissional.",
+        closing: "O Sensory AI transforma percepção em linguagem, e linguagem em valor profissional.",
       },
       {
         number: "02",
@@ -39,13 +39,15 @@ const t = {
         body: "O Blend AI é o agente especializado em desenvolvimento de blends e produtos à base de chá. Ele foi treinado para auxiliar na formulação de receitas com equilíbrio sensorial, ajustar proporções, sugerir combinações por perfil aromático, orientar processos de diluição e fixação de aromas, e apoiar a construção de linhas de produto com identidade e viabilidade comercial.\n\nÉ a ferramenta ideal para quem deseja criar blends autorais, linhas de chá com assinatura própria ou produtos para venda com padrão premium.",
         capabilitiesIntro: "O QUE ELE FAZ",
         capabilities: [
-          "Desenvolvimento de blends autorais com equilíbrio técnico",
-          "Ajuste de proporções e perfil sensorial de misturas",
-          "Sugestões de combinações por afinidade aromática",
-          "Orientação sobre diluição, fixação e estabilidade de aromas",
-          "Apoio à conformidade com normas da Anvisa para comercialização",
+          "**Cria blends autorais com equilíbrio técnico.** Formulação de receitas com proporções calculadas, camadas aromáticas e assinatura própria, do primeiro rascunho à versão final.",
+          "**Ajusta proporções e corrige o perfil sensorial.** Diagnóstico do que está desequilibrado na mistura e o caminho técnico para acertar corpo, aroma e persistência.",
+          "**Sugere combinações por afinidade aromática.** Bases, ervas, especiarias, frutas e flores compatíveis, com a justificativa sensorial de cada escolha.",
+          "**Orienta diluição, fixação e estabilidade de aromas.** Como manter o perfil íntegro ao longo do tempo, do envase ao consumo.",
+          "**Estrutura o seu ambiente de preparo.** Montagem do espaço de blendagem, fluxo de trabalho, técnicas de manipulação e utensílios adequados a cada escala de produção.",
+          "**Conduz testes de qualidade e durabilidade.** Protocolos de prova, controle de lote, avaliação de shelf life e registro dos resultados.",
+          "**Apoia a conformidade para comercialização.** Orientação sobre normas da Anvisa, rotulagem e requisitos para colocar o produto no mercado.",
         ],
-        closing: "O Blend AI transforma intenção criativa em produto com critério , e critério em diferenciação real.",
+        closing: "O Blend AI transforma intenção criativa em produto com critério, e critério em diferenciação real.",
       },
       {
         number: "03",
@@ -61,7 +63,7 @@ const t = {
           "Estratégias de crescimento, expansão e diferenciação",
           "Apoio à tomada de decisão com base em dados e cenários",
         ],
-        closing: "O Business AI transforma visão em estrutura , e estrutura em negócio com direção.",
+        closing: "O Business AI transforma visão em estrutura, e estrutura em negócio com direção.",
       },
     ],
   },
@@ -195,8 +197,8 @@ const plans = [
 ];
 
 const combo = {
-  name: "Combo Neural System , 3 Agentes",
-  description: "Acesso completo: sensorial, produto e negócio , integrados e disponíveis o tempo todo.",
+  name: "Combo Neural System, 3 Agentes",
+  description: "Acesso completo: sensorial, produto e negócio, integrados e disponíveis o tempo todo.",
   annual: { price: "R$ 1.100 à vista", installment: "ou até 12x de R$ 117,14", link: "https://pay.hotmart.com/H104735466M?off=l9avfqe7" },
   features: [
     "Acesso aos 3 agentes especializados",
