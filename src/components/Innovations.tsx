@@ -31,12 +31,23 @@ const Innovations = () => {
               <p className="font-sans text-sm text-primary-foreground/60 leading-relaxed mb-8 flex-1">
                 {card.description}
               </p>
-              <button
-                onClick={() => i === 0 ? navigate(neuralRoutes[lang]) : undefined}
-                className="font-sans text-sm tracking-wider uppercase border border-accent text-accent px-6 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-300 self-start"
-              >
-                {card.cta}
-              </button>
+              {i === 0 ? (
+                <button
+                  onClick={() => navigate(neuralRoutes[lang])}
+                  className="font-sans text-sm tracking-wider uppercase border border-accent text-accent px-6 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-300 self-start"
+                >
+                  {card.cta}
+                </button>
+              ) : (
+                <a
+                  href="https://tea-fest-in-rio-2026-eds0kfz.gamma.site/2026"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-sans text-sm tracking-wider uppercase border border-accent text-accent px-6 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-300 self-start"
+                >
+                  {card.cta}
+                </a>
+              )}
             </div>
           ))}
         </div>
@@ -44,11 +55,13 @@ const Innovations = () => {
         <p className="font-serif text-xl md:text-2xl font-medium text-center italic mb-10">
           {t.innovations.closing}
         </p>
-        <div className="text-center">
-          <a href="#" className="inline-flex items-center px-8 py-3.5 border border-primary-foreground/40 text-primary-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:border-primary-foreground hover:bg-primary-foreground/10">
-            {t.innovations.cta}
-          </a>
-        </div>
+        {t.innovations.cta && (
+          <div className="text-center">
+            <a href="#" className="inline-flex items-center px-8 py-3.5 border border-primary-foreground/40 text-primary-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:border-primary-foreground hover:bg-primary-foreground/10">
+              {t.innovations.cta}
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );

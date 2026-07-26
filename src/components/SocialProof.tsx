@@ -73,14 +73,18 @@ const SocialProof = () => {
           ))}
         </div>
 
-        <p className="font-sans text-base text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
-          {t.socialProof.transition}
-        </p>
-        <div className="text-center">
-          <a href="#" className="font-sans text-sm tracking-wider uppercase text-accent hover:text-accent/80 transition-colors duration-300">
-            {t.socialProof.cta}
-          </a>
-        </div>
+        {t.socialProof.transition && (
+          <p className="font-sans text-base text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
+            {t.socialProof.transition}
+          </p>
+        )}
+        {t.socialProof.cta && (
+          <div className="text-center">
+            <a href="#" className="font-sans text-sm tracking-wider uppercase text-accent hover:text-accent/80 transition-colors duration-300">
+              {t.socialProof.cta}
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );
