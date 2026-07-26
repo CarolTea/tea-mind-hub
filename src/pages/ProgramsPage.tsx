@@ -288,7 +288,7 @@ const ProgramSection = ({ program, isDark, forWhoTitle, includesTitle }: { progr
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-3.5 bg-accent text-accent-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:opacity-90"
               >
-                Comprar agora
+                Inscreva-se Agora
               </a>
             )}
             {program.contentUrls?.map((c) => (
