@@ -94,7 +94,7 @@ const ptCategories: ProgramCategory[] = [
           "Para quem deseja atuar como Sommelier de Chá com mais clareza, direção e visão de mercado.",
         mainDescription: "Formação Orientada ao Mercado do Chá",
         bodyText:
-          "Conhecimento sem direção gera dúvidas. Conhecimento com estratégia constrói carreiras.\n\nO mercado do chá oferece inúmeras possibilidades. A Tea Mind conecta conhecimento técnico, inteligência de mercado e acompanhamento estratégico para transformar essa diversidade em uma trajetória profissional coerente com o seu perfil, seus objetivos e as oportunidades reais do mercado.\n\nAqui, o estudo do chá acontece lado a lado com a construção da sua atuação profissional. Desde o primeiro dia, você desenvolve conhecimento aprofundado enquanto identifica onde pode gerar mais valor, como se posicionar e quais caminhos fazem sentido para a sua realidade.\n\nNossa metodologia reúne conhecimento aprofundado sobre chás, direção personalizada e acompanhamento estratégico para que você construa sua atuação, seja criando experiências, ministrando workshops, atendendo empresas, desenvolvendo consultorias ou construindo o seu próprio negócio.\n\nPorque uma carreira sustentável não nasce apenas do conhecimento. Ela nasce de escolhas bem orientadas.",
+          "**Conhecimento sem direção gera dúvidas. Conhecimento com estratégia constrói carreiras.**\n\nO mercado do chá oferece inúmeras possibilidades. A Tea Mind conecta conhecimento técnico, inteligência de mercado e acompanhamento estratégico para transformar essa diversidade em uma trajetória profissional coerente com o seu perfil, seus objetivos e as oportunidades reais do mercado.\n\nAqui, o estudo do chá acontece lado a lado com a construção da sua atuação profissional. Desde o primeiro dia, você desenvolve conhecimento aprofundado enquanto identifica onde pode gerar mais valor, como se posicionar e quais caminhos fazem sentido para a sua realidade.\n\nNossa metodologia reúne conhecimento aprofundado sobre chás, direção personalizada e acompanhamento estratégico para que você construa sua atuação, seja criando experiências, ministrando workshops, atendendo empresas, desenvolvendo consultorias ou construindo o seu próprio negócio.\n\n**Porque uma carreira sustentável não nasce apenas do conhecimento. Ela nasce de escolhas bem orientadas.**",
         forWhoIntro: ptCommon.forWhoIntro,
         forWhoItems: [
           "Deseja trabalhar com chá de forma profissional, séria e bem direcionada",
@@ -111,7 +111,8 @@ const ptCategories: ProgramCategory[] = [
           "Onboarding estratégico",
           "Smart Journey | Mapa de atuação Tea Mind",
           "2 sessões estratégicas ao longo da jornada",
-          "Acesso estendido ao conteúdo , 24 meses",
+          "Acesso por 24 meses",
+          "Acesso à comunidade exclusiva Tea Mind Society",
           "Certificação após aprovação nas provas intermediárias e finais",
         ],
         formationText:
@@ -131,7 +132,7 @@ const ptCategories: ProgramCategory[] = [
           "Para quem deseja se tornar um Tea Blender e criar uma linha de chás com assinatura própria, padrão premium e potencial real de mercado.",
         mainDescription: "Blends de Assinatura",
         bodyText:
-          "O mercado está cheio de blends parecidos.\n\nNa Tea Mind você aprende a criar blends que carregam identidade, propósito e assinatura.\n\nNão ensinamos apenas a desenvolver blends. Ensinamos você a compreender como grandes marcas constroem produtos memoráveis, para criar uma linha que faça sentido para o seu público e para o mercado.\n\nMais do que formular, você recebe direção personalizada para estruturar sua proposta, definir por onde começar, conquistar seus primeiros clientes e construir uma marca sustentável.\n\nPorque criar um excelente blend é apenas o começo. O verdadeiro diferencial está em construir uma marca que as pessoas escolham lembrar.",
+          "**O mercado está cheio de blends parecidos.**\n\nNa Tea Mind você aprende a criar blends que carregam identidade, propósito e assinatura.\n\nNão ensinamos apenas a desenvolver blends. Ensinamos você a compreender como grandes marcas constroem produtos memoráveis, para criar uma linha que faça sentido para o seu público e para o mercado.\n\nMais do que formular, você recebe direção personalizada para estruturar sua proposta, definir por onde começar, conquistar seus primeiros clientes e construir uma marca sustentável.\n\n**Porque criar um excelente blend é apenas o começo. O verdadeiro diferencial está em construir uma marca que as pessoas escolham lembrar.**",
         forWhoIntro: ptCommon.forWhoIntro,
         forWhoItems: [
           "Deseja criar uma linha de chás com assinatura própria, visão de mercado e valor percebido",
@@ -147,7 +148,8 @@ const ptCategories: ProgramCategory[] = [
           "Onboarding estratégico",
           "Smart Journey | Mapa de marca e produto",
           "2 sessões estratégicas ao longo da jornada",
-          "Acesso estendido ao conteúdo",
+          "Acesso por 24 meses",
+          "Acesso à comunidade exclusiva Tea Mind Society",
           "Certificação após aprovação do seu blend profissional para avaliação",
         ],
         formationText:

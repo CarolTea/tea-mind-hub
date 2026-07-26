@@ -204,7 +204,13 @@ const ProgramSection = ({ program, isDark, forWhoTitle, includesTitle }: { progr
           <div className="space-y-4 mb-14">
             {program.bodyText.split("\n\n").map((p, i) => (
               <p key={i} className={`font-sans text-base ${isDark ? "text-primary-foreground/60" : "text-foreground/60"} leading-relaxed`}>
-                {p}
+                {p.split("**").map((part, j) =>
+                  j % 2 === 1 ? (
+                    <strong key={j} className={`font-semibold ${isDark ? "text-primary-foreground" : "text-foreground"}`}>{part}</strong>
+                  ) : (
+                    part
+                  )
+                )}
               </p>
             ))}
           </div>
