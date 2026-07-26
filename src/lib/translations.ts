@@ -109,19 +109,19 @@ export const translations = {
         },
         {
           id: "aprimoramento",
-          eyebrow: "02 , Aprimoramento",
+          eyebrow: "",
           title: "Programas de Aprimoramento",
           description:
-            "Especializações para profissionais do chá que desejam aprofundar repertório técnico e diferenciar sua atuação.",
+            "Para profissionais do chá que desejam aprofundar repertório técnico e diferenciar sua atuação.",
           items: [
-            { id: "eventos", title: "Especialização em Eventos com Chá", description: "Para quem deseja criar, produzir e conduzir experiências e eventos com chá com padrão profissional, identidade própria e visão de mercado." },
-            { id: "harmonizacao", title: "Especialização em Harmonização com Chás", description: "Domine a harmonização entre chás, alimentos e bebidas com a técnica HARCOR, criando experiências gastronômicas sofisticadas." },
-            { id: "neurogastronomia", title: "Especialização em Neurogastronomia de Chás e Ervas", description: "1ª Especialização em Neurogastronomia de Chás e Ervas da América Latina. 8 aulas no Método SENSO, 30 horas, com Raquel Magalhães." },
+            { id: "eventos", title: "Especialização em Eventos com Chá", description: "" },
+            { id: "harmonizacao", title: "Especialização em Harmonização com Chás", description: "" },
+            { id: "neurogastronomia", title: "Especialização em Neurogastronomia de Chás e Ervas", description: "" },
           ],
         },
         {
           id: "aceleracao",
-          eyebrow: "03 , Aceleração",
+          eyebrow: "",
           title: "Programas de Aceleração",
           description:
             "Diagnóstico estratégico e estruturação para empreendedores que já iniciaram e precisam reorganizar a base do negócio.",
@@ -181,33 +181,32 @@ export const translations = {
           title: "Sommelier de Chá · Especialista em Eventos & Experiências com Chá · Tea Blender em formação",
         },
       ],
-      transition:
-        "Sommeliers de Chá, Tea Blenders, Especialistas em Eventos, Mestres em Harmonização, Especialistas em Neurogastronomia de Chás & Ervas, Especialistas em Negócios de Chás. Cada um construindo sua própria história no mercado do chá.",
-      cta: "Conheça nossos profissionais formados & empreendedores →",
+      transition: "",
+      cta: "",
     },
     innovations: {
       eyebrow: "Tea Mind Inovações",
       title: "Pioneiros no mercado do chá. Dentro e fora da xícara.",
       subtitle:
-        "Da primeira infraestrutura de IA proprietária do mundo para o mercado do chá ao maior evento de negócios do chá do Brasil , a Tea Mind está construindo o futuro da indústria.",
+        "Da primeira infraestrutura de IA proprietária do mundo para o mercado do chá ao maior evento de negócios do chá do Brasil, a Tea Mind está construindo o futuro do mercado do chá.",
       cards: [
         {
           icon: "01",
           title: "Tea Mind AI",
           description:
-            "A primeira infraestrutura de IA do mundo para o mercado do chá. Ecossistema pioneiro de sistemas de IA proprietários, desenvolvidos e treinados com nossa metodologia de classe mundial. Três agentes exclusivos para profissionais certificados do chá.",
-          cta: "Conhecer as IAs →",
+            "Três agentes exclusivos desenvolvidos e treinados com nossa metodologia de excelência para profissionais do setor.",
+          cta: "Assinar as IAs →",
         },
         {
           icon: "02",
           title: "Tea Fest in Rio",
           description:
-            "O maior evento de negócios, conhecimento e conexão do mercado de chá do Brasil. Para profissionais, empreendedores e apaixonados que vibram na mesma frequência! 2025 foi um sucesso! Prepare-se para 2026!",
-          cta: "Conhecer o Tea Fest →",
+            "O maior evento de conhecimento e conexão do mercado de chá do Brasil. Para profissionais, empreendedores e apaixonados por chá que vibram na mesma frequência! 2025 foi um sucesso! Prepare-se para 2026!",
+          cta: "Inscreva-se no Tea Fest 2026",
         },
       ],
       closing: "Enquanto muitos observam o mercado, nós criamos o que ele ainda precisa.",
-      cta: "Explorar todas as inovações →",
+      cta: "",
     },
     founders: {
       eyebrow: "Quem está por trás da Tea Mind",
