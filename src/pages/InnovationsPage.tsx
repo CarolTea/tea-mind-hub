@@ -30,7 +30,7 @@ const innovT = {
     hero: {
       eyebrow: "Tea Mind Inovações",
       title: "Pioneirismo, tecnologia e novos caminhos para o mercado do chá.",
-      subtitle: "A Tea Mind desenvolve projetos que ampliam o futuro da indústria do chá, conectando formação, tecnologia, negócios, experiências e inovação aplicada a um mercado em transformação.",
+      subtitle: "A Tea Mind desenvolve projetos que ampliam o futuro do mercado do chá, conectando formação, tecnologia, negócios, experiências e inovação aplicada a um mercado em transformação.",
     },
     vision: {
       title: "Inovar, para nós, é construir o que o mercado ainda precisa.",
