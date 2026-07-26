@@ -281,7 +281,11 @@ const NeuralSystemContent = () => {
                       {agent.capabilities.map((cap, i) => (
                         <li key={i} className="flex items-start gap-3 text-base text-foreground/75 font-sans leading-relaxed">
                           <span className="text-accent mt-1.5 text-xs">◆</span>
-                          <span>{cap}</span>
+                          <span>
+                            {cap.split("**").map((part, j) =>
+                              j % 2 === 1 ? <strong key={j} className="text-foreground font-medium">{part}</strong> : part
+                            )}
+                          </span>
                         </li>
                       ))}
                     </ul>
