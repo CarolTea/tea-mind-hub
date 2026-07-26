@@ -26,11 +26,12 @@ const translations = {
           body: "O Sensory AI é o agente especializado em análise sensorial de chás e infusões. Ele foi treinado para descrever aromas, sabores e texturas com precisão técnica, criar cartas de chás para restaurantes e hotéis, propor harmonizações por perfil aromático e apoiar a construção de experiências sensoriais com profundidade.\n\nÉ a ferramenta ideal para quem atua com curadoria, serviço, hospitalidade, eventos e educação sensorial no universo do chá.",
           capabilitiesIntro: "O QUE ELE FAZ",
           capabilities: [
-            "Análises sensoriais detalhadas com vocabulário técnico padronizado",
-            "Criação de cartas de chás para restaurantes, hotéis e casas de chá",
-            "Harmonizações com alimentos por perfil aromático e sensorial",
-            "Apoio à construção de experiências e eventos com base sensorial",
-            "Conteúdos e aulas especializadas sobre análise sensorial de chá",
+            "**Traduz percepção em palavra técnica.** Descrições sensoriais precisas, com vocabulário padronizado, prontas para rótulo, ficha técnica ou apresentação.",
+            "**Constrói cartas de chá que vendem.** Curadoria completa para restaurantes, hotéis e casas de chá, com descrição comercial de cada item.",
+            "**Cria harmonizações e drinks autorais.** Combinações com alimentos e coquetelaria por afinidade aromática, com justificativa sensorial que sustenta o preço.",
+            "**Escreve o seu discurso de venda.** Textos promocionais, storytelling de produto e propostas comerciais que comunicam valor em vez de listar ingredientes.",
+            "**Estrutura experiências, mini eventos e workshops.** Do roteiro sensorial à sequência de degustação, com o conteúdo que sustenta a experiência.",
+            "**Prepara aulas e conteúdos especializados.** Roteiros, materiais e explicações técnicas sobre chá com clareza didática.",
           ],
           closing: "O Sensory AI transforma percepção em linguagem — e linguagem em valor profissional.",
         },
@@ -93,11 +94,12 @@ const translations = {
           body: "Sensory AI is the agent specialized in sensory analysis of teas and infusions. It was trained to describe aromas, flavors, and textures with technical precision, create tea menus for restaurants and hotels, propose pairings by aromatic profile, and support the creation of in-depth sensory experiences.\n\nIt is the ideal tool for those working in curation, service, hospitality, events, and sensory education in the tea universe.",
           capabilitiesIntro: "WHAT IT DOES",
           capabilities: [
-            "Detailed sensory analyses with standardized technical vocabulary",
-            "Creation of tea menus for restaurants, hotels, and tea houses",
-            "Food pairings by aromatic and sensory profile",
-            "Support for building sensory-based experiences and events",
-            "Specialized content and classes on tea sensory analysis",
+            "**Turns perception into technical language.** Precise sensory descriptions with standardized vocabulary, ready for labels, tech sheets, or presentations.",
+            "**Builds tea menus that sell.** Full curation for restaurants, hotels, and tea houses, with commercial copy for every item.",
+            "**Creates pairings and signature drinks.** Food and cocktail combinations by aromatic affinity, with the sensory rationale that justifies the price.",
+            "**Writes your sales pitch.** Promotional copy, product storytelling, and commercial proposals that communicate value instead of listing ingredients.",
+            "**Structures experiences, small events, and workshops.** From the sensory script to the tasting sequence, with the content that holds it together.",
+            "**Prepares specialized classes and content.** Scripts, materials, and technical explanations about tea with teaching clarity.",
           ],
           closing: "Sensory AI transforms perception into language — and language into professional value.",
         },
@@ -160,11 +162,12 @@ const translations = {
           body: "Sensory AI es el agente especializado en análisis sensorial de tés e infusiones. Fue entrenado para describir aromas, sabores y texturas con precisión técnica, crear cartas de tés para restaurantes y hoteles, proponer maridajes por perfil aromático y apoyar la creación de experiencias sensoriales con profundidad.\n\nEs la herramienta ideal para quienes trabajan en curaduría, servicio, hospitalidad, eventos y educación sensorial en el universo del té.",
           capabilitiesIntro: "QUÉ HACE",
           capabilities: [
-            "Análisis sensoriales detallados con vocabulario técnico estandarizado",
-            "Creación de cartas de tés para restaurantes, hoteles y casas de té",
-            "Maridajes con alimentos por perfil aromático y sensorial",
-            "Apoyo a la construcción de experiencias y eventos con base sensorial",
-            "Contenidos y clases especializadas sobre análisis sensorial de té",
+            "**Traduce la percepción en palabra técnica.** Descripciones sensoriales precisas, con vocabulario estandarizado, listas para etiqueta, ficha técnica o presentación.",
+            "**Construye cartas de té que venden.** Curaduría completa para restaurantes, hoteles y casas de té, con descripción comercial de cada ítem.",
+            "**Crea maridajes y drinks de autor.** Combinaciones con alimentos y coctelería por afinidad aromática, con la justificación sensorial que sostiene el precio.",
+            "**Escribe tu discurso de venta.** Textos promocionales, storytelling de producto y propuestas comerciales que comunican valor en lugar de listar ingredientes.",
+            "**Estructura experiencias, mini eventos y workshops.** Del guion sensorial a la secuencia de degustación, con el contenido que sostiene la experiencia.",
+            "**Prepara clases y contenidos especializados.** Guiones, materiales y explicaciones técnicas sobre té con claridad didáctica.",
           ],
           closing: "Sensory AI transforma percepción en lenguaje — y lenguaje en valor profesional.",
         },
@@ -278,7 +281,11 @@ const NeuralSystemContent = () => {
                       {agent.capabilities.map((cap, i) => (
                         <li key={i} className="flex items-start gap-3 text-base text-foreground/75 font-sans leading-relaxed">
                           <span className="text-accent mt-1.5 text-xs">◆</span>
-                          <span>{cap}</span>
+                          <span>
+                            {cap.split("**").map((part, j) =>
+                              j % 2 === 1 ? <strong key={j} className="text-foreground font-medium">{part}</strong> : part
+                            )}
+                          </span>
                         </li>
                       ))}
                     </ul>

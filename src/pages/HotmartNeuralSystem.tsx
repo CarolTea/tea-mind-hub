@@ -21,11 +21,12 @@ const t = {
         body: "O Sensory AI é o agente especializado em análise sensorial de chás e infusões. Ele foi treinado para descrever aromas, sabores e texturas com precisão técnica, criar cartas de chás para restaurantes e hotéis, propor harmonizações por perfil aromático e apoiar a construção de experiências sensoriais com profundidade.\n\nÉ a ferramenta ideal para quem atua com curadoria, serviço, hospitalidade, eventos e educação sensorial no universo do chá.",
         capabilitiesIntro: "O QUE ELE FAZ",
         capabilities: [
-          "Análises sensoriais detalhadas com vocabulário técnico padronizado",
-          "Criação de cartas de chás para restaurantes, hotéis e casas de chá",
-          "Harmonizações com alimentos por perfil aromático e sensorial",
-          "Apoio à construção de experiências e eventos com base sensorial",
-          "Conteúdos e aulas especializadas sobre análise sensorial de chá",
+          "**Traduz percepção em palavra técnica.** Descrições sensoriais precisas, com vocabulário padronizado, prontas para rótulo, ficha técnica ou apresentação.",
+          "**Constrói cartas de chá que vendem.** Curadoria completa para restaurantes, hotéis e casas de chá, com descrição comercial de cada item.",
+          "**Cria harmonizações e drinks autorais.** Combinações com alimentos e coquetelaria por afinidade aromática, com justificativa sensorial que sustenta o preço.",
+          "**Escreve o seu discurso de venda.** Textos promocionais, storytelling de produto e propostas comerciais que comunicam valor em vez de listar ingredientes.",
+          "**Estrutura experiências, mini eventos e workshops.** Do roteiro sensorial à sequência de degustação, com o conteúdo que sustenta a experiência.",
+          "**Prepara aulas e conteúdos especializados.** Roteiros, materiais e explicações técnicas sobre chá com clareza didática.",
         ],
         closing: "O Sensory AI transforma percepção em linguagem , e linguagem em valor profissional.",
       },
@@ -133,7 +134,11 @@ const AgentsSection = () => (
                 {agent.capabilities.map((cap, i) => (
                   <li key={i} className="flex items-start gap-3 text-base text-foreground/75 font-sans leading-relaxed">
                     <span className="text-accent mt-1.5 text-xs">◆</span>
-                    <span>{cap}</span>
+                    <span>
+                      {cap.split("**").map((part, j) =>
+                        j % 2 === 1 ? <strong key={j} className="text-foreground font-medium">{part}</strong> : part
+                      )}
+                    </span>
                   </li>
                 ))}
               </ul>
