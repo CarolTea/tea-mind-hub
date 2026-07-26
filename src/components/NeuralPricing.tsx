@@ -47,7 +47,7 @@ const copy: Record<Lang, {
         ],
       },
       {
-        name: "Tea Mind | Blend AI",
+        name: "Tea Mind | Blender AI",
         description: "Para quem cria produto com intenção.",
         features: [
           "Desenvolvimento de blends autorais",
@@ -100,7 +100,7 @@ const copy: Record<Lang, {
         ],
       },
       {
-        name: "Tea Mind | Blend AI",
+        name: "Tea Mind | Blender AI",
         description: "For those who create products with intention.",
         features: [
           "Development of signature blends",
@@ -153,7 +153,7 @@ const copy: Record<Lang, {
         ],
       },
       {
-        name: "Tea Mind | Blend AI",
+        name: "Tea Mind | Blender AI",
         description: "Para quien crea producto con intención.",
         features: [
           "Desarrollo de blends de autor",

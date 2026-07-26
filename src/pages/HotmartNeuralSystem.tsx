@@ -33,10 +33,10 @@ const t = {
       },
       {
         number: "02",
-        name: "Blend AI",
+        name: "Blender AI",
         tag: "Inteligência de produto aplicada",
         headline: "O parceiro técnico que transforma ideia em produto real.",
-        body: "O Blend AI é o agente especializado em desenvolvimento de blends e produtos à base de chá. Ele foi treinado para auxiliar na formulação de receitas com equilíbrio sensorial, ajustar proporções, sugerir combinações por perfil aromático, orientar processos de diluição e fixação de aromas, e apoiar a construção de linhas de produto com identidade e viabilidade comercial.\n\nÉ a ferramenta ideal para quem deseja criar blends autorais, linhas de chá com assinatura própria ou produtos para venda com padrão premium.",
+        body: "O Blender AI é o agente especializado em desenvolvimento de blends e produtos à base de chá. Ele foi treinado para auxiliar na formulação de receitas com equilíbrio sensorial, ajustar proporções, sugerir combinações por perfil aromático, orientar processos de diluição e fixação de aromas, e apoiar a construção de linhas de produto com identidade e viabilidade comercial.\n\nÉ a ferramenta ideal para quem deseja criar blends autorais, linhas de chá com assinatura própria ou produtos para venda com padrão premium.",
         capabilitiesIntro: "O QUE ELE FAZ",
         capabilities: [
           "**Cria blends autorais com equilíbrio técnico.** Formulação de receitas com proporções calculadas, camadas aromáticas e assinatura própria, do primeiro rascunho à versão final.",
@@ -47,7 +47,7 @@ const t = {
           "**Conduz testes de qualidade e durabilidade.** Protocolos de prova, controle de lote, avaliação de shelf life e registro dos resultados.",
           "**Apoia a conformidade para comercialização.** Orientação sobre normas da Anvisa, rotulagem e requisitos para colocar o produto no mercado.",
         ],
-        closing: "O Blend AI transforma intenção criativa em produto com critério, e critério em diferenciação real.",
+        closing: "O Blender AI transforma intenção criativa em produto com critério, e critério em diferenciação real.",
       },
       {
         number: "03",
@@ -59,7 +59,6 @@ const t = {
         capabilities: [
           "**Constrói o plano de negócio do seu projeto.** Da definição de modelo e público à estrutura de custos, metas e projeção de receita, com linguagem pronta para apresentar a sócios, bancos ou investidores.",
           "**Define preços que sustentam o negócio.** Precificação de produtos, serviços e experiências com margem calculada, comparação de cenários e justificativa de valor para o cliente.",
-          "**Lê o mercado e posiciona a sua marca.** Análise de concorrência, oportunidades pouco exploradas e o território de discurso onde a sua marca compete sem disputar preço.",
           "**Desenha caminhos de crescimento.** Estratégias de expansão, novos canais, parcerias e diferenciação, com prioridade de execução em vez de lista de ideias.",
           "**Organiza a decisão difícil.** Cenários comparados, riscos, trade offs e recomendação clara quando é preciso escolher um caminho.",
         ],
@@ -171,7 +170,7 @@ const plans = [
     ],
   },
   {
-    name: "Tea Mind | Blend AI",
+    name: "Tea Mind | Blender AI",
     description: "Para quem cria produto com intenção.",
     monthly: { price: "R$ 70 / mês", link: "https://pay.hotmart.com/Q104723929R?off=x5mb43ov" },
     annual: { price: "R$ 600 à vista", installment: "ou até 12x de R$ 63,89", link: "https://pay.hotmart.com/Q104723929R?off=57g1hghd" },
