@@ -303,8 +303,7 @@ const ptCategories: ProgramCategory[] = [
         includesItems: [
           "8 aulas gravadas no Método SENSO, criado por Raquel Magalhães",
           "Aula 0 de nivelamento em chás para quem ainda não é profissional do chá",
-          "Encontros ao vivo de perguntas e respostas",
-          "30 dias de acesso à IA proprietária da Especialização (bônus da 2ª turma)",
+          "Suporte na plataforma para todas as dúvidas e orientações",
           "Acesso às gravações por 12 meses",
           "Material de apoio em PDF e exercícios",
           "30 horas de conteúdo entre aulas, nivelamento e materiais complementares",
@@ -313,7 +312,7 @@ const ptCategories: ProgramCategory[] = [
         formationText: "",
         directionTitle: "Estrutura do programa",
         directionText:
-          "Aula 1, Fundamentos da Análise Sensorial. Aula 2, Fundamentos da Neurogastronomia. Aula 3, Os 5 Sentidos e a Neurogastronomia. Aula 4, Comportamento Alimentar. Aula 5, Fitoquímica Sensorial. Aula 6, Camellia sinensis no contexto da Neurogastronomia. Aula 7, Harmonização com base na Neurogastronomia. Aula 8, Design Sensorial e Posicionamento Profissional.\n\nConduzida por Raquel Magalhães (criadora do Método SENSO, professora convidada do Le Cordon Bleu Rio de Janeiro), Carol Tavares e Carla Vicente.",
+          "Raquel Magalhães é Special Partner Tea Mind. Sommelière de Chá, Nutricionista, Especialista em Fitoterapia e Ayurveda & Criadora do método SENSO para Neurogastronomia. Professora convidada do Le Cordon Bleu Rio de Janeiro, e colunista da revista Casa e Jardim.\n\nSua atuação une olhar técnico, sensibilidade e repertório botânico na construção de experiências mais profundas com chás e ervas.\n\nNesta especialização, Raquel, Carol Tavares e Carla Vicente ensinam como você pode se tornar um Especialista e Consultor em Neurogastronomia.",
         cta: ptCommon.cta,
         hotmartUrl: "https://pay.hotmart.com/Q104515097L",
         contentUrls: [
