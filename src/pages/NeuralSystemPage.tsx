@@ -12,7 +12,7 @@ const translations = {
       hub: "Tea Mind Business Hub",
       title: "Neural System",
       subtitle: "Uma infraestrutura de inteligência artificial treinada para pensar, criar e decidir com você dentro do mercado do chá.",
-      intro: "Três agentes especializados — sensorial, produto e negócio — projetados para potencializar sua atuação profissional com repertório técnico, visão estratégica e apoio contínuo.",
+      intro: "Três agentes especializados, sensorial, produto e negócio, projetados para potencializar sua atuação profissional com repertório técnico, visão estratégica e apoio contínuo.",
     },
     agents: {
       heading: "Os Agentes do Neural System",
@@ -34,7 +34,7 @@ const translations = {
             "**Estrutura experiências, mini eventos e workshops.** Do roteiro sensorial à sequência de degustação, com o conteúdo que sustenta a experiência.",
             "**Prepara aulas e conteúdos especializados.** Roteiros, materiais e explicações técnicas sobre chá com clareza didática.",
           ],
-          closing: "O Sensory AI transforma percepção em linguagem — e linguagem em valor profissional.",
+          closing: "O Sensory AI transforma percepção em linguagem, e linguagem em valor profissional.",
         },
         {
           number: "02",
@@ -50,7 +50,7 @@ const translations = {
             "Orientação sobre diluição, fixação e estabilidade de aromas",
             "Apoio à conformidade com normas da Anvisa para comercialização",
           ],
-          closing: "O Blend AI transforma intenção criativa em produto com critério — e critério em diferenciação real.",
+          closing: "O Blend AI transforma intenção criativa em produto com critério, e critério em diferenciação real.",
         },
         {
           number: "03",
@@ -66,7 +66,7 @@ const translations = {
             "Estratégias de crescimento, expansão e diferenciação",
             "Apoio à tomada de decisão com base em dados e cenários",
           ],
-          closing: "O Business AI transforma visão em estrutura — e estrutura em negócio com direção.",
+          closing: "O Business AI transforma visão em estrutura, e estrutura em negócio com direção.",
         },
       ],
     },
@@ -81,7 +81,7 @@ const translations = {
       hub: "Tea Mind Business Hub",
       title: "Neural System",
       subtitle: "An artificial intelligence infrastructure trained to think, create, and make decisions with you in the tea market.",
-      intro: "Three specialized agents — sensory, product, and business — designed to enhance your professional practice with technical knowledge, strategic vision, and ongoing support.",
+      intro: "Three specialized agents, sensory, product, and business, designed to enhance your professional practice with technical knowledge, strategic vision, and ongoing support.",
     },
     agents: {
       heading: "The Neural System Agents",
@@ -103,7 +103,7 @@ const translations = {
             "**Structures experiences, small events, and workshops.** From the sensory script to the tasting sequence, with the content that holds it together.",
             "**Prepares specialized classes and content.** Scripts, materials, and technical explanations about tea with teaching clarity.",
           ],
-          closing: "Sensory AI transforms perception into language — and language into professional value.",
+          closing: "Sensory AI transforms perception into language, and language into professional value.",
         },
         {
           number: "02",
@@ -119,7 +119,7 @@ const translations = {
             "Guidance on dilution, fixation, and aroma stability",
             "Support for compliance with commercialization regulations",
           ],
-          closing: "Blend AI transforms creative intention into a product with criteria — and criteria into real differentiation.",
+          closing: "Blend AI transforms creative intention into a product with criteria, and criteria into real differentiation.",
         },
         {
           number: "03",
@@ -135,7 +135,7 @@ const translations = {
             "Growth, expansion, and differentiation strategies",
             "Decision-making support based on data and scenarios",
           ],
-          closing: "Business AI transforms vision into structure — and structure into a business with direction.",
+          closing: "Business AI transforms vision into structure, and structure into a business with direction.",
         },
       ],
     },
@@ -150,7 +150,7 @@ const translations = {
       hub: "Tea Mind Business Hub",
       title: "Neural System",
       subtitle: "Una infraestructura de inteligencia artificial entrenada para pensar, crear y decidir contigo dentro del mercado del té.",
-      intro: "Tres agentes especializados — sensorial, producto y negocio — diseñados para potenciar tu actuación profesional con repertorio técnico, visión estratégica y apoyo continuo.",
+      intro: "Tres agentes especializados, sensorial, producto y negocio, diseñados para potenciar tu actuación profesional con repertorio técnico, visión estratégica y apoyo continuo.",
     },
     agents: {
       heading: "Los Agentes del Neural System",
@@ -172,7 +172,7 @@ const translations = {
             "**Estructura experiencias, mini eventos y workshops.** Del guion sensorial a la secuencia de degustación, con el contenido que sostiene la experiencia.",
             "**Prepara clases y contenidos especializados.** Guiones, materiales y explicaciones técnicas sobre té con claridad didáctica.",
           ],
-          closing: "Sensory AI transforma percepción en lenguaje — y lenguaje en valor profesional.",
+          closing: "Sensory AI transforma percepción en lenguaje, y lenguaje en valor profesional.",
         },
         {
           number: "02",
@@ -188,7 +188,7 @@ const translations = {
             "Orientación sobre dilución, fijación y estabilidad de aromas",
             "Apoyo al cumplimiento de normas para comercialización",
           ],
-          closing: "Blend AI transforma intención creativa en producto con criterio — y criterio en diferenciación real.",
+          closing: "Blend AI transforma intención creativa en producto con criterio, y criterio en diferenciación real.",
         },
         {
           number: "03",
@@ -204,7 +204,7 @@ const translations = {
             "Estrategias de crecimiento, expansión y diferenciación",
             "Apoyo a la toma de decisiones basada en datos y escenarios",
           ],
-          closing: "Business AI transforma visión en estructura — y estructura en negocio con dirección.",
+          closing: "Business AI transforma visión en estructura, y estructura en negocio con dirección.",
         },
       ],
     },
