@@ -38,10 +38,10 @@ const translations = {
         },
         {
           number: "02",
-          name: "Blend AI",
+          name: "Blender AI",
           tag: "Inteligência de produto aplicada",
           headline: "O parceiro técnico que transforma ideia em produto real.",
-          body: "O Blend AI é o agente especializado em desenvolvimento de blends e produtos à base de chá. Ele foi treinado para auxiliar na formulação de receitas com equilíbrio sensorial, ajustar proporções, sugerir combinações por perfil aromático, orientar processos de diluição e fixação de aromas, e apoiar a construção de linhas de produto com identidade e viabilidade comercial.\n\nÉ a ferramenta ideal para quem deseja criar blends autorais, linhas de chá com assinatura própria ou produtos para venda com padrão premium.",
+          body: "O Blender AI é o agente especializado em desenvolvimento de blends e produtos à base de chá. Ele foi treinado para auxiliar na formulação de receitas com equilíbrio sensorial, ajustar proporções, sugerir combinações por perfil aromático, orientar processos de diluição e fixação de aromas, e apoiar a construção de linhas de produto com identidade e viabilidade comercial.\n\nÉ a ferramenta ideal para quem deseja criar blends autorais, linhas de chá com assinatura própria ou produtos para venda com padrão premium.",
           capabilitiesIntro: "O QUE ELE FAZ",
           capabilities: [
             "**Cria blends autorais com equilíbrio técnico.** Formulação de receitas com proporções calculadas, camadas aromáticas e assinatura própria, do primeiro rascunho à versão final.",
@@ -52,7 +52,7 @@ const translations = {
             "**Conduz testes de qualidade e durabilidade.** Protocolos de prova, controle de lote, avaliação de shelf life e registro dos resultados.",
             "**Apoia a conformidade para comercialização.** Orientação sobre normas da Anvisa, rotulagem e requisitos para colocar o produto no mercado.",
           ],
-          closing: "O Blend AI transforma intenção criativa em produto com critério, e critério em diferenciação real.",
+          closing: "O Blender AI transforma intenção criativa em produto com critério, e critério em diferenciação real.",
         },
         {
           number: "03",
@@ -64,7 +64,6 @@ const translations = {
           capabilities: [
             "**Constrói o plano de negócio do seu projeto.** Da definição de modelo e público à estrutura de custos, metas e projeção de receita, com linguagem pronta para apresentar a sócios, bancos ou investidores.",
             "**Define preços que sustentam o negócio.** Precificação de produtos, serviços e experiências com margem calculada, comparação de cenários e justificativa de valor para o cliente.",
-            "**Lê o mercado e posiciona a sua marca.** Análise de concorrência, oportunidades pouco exploradas e o território de discurso onde a sua marca compete sem disputar preço.",
             "**Desenha caminhos de crescimento.** Estratégias de expansão, novos canais, parcerias e diferenciação, com prioridade de execução em vez de lista de ideias.",
             "**Organiza a decisão difícil.** Cenários comparados, riscos, trade offs e recomendação clara quando é preciso escolher um caminho.",
           ],
@@ -109,10 +108,10 @@ const translations = {
         },
         {
           number: "02",
-          name: "Blend AI",
+          name: "Blender AI",
           tag: "Applied product intelligence",
           headline: "The technical partner that turns ideas into real products.",
-          body: "Blend AI is the agent specialized in developing blends and tea-based products. It was trained to assist in recipe formulation with sensory balance, adjust proportions, suggest combinations by aromatic profile, guide dilution and aroma fixation processes, and support the creation of product lines with identity and commercial viability.\n\nIt is the ideal tool for those who want to create signature blends, proprietary tea lines, or premium products for sale.",
+          body: "Blender AI is the agent specialized in developing blends and tea-based products. It was trained to assist in recipe formulation with sensory balance, adjust proportions, suggest combinations by aromatic profile, guide dilution and aroma fixation processes, and support the creation of product lines with identity and commercial viability.\n\nIt is the ideal tool for those who want to create signature blends, proprietary tea lines, or premium products for sale.",
           capabilitiesIntro: "WHAT IT DOES",
           capabilities: [
             "**Creates signature blends with technical balance.** Recipe formulation with calculated proportions, aromatic layering, and a signature of your own, from first draft to final version.",
@@ -123,7 +122,7 @@ const translations = {
             "**Runs quality and shelf life testing.** Tasting protocols, batch control, durability assessment, and result logging.",
             "**Supports compliance for commercialization.** Guidance on food safety regulations, labeling, and the requirements to bring the product to market.",
           ],
-          closing: "Blend AI transforms creative intention into a product with criteria, and criteria into real differentiation.",
+          closing: "Blender AI transforms creative intention into a product with criteria, and criteria into real differentiation.",
         },
         {
           number: "03",
@@ -135,7 +134,6 @@ const translations = {
           capabilities: [
             "**Builds the business plan for your project.** From model and audience definition to cost structure, targets, and revenue projection, in language ready to present to partners, banks, or investors.",
             "**Sets prices that sustain the business.** Pricing for products, services, and experiences with calculated margin, scenario comparison, and a value rationale for the client.",
-            "**Reads the market and positions your brand.** Competitive analysis, underexplored opportunities, and the narrative territory where your brand competes without fighting on price.",
             "**Designs growth paths.** Expansion strategies, new channels, partnerships, and differentiation, with execution priorities instead of a list of ideas.",
             "**Organizes the hard decision.** Compared scenarios, risks, trade offs, and a clear recommendation when a path has to be chosen.",
           ],
@@ -180,10 +178,10 @@ const translations = {
         },
         {
           number: "02",
-          name: "Blend AI",
+          name: "Blender AI",
           tag: "Inteligencia de producto aplicada",
           headline: "El socio técnico que transforma ideas en productos reales.",
-          body: "Blend AI es el agente especializado en desarrollo de blends y productos a base de té. Fue entrenado para ayudar en la formulación de recetas con equilibrio sensorial, ajustar proporciones, sugerir combinaciones por perfil aromático, orientar procesos de dilución y fijación de aromas, y apoyar la construcción de líneas de producto con identidad y viabilidad comercial.\n\nEs la herramienta ideal para quienes desean crear blends autorales, líneas de té con firma propia o productos para venta con estándar premium.",
+          body: "Blender AI es el agente especializado en desarrollo de blends y productos a base de té. Fue entrenado para ayudar en la formulación de recetas con equilibrio sensorial, ajustar proporciones, sugerir combinaciones por perfil aromático, orientar procesos de dilución y fijación de aromas, y apoyar la construcción de líneas de producto con identidad y viabilidad comercial.\n\nEs la herramienta ideal para quienes desean crear blends autorales, líneas de té con firma propia o productos para venta con estándar premium.",
           capabilitiesIntro: "QUÉ HACE",
           capabilities: [
             "**Crea blends autorales con equilibrio técnico.** Formulación de recetas con proporciones calculadas, capas aromáticas y firma propia, del primer borrador a la versión final.",
@@ -194,7 +192,7 @@ const translations = {
             "**Conduce pruebas de calidad y durabilidad.** Protocolos de cata, control de lote, evaluación de vida útil y registro de resultados.",
             "**Apoya el cumplimiento para la comercialización.** Orientación sobre normas sanitarias, etiquetado y requisitos para llevar el producto al mercado.",
           ],
-          closing: "Blend AI transforma intención creativa en producto con criterio, y criterio en diferenciación real.",
+          closing: "Blender AI transforma intención creativa en producto con criterio, y criterio en diferenciación real.",
         },
         {
           number: "03",
@@ -206,7 +204,6 @@ const translations = {
           capabilities: [
             "**Construye el plan de negocio de tu proyecto.** De la definición de modelo y público a la estructura de costos, metas y proyección de ingresos, con lenguaje listo para presentar a socios, bancos o inversores.",
             "**Define precios que sostienen el negocio.** Fijación de precios de productos, servicios y experiencias con margen calculado, comparación de escenarios y justificación de valor para el cliente.",
-            "**Lee el mercado y posiciona tu marca.** Análisis de competencia, oportunidades poco exploradas y el territorio de discurso donde tu marca compite sin disputar precio.",
             "**Diseña caminos de crecimiento.** Estrategias de expansión, nuevos canales, alianzas y diferenciación, con prioridad de ejecución en lugar de una lista de ideas.",
             "**Organiza la decisión difícil.** Escenarios comparados, riesgos, trade offs y una recomendación clara cuando hay que elegir un camino.",
           ],
