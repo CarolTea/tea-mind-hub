@@ -196,10 +196,6 @@ const ptCategories: ProgramCategory[] = [
         directionText:
           "O programa inicia com o onboarding (sessão online 1 a 1 com uma das fundadoras). Mapeamos seu contexto, objetivos, repertório e possibilidades.\n\nO resultado é o seu Smart Journey, que organiza esse olhar em um mapa personalizado. As sessões estratégicas ajudam você a transformar a formação em um caminho aplicável ao tipo de atuação que você deseja construir. O acesso é estendido para 36 meses para o direcionamento estratégico com as founders.",
         cta: ptCommon.cta,
-        contentUrls: [
-          { label: "Conteúdo Atuação com Chá", url: "https://gamma.app/docs/Programa-Atuacao-com-Chas-lee9e9ao6tgwbxc" },
-          { label: "Conteúdo Laboratório de Marcas", url: "https://gamma.app/docs/Programa-Laboratorio-de-Marcas-f2sp39blxam9xy9" },
-        ],
         hotmartUrl: "https://pay.hotmart.com/W105798749J",
       },
     ],
