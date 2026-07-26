@@ -42,10 +42,11 @@ const HeroBackground = () => (
 const eventsT = {
   pt: {
     hero: {
-      eyebrow: "Tea Mind Eventos",
+      eyebrow: "Tea Mind Eventos, Treinamentos, Palestras",
       title: "Experiências de chá que viram linguagem de marca, conexão e memória.",
-      subtitle: "Eventos personalizados, corporativos e temáticos com curadoria sensorial e narrativa autoral. Da concepção à experiência final, criamos encontros únicos.",
+      subtitle: "Eventos personalizados, experiências sensoriais, treinamentos para o setor de A&B & palestras corporativas. Da concepção à experiência final, criamos encontros únicos com curadoria sensorial de chás de luxo.",
       cta: "Falar no WhatsApp",
+      portfolioCta: "Conheça Nosso Portfólio",
     },
     intro: {
       title: "Cada evento é um universo sensorial construído sob medida.",
@@ -76,10 +77,11 @@ const eventsT = {
   },
   en: {
     hero: {
-      eyebrow: "Tea Mind Events",
+      eyebrow: "Tea Mind Events, Trainings, Talks",
       title: "Tea experiences that become brand language, connection and memory.",
-      subtitle: "Personalized, corporate and themed events with sensory curation and signature narrative. From concept to execution, we craft unique gatherings.",
+      subtitle: "Personalized events, sensory experiences, training for the F&B sector & corporate talks. From concept to execution, we craft unique gatherings with luxury tea sensory curation.",
       cta: "Chat on WhatsApp",
+      portfolioCta: "See Our Portfolio",
     },
     intro: {
       title: "Every event is a sensory universe built to measure.",
@@ -110,10 +112,11 @@ const eventsT = {
   },
   es: {
     hero: {
-      eyebrow: "Tea Mind Eventos",
+      eyebrow: "Tea Mind Eventos, Entrenamientos, Charlas",
       title: "Experiencias de té que se convierten en lenguaje de marca, conexión y memoria.",
-      subtitle: "Eventos personalizados, corporativos y temáticos con curaduría sensorial y narrativa de autor. De la concepción a la ejecución, creamos encuentros únicos.",
+      subtitle: "Eventos personalizados, experiencias sensoriales, entrenamientos para el sector de A&B y charlas corporativas. De la concepción a la ejecución, creamos encuentros únicos con curaduría sensorial de tés de lujo.",
       cta: "Hablar por WhatsApp",
+      portfolioCta: "Conoce Nuestro Portafolio",
     },
     intro: {
       title: "Cada evento es un universo sensorial construido a medida.",
@@ -167,14 +170,24 @@ const EventsContent = () => {
             <p className="font-sans text-base md:text-lg text-primary-foreground/70 leading-relaxed max-w-3xl mx-auto mb-10">{t.hero.subtitle}</p>
           </Fade>
           <Fade delay={450}>
-            <a
-              href={waHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 font-sans text-sm tracking-widest uppercase transition-all duration-300"
-            >
-              {t.hero.cta} <ArrowRight className="w-4 h-4" />
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href={waHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 font-sans text-sm tracking-widest uppercase transition-all duration-300"
+              >
+                {t.hero.cta} <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
+                href="https://gamma.app/docs/Tea-Mind-Business-Hub-Portfolio-7zs6sbwalhfqvz4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-accent text-primary hover:bg-accent/90 px-8 py-4 font-sans text-sm tracking-widest uppercase transition-all duration-300"
+              >
+                {t.hero.portfolioCta} <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
           </Fade>
         </div>
       </section>
