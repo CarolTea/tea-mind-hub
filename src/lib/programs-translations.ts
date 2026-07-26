@@ -989,9 +989,9 @@ export const programsTranslations: Record<Lang, ProgramsPageTranslation> = {
         "Na Tea Mind, cada programa parte de uma estrutura sólida de formação e direcionamento estratégico, mas ganha forma a partir de quem entra: seus objetivos, seu momento, sua capacidade de investimento, seu contexto local e aquilo que você deseja criar no mundo do chá.",
     },
     diagnosis: {
-      text: "Nem sempre é fácil saber sozinho qual programa se adequa melhor ao seu momento.\n\nPor isso, recomendamos começar pelo diagnóstico gratuito: uma leitura inicial que ajuda a compreender qual trajetória faz mais sentido para o seu perfil, sua realidade e o que você deseja construir no mercado do chá.",
+      text: "Recomendamos começar pelo diagnóstico gratuito: uma leitura inicial que ajuda você a compreender qual trajetória faz mais sentido para o seu perfil, sua realidade e o que você deseja construir no mercado do chá.",
       cta1: "Fazer o Diagnóstico Gratuito",
-      cta2: "Conhecer os Programas Abaixo",
+      cta2: "",
     },
     forWhoTitle: ptCommon.forWhoTitle,
     includesTitle: ptCommon.includesTitle,

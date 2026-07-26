@@ -118,12 +118,14 @@ const DiagnosisBlock = () => {
             >
               {t.diagnosis.cta1}
             </a>
-            <a
-              href="#programs-list"
-              className="inline-flex items-center justify-center px-8 py-3.5 border border-foreground/20 text-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:border-foreground/40"
-            >
-              {t.diagnosis.cta2}
-            </a>
+            {t.diagnosis.cta2 && (
+              <a
+                href="#programs-list"
+                className="inline-flex items-center justify-center px-8 py-3.5 border border-foreground/20 text-foreground text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 hover:border-foreground/40"
+              >
+                {t.diagnosis.cta2}
+              </a>
+            )}
           </div>
         </Fade>
       </div>
