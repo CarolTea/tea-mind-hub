@@ -61,9 +61,7 @@ const societyT = {
       text: "A Tea Mind Society foi criada para reunir alunos e profissionais formados que desejam permanecer próximos da Tea Mind e continuar ampliando repertório com conteúdo relevante, encontros especiais e conversas que acompanham os movimentos do mercado.",
       itemsTitle: "O que acontece na Society",
       items: [
-        "Lives mensais com temas de negócios, mercado e desenvolvimento profissional",
-        "Entrevistas e encontros com convidados especiais",
-        "Conteúdos que ampliam a visão sobre o mercado do chá",
+        "Conteúdos escritos que ampliam a visão sobre o mercado do chá",
         "Discussões relevantes para quem deseja seguir evoluindo",
         "Acesso contínuo a conversas que mantêm a jornada em movimento",
       ],
@@ -103,9 +101,7 @@ const societyT = {
       text: "The Tea Mind Society was created to bring together students and trained professionals who wish to stay close to Tea Mind and continue expanding their repertoire with relevant content, special meetings, and conversations that follow market movements.",
       itemsTitle: "What happens in the Society",
       items: [
-        "Monthly lives on business, market, and professional development topics",
-        "Interviews and meetings with special guests",
-        "Content that broadens the vision of the tea market",
+        "Written content that broadens the vision of the tea market",
         "Relevant discussions for those who wish to keep evolving",
         "Continuous access to conversations that keep the journey moving",
       ],
@@ -145,9 +141,7 @@ const societyT = {
       text: "La Tea Mind Society fue creada para reunir alumnos y profesionales formados que desean permanecer cercanos a Tea Mind y continuar ampliando repertorio con contenido relevante, encuentros especiales y conversaciones que acompañan los movimientos del mercado.",
       itemsTitle: "Lo que ocurre en la Society",
       items: [
-        "Lives mensuales con temas de negocios, mercado y desarrollo profesional",
-        "Entrevistas y encuentros con invitados especiales",
-        "Contenidos que amplían la visión sobre el mercado del té",
+        "Contenidos escritos que amplían la visión sobre el mercado del té",
         "Discusiones relevantes para quienes desean seguir evolucionando",
         "Acceso continuo a conversaciones que mantienen el camino en movimiento",
       ],
