@@ -306,7 +306,7 @@ export const translations = {
       contactTitle: "Eventos",
       contact: {
         eyebrow: "Contato",
-        title: "Vamos conversar.",
+        title: "Pegue sua xícara e vamos conversar.",
         text: "Para eventos, parcerias, imprensa ou conversas sobre o mercado do chá, fale diretamente com a nossa equipe.",
         cta: "Falar no WhatsApp →",
       },
@@ -639,7 +639,7 @@ export const translations = {
       contactTitle: "Events",
       contact: {
         eyebrow: "Contact",
-        title: "Let's talk.",
+        title: "Grab your cup and let's talk.",
         text: "For events, partnerships, press or conversations about the tea market, reach our team directly.",
         cta: "Chat on WhatsApp →",
       },
@@ -972,7 +972,7 @@ export const translations = {
       contactTitle: "Eventos",
       contact: {
         eyebrow: "Contacto",
-        title: "Hablemos.",
+        title: "Toma tu taza y hablemos.",
         text: "Para eventos, alianzas, prensa o conversaciones sobre el mercado del té, habla directamente con nuestro equipo.",
         cta: "Hablar por WhatsApp →",
       },
