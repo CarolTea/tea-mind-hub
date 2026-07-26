@@ -312,7 +312,7 @@ const ptCategories: ProgramCategory[] = [
         formationText: "",
         directionTitle: "Estrutura do programa",
         directionText:
-          "Raquel Magalhães é Special Partner Tea Mind. Sommelière de Chá, Nutricionista, Especialista em Fitoterapia e Ayurveda & Criadora do método SENSO para Neurogastronomia. Professora convidada do Le Cordon Bleu Rio de Janeiro, e colunista da revista Casa e Jardim.\n\nSua atuação une olhar técnico, sensibilidade e repertório botânico na construção de experiências mais profundas com chás e ervas.\n\nNesta especialização, Raquel, Carol Tavares e Carla Vicente ensinam como você pode se tornar um Especialista e Consultor em Neurogastronomia.",
+          "Raquel Magalhães é Special Partner Tea Mind. Sommelière de Chá, Nutricionista, Especialista em Fitoterapia e Ayurveda & Criadora do método SENSO para Neurogastronomia. Professora convidada do Le Cordon Bleu Rio de Janeiro, e colunista da revista Casa e Jardim.\n\nSua atuação une olhar técnico, sensibilidade e repertório botânico na construção de experiências mais profundas com chás e ervas.\n\nNesta especialização, Raquel, Carol Tavares e Carla Vicente ensinam como você pode se tornar um Especialista e Consultor em Neurogastronomia, seja para prestar consultoria em diversas áreas ou levar sua marca e serviços a um novo patamar.",
         cta: ptCommon.cta,
         hotmartUrl: "https://pay.hotmart.com/Q104515097L",
         contentUrls: [
