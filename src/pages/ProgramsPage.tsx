@@ -298,18 +298,6 @@ const ProgramSection = ({ program, isDark, forWhoTitle, includesTitle }: { progr
                 {c.label}
               </a>
             ))}
-            <a
-              href="https://teamindquest.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`inline-flex items-center justify-center px-8 py-3.5 text-sm font-sans font-medium tracking-wider uppercase transition-all duration-300 ${
-                program.hotmartUrl
-                  ? `border ${isDark ? "border-primary-foreground/30 text-primary-foreground hover:border-primary-foreground/60" : "border-foreground/20 text-foreground hover:border-foreground/40"}`
-                  : "bg-accent text-accent-foreground hover:opacity-90"
-              }`}
-            >
-              {program.cta}
-            </a>
           </div>
         </Fade>
       </div>
