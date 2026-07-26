@@ -1,26 +1,17 @@
 ## Objetivo
-Reescrever a seção "O QUE ELE FAZ" do **Sensory AI** com copy de verdade, editorial e vendável, não uma lista de funções técnicas. Hoje ela lista tarefas; a nova versão nomeia o resultado profissional de cada capacidade.
 
-## Nova copy (PT)
+Na seção "O QUE ELE FAZ" do agente **Sensory AI**, incluir um novo primeiro item sobre identificação de chás por foto, mantendo o mesmo padrão editorial (frase em negrito + complemento).
 
-**O QUE ELE FAZ**
+## Copy proposta
 
-- **Traduz percepção em palavra técnica.** Descrições sensoriais precisas, com vocabulário padronizado, prontas para rótulo, ficha técnica ou apresentação.
-- **Constrói cartas de chá que vendem.** Curadoria completa para restaurantes, hotéis e casas de chá, com descrição comercial de cada item.
-- **Cria harmonizações e drinks autorais.** Combinações com alimentos e coquetelaria por afinidade aromática, com justificativa sensorial que sustenta o preço.
-- **Escreve o seu discurso de venda.** Textos promocionais, storytelling de produto e propostas comerciais que comunicam valor em vez de listar ingredientes.
-- **Estrutura experiências, mini eventos e workshops.** Do roteiro sensorial à sequência de degustação, com o conteúdo que sustenta a experiência.
-- **Prepara aulas e conteúdos especializados.** Roteiros, materiais e explicações técnicas sobre chá com clareza didática.
+- PT: **Identifica chás por foto.** Envie uma imagem da folha seca, da infusão ou do líquor e receba tipo, provável origem, grau de oxidação e leitura sensorial do que está na xícara.
+- EN: **Identifies teas from a photo.** Send an image of the dry leaf, the infusion or the liquor and get type, likely origin, oxidation level and a sensory reading of what is in the cup.
+- ES: **Identifica tés por foto.** Envía una imagen de la hoja seca, la infusión o el licor y recibe tipo, probable origen, grado de oxidación y una lectura sensorial de lo que hay en la taza.
 
-Fechamento (mantido): "O Sensory AI transforma percepção em linguagem, e linguagem em valor profissional."
-
-Se você preferir a versão enxuta, sem os títulos em negrito, eu aplico só a primeira frase de cada item.
-
-## Traduções
-Mesma estrutura e mesmo tom em EN e ES, mantendo termos de IA em inglês.
+O item entra como **primeiro** da lista, antes de "Traduz percepção em palavra técnica".
 
 ## Detalhes técnicos
-- Arquivo: `src/pages/NeuralSystemPage.tsx`, objeto `translations`, chave `agents.items[0].capabilities` nos blocos `pt`, `en`, `es`.
-- A lista já é renderizada por `map`, suporta 6 itens sem mudança de layout.
-- Renderizar `**negrito**` como `<strong>` nos itens da lista (mesmo padrão já usado na página de Programas).
-- Verificar `src/pages/HotmartNeuralSystem.tsx`: se a mesma lista existir lá, sincronizar para evitar divergência.
+
+- `src/pages/NeuralSystemPage.tsx`: adicionar o item no array `capabilities` do agente 01 (Sensory AI) nos três blocos de idioma (pt, en, es).
+- `src/pages/HotmartNeuralSystem.tsx`: aplicar a mesma inclusão nos três idiomas, mantendo as páginas sincronizadas.
+- Nenhuma mudança de renderização é necessária: o suporte a `**negrito**` já existe.

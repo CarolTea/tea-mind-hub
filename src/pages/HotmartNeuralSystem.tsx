@@ -21,6 +21,7 @@ const t = {
         body: "O Sensory AI é o agente especializado em análise sensorial de chás e infusões. Ele foi treinado para descrever aromas, sabores e texturas com precisão técnica, criar cartas de chás para restaurantes e hotéis, propor harmonizações por perfil aromático e apoiar a construção de experiências sensoriais com profundidade.\n\nÉ a ferramenta ideal para quem atua com curadoria, serviço, hospitalidade, eventos e educação sensorial no universo do chá.",
         capabilitiesIntro: "O QUE ELE FAZ",
         capabilities: [
+          "**Identifica chás por foto.** Envie uma imagem da folha seca, da infusão ou do líquor e receba tipo, provável origem, grau de oxidação e leitura sensorial do que está na xícara.",
           "**Traduz percepção em palavra técnica.** Descrições sensoriais precisas, com vocabulário padronizado, prontas para rótulo, ficha técnica ou apresentação.",
           "**Constrói cartas de chá que vendem.** Curadoria completa para restaurantes, hotéis e casas de chá, com descrição comercial de cada item.",
           "**Cria harmonizações e drinks autorais.** Combinações com alimentos e coquetelaria por afinidade aromática, com justificativa sensorial que sustenta o preço.",
