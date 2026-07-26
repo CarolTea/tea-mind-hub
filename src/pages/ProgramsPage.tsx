@@ -324,7 +324,8 @@ const ProgramsContent = () => {
       <DiagnosisBlock />
       <div id="programs-list">
         {t.categories.map((category, catIdx) => {
-          const catIsDark = catIdx % 2 === 0;
+          // divider usa o mesmo fundo do primeiro programa da categoria
+          const catIsDark = (catIdx + 1) % 2 === 0;
           return (
             <div key={category.id}>
               <CategoryDivider category={category} isDark={catIsDark} />
