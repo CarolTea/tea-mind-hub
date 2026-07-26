@@ -98,14 +98,13 @@ export const translations = {
       categories: [
         {
           id: "profissionalizantes",
-          eyebrow: "01 , Profissionalizantes",
+          eyebrow: "",
           title: "Programas Profissionalizantes",
-          description:
-            "Trajetórias completas de formação para quem deseja atuar, criar produtos ou construir um negócio no mercado do chá.",
+          description: "",
           items: [
-            { id: "atuacao", title: "Tea Mind Atuação com Chá", subtitle: "Sommelier de Chá", description: "Para quem deseja atuar como Sommelier de Chá com mais clareza, direção e visão de mercado." },
-            { id: "laboratorio", title: "Tea Mind Laboratório de Marcas de Chá", subtitle: "Tea Blender", description: "Para quem deseja se tornar um Tea Blender e criar uma linha de chás com assinatura própria, padrão premium e potencial real de mercado." },
-            { id: "full-experience", title: "Tea Mind Full Experience", subtitle: "Sommelier de Chá + Tea Blender", description: "Para quem quer construir algo completo, sólido e de longo prazo no mercado do chá." },
+            { id: "atuacao", title: "Tea Mind Atuação com Chá", subtitle: "Sommelier de Chá", description: "" },
+            { id: "laboratorio", title: "Tea Mind Laboratório de Marcas de Chá", subtitle: "Tea Blender", description: "" },
+            { id: "full-experience", title: "Tea Mind Full Experience", subtitle: "Sommelier de Chá + Tea Blender", description: "" },
           ],
         },
         {
