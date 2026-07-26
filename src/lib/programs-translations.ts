@@ -92,10 +92,9 @@ const ptCategories: ProgramCategory[] = [
         subtitle: "Sommelier de Chá",
         shortDescription:
           "Para quem deseja atuar como Sommelier de Chá com mais clareza, direção e visão de mercado.",
-        mainDescription:
-          "Nosso programa de formação profissional e acompanhamento estratégico para quem deseja atuar com chá com mais clareza, direção e visão de mercado.",
+        mainDescription: "Formação Orientada ao Mercado do Chá",
         bodyText:
-          "No Tea Mind Atuação com Chá, o aluno ingressa na formação de Sommelier de Chá & Tea Barista empreendedor e desenvolve sua trajetória ao longo de uma jornada acompanhada por onboarding estratégico, Smart Journey e sessões estratégicas aplicadas à sua realidade, para transformar conhecimento em atuação profissional real.",
+          "Conhecimento sem direção gera dúvidas. Conhecimento com estratégia constrói carreiras.\n\nO mercado do chá oferece inúmeras possibilidades. A Tea Mind conecta conhecimento técnico, inteligência de mercado e acompanhamento estratégico para transformar essa diversidade em uma trajetória profissional coerente com o seu perfil, seus objetivos e as oportunidades reais do mercado.\n\nAqui, o estudo do chá acontece lado a lado com a construção da sua atuação profissional. Desde o primeiro dia, você desenvolve conhecimento aprofundado enquanto identifica onde pode gerar mais valor, como se posicionar e quais caminhos fazem sentido para a sua realidade.\n\nNossa metodologia reúne conhecimento aprofundado sobre chás, direção personalizada e acompanhamento estratégico para que você construa sua atuação, seja criando experiências, ministrando workshops, atendendo empresas, desenvolvendo consultorias ou construindo o seu próprio negócio.\n\nPorque uma carreira sustentável não nasce apenas do conhecimento. Ela nasce de escolhas bem orientadas.",
         forWhoIntro: ptCommon.forWhoIntro,
         forWhoItems: [
           "Deseja trabalhar com chá de forma profissional, séria e bem direcionada",
@@ -130,10 +129,9 @@ const ptCategories: ProgramCategory[] = [
         subtitle: "Tea Blender",
         shortDescription:
           "Para quem deseja se tornar um Tea Blender e criar uma linha de chás com assinatura própria, padrão premium e potencial real de mercado.",
-        mainDescription:
-          "Nosso programa de formação profissional e acompanhamento estratégico para quem deseja criar uma linha de chás com assinatura própria, padrão premium e posicionamento de mercado.",
+        mainDescription: "Blends de Assinatura",
         bodyText:
-          "No Tea Mind Laboratório de Marcas de Chá, o aluno ingressa na formação em Tea Blender empreendedor e percorre uma jornada acompanhada por onboarding estratégico, Smart Journey e sessões estratégicas aplicadas à sua realidade, estruturadas para transformar ideias em produtos com identidade, viabilidade comercial e potencial real de venda.",
+          "O mercado está cheio de blends parecidos.\n\nNa Tea Mind você aprende a criar blends que carregam identidade, propósito e assinatura.\n\nNão ensinamos apenas a desenvolver blends. Ensinamos você a compreender como grandes marcas constroem produtos memoráveis, para criar uma linha que faça sentido para o seu público e para o mercado.\n\nMais do que formular, você recebe direção personalizada para estruturar sua proposta, definir por onde começar, conquistar seus primeiros clientes e construir uma marca sustentável.\n\nPorque criar um excelente blend é apenas o começo. O verdadeiro diferencial está em construir uma marca que as pessoas escolham lembrar.",
         forWhoIntro: ptCommon.forWhoIntro,
         forWhoItems: [
           "Deseja criar uma linha de chás com assinatura própria, visão de mercado e valor percebido",
