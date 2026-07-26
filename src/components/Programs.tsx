@@ -41,16 +41,20 @@ const Programs = () => {
             <div key={category.id}>
               {/* Category header */}
               <div className="text-center max-w-2xl mx-auto mb-10">
-                <p className="font-sans text-xs tracking-[0.3em] uppercase text-accent mb-3">
-                  {category.eyebrow}
-                </p>
+                {category.eyebrow && (
+                  <p className="font-sans text-xs tracking-[0.3em] uppercase text-accent mb-3">
+                    {category.eyebrow}
+                  </p>
+                )}
                 <h3 className="font-serif text-2xl md:text-3xl font-medium mb-4">
                   {category.title}
                 </h3>
-                <div className="w-12 h-px bg-accent mx-auto mb-4" />
-                <p className="font-sans text-sm md:text-base text-primary-foreground/55 leading-relaxed">
-                  {category.description}
-                </p>
+                <div className="w-12 h-px bg-accent mx-auto" />
+                {category.description && (
+                  <p className="font-sans text-sm md:text-base text-primary-foreground/55 leading-relaxed mt-4">
+                    {category.description}
+                  </p>
+                )}
               </div>
 
               {/* Cards */}
@@ -82,9 +86,11 @@ const Programs = () => {
                         )}
                       </div>
                       <div className="w-10 h-px bg-accent mb-6" />
-                      <p className="font-sans text-sm text-primary-foreground/60 leading-relaxed mb-8 flex-1">
-                        {program.description}
-                      </p>
+                      {program.description && (
+                        <p className="font-sans text-sm text-primary-foreground/60 leading-relaxed mb-8 flex-1">
+                          {program.description}
+                        </p>
+                      )}
                       {!isComingSoon && (
                         <button
                           onClick={() => goToProgram(program.id)}
