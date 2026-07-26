@@ -115,11 +115,10 @@ const ptCategories: ProgramCategory[] = [
           "Acesso à comunidade exclusiva Tea Mind Society",
           "Certificação após aprovação nas provas intermediárias e finais",
         ],
-        formationText:
-          "Uma formação profissional robusta, desenvolvida para quem deseja atuar com chá com profundidade, seriedade e visão de mercado , e não apenas ter um contato introdutório com o tema.",
+        formationText: "",
         directionTitle: "Como funciona o nosso direcionamento",
         directionText:
-          "O programa parte de uma base técnica e profissional consistente, mas a forma como essa jornada se organiza ganha direção a partir da realidade de cada aluno.\n\nNo onboarding, mapeamos contexto, objetivos, repertório e possibilidades. O Smart Journey organiza esse olhar em um mapa personalizado, e as sessões estratégicas ajudam você a transformar a formação em um caminho aplicável ao tipo de atuação que você deseja construir.",
+          "O programa inicia com o onboarding (sessão online 1 a 1 com uma das fundadoras). Mapeamos seu contexto, objetivos, repertório e possibilidades.\n\nO resultado é o seu Smart Journey, que organiza esse olhar em um mapa personalizado. As sessões estratégicas ajudam você a transformar a formação em um caminho aplicável ao tipo de atuação que você deseja construir.",
         cta: ptCommon.cta,
         contentUrls: [{ label: "Conheça o conteúdo programático", url: "https://gamma.app/docs/Programa-Atuacao-com-Chas-lee9e9ao6tgwbxc" }],
         hotmartUrl: "https://pay.hotmart.com/N105799398X",
