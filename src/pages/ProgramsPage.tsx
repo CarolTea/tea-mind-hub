@@ -25,6 +25,9 @@ const Fade = ({ children, className = "" }: { children: ReactNode; className?: s
 };
 
 const ProgramsHeroBackground = () => (
+  <>
+  </>
+);
   <svg
     className="absolute inset-0 w-full h-full z-[2] pointer-events-none"
     viewBox="0 0 1440 700"
