@@ -144,7 +144,7 @@ export const translations = {
       ],
       eyebrow: "Resultados reais",
       title:
-        "Não ensinamos sobre o mercado do chá. Nós o construímos junto de nossos alunos.",
+        "Construímos o mercado do chá junto de nossos alunos.",
       testimonials: [
         {
           text: "Foi tudo encantador. Aborda os conteúdos de forma abrangente e permite ao aluno se desenvolver. Muito bem organizado, professores competentes, queridos e comprometidos com o aprendizado do aluno.",
