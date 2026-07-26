@@ -8,7 +8,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const Fade = ({ children, className = "" }: { children: ReactNode; className?: string }) => {
-  const _unused = null;
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
   useEffect(() => {
