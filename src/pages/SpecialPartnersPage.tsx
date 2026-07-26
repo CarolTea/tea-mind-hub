@@ -6,6 +6,7 @@ import type { Lang } from "@/lib/translations";
 import teresinha from "@/assets/special-teresinha-shimada.png";
 import fernanda from "@/assets/special-fernanda-rivas.png";
 import tatiana from "@/assets/special-tatiana-cantu.png";
+import raquel from "@/assets/special-raquel-magalhaes.png";
 import gaby from "@/assets/special-gaby-godoy.png";
 
 const WHATSAPP = "5521981126981";
