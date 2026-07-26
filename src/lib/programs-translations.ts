@@ -237,6 +237,9 @@ const ptCategories: ProgramCategory[] = [
           "Uma especialização prática e aplicada, voltada a quem deseja transformar o chá em experiências comercializáveis, com padrão profissional e repertório próprio.",
         cta: ptCommon.cta,
         hotmartUrl: "https://pay.hotmart.com/L104513681S",
+        contentUrls: [
+          { label: "Conheça o conteúdo programático", url: "https://gamma.app/docs/Especializacao-em-Experiencias-Eventos-de-Cha-fojl29exf31zntn" },
+        ],
       },
       {
         id: "harmonizacao",
@@ -274,6 +277,9 @@ const ptCategories: ProgramCategory[] = [
           "Nesta especialização sensorial o objetivo é que o aluno saia com mais segurança, repertório técnico e método para criar harmonizações coerentes, memoráveis e estrategicamente pensadas.",
         cta: ptCommon.cta,
         hotmartUrl: "https://pay.hotmart.com/W104514736G",
+        contentUrls: [
+          { label: "Conheça o conteúdo programático", url: "https://gamma.app/docs/Master-em-Harmonizacao-Especializacao-f4lexnop81pc0ez" },
+        ],
       },
       {
         id: "neurogastronomia",
@@ -310,6 +316,9 @@ const ptCategories: ProgramCategory[] = [
           "Aula 1, Fundamentos da Análise Sensorial. Aula 2, Fundamentos da Neurogastronomia. Aula 3, Os 5 Sentidos e a Neurogastronomia. Aula 4, Comportamento Alimentar. Aula 5, Fitoquímica Sensorial. Aula 6, Camellia sinensis no contexto da Neurogastronomia. Aula 7, Harmonização com base na Neurogastronomia. Aula 8, Design Sensorial e Posicionamento Profissional.\n\nConduzida por Raquel Magalhães (criadora do Método SENSO, professora convidada do Le Cordon Bleu Rio de Janeiro), Carol Tavares e Carla Vicente.",
         cta: ptCommon.cta,
         hotmartUrl: "https://pay.hotmart.com/Q104515097L",
+        contentUrls: [
+          { label: "Conheça o conteúdo programático", url: "https://gamma.app/docs/Ementa-do-curso-Especializacao-em-Neurogastronomia-de-Chas-e-Erva-lxck8rqewiuht96" },
+        ],
       },
     ],
   },
