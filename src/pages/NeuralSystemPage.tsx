@@ -3,6 +3,7 @@ import { LanguageProvider, useLang } from "@/contexts/LanguageContext";
 import type { Lang } from "@/lib/translations";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import NeuralPricing from "@/components/NeuralPricing";
 
 const translations = {
   pt: {
@@ -291,24 +292,8 @@ const NeuralSystemContent = () => {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="bg-secondary text-secondary-foreground py-24 md:py-32">
-          <div className="max-w-3xl mx-auto px-6 text-center">
-            <Fade>
-              <div className="w-16 h-px bg-accent mx-auto mb-10" />
-              <p className="font-serif text-2xl md:text-3xl text-secondary-foreground/90 mb-12 leading-relaxed">
-                {t.cta.statement}
-              </p>
-              <a
-                href="mailto:contato@teamindbusinesshub.com"
-                className="inline-block border-2 border-accent text-accent px-10 py-4 text-sm tracking-[0.2em] uppercase font-sans hover:bg-accent hover:text-secondary transition-colors duration-300"
-              >
-                {t.cta.button}
-              </a>
-              <div className="w-16 h-px bg-accent mx-auto mt-10" />
-            </Fade>
-          </div>
-        </section>
+        {/* Pricing */}
+        <NeuralPricing lang={lang} />
       </main>
       <Footer />
     </div>
