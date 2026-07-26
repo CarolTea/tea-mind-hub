@@ -7,6 +7,7 @@ import teresinha from "@/assets/special-teresinha-shimada.png";
 import fernanda from "@/assets/special-fernanda-rivas.png";
 import tatiana from "@/assets/special-tatiana-cantu.png";
 import raquel from "@/assets/special-raquel-magalhaes.png";
+import sylvia from "@/assets/special-sylvia-perez.png";
 import gaby from "@/assets/special-gaby-godoy.png";
 
 const WHATSAPP = "5521981126981";
@@ -58,6 +59,15 @@ const copy = {
         bio: [
           "Professora convidada do Le Cordon Bleu Rio de Janeiro, é também colunista da revista Casa e Jardim. Sua atuação une olhar técnico, sensibilidade e repertório botânico na construção de experiências mais profundas com chás e ervas.",
           "Criadora do método SENSO para Neurogastronomia, na Tea Mind é professora parceira na 1ª Especialização em Neurogastronomia de Chás & Ervas da América Latina.",
+        ],
+      },
+      {
+        name: "Sylvia Perez",
+        specialty: "CEO Projeto Camellia · Professora · Sommelier de Chá · Análise Sensorial & Neurogastronomia",
+        img: sylvia,
+        bio: [
+          "Uruguaia e CEO do Projeto Camellia, é professora, Sommelier de Chá e especialista em análise sensorial e neurogastronomia. Atua na formação de alunos em 11 países, unindo ciência, sensibilidade e cultura do chá.",
+          "Na Tea Mind, integra a Especialização em Neurogastronomia de Chás & Ervas em espanhol, atuando como professora e contribuindo para a expansão e difusão do conhecimento sensorial e neurogastronômico no mercado LATAM.",
         ],
       },
       {
@@ -120,6 +130,15 @@ const copy = {
         ],
       },
       {
+        name: "Sylvia Perez",
+        specialty: "CEO Projeto Camellia · Teacher · Tea Sommelier · Sensory Analysis & Neurogastronomy",
+        img: sylvia,
+        bio: [
+          "Uruguayan and CEO of Projeto Camellia, she is a teacher, Tea Sommelier and specialist in sensory analysis and neurogastronomy. She trains students in 11 countries, bringing together science, sensitivity and tea culture.",
+          "At Tea Mind, she is part of the Specialization in Neurogastronomy of Teas & Herbs in Spanish, teaching and contributing to the expansion of sensory and neurogastronomic knowledge across the LATAM market.",
+        ],
+      },
+      {
         name: "Gaby Godoy",
         specialty: "Entrepreneur · Tea Experiences",
         img: gaby,
@@ -176,6 +195,15 @@ const copy = {
         bio: [
           "Profesora invitada de Le Cordon Bleu Rio de Janeiro, es también columnista de la revista Casa e Jardim. Su actuación une mirada técnica, sensibilidad y repertorio botánico en la construcción de experiencias más profundas con tés y hierbas.",
           "Creadora del método SENSO para Neurogastronomía, en Tea Mind es profesora partner en la 1ª Especialización en Neurogastronomía de Tés & Hierbas de América Latina.",
+        ],
+      },
+      {
+        name: "Sylvia Perez",
+        specialty: "CEO Projeto Camellia · Profesora · Sommelier de Té · Análisis Sensorial & Neurogastronomía",
+        img: sylvia,
+        bio: [
+          "Uruguaya y CEO del Projeto Camellia, es profesora, Sommelier de Té y especialista en análisis sensorial y neurogastronomía. Forma alumnos en 11 países, uniendo ciencia, sensibilidad y cultura del té.",
+          "En Tea Mind integra la Especialización en Neurogastronomía de Tés & Hierbas en español, actuando como profesora y contribuyendo a la expansión y difusión del conocimiento sensorial y neurogastronómico en el mercado LATAM.",
         ],
       },
       {
