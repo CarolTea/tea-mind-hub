@@ -26,6 +26,7 @@ const translations = {
           body: "O Sensory AI é o agente especializado em análise sensorial de chás e infusões. Ele foi treinado para descrever aromas, sabores e texturas com precisão técnica, criar cartas de chás para restaurantes e hotéis, propor harmonizações por perfil aromático e apoiar a construção de experiências sensoriais com profundidade.\n\nÉ a ferramenta ideal para quem atua com curadoria, serviço, hospitalidade, eventos e educação sensorial no universo do chá.",
           capabilitiesIntro: "O QUE ELE FAZ",
           capabilities: [
+            "**Identifica chás por foto.** Envie uma imagem da folha seca, da infusão ou do líquor e receba tipo, provável origem, grau de oxidação e leitura sensorial do que está na xícara.",
             "**Traduz percepção em palavra técnica.** Descrições sensoriais precisas, com vocabulário padronizado, prontas para rótulo, ficha técnica ou apresentação.",
             "**Constrói cartas de chá que vendem.** Curadoria completa para restaurantes, hotéis e casas de chá, com descrição comercial de cada item.",
             "**Cria harmonizações e drinks autorais.** Combinações com alimentos e coquetelaria por afinidade aromática, com justificativa sensorial que sustenta o preço.",
@@ -94,6 +95,7 @@ const translations = {
           body: "Sensory AI is the agent specialized in sensory analysis of teas and infusions. It was trained to describe aromas, flavors, and textures with technical precision, create tea menus for restaurants and hotels, propose pairings by aromatic profile, and support the creation of in-depth sensory experiences.\n\nIt is the ideal tool for those working in curation, service, hospitality, events, and sensory education in the tea universe.",
           capabilitiesIntro: "WHAT IT DOES",
           capabilities: [
+            "**Identifies teas from a photo.** Send an image of the dry leaf, the infusion, or the liquor and get type, likely origin, oxidation level, and a sensory reading of what is in the cup.",
             "**Turns perception into technical language.** Precise sensory descriptions with standardized vocabulary, ready for labels, tech sheets, or presentations.",
             "**Builds tea menus that sell.** Full curation for restaurants, hotels, and tea houses, with commercial copy for every item.",
             "**Creates pairings and signature drinks.** Food and cocktail combinations by aromatic affinity, with the sensory rationale that justifies the price.",
@@ -162,6 +164,7 @@ const translations = {
           body: "Sensory AI es el agente especializado en análisis sensorial de tés e infusiones. Fue entrenado para describir aromas, sabores y texturas con precisión técnica, crear cartas de tés para restaurantes y hoteles, proponer maridajes por perfil aromático y apoyar la creación de experiencias sensoriales con profundidad.\n\nEs la herramienta ideal para quienes trabajan en curaduría, servicio, hospitalidad, eventos y educación sensorial en el universo del té.",
           capabilitiesIntro: "QUÉ HACE",
           capabilities: [
+            "**Identifica tés por foto.** Envía una imagen de la hoja seca, la infusión o el licor y recibe tipo, probable origen, grado de oxidación y una lectura sensorial de lo que hay en la taza.",
             "**Traduce la percepción en palabra técnica.** Descripciones sensoriales precisas, con vocabulario estandarizado, listas para etiqueta, ficha técnica o presentación.",
             "**Construye cartas de té que venden.** Curaduría completa para restaurantes, hoteles y casas de té, con descripción comercial de cada ítem.",
             "**Crea maridajes y drinks de autor.** Combinaciones con alimentos y coctelería por afinidad aromática, con la justificación sensorial que sostiene el precio.",
