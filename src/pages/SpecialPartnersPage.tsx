@@ -6,6 +6,7 @@ import type { Lang } from "@/lib/translations";
 import teresinha from "@/assets/special-teresinha-shimada.png";
 import fernanda from "@/assets/special-fernanda-rivas.png";
 import tatiana from "@/assets/special-tatiana-cantu.png";
+import raquel from "@/assets/special-raquel-magalhaes.png";
 import gaby from "@/assets/special-gaby-godoy.png";
 
 const WHATSAPP = "5521981126981";
@@ -48,6 +49,15 @@ const copy = {
         bio: [
           "Sommelier de Chá, Tea Barista e Tea Blender formada pela metodologia Tea Mind, é criadora da Tatea e uma das profissionais mais refinadas da nova geração do chá brasileiro. Duas vezes vice-campeã no Concurso Nacional de Sommelier de Chá, atua com curadoria, degustação, serviço de chá e criação de blends para marcas, restaurantes e experiências especiais.",
           "Como integrante do Panorama do Chá, desenvolve projetos ligados à origem, produção e microlotes brasileiros, incluindo criações em parceria com a Mestra Teresinha Eiko Shimada. Na Tea Mind, é uma parceira de confiança em eventos, consultorias e projetos sensoriais de alta exigência.",
+        ],
+      },
+      {
+        name: "Raquel Magalhães",
+        specialty: "Sommelière de Chá · Nutricionista · Fitoterapia, Ayurveda & Neurogastronomia",
+        img: raquel,
+        bio: [
+          "Professora convidada do Le Cordon Bleu Rio de Janeiro, é também colunista da revista Casa e Jardim. Sua atuação une olhar técnico, sensibilidade e repertório botânico na construção de experiências mais profundas com chás e ervas.",
+          "Criadora do método SENSO para Neurogastronomia, na Tea Mind é professora parceira na 1ª Especialização em Neurogastronomia de Chás & Ervas da América Latina.",
         ],
       },
       {
@@ -101,6 +111,15 @@ const copy = {
         ],
       },
       {
+        name: "Raquel Magalhães",
+        specialty: "Tea Sommelier · Nutritionist · Phytotherapy, Ayurveda & Neurogastronomy",
+        img: raquel,
+        bio: [
+          "Guest professor at Le Cordon Bleu Rio de Janeiro, she is also a columnist for Casa e Jardim magazine. Her work combines technical insight, sensitivity and botanical repertoire in building deeper experiences with teas and herbs.",
+          "Creator of the SENSO method for Neurogastronomy, at Tea Mind she is a guest teacher in Latin America's first Specialization in Neurogastronomy of Teas & Herbs.",
+        ],
+      },
+      {
         name: "Gaby Godoy",
         specialty: "Entrepreneur · Tea Experiences",
         img: gaby,
@@ -148,6 +167,15 @@ const copy = {
         bio: [
           "Sommelier de Té, Tea Barista y Tea Blender formada por la metodología Tea Mind, es la creadora de Tatea y una de las profesionales más refinadas de la nueva generación del té brasileño. Dos veces subcampeona en el Concurso Nacional de Sommelier de Té, trabaja con curaduría, cata, servicio de té y creación de blends para marcas, restaurantes y experiencias especiales.",
           "Como integrante de Panorama do Chá, desarrolla proyectos vinculados al origen, producción y microlotes brasileños, incluyendo creaciones en alianza con la Maestra Teresinha Eiko Shimada. En Tea Mind es partner de confianza en eventos, consultorías y proyectos sensoriales de alta exigencia.",
+        ],
+      },
+      {
+        name: "Raquel Magalhães",
+        specialty: "Sommelière de Té · Nutricionista · Fitoterapia, Ayurveda & Neurogastronomía",
+        img: raquel,
+        bio: [
+          "Profesora invitada de Le Cordon Bleu Rio de Janeiro, es también columnista de la revista Casa e Jardim. Su actuación une mirada técnica, sensibilidad y repertorio botánico en la construcción de experiencias más profundas con tés y hierbas.",
+          "Creadora del método SENSO para Neurogastronomía, en Tea Mind es profesora partner en la 1ª Especialización en Neurogastronomía de Tés & Hierbas de América Latina.",
         ],
       },
       {
