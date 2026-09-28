@@ -50,6 +50,7 @@ const societyT = {
         "busca ampliar visão de negócio, repertório e conexões",
         "entende que trajetória profissional se constrói ao longo do tempo",
       ],
+      note: "A participação é destinada a alunos, ex-alunos e profissionais convidados pela Tea Mind.",
     },
     vision: {
       title: "A xícara não se esvazia quando o programa acaba.",
@@ -58,13 +59,14 @@ const societyT = {
     },
     whatIs: {
       title: "Um espaço de continuidade, atualização e acesso.",
-      text: "A Tea Mind Society foi criada para reunir alunos e profissionais formados que desejam permanecer próximos da Tea Mind e continuar ampliando repertório com conteúdo relevante, encontros especiais e conversas que acompanham os movimentos do mercado.",
+      text: "A Tea Mind Society foi criada para reunir alunos e profissionais do ecossistema Tea Mind que desejam permanecer próximos e assim continuar ampliando repertório, conexões e visão de mercado.",
       itemsTitle: "O que acontece na Society",
       items: [
         "Conteúdos escritos que ampliam a visão sobre o mercado do chá",
         "Discussões relevantes para quem deseja seguir evoluindo",
         "Acesso contínuo a conversas que mantêm a jornada em movimento",
       ],
+      closing: "A Society não segue uma grade de aulas ou calendário fixo de conteúdos. As atividades e materiais acompanham temas, movimentos e oportunidades relevantes que estão surgindo e acontecendo dentro do escopo da própria Tea Mind e que serão compartilhados com os alunos presentes da Society.",
     },
     diff: {
       title: "Uma extensão viva do ecossistema Tea Mind.",
@@ -74,7 +76,7 @@ const societyT = {
     closing: {
       title: "Continuar perto também é uma forma de crescer.",
       text: "A Tea Mind Society foi criada para quem entende que construir uma trajetória no mercado do chá não é um evento pontual, mas um processo contínuo de expansão, refinamento e presença.",
-      cta: "Solicite sua entrada gratuita na Tea Mind Society",
+      cta: "Solicite sua entrada na Tea Mind Society",
     },
   },
   en: {
@@ -90,6 +92,7 @@ const societyT = {
         "seek to broaden their business vision, repertoire, and connections",
         "understand that a professional journey is built over time",
       ],
+      note: "Participation is intended for students, former students, and professionals invited by Tea Mind.",
     },
     vision: {
       title: "The cup doesn't empty when the program ends.",
@@ -98,13 +101,14 @@ const societyT = {
     },
     whatIs: {
       title: "A space for continuity, updates, and access.",
-      text: "The Tea Mind Society was created to bring together students and trained professionals who wish to stay close to Tea Mind and continue expanding their repertoire with relevant content, special meetings, and conversations that follow market movements.",
+      text: "The Tea Mind Society was created to bring together students and professionals from the Tea Mind ecosystem who wish to stay connected and continue broadening their knowledge, connections, and market perspective.",
       itemsTitle: "What happens in the Society",
       items: [
         "Written content that broadens the vision of the tea market",
         "Relevant discussions for those who wish to keep evolving",
         "Continuous access to conversations that keep the journey moving",
       ],
+      closing: "The Society does not follow a fixed class schedule or content calendar. Its activities and materials reflect relevant topics, developments, and opportunities emerging within Tea Mind, which will be shared with Society members.",
     },
     diff: {
       title: "A living extension of the Tea Mind ecosystem.",
@@ -114,7 +118,7 @@ const societyT = {
     closing: {
       title: "Staying close is also a way to grow.",
       text: "The Tea Mind Society was created for those who understand that building a career in the tea market is not a one-time event, but a continuous process of expansion, refinement, and presence.",
-      cta: "Request your free entry to the Tea Mind Society",
+      cta: "Request your entry to the Tea Mind Society",
     },
   },
   es: {
@@ -130,6 +134,7 @@ const societyT = {
         "busca ampliar visión de negocio, repertorio y conexiones",
         "entiende que la trayectoria profesional se construye a lo largo del tiempo",
       ],
+      note: "La participación está destinada a alumnos, exalumnos y profesionales invitados por Tea Mind.",
     },
     vision: {
       title: "La taza no se vacía cuando el programa termina.",
@@ -138,13 +143,14 @@ const societyT = {
     },
     whatIs: {
       title: "Un espacio de continuidad, actualización y acceso.",
-      text: "La Tea Mind Society fue creada para reunir alumnos y profesionales formados que desean permanecer cercanos a Tea Mind y continuar ampliando repertorio con contenido relevante, encuentros especiales y conversaciones que acompañan los movimientos del mercado.",
+      text: "La Tea Mind Society fue creada para reunir a alumnos y profesionales del ecosistema Tea Mind que desean permanecer cerca y seguir ampliando sus conocimientos, conexiones y visión de mercado.",
       itemsTitle: "Lo que ocurre en la Society",
       items: [
         "Contenidos escritos que amplían la visión sobre el mercado del té",
         "Discusiones relevantes para quienes desean seguir evolucionando",
         "Acceso continuo a conversaciones que mantienen el camino en movimiento",
       ],
+      closing: "La Society no sigue un programa de clases ni un calendario fijo de contenidos. Sus actividades y materiales acompañan temas, movimientos y oportunidades relevantes que surgen dentro del ámbito de la propia Tea Mind y que se compartirán con los miembros de la Society.",
     },
     diff: {
       title: "Una extensión viva del ecosistema Tea Mind.",
@@ -154,7 +160,7 @@ const societyT = {
     closing: {
       title: "Seguir cerca también es una forma de crecer.",
       text: "La Tea Mind Society fue creada para quienes entienden que construir una trayectoria en el mercado del té no es un evento puntual, sino un proceso continuo de expansión, refinamiento y presencia.",
-      cta: "Solicita tu entrada gratuita a la Tea Mind Society",
+      cta: "Solicita tu entrada a la Tea Mind Society",
     },
   },
 } as const;
@@ -169,9 +175,9 @@ const SocietyContent = () => {
 
   const WHATSAPP_NUMBER = "5521981126981";
   const societyMessages = {
-    pt: "Olá! Gostaria de solicitar minha entrada gratuita na Tea Mind Society.",
-    en: "Hi! I'd like to request my free entry to the Tea Mind Society.",
-    es: "¡Hola! Me gustaría solicitar mi entrada gratuita a la Tea Mind Society.",
+    pt: "Olá! Gostaria de solicitar minha entrada na Tea Mind Society.",
+    en: "Hi! I'd like to request my entry to the Tea Mind Society.",
+    es: "¡Hola! Me gustaría solicitar mi entrada a la Tea Mind Society.",
   } as const;
   const societyHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(societyMessages[lang])}`;
 
@@ -203,6 +209,7 @@ const SocietyContent = () => {
                   </li>
                 ))}
               </ul>
+              <p className="mt-8 text-sm md:text-base leading-relaxed text-[hsl(40,20%,94%)]/70">{t.hero.note}</p>
             </div>
           </Fade>
         </div>
@@ -250,6 +257,9 @@ const SocietyContent = () => {
               );
             })}
           </div>
+          <Fade delay={300}>
+            <p className="max-w-3xl mx-auto mt-14 text-center text-sm md:text-base leading-relaxed text-[hsl(40,20%,94%)]/70">{t.whatIs.closing}</p>
+          </Fade>
         </div>
       </section>
 
