@@ -1,24 +1,29 @@
-## Objetivo
+# Tea Mind Society, nova versão com 3 blocos
 
-Incluir a Raquel na página Special Partners (`/pt/parceiras-especiais` e equivalentes em EN/ES), mantendo o mesmo padrão editorial dos outros perfis. A segunda pessoa entra depois, quando você enviar foto e texto.
+Substituir todo o conteúdo da página Tea Mind Society (PT, EN, ES) por apenas 3 blocos, mantendo menu e rodapé.
 
-## O que será feito
+## Bloco 01, abertura (fundo escuro)
+- Selo "Tea Mind Society", título "Ninguém constrói um mercado sozinho."
+- Dois parágrafos: rede privada de profissionais do chá e espaço intimista do ecossistema.
+- "A Society é para quem:" com os 4 itens e ícone de check.
+- Nota final: participação exclusivamente por convite.
 
-1. **Foto**: subir a imagem enviada como asset CDN (`raquel.png`) e referenciá-la no card.
-2. **Novo perfil no grid**, posicionado após a Tatiana Cantu (mesma lógica de proximidade temática, sensorial/neurogastronomia). Se preferir outra posição, é só dizer.
-3. **Copy nos três idiomas**:
-   - Especialidade (PT): `Sommelière de Chá · Nutricionista · Fitoterapia, Ayurveda & Neurogastronomia`
-   - Bio em dois parágrafos, seguindo o formato dos demais:
-     - Parágrafo 1: professora convidada do Le Cordon Bleu Rio de Janeiro, colunista da revista Casa e Jardim, olhar técnico, sensibilidade e repertório botânico em experiências mais profundas com chás e ervas.
-     - Parágrafo 2: criadora do método SENSO para Neurogastronomia; na Tea Mind, professora parceira na 1ª Especialização em Neurogastronomia de Chás & Ervas da América Latina.
-   - Versões EN e ES com o mesmo conteúdo, mantendo os termos próprios em português quando forem nomes (Casa e Jardim, método SENSO).
+## Bloco 02, "Uma extensão viva do ecossistema Tea Mind." (fundo claro)
+- Dois parágrafos de introdução (conhecimento circulando, grupo privado de WhatsApp).
+- "O que você encontra na Society:" com os 5 itens em caixas com ícones.
+- Parágrafo "A Society não é um curso, mentoria ou grupo de aulas..."
+- Frase final em destaque (itálico com linha lateral): "Aqui, o que nos une..."
 
-## Detalhes técnicos
+## Bloco 03, "Continuar perto também é uma forma de crescer." (fundo escuro)
+- Três parágrafos (processo contínuo, propósito comum, participação seletiva).
+- Pergunta em destaque e frase de convite.
+- Botão de contato via WhatsApp (mesmo número atual), texto "Manifeste seu interesse" / "Express your interest" / "Manifiesta tu interés", com mensagem automática ajustada.
 
-- Arquivo: `src/pages/SpecialPartnersPage.tsx` (objeto `copy.pt/en/es.members`).
-- Asset: `lovable-assets create` a partir de `/mnt/user-uploads/`, pointer em `src/assets/special-raquel.png.asset.json`, importado como os demais.
-- O grid é `md:grid-cols-2`; com 5 perfis o último card fica sozinho na última linha, comportamento aceitável e já responsivo.
+## Removido
+- Blocos atuais "A xícara não se esvazia...", "Um espaço de continuidade..." e o bloco de fechamento antigo.
 
-## Pendência
+## Traduções
+- Inglês e espanhol traduzidos fielmente do texto em português, sem travessões, usando vírgulas.
 
-Confirme o sobrenome da Raquel para o título do card (nas páginas de programas ela aparece como **Raquel Magalhães**, que usarei por padrão).
+## Técnico
+- Editar apenas `src/pages/SocietyPage.tsx` (objeto `societyT` e JSX), reaproveitando Fade, HeroBackground e estilos existentes.
