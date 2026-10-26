@@ -178,34 +178,33 @@ const SocietyContent = () => {
     es: "¡Hola! Me gustaría manifestar mi interés en participar en la Tea Mind Society.",
   } as const;
   const societyHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(societyMessages[lang])}`;
-  const light = "text-[hsl(40,20%,94%)]";
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
 
       {/* BLOCK 1 */}
-      <section className={`relative min-h-[90vh] flex items-center justify-center bg-[hsl(25,30%,14%)] ${light} overflow-hidden`}>
+      <section className={`relative min-h-[90vh] flex items-center justify-center bg-[hsl(25,30%,14%)] text-[hsl(40,20%,94%)] overflow-hidden`}>
         <HeroBackground />
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-32 text-center">
-          <Fade><span className={`inline-block text-xs tracking-[0.35em] uppercase font-sans mb-6 ${light}/60`}>{t.hero.eyebrow}</span></Fade>
+          <Fade><span className={`inline-block text-xs tracking-[0.35em] uppercase font-sans mb-6 text-[hsl(40,20%,94%)]/60`}>{t.hero.eyebrow}</span></Fade>
           <Fade delay={150}><h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8">{t.hero.title}</h1></Fade>
           <Fade delay={300}>
-            <p className={`text-base md:text-lg leading-relaxed ${light}/80 max-w-3xl mx-auto mb-6`}>{t.hero.p1}</p>
-            <p className={`text-base md:text-lg leading-relaxed ${light}/70 max-w-3xl mx-auto mb-12`}>{t.hero.p2}</p>
+            <p className={`text-base md:text-lg leading-relaxed text-[hsl(40,20%,94%)]/80 max-w-3xl mx-auto mb-6`}>{t.hero.p1}</p>
+            <p className={`text-base md:text-lg leading-relaxed text-[hsl(40,20%,94%)]/70 max-w-3xl mx-auto mb-12`}>{t.hero.p2}</p>
           </Fade>
           <Fade delay={450}>
             <div className="text-left max-w-xl mx-auto">
-              <p className={`text-sm uppercase tracking-[0.2em] font-sans mb-4 ${light}/60`}>{t.hero.listTitle}</p>
+              <p className={`text-sm uppercase tracking-[0.2em] font-sans mb-4 text-[hsl(40,20%,94%)]/60`}>{t.hero.listTitle}</p>
               <ul className="space-y-3">
                 {t.hero.list.map((item, i) => (
-                  <li key={i} className={`flex items-start gap-3 text-sm md:text-base ${light}/80`}>
-                    <CheckCircle2 className={`w-5 h-5 mt-0.5 ${light}/40 flex-shrink-0`} />
+                  <li key={i} className={`flex items-start gap-3 text-sm md:text-base text-[hsl(40,20%,94%)]/80`}>
+                    <CheckCircle2 className={`w-5 h-5 mt-0.5 text-[hsl(40,20%,94%)]/40 flex-shrink-0`} />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
-              <p className={`mt-8 text-sm md:text-base leading-relaxed ${light}/70`}>{t.hero.note}</p>
+              <p className={`mt-8 text-sm md:text-base leading-relaxed text-[hsl(40,20%,94%)]/70`}>{t.hero.note}</p>
             </div>
           </Fade>
         </div>
@@ -243,17 +242,17 @@ const SocietyContent = () => {
       </section>
 
       {/* BLOCK 3 */}
-      <section className={`py-24 md:py-32 bg-[hsl(25,30%,14%)] ${light}`}>
+      <section className={`py-24 md:py-32 bg-[hsl(25,30%,14%)] text-[hsl(40,20%,94%)]`}>
         <div className="max-w-3xl mx-auto px-6 text-center">
           <Fade><h2 className="font-serif text-3xl md:text-5xl leading-tight mb-8">{t.closing.title}</h2></Fade>
           <Fade delay={150}>
             {t.closing.paragraphs.map((p, i) => (
-              <p key={i} className={`text-base md:text-lg leading-relaxed ${light}/70 mb-5`}>{p}</p>
+              <p key={i} className={`text-base md:text-lg leading-relaxed text-[hsl(40,20%,94%)]/70 mb-5`}>{p}</p>
             ))}
           </Fade>
           <Fade delay={300}>
             <p className="font-serif italic text-xl md:text-2xl mt-10 mb-4">{t.closing.question}</p>
-            <p className={`text-base leading-relaxed ${light}/70 mb-12`}>{t.closing.invite}</p>
+            <p className={`text-base leading-relaxed text-[hsl(40,20%,94%)]/70 mb-12`}>{t.closing.invite}</p>
             <a href={societyHref} target="_blank" rel="noopener noreferrer"
               className={`inline-block px-8 py-4 border border-[hsl(40,20%,94%)]/30 text-sm tracking-wider uppercase font-sans hover:bg-[hsl(40,20%,94%)]/10 transition-colors duration-500`}>
               {t.closing.cta}
