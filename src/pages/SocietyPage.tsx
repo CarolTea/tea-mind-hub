@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { MessageCircle, Calendar, BookOpen, TrendingUp, Users, CheckCircle2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -41,261 +40,222 @@ const societyT = {
     hero: {
       eyebrow: "Tea Mind Society",
       title: "Ninguém constrói um mercado sozinho.",
-      subtitle: "A Tea Mind Society é o espaço de continuidade da Tea Mind para alunos e profissionais que desejam seguir aprendendo, se atualizando e acompanhando os movimentos do mercado do chá com mais profundidade, estratégia e conexão, mesmo após o encerramento de um programa ou formação.",
-      listTitle: "Este espaço é para quem:",
+      p1: "A Tea Mind Society é uma rede privada de profissionais do chá, criada para conectar pessoas que estão atuando, pesquisando, desenvolvendo projetos ou construindo sua trajetória no mercado brasileiro do chá.",
+      p2: "Um espaço intimista, dentro do ecossistema Tea Mind, onde diferentes experiências e conhecimentos se encontram para ampliar perspectivas, compartilhar desafios e contribuir para o desenvolvimento do nosso setor.",
+      listTitle: "A Society é para quem:",
       list: [
-        "valoriza continuidade e atualização",
-        "quer seguir aprendendo com a Tea Mind",
-        "deseja acompanhar temas relevantes do mercado do chá",
-        "busca ampliar visão de negócio, repertório e conexões",
-        "entende que trajetória profissional se constrói ao longo do tempo",
+        "Atua profissionalmente com chá ou está construindo esse caminho.",
+        "Desenvolve negócios, serviços, experiências, educação, pesquisas ou projetos relacionados ao chá.",
+        "Deseja trocar conhecimentos e experiências com outros profissionais.",
+        "Acredita que o mercado brasileiro do chá cresce quando seus profissionais se conectam e compartilham o que sabem.",
       ],
-      note: "A participação é destinada a alunos, ex-alunos e profissionais convidados pela Tea Mind.",
+      note: "A participação acontece exclusivamente por convite da Tea Mind, considerando a afinidade com esse propósito.",
     },
-    vision: {
-      title: "A xícara não se esvazia quando o programa acaba.",
-      text: "No mercado do chá, crescer exige continuidade. Exige acompanhar tendências, ouvir novas perspectivas, acessar especialistas, revisitar temas importantes e seguir em contato com um ecossistema que estimula repertório, visão de negócio e evolução profissional.",
-      closing: "A Tea Mind Society nasce desse entendimento: como um espaço vivo de atualização, troca qualificada e expansão de visão para quem continua construindo sua trajetória no chá.",
-    },
-    whatIs: {
-      title: "Um espaço de continuidade, atualização e acesso.",
-      text: "A Tea Mind Society foi criada para reunir alunos e profissionais do ecossistema Tea Mind que desejam permanecer próximos e assim continuar ampliando repertório, conexões e visão de mercado.",
-      itemsTitle: "O que acontece na Society",
-      items: [
-        "Conteúdos escritos que ampliam a visão sobre o mercado do chá",
-        "Discussões relevantes para quem deseja seguir evoluindo",
-        "Acesso contínuo a conversas que mantêm a jornada em movimento",
-      ],
-      closing: "A Society não segue uma grade de aulas ou calendário fixo de conteúdos. As atividades e materiais acompanham temas, movimentos e oportunidades relevantes que estão surgindo e acontecendo dentro do escopo da própria Tea Mind e que serão compartilhados com os alunos presentes da Society.",
-    },
-    diff: {
+    ext: {
       title: "Uma extensão viva do ecossistema Tea Mind.",
-      text: "A Tea Mind Society mantém viva a conexão com as discussões que importam, com os movimentos do mercado e com o pensamento que sustenta a Tea Mind. Com o tempo, esse espaço também se fortalece com a participação de partners e de alunos mais experientes, ampliando ainda mais a riqueza das trocas e dos conteúdos.",
-      closing: "Aqui, o valor está na curadoria, na continuidade e no acesso.",
+      p1: "Na Society, o conhecimento continua circulando e novas conexões podem nascer das experiências de quem está construindo o mercado do chá.",
+      p2: "Em um grupo privado de WhatsApp, reunimos profissionais com diferentes trajetórias, incluindo alunos, ex-alunos, Special Partners e convidados da Tea Mind.",
+      itemsTitle: "O que você encontra na Society:",
+      items: [
+        "Conversas sobre projetos, negócios, serviços e desafios reais do mercado do chá.",
+        "Trocas de experiências, conhecimentos e perspectivas entre profissionais.",
+        "Reflexões e aprendizados que Carla Vicente compartilha a partir de sua atuação no mercado.",
+        "Conexões com pessoas de diferentes especialidades e áreas de atuação.",
+        "Acesso antecipado a informações e inscrições de iniciativas selecionadas da Tea Mind.",
+      ],
+      note: "A Society não é um curso, mentoria ou grupo de aulas. Não existe calendário fixo de conteúdos ou encontros obrigatórios. Cada membro pode acompanhar e contribuir com as conversas quando desejar.",
+      closing: "Aqui, o que nos une é o desejo de fortalecer nossa atuação como profissionais e contribuir para que a cultura do chá se expanda, alcançando cada vez mais brasileiros.",
     },
     closing: {
       title: "Continuar perto também é uma forma de crescer.",
-      text: "A Tea Mind Society foi criada para quem entende que construir uma trajetória no mercado do chá não é um evento pontual, mas um processo contínuo de expansão, refinamento e presença.",
-      cta: "Solicite sua entrada na Tea Mind Society",
+      paragraphs: [
+        "A Tea Mind Society foi criada para quem entende que construir uma trajetória profissional no chá é um processo contínuo.",
+        "Mais do que permanecer em contato, queremos aproximar profissionais que compartilham um propósito: contribuir para o desenvolvimento do mercado brasileiro do chá.",
+        "A participação na Society é seletiva e acontece mediante convite ou aprovação da Tea Mind.",
+      ],
+      question: "Você atua ou está construindo seu caminho profissional no mercado do chá e se identifica com esse propósito?",
+      invite: "Conheça nossa proposta e entre em contato para manifestar seu interesse em participar.",
+      cta: "Manifeste seu interesse",
     },
   },
   en: {
     hero: {
       eyebrow: "Tea Mind Society",
       title: "No one builds a market alone.",
-      subtitle: "The Tea Mind Society is Tea Mind's continuity space for students and professionals who wish to keep learning, staying updated, and following the movements of the tea market with more depth, strategy, and connection — even after completing a program or course.",
-      listTitle: "This space is for those who:",
+      p1: "The Tea Mind Society is a private network of tea professionals, created to connect people who are working, researching, developing projects, or building their careers in the Brazilian tea market.",
+      p2: "An intimate space within the Tea Mind ecosystem, where different experiences and knowledge come together to broaden perspectives, share challenges, and contribute to the development of our sector.",
+      listTitle: "The Society is for those who:",
       list: [
-        "value continuity and staying current",
-        "want to keep learning with Tea Mind",
-        "wish to follow relevant tea market topics",
-        "seek to broaden their business vision, repertoire, and connections",
-        "understand that a professional journey is built over time",
+        "Work professionally with tea or are building that path.",
+        "Develop businesses, services, experiences, education, research, or projects related to tea.",
+        "Wish to exchange knowledge and experiences with other professionals.",
+        "Believe the Brazilian tea market grows when its professionals connect and share what they know.",
       ],
-      note: "Participation is intended for students, former students, and professionals invited by Tea Mind.",
+      note: "Participation is exclusively by invitation from Tea Mind, based on affinity with this purpose.",
     },
-    vision: {
-      title: "The cup doesn't empty when the program ends.",
-      text: "In the tea market, growth requires continuity. It requires following trends, hearing new perspectives, accessing specialists, revisiting important topics, and staying connected to an ecosystem that stimulates repertoire, business vision, and professional evolution.",
-      closing: "The Tea Mind Society is born from this understanding: as a living space for updates, qualified exchange, and expanded vision for those who continue building their journey in tea.",
-    },
-    whatIs: {
-      title: "A space for continuity, updates, and access.",
-      text: "The Tea Mind Society was created to bring together students and professionals from the Tea Mind ecosystem who wish to stay connected and continue broadening their knowledge, connections, and market perspective.",
-      itemsTitle: "What happens in the Society",
-      items: [
-        "Written content that broadens the vision of the tea market",
-        "Relevant discussions for those who wish to keep evolving",
-        "Continuous access to conversations that keep the journey moving",
-      ],
-      closing: "The Society does not follow a fixed class schedule or content calendar. Its activities and materials reflect relevant topics, developments, and opportunities emerging within Tea Mind, which will be shared with Society members.",
-    },
-    diff: {
+    ext: {
       title: "A living extension of the Tea Mind ecosystem.",
-      text: "The Tea Mind Society keeps alive the connection with the discussions that matter, with market movements, and with the thinking that sustains Tea Mind. Over time, this space is also strengthened by the participation of partners and more experienced students, further enriching the exchanges and content.",
-      closing: "Here, the value lies in curation, continuity, and access.",
+      p1: "In the Society, knowledge keeps flowing and new connections can arise from the experiences of those building the tea market.",
+      p2: "In a private WhatsApp group, we bring together professionals with different paths, including students, former students, Special Partners, and Tea Mind guests.",
+      itemsTitle: "What you will find in the Society:",
+      items: [
+        "Conversations about projects, businesses, services, and real challenges in the tea market.",
+        "Exchanges of experiences, knowledge, and perspectives among professionals.",
+        "Reflections and insights Carla Vicente shares from her work in the market.",
+        "Connections with people from different specialties and fields.",
+        "Early access to information and registrations for selected Tea Mind initiatives.",
+      ],
+      note: "The Society is not a course, mentorship, or class group. There is no fixed content calendar or mandatory meetings. Each member can follow and contribute to the conversations whenever they wish.",
+      closing: "Here, what unites us is the desire to strengthen our work as professionals and help tea culture expand, reaching more and more Brazilians.",
     },
     closing: {
       title: "Staying close is also a way to grow.",
-      text: "The Tea Mind Society was created for those who understand that building a career in the tea market is not a one-time event, but a continuous process of expansion, refinement, and presence.",
-      cta: "Request your entry to the Tea Mind Society",
+      paragraphs: [
+        "The Tea Mind Society was created for those who understand that building a professional career in tea is a continuous process.",
+        "More than staying in touch, we want to bring together professionals who share a purpose: contributing to the development of the Brazilian tea market.",
+        "Participation in the Society is selective and happens by invitation or approval from Tea Mind.",
+      ],
+      question: "Do you work in, or are you building your professional path in, the tea market and identify with this purpose?",
+      invite: "Learn about our proposal and get in touch to express your interest in joining.",
+      cta: "Express your interest",
     },
   },
   es: {
     hero: {
       eyebrow: "Tea Mind Society",
       title: "Nadie construye un mercado solo.",
-      subtitle: "La Tea Mind Society es el espacio de continuidad de Tea Mind para alumnos y profesionales que desean seguir aprendiendo, actualizándose y acompañando los movimientos del mercado del té con más profundidad, estrategia y conexión, incluso después de finalizar un programa o formación.",
-      listTitle: "Este espacio es para quien:",
+      p1: "La Tea Mind Society es una red privada de profesionales del té, creada para conectar a personas que están actuando, investigando, desarrollando proyectos o construyendo su trayectoria en el mercado brasileño del té.",
+      p2: "Un espacio íntimo, dentro del ecosistema Tea Mind, donde diferentes experiencias y conocimientos se encuentran para ampliar perspectivas, compartir desafíos y contribuir al desarrollo de nuestro sector.",
+      listTitle: "La Society es para quien:",
       list: [
-        "valora la continuidad y la actualización",
-        "quiere seguir aprendiendo con Tea Mind",
-        "desea acompañar temas relevantes del mercado del té",
-        "busca ampliar visión de negocio, repertorio y conexiones",
-        "entiende que la trayectoria profesional se construye a lo largo del tiempo",
+        "Trabaja profesionalmente con té o está construyendo ese camino.",
+        "Desarrolla negocios, servicios, experiencias, educación, investigaciones o proyectos relacionados con el té.",
+        "Desea intercambiar conocimientos y experiencias con otros profesionales.",
+        "Cree que el mercado brasileño del té crece cuando sus profesionales se conectan y comparten lo que saben.",
       ],
-      note: "La participación está destinada a alumnos, exalumnos y profesionales invitados por Tea Mind.",
+      note: "La participación se da exclusivamente por invitación de Tea Mind, considerando la afinidad con este propósito.",
     },
-    vision: {
-      title: "La taza no se vacía cuando el programa termina.",
-      text: "En el mercado del té, crecer exige continuidad. Exige acompañar tendencias, escuchar nuevas perspectivas, acceder a especialistas, revisitar temas importantes y seguir en contacto con un ecosistema que estimula repertorio, visión de negocio y evolución profesional.",
-      closing: "La Tea Mind Society nace de ese entendimiento: como un espacio vivo de actualización, intercambio cualificado y expansión de visión para quienes continúan construyendo su trayectoria en el té.",
-    },
-    whatIs: {
-      title: "Un espacio de continuidad, actualización y acceso.",
-      text: "La Tea Mind Society fue creada para reunir a alumnos y profesionales del ecosistema Tea Mind que desean permanecer cerca y seguir ampliando sus conocimientos, conexiones y visión de mercado.",
-      itemsTitle: "Lo que ocurre en la Society",
-      items: [
-        "Contenidos escritos que amplían la visión sobre el mercado del té",
-        "Discusiones relevantes para quienes desean seguir evolucionando",
-        "Acceso continuo a conversaciones que mantienen el camino en movimiento",
-      ],
-      closing: "La Society no sigue un programa de clases ni un calendario fijo de contenidos. Sus actividades y materiales acompañan temas, movimientos y oportunidades relevantes que surgen dentro del ámbito de la propia Tea Mind y que se compartirán con los miembros de la Society.",
-    },
-    diff: {
+    ext: {
       title: "Una extensión viva del ecosistema Tea Mind.",
-      text: "La Tea Mind Society mantiene viva la conexión con las discusiones que importan, con los movimientos del mercado y con el pensamiento que sustenta Tea Mind. Con el tiempo, este espacio también se fortalece con la participación de partners y de alumnos más experimentados, ampliando aún más la riqueza de los intercambios y contenidos.",
-      closing: "Aquí, el valor está en la curaduría, la continuidad y el acceso.",
+      p1: "En la Society, el conocimiento sigue circulando y nuevas conexiones pueden nacer de las experiencias de quienes están construyendo el mercado del té.",
+      p2: "En un grupo privado de WhatsApp, reunimos a profesionales con diferentes trayectorias, incluyendo alumnos, exalumnos, Special Partners e invitados de Tea Mind.",
+      itemsTitle: "Lo que encuentras en la Society:",
+      items: [
+        "Conversaciones sobre proyectos, negocios, servicios y desafíos reales del mercado del té.",
+        "Intercambios de experiencias, conocimientos y perspectivas entre profesionales.",
+        "Reflexiones y aprendizajes que Carla Vicente comparte a partir de su actuación en el mercado.",
+        "Conexiones con personas de diferentes especialidades y áreas de actuación.",
+        "Acceso anticipado a información e inscripciones de iniciativas seleccionadas de Tea Mind.",
+      ],
+      note: "La Society no es un curso, mentoría ni grupo de clases. No existe un calendario fijo de contenidos ni encuentros obligatorios. Cada miembro puede acompañar y contribuir a las conversaciones cuando lo desee.",
+      closing: "Aquí, lo que nos une es el deseo de fortalecer nuestra actuación como profesionales y contribuir a que la cultura del té se expanda, llegando a cada vez más brasileños.",
     },
     closing: {
       title: "Seguir cerca también es una forma de crecer.",
-      text: "La Tea Mind Society fue creada para quienes entienden que construir una trayectoria en el mercado del té no es un evento puntual, sino un proceso continuo de expansión, refinamiento y presencia.",
-      cta: "Solicita tu entrada a la Tea Mind Society",
+      paragraphs: [
+        "La Tea Mind Society fue creada para quienes entienden que construir una trayectoria profesional en el té es un proceso continuo.",
+        "Más que mantenernos en contacto, queremos acercar a profesionales que comparten un propósito: contribuir al desarrollo del mercado brasileño del té.",
+        "La participación en la Society es selectiva y se da mediante invitación o aprobación de Tea Mind.",
+      ],
+      question: "¿Trabajas o estás construyendo tu camino profesional en el mercado del té y te identificas con este propósito?",
+      invite: "Conoce nuestra propuesta y ponte en contacto para manifestar tu interés en participar.",
+      cta: "Manifiesta tu interés",
     },
   },
 } as const;
 
-const featureIcons = [MessageCircle, Calendar, BookOpen, TrendingUp, Users];
+const featureIcons = [MessageCircle, Users, BookOpen, TrendingUp, Calendar];
 
 /* ── Content ── */
 const SocietyContent = () => {
-  const { lang, t: globalT } = useLang();
-  const navigate = useNavigate();
+  const { lang } = useLang();
   const t = societyT[lang];
 
   const WHATSAPP_NUMBER = "5521981126981";
   const societyMessages = {
-    pt: "Olá! Gostaria de solicitar minha entrada na Tea Mind Society.",
-    en: "Hi! I'd like to request my entry to the Tea Mind Society.",
-    es: "¡Hola! Me gustaría solicitar mi entrada a la Tea Mind Society.",
+    pt: "Olá! Gostaria de manifestar meu interesse em participar da Tea Mind Society.",
+    en: "Hi! I'd like to express my interest in joining the Tea Mind Society.",
+    es: "¡Hola! Me gustaría manifestar mi interés en participar en la Tea Mind Society.",
   } as const;
   const societyHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(societyMessages[lang])}`;
+  const light = "text-[hsl(40,20%,94%)]";
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
 
-      {/* ── BLOCK 1 — HERO ── */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-[hsl(25,30%,14%)] text-[hsl(40,20%,94%)] overflow-hidden">
+      {/* BLOCK 1 */}
+      <section className={`relative min-h-[90vh] flex items-center justify-center bg-[hsl(25,30%,14%)] ${light} overflow-hidden`}>
         <HeroBackground />
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-32 text-center">
-          <Fade>
-            <span className="inline-block text-xs tracking-[0.35em] uppercase font-sans mb-6 text-[hsl(40,20%,94%)]/60">{t.hero.eyebrow}</span>
-          </Fade>
-          <Fade delay={150}>
-            <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8">{t.hero.title}</h1>
-          </Fade>
+          <Fade><span className={`inline-block text-xs tracking-[0.35em] uppercase font-sans mb-6 ${light}/60`}>{t.hero.eyebrow}</span></Fade>
+          <Fade delay={150}><h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8">{t.hero.title}</h1></Fade>
           <Fade delay={300}>
-            <p className="text-base md:text-lg leading-relaxed text-[hsl(40,20%,94%)]/80 max-w-3xl mx-auto mb-10">{t.hero.subtitle}</p>
+            <p className={`text-base md:text-lg leading-relaxed ${light}/80 max-w-3xl mx-auto mb-6`}>{t.hero.p1}</p>
+            <p className={`text-base md:text-lg leading-relaxed ${light}/70 max-w-3xl mx-auto mb-12`}>{t.hero.p2}</p>
           </Fade>
           <Fade delay={450}>
             <div className="text-left max-w-xl mx-auto">
-              <p className="text-sm uppercase tracking-[0.2em] font-sans mb-4 text-[hsl(40,20%,94%)]/60">{t.hero.listTitle}</p>
+              <p className={`text-sm uppercase tracking-[0.2em] font-sans mb-4 ${light}/60`}>{t.hero.listTitle}</p>
               <ul className="space-y-3">
                 {t.hero.list.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-sm md:text-base text-[hsl(40,20%,94%)]/80">
-                    <CheckCircle2 className="w-5 h-5 mt-0.5 text-[hsl(40,20%,94%)]/40 flex-shrink-0" />
+                  <li key={i} className={`flex items-start gap-3 text-sm md:text-base ${light}/80`}>
+                    <CheckCircle2 className={`w-5 h-5 mt-0.5 ${light}/40 flex-shrink-0`} />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-8 text-sm md:text-base leading-relaxed text-[hsl(40,20%,94%)]/70">{t.hero.note}</p>
+              <p className={`mt-8 text-sm md:text-base leading-relaxed ${light}/70`}>{t.hero.note}</p>
             </div>
           </Fade>
         </div>
       </section>
 
-      {/* ── BLOCK 2 — VISION ── */}
+      {/* BLOCK 2 */}
       <section className="py-24 md:py-32 bg-background">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <Fade>
-            <h2 className="font-serif text-3xl md:text-4xl mb-8 text-foreground">{t.vision.title}</h2>
-          </Fade>
-          <Fade delay={150}>
-            <p className="text-base md:text-lg leading-relaxed text-foreground/70 mb-10">{t.vision.text}</p>
-          </Fade>
-          <Fade delay={300}>
-            <div className="border-l-2 border-foreground/20 pl-6 text-left">
-              <p className="italic text-base text-foreground/60 leading-relaxed">{t.vision.closing}</p>
-            </div>
-          </Fade>
-        </div>
-      </section>
-
-      {/* ── BLOCK 3 — WHAT IS THE SOCIETY ── */}
-      <section className="py-24 md:py-32 bg-[hsl(25,30%,14%)] text-[hsl(40,20%,94%)]">
         <div className="max-w-5xl mx-auto px-6">
-          <Fade>
-            <h2 className="font-serif text-3xl md:text-4xl text-center mb-6">{t.whatIs.title}</h2>
-          </Fade>
+          <Fade><h2 className="font-serif text-3xl md:text-4xl text-center mb-8 text-foreground">{t.ext.title}</h2></Fade>
           <Fade delay={100}>
-            <p className="text-base md:text-lg leading-relaxed text-[hsl(40,20%,94%)]/70 text-center max-w-3xl mx-auto mb-16">{t.whatIs.text}</p>
+            <p className="text-base md:text-lg leading-relaxed text-foreground/70 text-center max-w-3xl mx-auto mb-4">{t.ext.p1}</p>
+            <p className="text-base md:text-lg leading-relaxed text-foreground/70 text-center max-w-3xl mx-auto mb-16">{t.ext.p2}</p>
           </Fade>
-          <Fade delay={200}>
-            <p className="text-xs uppercase tracking-[0.3em] font-sans text-[hsl(40,20%,94%)]/50 text-center mb-10">{t.whatIs.itemsTitle}</p>
-          </Fade>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {t.whatIs.items.map((item, i) => {
+          <Fade delay={200}><p className="text-xs uppercase tracking-[0.3em] font-sans text-foreground/50 text-center mb-10">{t.ext.itemsTitle}</p></Fade>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {t.ext.items.map((item, i) => {
               const Icon = featureIcons[i];
               return (
                 <Fade key={i} delay={300 + i * 100}>
-                  <div className="flex items-start gap-4 p-6 rounded-lg border border-[hsl(40,20%,94%)]/10 hover:border-[hsl(40,20%,94%)]/25 transition-colors duration-500 bg-[hsl(40,20%,94%)]/[0.03]">
-                    <Icon className="w-6 h-6 mt-0.5 flex-shrink-0 text-[hsl(40,20%,94%)]/40" />
-                    <p className="text-sm md:text-base leading-relaxed text-[hsl(40,20%,94%)]/80">{item}</p>
+                  <div className="flex items-start gap-4 p-6 h-full rounded-lg border border-foreground/10 hover:border-foreground/25 transition-colors duration-500">
+                    <Icon className="w-6 h-6 mt-0.5 flex-shrink-0 text-foreground/40" />
+                    <p className="text-sm md:text-base leading-relaxed text-foreground/80">{item}</p>
                   </div>
                 </Fade>
               );
             })}
           </div>
-          <Fade delay={300}>
-            <p className="max-w-3xl mx-auto mt-14 text-center text-sm md:text-base leading-relaxed text-[hsl(40,20%,94%)]/70">{t.whatIs.closing}</p>
-          </Fade>
-        </div>
-      </section>
-
-      {/* ── BLOCK 4 — DIFFERENTIATOR ── */}
-      <section className="py-24 md:py-32 bg-background">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <Fade>
-            <h2 className="font-serif text-3xl md:text-4xl mb-8 text-foreground">{t.diff.title}</h2>
-          </Fade>
-          <Fade delay={150}>
-            <p className="text-base md:text-lg leading-relaxed text-foreground/70 mb-12">{t.diff.text}</p>
-          </Fade>
-          <Fade delay={300}>
-            <div className="border-l-2 border-foreground/20 pl-6 text-left max-w-xl mx-auto">
-              <p className="text-lg md:text-xl font-serif italic text-foreground/70">{t.diff.closing}</p>
+          <Fade delay={300}><p className="max-w-3xl mx-auto mt-14 text-center text-sm md:text-base leading-relaxed text-foreground/70">{t.ext.note}</p></Fade>
+          <Fade delay={400}>
+            <div className="border-l-2 border-foreground/20 pl-6 text-left max-w-2xl mx-auto mt-12">
+              <p className="text-lg md:text-xl font-serif italic text-foreground/70">{t.ext.closing}</p>
             </div>
           </Fade>
         </div>
       </section>
 
-      {/* ── BLOCK 5 — CLOSING ── */}
-      <section className="py-24 md:py-32 bg-[hsl(25,30%,14%)] text-[hsl(40,20%,94%)]">
+      {/* BLOCK 3 */}
+      <section className={`py-24 md:py-32 bg-[hsl(25,30%,14%)] ${light}`}>
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <Fade>
-            <h2 className="font-serif text-3xl md:text-5xl leading-tight mb-8">{t.closing.title}</h2>
-          </Fade>
+          <Fade><h2 className="font-serif text-3xl md:text-5xl leading-tight mb-8">{t.closing.title}</h2></Fade>
           <Fade delay={150}>
-            <p className="text-base md:text-lg leading-relaxed text-[hsl(40,20%,94%)]/70 mb-12">{t.closing.text}</p>
+            {t.closing.paragraphs.map((p, i) => (
+              <p key={i} className={`text-base md:text-lg leading-relaxed ${light}/70 mb-5`}>{p}</p>
+            ))}
           </Fade>
           <Fade delay={300}>
-            <a
-              href={societyHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-8 py-4 border border-[hsl(40,20%,94%)]/30 text-sm tracking-wider uppercase font-sans hover:bg-[hsl(40,20%,94%)]/10 transition-colors duration-500"
-            >
+            <p className="font-serif italic text-xl md:text-2xl mt-10 mb-4">{t.closing.question}</p>
+            <p className={`text-base leading-relaxed ${light}/70 mb-12`}>{t.closing.invite}</p>
+            <a href={societyHref} target="_blank" rel="noopener noreferrer"
+              className={`inline-block px-8 py-4 border border-[hsl(40,20%,94%)]/30 text-sm tracking-wider uppercase font-sans hover:bg-[hsl(40,20%,94%)]/10 transition-colors duration-500`}>
               {t.closing.cta}
             </a>
           </Fade>
