@@ -42,19 +42,18 @@ const societyT = {
       title: "Ninguém constrói um mercado sozinho.",
       p1: "A Tea Mind Society é uma rede privada de profissionais do chá, criada para conectar pessoas que estão atuando, pesquisando, desenvolvendo projetos ou construindo sua trajetória no mercado brasileiro do chá.",
       p2: "Um espaço intimista, dentro do ecossistema Tea Mind, onde diferentes experiências e conhecimentos se encontram para ampliar perspectivas, compartilhar desafios e contribuir para o desenvolvimento do nosso setor.",
-      listTitle: "A Society é para quem:",
+      listTitle: "A Society é para quem possui:",
       list: [
-        "Atua profissionalmente com chá ou está construindo esse caminho.",
-        "Desenvolve negócios, serviços, experiências, educação, pesquisas ou projetos relacionados ao chá.",
-        "Deseja trocar conhecimentos e experiências com outros profissionais.",
-        "Acredita que o mercado brasileiro do chá cresce quando seus profissionais se conectam e compartilham o que sabem.",
+        "Identidade profissional: a pessoa se reconhece como alguém que atua ou deseja atuar profissionalmente com chá, não apenas como consumidora ou apreciadora.",
+        "Compromisso com o ofício: leva a sério seu conhecimento, seus projetos e seus processos, independentemente do tamanho ou da frequência da atuação.",
+        "Afinidade com o propósito coletivo: interessa-se pelo desenvolvimento do mercado brasileiro do chá e reconhece valor na troca com outros profissionais.",
       ],
       note: "A participação acontece exclusivamente por convite da Tea Mind, considerando a afinidade com esse propósito.",
     },
     ext: {
       title: "Uma extensão viva do ecossistema Tea Mind.",
       p1: "Na Society, o conhecimento continua circulando e novas conexões podem nascer das experiências de quem está construindo o mercado do chá.",
-      p2: "Em um grupo privado de WhatsApp, reunimos profissionais com diferentes trajetórias, incluindo alunos, ex-alunos, Special Partners e convidados da Tea Mind.",
+      p2: "Em um grupo privado de WhatsApp, reunimos profissionais com diferentes trajetórias, incluindo alunos, ex-alunos, Special Partners e convidados da Tea Mind que possuem seriedade na relação com o próprio ofício do chá.",
       itemsTitle: "O que você encontra na Society:",
       items: [
         "Conversas sobre projetos, negócios, serviços e desafios reais do mercado do chá.",
@@ -84,19 +83,18 @@ const societyT = {
       title: "No one builds a market alone.",
       p1: "The Tea Mind Society is a private network of tea professionals, created to connect people who are working, researching, developing projects, or building their careers in the Brazilian tea market.",
       p2: "An intimate space within the Tea Mind ecosystem, where different experiences and knowledge come together to broaden perspectives, share challenges, and contribute to the development of our sector.",
-      listTitle: "The Society is for those who:",
+      listTitle: "The Society is for those who have:",
       list: [
-        "Work professionally with tea or are building that path.",
-        "Develop businesses, services, experiences, education, research, or projects related to tea.",
-        "Wish to exchange knowledge and experiences with other professionals.",
-        "Believe the Brazilian tea market grows when its professionals connect and share what they know.",
+        "Professional identity: they see themselves as someone who works, or wishes to work, professionally with tea, not just as a consumer or enthusiast.",
+        "Commitment to the craft: they take their knowledge, projects, and processes seriously, regardless of the size or frequency of their work.",
+        "Affinity with the collective purpose: they care about the development of the Brazilian tea market and see value in exchanging with other professionals.",
       ],
       note: "Participation is exclusively by invitation from Tea Mind, based on affinity with this purpose.",
     },
     ext: {
       title: "A living extension of the Tea Mind ecosystem.",
       p1: "In the Society, knowledge keeps flowing and new connections can arise from the experiences of those building the tea market.",
-      p2: "In a private WhatsApp group, we bring together professionals with different paths, including students, former students, Special Partners, and Tea Mind guests.",
+      p2: "In a private WhatsApp group, we bring together professionals with different paths, including students, former students, Special Partners, and Tea Mind guests who approach the craft of tea with seriousness.",
       itemsTitle: "What you will find in the Society:",
       items: [
         "Conversations about projects, businesses, services, and real challenges in the tea market.",
@@ -126,19 +124,18 @@ const societyT = {
       title: "Nadie construye un mercado solo.",
       p1: "La Tea Mind Society es una red privada de profesionales del té, creada para conectar a personas que están actuando, investigando, desarrollando proyectos o construyendo su trayectoria en el mercado brasileño del té.",
       p2: "Un espacio íntimo, dentro del ecosistema Tea Mind, donde diferentes experiencias y conocimientos se encuentran para ampliar perspectivas, compartir desafíos y contribuir al desarrollo de nuestro sector.",
-      listTitle: "La Society es para quien:",
+      listTitle: "La Society es para quien posee:",
       list: [
-        "Trabaja profesionalmente con té o está construyendo ese camino.",
-        "Desarrolla negocios, servicios, experiencias, educación, investigaciones o proyectos relacionados con el té.",
-        "Desea intercambiar conocimientos y experiencias con otros profesionales.",
-        "Cree que el mercado brasileño del té crece cuando sus profesionales se conectan y comparten lo que saben.",
+        "Identidad profesional: la persona se reconoce como alguien que actúa o desea actuar profesionalmente con té, no solo como consumidora o apreciadora.",
+        "Compromiso con el oficio: se toma en serio su conocimiento, sus proyectos y sus procesos, independientemente del tamaño o la frecuencia de su actuación.",
+        "Afinidad con el propósito colectivo: se interesa por el desarrollo del mercado brasileño del té y reconoce el valor del intercambio con otros profesionales.",
       ],
       note: "La participación se da exclusivamente por invitación de Tea Mind, considerando la afinidad con este propósito.",
     },
     ext: {
       title: "Una extensión viva del ecosistema Tea Mind.",
       p1: "En la Society, el conocimiento sigue circulando y nuevas conexiones pueden nacer de las experiencias de quienes están construyendo el mercado del té.",
-      p2: "En un grupo privado de WhatsApp, reunimos a profesionales con diferentes trayectorias, incluyendo alumnos, exalumnos, Special Partners e invitados de Tea Mind.",
+      p2: "En un grupo privado de WhatsApp, reunimos a profesionales con diferentes trayectorias, incluyendo alumnos, exalumnos, Special Partners e invitados de Tea Mind que tienen seriedad en la relación con el propio oficio del té.",
       itemsTitle: "Lo que encuentras en la Society:",
       items: [
         "Conversaciones sobre proyectos, negocios, servicios y desafíos reales del mercado del té.",
@@ -200,7 +197,7 @@ const SocietyContent = () => {
                 {t.hero.list.map((item, i) => (
                   <li key={i} className={`flex items-start gap-3 text-sm md:text-base text-[hsl(40,20%,94%)]/80`}>
                     <CheckCircle2 className={`w-5 h-5 mt-0.5 text-[hsl(40,20%,94%)]/40 flex-shrink-0`} />
-                    <span>{item}</span>
+                    <span>{(() => { const idx = item.indexOf(":"); return idx > 0 ? (<><strong className="font-semibold text-[hsl(40,20%,94%)]">{item.slice(0, idx + 1)}</strong>{item.slice(idx + 1)}</>) : item; })()}</span>
                   </li>
                 ))}
               </ul>
