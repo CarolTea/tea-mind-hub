@@ -53,10 +53,10 @@ const eventsT = {
       text: "Mais do que servir chá, criamos atmosferas que envolvem o público em uma experiência completa, técnica, estética e emocional. Trabalhamos com profundidade de repertório, refinamento e visão de negócio para entregar encontros memoráveis.",
     },
     types: {
-      title: "Formatos de eventos",
+      title: "Formatos",
       items: [
         { icon: Sparkles, title: "Eventos Personalizados", text: "Para celebrações privadas, lançamentos e ocasiões especiais que pedem uma experiência sensorial única." },
-        { icon: Building2, title: "Eventos Corporativos", text: "Experiências para marcas, equipes e clientes estratégicos que valorizam sofisticação e diferencial." },
+        { icon: Building2, title: "Palestras Corporativas", text: "Uma pausa sensorial com chás de luxo no ambiente de trabalho. Para equipes, clientes estratégicos e parceiros que valorizam a sofisticação em ações de bem-estar, integração e qualidade de vida." },
         { icon: Heart, title: "Eventos Temáticos", text: "Encontros com narrativa autoral que conectam chá, cultura, gastronomia e experiência de marca." },
       ],
     },
@@ -88,10 +88,10 @@ const eventsT = {
       text: "More than serving tea, we create atmospheres that immerse audiences in a complete experience, technical, aesthetic and emotional. We work with depth of repertoire, refinement and business vision to deliver memorable gatherings.",
     },
     types: {
-      title: "Event formats",
+      title: "Formats",
       items: [
         { icon: Sparkles, title: "Personalized Events", text: "For private celebrations, launches and special occasions that call for a unique sensory experience." },
-        { icon: Building2, title: "Corporate Events", text: "Experiences for brands, teams and strategic clients who value sophistication and differentiation." },
+        { icon: Building2, title: "Corporate Talks", text: "A sensory pause with luxury teas in the workplace. For teams, strategic clients and partners who value sophistication in wellness, integration and quality of life initiatives." },
         { icon: Heart, title: "Themed Events", text: "Gatherings with signature narrative that connect tea, culture, gastronomy and brand experience." },
       ],
     },
@@ -123,10 +123,10 @@ const eventsT = {
       text: "Más que servir té, creamos atmósferas que envuelven al público en una experiencia completa, técnica, estética y emocional. Trabajamos con profundidad de repertorio, refinamiento y visión de negocio para entregar encuentros memorables.",
     },
     types: {
-      title: "Formatos de eventos",
+      title: "Formatos",
       items: [
         { icon: Sparkles, title: "Eventos Personalizados", text: "Para celebraciones privadas, lanzamientos y ocasiones especiales que requieren una experiencia sensorial única." },
-        { icon: Building2, title: "Eventos Corporativos", text: "Experiencias para marcas, equipos y clientes estratégicos que valoran sofisticación y diferencial." },
+        { icon: Building2, title: "Charlas Corporativas", text: "Una pausa sensorial con tés de lujo en el ambiente de trabajo. Para equipos, clientes estratégicos y socios que valoran la sofisticación en acciones de bienestar, integración y calidad de vida." },
         { icon: Heart, title: "Eventos Temáticos", text: "Encuentros con narrativa de autor que conectan té, cultura, gastronomía y experiencia de marca." },
       ],
     },
